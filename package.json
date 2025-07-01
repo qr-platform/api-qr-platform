@@ -1,0 +1,20 @@
+{
+  "name": "@qr-platform/api-qr-platform",
+  "version": "1.0.0",
+  "description": "API Clients for QR Platform",
+  "scripts": {
+    "build": "cd packages/clients && npm run build",
+    "generate": "cd packages/clients && npm run generate",
+    "generate:node": "cd packages/clients && npm run generate:node",
+    "generate:react": "cd packages/clients && npm run generate:react",
+    "clean": "cd packages/clients && npm run clean",
+    "install:clients": "cd packages/clients && npm install"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC",
+  "private": true
+}
