@@ -17,45 +17,83 @@ For server-side applications, CLI tools, or any Node.js environment:
 ```typescript
 // Import the Node.js client
 import {
-  QrCodesService,
-  OpenAPI,
-  ApiError,
+  getCodes,
+  postCodes,
+  client,
+  createClient,
+  createConfig,
 } from "@qr-platform/api-qr-platform/node";
 
-// Configure authentication
-OpenAPI.TOKEN = "your-api-key-here";
+// Configure the default client
+client.setConfig({
+  baseUrl: "https://api.qr-platform.com/v1",
+  headers: {
+    Authorization: "Bearer your-api-key-here",
+  },
+});
 
-// Make API calls
+// Or create a custom client
+const myClient = createClient(
+  createConfig({
+    baseUrl: "https://api.qr-platform.com/v1",
+    headers: {
+      Authorization: "Bearer your-api-key-here",
+    },
+  })
+);
+
+// Make API calls using SDK functions
 try {
-  const codes = await QrCodesService.getCodes();
-  console.log("QR Codes:", codes);
+  const codes = await getCodes();
+  console.log("QR Codes:", codes.data);
+
+  const newCode = await postCodes({
+    body: {
+      name: "My QR Code",
+      data: "https://example.com",
+    },
+  });
+  console.log("Created:", newCode.data);
 } catch (error) {
-  if (error instanceof ApiError) {
-    console.error("API Error:", error.status, error.body);
-  }
+  console.error("API Error:", error);
 }
 ```
 
 ### React Client
 
-For React applications with React Query integration:
+For React applications with TanStack React Query integration:
 
 ```typescript
-// Import React hooks
-import { useGetCodes, usePostCodes } from "@qr-platform/api-qr-platform/react";
-import { OpenAPI } from "@qr-platform/api-qr-platform/node";
+// Import React Query options and mutations
+import {
+  getCodesOptions,
+  postCodesMutation,
+  getCodesByCodeIdOptions,
+} from "@qr-platform/api-qr-platform/react";
+import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
+import { client } from "@qr-platform/api-qr-platform/node";
 
 // Configure authentication (in your app setup)
-OpenAPI.TOKEN = "your-api-key-here";
+client.setConfig({
+  baseUrl: "https://api.qr-platform.com/v1",
+  headers: {
+    Authorization: "Bearer your-api-key-here",
+  },
+});
 
 function MyComponent() {
-  // Use query hooks
-  const { data: codes, isLoading, error } = useGetCodes();
+  const queryClient = useQueryClient();
 
-  // Use mutation hooks
-  const createCode = usePostCodes({
+  // Use query options with useQuery
+  const { data: codes, isLoading, error } = useQuery(getCodesOptions());
+
+  // Use mutation options with useMutation
+  const createCode = useMutation({
+    ...postCodesMutation(),
     onSuccess: (data) => {
       console.log("Code created:", data);
+      // Invalidate and refetch codes
+      queryClient.invalidateQueries({ queryKey: ["getCodes"] });
     },
     onError: (error) => {
       console.error("Error creating code:", error);
@@ -64,7 +102,7 @@ function MyComponent() {
 
   const handleCreate = () => {
     createCode.mutate({
-      requestBody: {
+      body: {
         name: "My QR Code",
         data: "https://example.com",
       },
@@ -77,10 +115,12 @@ function MyComponent() {
   return (
     <div>
       <h1>QR Codes</h1>
-      {codes?.map((code) => (
+      {codes?.data?.map((code) => (
         <div key={code.id}>{code.name}</div>
       ))}
-      <button onClick={handleCreate}>Create Code</button>
+      <button onClick={handleCreate} disabled={createCode.isPending}>
+        {createCode.isPending ? "Creating..." : "Create Code"}
+      </button>
     </div>
   );
 }
@@ -96,12 +136,13 @@ function MyComponent() {
 ├── react.d.ts           # React types entry point
 └── dist/
     ├── node/            # Compiled Node.js client
-    │   ├── core/        # Core HTTP client functionality
-    │   ├── services.gen.ts
+    │   ├── client/      # Core HTTP client functionality
+    │   ├── core/        # Core utilities
+    │   ├── sdk.gen.ts   # Generated SDK functions
     │   ├── types.gen.ts
     │   └── index.ts
     └── react/           # Compiled React client
-        ├── hooks/       # React Query hooks
+        ├── @tanstack/   # TanStack React Query hooks
         └── index.ts
 ```
 
@@ -111,45 +152,95 @@ function MyComponent() {
 
 #### Configuration
 
-- `OpenAPI.TOKEN` - Set your API key
-- `OpenAPI.BASE` - API base URL (default: auto-detected)
+```typescript
+import {
+  client,
+  createClient,
+  createConfig,
+} from "@qr-platform/api-qr-platform/node";
 
-#### Available Services
+// Configure default client
+client.setConfig({
+  baseUrl: "https://api.qr-platform.com/v1",
+  headers: {
+    Authorization: "Bearer your-api-key",
+  },
+});
 
-- `AuthService` - Authentication endpoints
-- `QrCodesService` - QR code management
-- `ApiKeysService` - API key management
-- `WorkspacesService` - Workspace management
-- `TemplatesService` - Template management
-- `StylesService` - Style management
+// Or create a new client instance
+const customClient = createClient(
+  createConfig({
+    baseUrl: "https://api.qr-platform.com/v1",
+    headers: {
+      Authorization: "Bearer your-api-key",
+    },
+  })
+);
+```
+
+#### Available SDK Functions
+
+- `getAuthMe()` - Get current user
+- `postAuthSignIn()` - Sign in user
+- `getCodes()` - Fetch QR codes
+- `postCodes()` - Create QR code
+- `getCodesByCodeId()` - Get specific code
+- `putCodesByCodeId()` - Update QR code
+- `deleteCodesByCodeId()` - Delete QR code
+- `getTemplates()` - Fetch templates
+- `postTemplates()` - Create template
+- `getStyles()` - Fetch styles
+- `postStyles()` - Create style
 - And many more...
 
 #### Error Handling
 
-All API errors are thrown as `ApiError` instances with:
+All API functions return a result object with either `data` or `error`:
 
-- `status: number` - HTTP status code
-- `statusText: string` - HTTP status message
-- `body: unknown` - Error response body
-- `url: string` - Request URL
+```typescript
+try {
+  const result = await getCodes();
+  console.log(result.data); // Success data
+} catch (error) {
+  console.error(error); // Network or other errors
+}
+```
 
 ### React Client
 
-The React client provides all the same services as the Node.js client, plus:
+The React client provides TanStack React Query options for all API endpoints:
 
-#### Query Hooks
+#### Query Options
 
-- `useGetCodes()` - Fetch QR codes
-- `useGetCodesByCodeId({ codeId })` - Fetch specific code
-- `useGetTemplates()` - Fetch templates
+- `getCodesOptions()` - Fetch QR codes
+- `getCodesByCodeIdOptions({ path: { codeId } })` - Fetch specific code
+- `getTemplatesOptions()` - Fetch templates
+- `getAuthMeOptions()` - Get current user
 - And many more...
 
-#### Mutation Hooks
+#### Mutation Options
 
-- `usePostCodes()` - Create QR code
-- `usePutCodesByCodeId()` - Update QR code
-- `useDeleteCodesByCodeId()` - Delete QR code
+- `postCodesMutation()` - Create QR code
+- `putCodesByCodeIdMutation()` - Update QR code
+- `deleteCodesByCodeIdMutation()` - Delete QR code
+- `postTemplatesMutation()` - Create template
 - And many more...
+
+#### Usage with TanStack React Query
+
+```typescript
+import { useQuery, useMutation } from "@tanstack/react-query";
+import {
+  getCodesOptions,
+  postCodesMutation,
+} from "@qr-platform/api-qr-platform/react";
+
+// Query
+const { data, isLoading, error } = useQuery(getCodesOptions());
+
+// Mutation
+const mutation = useMutation(postCodesMutation());
+```
 
 ## Development
 

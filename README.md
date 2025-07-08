@@ -1,6 +1,6 @@
-# QR Worker API Clients Monorepo
+# QR Platform API Clients Monorepo
 
-This monorepo contains API clients for the QR Worker platform, providing both Node.js and React implementations in a single package.
+This monorepo contains API clients for the QR Platform, providing both Node.js and React implementations in a single package.
 
 ## 🏗️ Structure
 
@@ -10,12 +10,13 @@ This monorepo contains API clients for the QR Worker platform, providing both No
 │   └── clients/                 # Main package with both Node.js and React clients
 │       ├── src/
 │       │   ├── node/           # Node.js/Universal client
-│       │   │   ├── core/       # Core HTTP functionality
-│       │   │   ├── services.gen.ts
+│       │   │   ├── client/     # Core HTTP functionality
+│       │   │   ├── core/       # Core utilities
+│       │   │   ├── sdk.gen.ts  # Generated SDK functions
 │       │   │   ├── types.gen.ts
 │       │   │   └── index.ts
 │       │   └── react/          # React Query hooks
-│       │       ├── hooks/      # React Query implementations
+│       │       ├── @tanstack/  # TanStack React Query hooks
 │       │       └── index.ts
 │       ├── dist/               # Compiled output
 │       ├── package.json        # Package configuration
@@ -62,22 +63,37 @@ The `packages/clients` directory contains the main package that provides separat
 ### Node.js Usage
 
 ```typescript
-import { QrCodesService, OpenAPI } from "@qr-platform/api-qr-platform/node";
+import { getCodes, client } from "@qr-platform/api-qr-platform/node";
 
-OpenAPI.TOKEN = "your-api-key";
-const codes = await QrCodesService.getCodes();
+// Configure the client
+client.setConfig({
+  baseUrl: "https://api.qr-platform.com/v1",
+  headers: {
+    Authorization: "Bearer your-api-key",
+  },
+});
+
+// Make API calls using SDK functions
+const codes = await getCodes();
 ```
 
 ### React Usage
 
 ```typescript
-import { useGetCodes } from "@qr-platform/api-qr-platform/react";
-import { OpenAPI } from "@qr-platform/api-qr-platform/node";
+import { getCodesOptions } from "@qr-platform/api-qr-platform/react";
+import { useQuery } from "@tanstack/react-query";
+import { client } from "@qr-platform/api-qr-platform/node";
 
-OpenAPI.TOKEN = "your-api-key";
+// Configure the client (typically in your app setup)
+client.setConfig({
+  baseUrl: "https://api.qr-platform.com/v1",
+  headers: {
+    Authorization: "Bearer your-api-key",
+  },
+});
 
 function MyComponent() {
-  const { data: codes } = useGetCodes();
+  const { data: codes } = useQuery(getCodesOptions());
   return <div>{/* Your component */}</div>;
 }
 ```

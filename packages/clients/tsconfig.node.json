@@ -3,7 +3,7 @@
   "compilerOptions": {
     "outDir": "./dist/node",
     "rootDir": "./src/node",
-    "lib": ["ES2020", "DOM"],
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "types": ["node"]
   },
   "include": ["src/node/**/*"]
