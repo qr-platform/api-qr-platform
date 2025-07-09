@@ -1,6 +1,6 @@
 {
   "name": "@qr-platform/api-qr-platform",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "API Clients for QR Platform",
   "scripts": {
     "build": "cd packages/clients && npm run build",
