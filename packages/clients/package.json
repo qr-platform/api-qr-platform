@@ -26,7 +26,7 @@
     }
   },
   "scripts": {
-    "build": "npm run build:node && npm run build:react && npm run build:entries",
+    "build": "npm run build:utils && npm run build:node && npm run build:react && npm run build:entries",
     "build:node": "tsc -p tsconfig.node.json",
     "build:react": "tsc -p tsconfig.react.json",
     "build:entries": "node scripts/build-entries.js",
@@ -36,7 +36,8 @@
     "generate:node": "openapi-ts -i https://api.qr-platform.com/v1/openapi -o ./src/node --plugins @hey-api/client-fetch @hey-api/sdk @hey-api/typescript",
     "generate:react": "openapi-ts -i https://api.qr-platform.com/v1/openapi -o ./src/react --plugins @tanstack/react-query @hey-api/typescript",
     "generate": "npm run generate:node && npm run generate:react",
-    "clean": "rm -rf dist *.js *.d.ts && find src -name '*.js' -delete && find src -name '*.d.ts' -delete"
+    "clean": "rm -rf dist *.js *.d.ts && find src -name '*.js' -delete && find src -name '*.d.ts' -delete",
+    "build:utils": "node scripts/build-utils.js"
   },
   "dependencies": {
     "@tanstack/react-query": "^5.0.0"
