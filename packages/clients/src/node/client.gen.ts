@@ -14,5 +14,5 @@ import { type Config, type ClientOptions as DefaultClientOptions, createClient, 
 export type CreateClientConfig<T extends DefaultClientOptions = ClientOptions> = (override?: Config<DefaultClientOptions & T>) => Config<Required<DefaultClientOptions> & T>;
 
 export const client = createClient(createConfig<ClientOptions>({
-    baseUrl: 'http://localhost:8787/v1'
+    baseUrl: 'https://api.qr-platform.com/v1'
 }));

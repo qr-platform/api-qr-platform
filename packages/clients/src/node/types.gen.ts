@@ -13668,5 +13668,5 @@ export type PostWorkspacesByWorkspaceIdRouterRuleTemplatesResponses = {
 };
 
 export type ClientOptions = {
-    baseUrl: 'http://localhost:8787/v1' | (string & {});
+    baseUrl: 'https://api.qr-platform.com/v1' | (string & {});
 };
