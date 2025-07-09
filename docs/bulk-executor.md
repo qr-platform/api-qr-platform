@@ -8,6 +8,69 @@ The Bulk Executor solves a common problem: when you have a large array of items 
 
 **Instead of manually managing this logic**, the Bulk Executor handles it automatically.
 
+## 🔧 Current Usage Patterns
+
+The bulk utilities support two client patterns:
+
+### ✅ Recommended: Custom Client Instance
+
+This pattern always works and is recommended for reliability:
+
+```javascript
+import {
+  bulkExecute,
+  deleteCodesByCodeId,
+  createClient,
+  createConfig,
+} from "@qr-platform/api-qr-platform/node";
+
+const client = createClient(
+  createConfig({
+    baseUrl: "https://api.qr-platform.com/v1",
+    headers: { Authorization: "Bearer your-api-key" },
+  })
+);
+
+const result = await bulkExecute(
+  (ids) => deleteCodesByCodeId({ client, body: { ids } }),
+  arrayOfIds,
+  { maxCount: 100 }
+);
+```
+
+### 🔄 Alternative: Global Client (May Require Rebuild)
+
+This pattern provides cleaner syntax but may require rebuilding the package:
+
+```javascript
+import {
+  client,
+  bulkExecute,
+  deleteCodesByCodeId,
+} from "@qr-platform/api-qr-platform/node";
+
+client.setConfig({
+  baseUrl: "https://api.qr-platform.com/v1",
+  headers: { Authorization: "Bearer your-api-key" },
+});
+
+const result = await bulkExecute(
+  (ids) => deleteCodesByCodeId({ body: { ids } }),
+  arrayOfIds,
+  { maxCount: 100 }
+);
+```
+
+### 🚨 Troubleshooting
+
+If you get "client is not exported" or similar errors:
+
+1. **Use the custom client pattern** (always works)
+2. **Rebuild the package:** `cd packages/clients && npm run build`
+3. **Verify exports:** `node -e "console.log(require('./node.js').client)"`
+
+All examples in this document show both patterns where applicable.
+
 ## 🏗️ Architecture
 
 The bulk utilities are built with a **generation-proof architecture**:
@@ -44,12 +107,12 @@ import { bulkExecute } from "@qr-platform/api-qr-platform/react";
 ### All Utilities
 
 ```javascript
-import { 
+import {
   bulkExecute,
   mergeBulkResponseData,
   filterSuccessfulResponses,
   extractAllErrors,
-  getBulkResponseSummary
+  getBulkResponseSummary,
 } from "@qr-platform/api-qr-platform/node";
 ```
 
@@ -58,11 +121,24 @@ import {
 ### Simple Example
 
 ```javascript
-import { bulkExecute, deleteCodesByCodeId } from "@qr-platform/api-qr-platform/node";
+import {
+  bulkExecute,
+  deleteCodesByCodeId,
+  createClient,
+  createConfig,
+} from "@qr-platform/api-qr-platform/node";
+
+// Create client instance
+const client = createClient(
+  createConfig({
+    baseUrl: "https://api.qr-platform.com/v1",
+    headers: { Authorization: "Bearer your-api-key" },
+  })
+);
 
 // You have 1000 code IDs, but can only delete 100 at a time
 const result = await bulkExecute(
-  (ids) => deleteCodesByCodeId({ body: { ids } }),
+  (ids) => deleteCodesByCodeId({ client, body: { ids } }),
   arrayOf1000CodeIds,
   { maxCount: 100 }
 );
@@ -73,11 +149,47 @@ console.log(`Successful: ${result.successful.length}`);
 console.log(`Failed: ${result.failed.length}`);
 ```
 
+**Alternative: Global Client (If Available)**
+
+```javascript
+import {
+  client,
+  bulkExecute,
+  deleteCodesByCodeId,
+} from "@qr-platform/api-qr-platform/node";
+
+// Configure global client once (requires rebuild if not working)
+client.setConfig({
+  baseUrl: "https://api.qr-platform.com/v1",
+  headers: { Authorization: "Bearer your-api-key" },
+});
+
+// Use without passing client (if global client is available)
+const result = await bulkExecute(
+  (ids) => deleteCodesByCodeId({ body: { ids } }),
+  arrayOf1000CodeIds,
+  { maxCount: 100 }
+);
+```
+
 ### React Component Example
 
 ```javascript
-import React, { useState } from 'react';
-import { bulkExecute, deleteCodesByCodeId } from "@qr-platform/api-qr-platform/react";
+import React, { useState } from "react";
+import {
+  bulkExecute,
+  deleteCodesByCodeId,
+  createClient,
+  createConfig,
+} from "@qr-platform/api-qr-platform/react";
+
+// Create client instance (typically in your app setup)
+const client = createClient(
+  createConfig({
+    baseUrl: "https://api.qr-platform.com/v1",
+    headers: { Authorization: "Bearer your-api-key" },
+  })
+);
 
 function BulkDeleteComponent({ codeIds }) {
   const [isProcessing, setIsProcessing] = useState(false);
@@ -87,13 +199,13 @@ function BulkDeleteComponent({ codeIds }) {
     setIsProcessing(true);
     try {
       const result = await bulkExecute(
-        (ids) => deleteCodesByCodeId({ body: { ids } }),
+        (ids) => deleteCodesByCodeId({ client, body: { ids } }),
         codeIds,
         { maxCount: 100 }
       );
       setResult(result);
     } catch (error) {
-      console.error('Bulk operation failed:', error);
+      console.error("Bulk operation failed:", error);
     } finally {
       setIsProcessing(false);
     }
@@ -102,12 +214,11 @@ function BulkDeleteComponent({ codeIds }) {
   return (
     <div>
       <button onClick={handleBulkDelete} disabled={isProcessing}>
-        {isProcessing ? 'Processing...' : `Delete ${codeIds.length} codes`}
+        {isProcessing ? "Processing..." : `Delete ${codeIds.length} codes`}
       </button>
       {result && (
         <div>
-          Successful: {result.successful.length}, 
-          Failed: {result.failed.length}
+          Successful: {result.successful.length}, Failed: {result.failed.length}
         </div>
       )}
     </div>
@@ -121,9 +232,9 @@ function BulkDeleteComponent({ codeIds }) {
 
 ```typescript
 interface BulkExecutorConfig {
-  maxCount: number;        // Maximum items per request (required)
-  delay?: number;          // Delay between requests in milliseconds (optional)
-  parallel?: boolean;      // Execute chunks in parallel (default: true)
+  maxCount: number; // Maximum items per request (required)
+  delay?: number; // Delay between requests in milliseconds (optional)
+  parallel?: boolean; // Execute chunks in parallel (default: true)
 }
 ```
 
@@ -146,10 +257,10 @@ interface BulkExecutorConfig {
 
 ```typescript
 interface BulkExecutorResult<T> {
-  successful: T[];                               // Array of successful responses
+  successful: T[]; // Array of successful responses
   failed: Array<{ chunk: any[]; error: unknown }>; // Failed chunks with errors
-  totalChunks: number;                           // Total number of chunks processed
-  totalProcessed: number;                        // Total chunks attempted
+  totalChunks: number; // Total number of chunks processed
+  totalProcessed: number; // Total chunks attempted
 }
 ```
 
@@ -175,11 +286,24 @@ interface BulkExecutorResult<T> {
 ### 1. Bulk Delete Operations
 
 ```javascript
-import { bulkExecute, deleteCodesByCodeId } from "@qr-platform/api-qr-platform/node";
+import {
+  bulkExecute,
+  deleteCodesByCodeId,
+  createClient,
+  createConfig,
+} from "@qr-platform/api-qr-platform/node";
+
+// Create client
+const client = createClient(
+  createConfig({
+    baseUrl: "https://api.qr-platform.com/v1",
+    headers: { Authorization: "Bearer your-api-key" },
+  })
+);
 
 // Delete 500 QR codes, 100 at a time
 const deleteResult = await bulkExecute(
-  (ids) => deleteCodesByCodeId({ body: { ids } }),
+  (ids) => deleteCodesByCodeId({ client, body: { ids } }),
   arrayOf500CodeIds,
   { maxCount: 100 }
 );
@@ -190,18 +314,35 @@ console.log(`Deleted ${deleteResult.successful.length * 100} codes`);
 ### 2. Bulk Update Operations
 
 ```javascript
-import { bulkExecute, putCodesByCodeId } from "@qr-platform/api-qr-platform/node";
+import {
+  bulkExecute,
+  putCodesByCodeId,
+  createClient,
+  createConfig,
+} from "@qr-platform/api-qr-platform/node";
+
+// Create client
+const client = createClient(
+  createConfig({
+    baseUrl: "https://api.qr-platform.com/v1",
+    headers: { Authorization: "Bearer your-api-key" },
+  })
+);
 
 // Update codes in batches
-const updates = codeIds.map(id => ({ id, data: { name: "Updated" } }));
+const updates = codeIds.map((id) => ({ id, data: { name: "Updated" } }));
 
 const updateResult = await bulkExecute(
-  (batch) => Promise.all(
-    batch.map(update => putCodesByCodeId({ 
-      path: { codeId: update.id }, 
-      body: update.data 
-    }))
-  ),
+  (batch) =>
+    Promise.all(
+      batch.map((update) =>
+        putCodesByCodeId({
+          client,
+          path: { codeId: update.id },
+          body: update.data,
+        })
+      )
+    ),
   updates,
   { maxCount: 25 }
 );
@@ -210,14 +351,29 @@ const updateResult = await bulkExecute(
 ### 3. Rate-Limited APIs (Sequential Processing)
 
 ```javascript
+import {
+  bulkExecute,
+  deleteCodesByCodeId,
+  createClient,
+  createConfig,
+} from "@qr-platform/api-qr-platform/node";
+
+// Create client
+const client = createClient(
+  createConfig({
+    baseUrl: "https://api.qr-platform.com/v1",
+    headers: { Authorization: "Bearer your-api-key" },
+  })
+);
+
 // For APIs with strict rate limits
 const result = await bulkExecute(
-  (ids) => deleteCodesByCodeId({ body: { ids } }),
+  (ids) => deleteCodesByCodeId({ client, body: { ids } }),
   largeIdArray,
   {
-    maxCount: 50,        // Smaller batches
-    parallel: false,     // Sequential processing
-    delay: 2000         // 2 second delay between requests
+    maxCount: 50, // Smaller batches
+    parallel: false, // Sequential processing
+    delay: 2000, // 2 second delay between requests
   }
 );
 ```
@@ -225,27 +381,39 @@ const result = await bulkExecute(
 ### 4. Custom Bulk Operations
 
 ```javascript
+import {
+  bulkExecute,
+  createClient,
+  createConfig,
+} from "@qr-platform/api-qr-platform/node";
+
+// Create client
+const client = createClient(
+  createConfig({
+    baseUrl: "https://api.qr-platform.com/v1",
+    headers: { Authorization: "Bearer your-api-key" },
+  })
+);
+
 // Works with any function that accepts an array
 const customOperation = async (items) => {
   // Your custom logic here
-  return await someApiCall(items);
+  return await someApiCall({ client, data: items });
 };
 
-const result = await bulkExecute(
-  customOperation,
-  yourDataArray,
-  { maxCount: 75 }
-);
+const result = await bulkExecute(customOperation, yourDataArray, {
+  maxCount: 75,
+});
 ```
 
 ### 5. Using Response Utilities
 
 ```javascript
-import { 
-  bulkExecute, 
-  mergeBulkResponseData, 
+import {
+  bulkExecute,
+  mergeBulkResponseData,
   getBulkResponseSummary,
-  filterSuccessfulResponses
+  filterSuccessfulResponses,
 } from "@qr-platform/api-qr-platform/node";
 
 const result = await bulkExecute(func, data, { maxCount: 100 });
@@ -269,9 +437,9 @@ console.log(`Total items processed: ${summary.totalItems}`);
 - **Higher server load**
 
 ```javascript
-const result = await bulkExecute(func, data, { 
-  maxCount: 100, 
-  parallel: true  // Default
+const result = await bulkExecute(func, data, {
+  maxCount: 100,
+  parallel: true, // Default
 });
 ```
 
@@ -282,10 +450,10 @@ const result = await bulkExecute(func, data, {
 - **Supports delays between requests**
 
 ```javascript
-const result = await bulkExecute(func, data, { 
-  maxCount: 100, 
+const result = await bulkExecute(func, data, {
+  maxCount: 100,
   parallel: false,
-  delay: 1000  // 1 second between each request
+  delay: 1000, // 1 second between each request
 });
 ```
 
@@ -293,12 +461,12 @@ const result = await bulkExecute(func, data, {
 
 ### Scenario Comparison
 
-| Input Size | Max Count | Mode | Requests | Time Estimate |
-|------------|-----------|------|----------|---------------|
-| 1000 items | 100 | Parallel | 10 simultaneous | ~2-3 seconds |
-| 1000 items | 100 | Sequential | 10 sequential | ~10-15 seconds |
-| 1000 items | 100 | Sequential + 1s delay | 10 with delays | ~19 seconds |
-| 90 items | 100 | Any | 1 | ~1 second |
+| Input Size | Max Count | Mode                  | Requests        | Time Estimate  |
+| ---------- | --------- | --------------------- | --------------- | -------------- |
+| 1000 items | 100       | Parallel              | 10 simultaneous | ~2-3 seconds   |
+| 1000 items | 100       | Sequential            | 10 sequential   | ~10-15 seconds |
+| 1000 items | 100       | Sequential + 1s delay | 10 with delays  | ~19 seconds    |
+| 90 items   | 100       | Any                   | 1               | ~1 second      |
 
 ## ⚠️ Error Handling
 
@@ -326,10 +494,10 @@ console.log(`Success rate: ${successRate.toFixed(1)}%`);
 ### Advanced Error Handling with Utilities
 
 ```javascript
-import { 
-  bulkExecute, 
-  extractAllErrors, 
-  getBulkResponseSummary 
+import {
+  bulkExecute,
+  extractAllErrors,
+  getBulkResponseSummary,
 } from "@qr-platform/api-qr-platform/node";
 
 const result = await bulkExecute(func, data, { maxCount: 100 });
@@ -348,6 +516,7 @@ console.log(`Overall success rate: ${summary.successRate.toFixed(1)}%`);
 ## 🛡️ Best Practices
 
 ### 1. Choose Appropriate Batch Sizes
+
 ```javascript
 // For delete operations (usually fast)
 { maxCount: 100 }
@@ -360,28 +529,40 @@ console.log(`Overall success rate: ${summary.successRate.toFixed(1)}%`);
 ```
 
 ### 2. Handle Errors Gracefully
+
 ```javascript
 const result = await bulkExecute(func, data, config);
 
 if (result.failed.length > 0) {
   console.warn(`${result.failed.length} chunks failed`);
   // Optionally retry failed chunks
-  const retryIds = result.failed.flatMap(f => f.chunk);
+  const retryIds = result.failed.flatMap((f) => f.chunk);
   // ... retry logic
 }
 ```
 
 ### 3. Monitor Progress
+
 ```javascript
-console.log(`Processing ${data.length} items in ${Math.ceil(data.length / maxCount)} chunks...`);
+console.log(
+  `Processing ${data.length} items in ${Math.ceil(
+    data.length / maxCount
+  )} chunks...`
+);
 
 const result = await bulkExecute(func, data, config);
 
 console.log(`Completed: ${result.totalProcessed}/${result.totalChunks} chunks`);
-console.log(`Success rate: ${(result.successful.length / result.totalChunks * 100).toFixed(1)}%`);
+console.log(
+  `Success rate: ${(
+    (result.successful.length / result.totalChunks) *
+    100
+  ).toFixed(1)}%`
+);
 ```
 
 ### 4. Test with Small Batches First
+
 ```javascript
 // Test with a small subset first
 const testResult = await bulkExecute(func, data.slice(0, 10), { maxCount: 5 });
@@ -393,11 +574,12 @@ if (testResult.failed.length === 0) {
 ```
 
 ### 5. Use Response Utilities for Better Data Management
+
 ```javascript
-import { 
-  bulkExecute, 
-  mergeBulkResponseData, 
-  filterSuccessfulResponses 
+import {
+  bulkExecute,
+  mergeBulkResponseData,
+  filterSuccessfulResponses,
 } from "@qr-platform/api-qr-platform/node";
 
 const result = await bulkExecute(func, data, config);
@@ -416,19 +598,41 @@ console.log(`Successfully processed ${mergedData.data.length} items`);
 ### Custom Wrapper Functions
 
 ```javascript
+import {
+  bulkExecute,
+  deleteCodesByCodeId,
+  postCodesByCodeIdRestore,
+  createClient,
+  createConfig,
+} from "@qr-platform/api-qr-platform/node";
+
+// Create client instance
+const client = createClient(
+  createConfig({
+    baseUrl: "https://api.qr-platform.com/v1",
+    headers: { Authorization: "Bearer your-api-key" },
+  })
+);
+
 // Create reusable wrapper functions
-const bulkDeleteCodes = (codeIds, batchSize = 100) => 
+const bulkDeleteCodes = (codeIds, batchSize = 100) =>
   bulkExecute(
-    (ids) => deleteCodesByCodeId({ body: { ids } }),
+    (ids) => deleteCodesByCodeId({ client, body: { ids } }),
     codeIds,
-    { maxCount: batchSize }
+    {
+      maxCount: batchSize,
+    }
   );
 
-const bulkRestoreCodes = (codeIds, batchSize = 50) => 
+const bulkRestoreCodes = (codeIds, batchSize = 50) =>
   bulkExecute(
-    (ids) => postCodesByCodeIdRestore({ body: { ids } }),
+    (ids) => postCodesByCodeIdRestore({ client, body: { ids } }),
     codeIds,
-    { maxCount: batchSize, parallel: false, delay: 500 }
+    {
+      maxCount: batchSize,
+      parallel: false,
+      delay: 500,
+    }
   );
 
 // Usage
@@ -439,25 +643,46 @@ const restoreResult = await bulkRestoreCodes(deletedCodeIds);
 ### Progress Tracking
 
 ```javascript
+import {
+  bulkExecute,
+  createClient,
+  createConfig,
+} from "@qr-platform/api-qr-platform/node";
+
+// Create client
+const client = createClient(
+  createConfig({
+    baseUrl: "https://api.qr-platform.com/v1",
+    headers: { Authorization: "Bearer your-api-key" },
+  })
+);
+
 // For very large operations, you might want progress updates
 const processLargeDataset = async (data) => {
   const chunkSize = 100;
   const totalChunks = Math.ceil(data.length / chunkSize);
   let processedChunks = 0;
-  
-  console.log(`Starting bulk operation: ${data.length} items in ${totalChunks} chunks`);
-  
+
+  console.log(
+    `Starting bulk operation: ${data.length} items in ${totalChunks} chunks`
+  );
+
   const result = await bulkExecute(
     async (chunk) => {
-      const response = await yourApiFunction(chunk);
+      const response = await yourApiFunction({ client, data: chunk });
       processedChunks++;
-      console.log(`Processed chunk: ${processedChunks}/${totalChunks} (${((processedChunks/totalChunks)*100).toFixed(1)}%)`);
+      console.log(
+        `Processed chunk: ${processedChunks}/${totalChunks} (${(
+          (processedChunks / totalChunks) *
+          100
+        ).toFixed(1)}%)`
+      );
       return response;
     },
     data,
     { maxCount: chunkSize, parallel: false, delay: 100 }
   );
-  
+
   return result;
 };
 ```
@@ -465,8 +690,20 @@ const processLargeDataset = async (data) => {
 ### React Hook Example
 
 ```javascript
-import { useState, useCallback } from 'react';
-import { bulkExecute } from "@qr-platform/api-qr-platform/react";
+import { useState, useCallback } from "react";
+import {
+  bulkExecute,
+  createClient,
+  createConfig,
+} from "@qr-platform/api-qr-platform/react";
+
+// Create client instance (typically in app setup)
+const client = createClient(
+  createConfig({
+    baseUrl: "https://api.qr-platform.com/v1",
+    headers: { Authorization: "Bearer your-api-key" },
+  })
+);
 
 function useBulkOperation() {
   const [isLoading, setIsLoading] = useState(false);
@@ -498,17 +735,15 @@ function MyComponent({ codeIds }) {
   const { execute, isLoading, result } = useBulkOperation();
 
   const handleBulkDelete = () => {
-    execute(
-      (ids) => deleteCodesByCodeId({ body: { ids } }),
-      codeIds,
-      { maxCount: 100 }
-    );
+    execute((ids) => deleteCodesByCodeId({ client, body: { ids } }), codeIds, {
+      maxCount: 100,
+    });
   };
 
   return (
     <div>
       <button onClick={handleBulkDelete} disabled={isLoading}>
-        {isLoading ? 'Processing...' : 'Delete Codes'}
+        {isLoading ? "Processing..." : "Delete Codes"}
       </button>
       {result && <div>Processed {result.totalChunks} chunks</div>}
     </div>
@@ -519,15 +754,21 @@ function MyComponent({ codeIds }) {
 ## 🚫 Common Pitfalls
 
 ### 1. Don't Use Extremely Large Batch Sizes
+
 ```javascript
 // ❌ Avoid - might timeout or overwhelm server
-{ maxCount: 1000 }
+{
+  maxCount: 1000;
+}
 
 // ✅ Better - reasonable batch size
-{ maxCount: 100 }
+{
+  maxCount: 100;
+}
 ```
 
 ### 2. Consider Server Limits
+
 ```javascript
 // ❌ Too aggressive for rate-limited APIs
 { maxCount: 100, parallel: true }
@@ -537,9 +778,10 @@ function MyComponent({ codeIds }) {
 ```
 
 ### 3. Handle Empty Arrays
+
 ```javascript
 if (data.length === 0) {
-  console.log('No data to process');
+  console.log("No data to process");
   return;
 }
 
@@ -547,6 +789,7 @@ const result = await bulkExecute(func, data, config);
 ```
 
 ### 4. Don't Ignore Failed Chunks
+
 ```javascript
 // ❌ Ignoring failures
 const result = await bulkExecute(func, data, config);
@@ -606,7 +849,7 @@ async function bulkExecute<T>(
   func: (items: any[]) => Promise<T>,
   items: any[],
   config: BulkExecutorConfig
-): Promise<BulkExecutorResult<T>>
+): Promise<BulkExecutorResult<T>>;
 ```
 
 ### Utility Functions
@@ -618,13 +861,15 @@ function mergeBulkResponseData(responses: BulkResponseData[]): {
   errors: any[] | null;
   summaries: any[] | null;
   totalResponses: number;
-}
+};
 
 // Filter successful responses only
-function filterSuccessfulResponses(responses: BulkResponseData[]): BulkResponseData[]
+function filterSuccessfulResponses(
+  responses: BulkResponseData[]
+): BulkResponseData[];
 
 // Extract all errors from responses
-function extractAllErrors(responses: BulkResponseData[]): any[]
+function extractAllErrors(responses: BulkResponseData[]): any[];
 
 // Get comprehensive statistics
 function getBulkResponseSummary(responses: BulkResponseData[]): {
@@ -635,7 +880,7 @@ function getBulkResponseSummary(responses: BulkResponseData[]): {
   totalErrors: number;
   hasErrors: boolean;
   successRate: number;
-}
+};
 ```
 
 ### Type Definitions
@@ -678,4 +923,3 @@ Promise that resolves to `BulkExecutorResult<T>` containing successful results, 
 ---
 
 The Bulk Executor provides a simple, reliable way to handle large-scale operations while respecting API limits and providing comprehensive error handling. The **generation-proof architecture** ensures your utilities persist through any API updates.
-
