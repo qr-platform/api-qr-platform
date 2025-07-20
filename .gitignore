@@ -2,9 +2,9 @@
 node_modules/
 
 # build output
-dist/
-*.js
-*.d.ts
+# dist/
+# *.js
+# *.d.ts
 
 # logs
 npm-debug.log*

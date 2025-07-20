@@ -1,7 +1,7 @@
 {
   "name": "@qr-platform/api-qr-platform",
   "version": "0.1.0",
-  "description": "API clients for QR Platform",
+  "description": "API clients for QR Platform with Node.js and React support",
   "main": "dist/node/index.js",
   "types": "dist/node/index.d.ts",
   "files": [
@@ -9,7 +9,8 @@
     "node.js",
     "react.js",
     "node.d.ts",
-    "react.d.ts"
+    "react.d.ts",
+    "README.md"
   ],
   "exports": {
     ".": {
@@ -37,7 +38,10 @@
     "generate:react": "openapi-ts -i https://api.qr-platform.com/v1/openapi -o ./src/react --plugins @tanstack/react-query @hey-api/typescript",
     "generate": "npm run generate:node && npm run generate:react",
     "clean": "rm -rf dist *.js *.d.ts && find src -name '*.js' -delete && find src -name '*.d.ts' -delete",
-    "build:utils": "node scripts/build-utils.js"
+    "build:utils": "node scripts/build-utils.js",
+    "prepublishOnly": "npm run clean && npm run build",
+    "prepack": "npm run build",
+    "postpack": "npm run clean"
   },
   "dependencies": {
     "@tanstack/react-query": "^5.0.0"
@@ -58,14 +62,70 @@
     "typescript": "^5.6.0"
   },
   "keywords": [
-    "api-client",
+    "qr-platform",
+    "qr-platform-api",
+    "qr-platform-api-client",
+    "qr-platform-api-clients",
+    "qr-platform-api-clients-node",
+    "qr-platform-api-clients-react",
+    "qr-platform-api-clients-node-react",
+    "qr-platform-api-clients-node-react-typescript",
+    "qr",
+    "qrcode",
     "qr-code",
-    "nodejs",
-    "react",
-    "react-query",
-    "typescript"
+    "js",
+    "qrjs",
+    "qrstyling",
+    "qr-styling",
+    "qr-code.js",
+    "qrbranding",
+    "branding",
+    "qrimage",
+    "qrlogo",
+    "qr-code-borders",
+    "qrcode-borders",
+    "qr-borders",
+    "qrcode",
+    "qr-code",
+    "qr-code-generator",
+    "javascript",
+    "typescript",
+    "qr-platform",
+    "custom-qr-code",
+    "qr-code-styling",
+    "qr-code-design",
+    "qr-code-image",
+    "qr-code-border",
+    "qr-code-gradient",
+    "qr-code-validation",
+    "svg-qr-code",
+    "responsive-qr-code",
+    "node-qr-code",
+    "browser-qr-code",
+    "qr-code-api",
+    "premium-qr-code",
+    "supported-qr-code",
+    "premium-qr-code",
+    "professional-qr-code",
+    "qr-code-generator",
+    "qr-code-generator-api",
+    "qr-code-generator-api-client",
+    "qr-code-generator-api-clients",
+    "qr-code-generator-api-clients-node",
+    "qr-code-generator-api-clients-react"
   ],
-  "repository": "your-repo/@qr-platform/api-qr-platform",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qr-platform/api-qr-platform.git",
+    "directory": "packages/clients"
+  },
+  "bugs": {
+    "url": "https://github.com/qr-platform/api-qr-platform/issues"
+  },
+  "homepage": "https://github.com/qr-platform/api-qr-platform#readme",
   "license": "ISC",
-  "author": ""
+  "author": "QR-Platform <contact@qr-platform.com>",
+  "publishConfig": {
+    "access": "public"
+  }
 }
