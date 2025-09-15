@@ -1554,9 +1554,9 @@ export type PlanNotFoundMessage = {
 };
 
 /**
- * List of settings with group information
+ * List of settings with category information
  */
-export type SettingsWithGroupResponse = Array<SettingWithGroup>;
+export type SettingsWithCategoryResponse = Array<SettingWithCategory>;
 
 /**
  * Setting response data
@@ -1581,13 +1581,13 @@ export type SettingResponse = {
 };
 
 /**
- * Setting with group information
+ * Setting with category information
  */
-export type SettingWithGroup = SettingResponse & {
+export type SettingWithCategory = SettingResponse & {
     /**
-     * Type of setting (service or custom)
+     * Category of setting (service or custom)
      */
-    group: 'service' | 'custom';
+    category: 'service' | 'custom';
 };
 
 /**
@@ -1818,9 +1818,9 @@ export type CodeRouterRuleResponse = {
     };
     priority: number;
     /**
-     * The type of data the QR code contains. Only applies to dynamic codes. Determines how the QR code data is processed and what content type is returned when scanned. Available options: url (default, standard web redirect), wifi (WiFi configuration), vcard (contact card), text (plain text), email (mailto format), event (calendar event), json (custom JSON), file (file download).
+     * The type of data the QR code contains. Only applies to dynamic codes. Determines how the QR code data is processed and what content type is returned when scanned. Available options: url (default, standard web redirect), wifi (WiFi configuration), vcard (contact card), text (plain text), email (mailto format), event (calendar event), json (custom JSON), file (file download), scan-info (returns scan information as JSON).
      */
-    dataType: 'url' | 'wifi' | 'vcard' | 'text' | 'email' | 'event' | 'json' | 'file';
+    dataType: 'url' | 'wifi' | 'vcard' | 'text' | 'email' | 'event' | 'json' | 'file' | 'scan-info';
     dynamicData: {
         [key: string]: unknown;
     };
@@ -1913,7 +1913,7 @@ export type BaseCodeResponse = {
     /**
      * The type of data the QR code contains. Only applies to dynamic codes.
      */
-    dataType?: 'url' | 'wifi' | 'vcard' | 'text' | 'email' | 'event' | 'json' | 'file' | null;
+    dataType?: 'url' | 'wifi' | 'vcard' | 'text' | 'email' | 'event' | 'json' | 'file' | 'scan-info' | null;
     /**
      * Short alias for the QR code
      */
@@ -2363,7 +2363,7 @@ export type TextDecorationStyle = {
     /**
      * Font weight
      */
-    fontWeight?: 'normal' | 'bold';
+    fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
 };
 
 /**
@@ -3287,7 +3287,7 @@ export type CreateCodeRequest = {
     /**
      * The type of data the QR code contains. Only applies to dynamic codes. Defaults to "url" for dynamic codes. Each dataType has specific content structure requirements. url: {url}, wifi: {ssid, password?, security?, hidden?}, vcard: {fullName?, email?, phone?, organization?}, text: {text}, email: {to, subject?, body?}, event: {eventTitle, startDate, endDate?, location?}, file: {fileName, fileUrl, mimeType?}, json: any valid JSON.
      */
-    dataType?: 'url' | 'wifi' | 'vcard' | 'text' | 'email' | 'event' | 'json' | 'file';
+    dataType?: 'url' | 'wifi' | 'vcard' | 'text' | 'email' | 'event' | 'json' | 'file' | 'scan-info';
     /**
      * Functional content for dynamic QR codes. Structure depends on dataType. url: {url}, wifi: {ssid, password?, security?, hidden?}, vcard: {fullName?, email?, phone?, organization?}, text: {text}, email: {to, subject?, body?}, event: {eventTitle, startDate, endDate?, location?}, file: {fileName, fileUrl, mimeType?}, json: any valid JSON.
      */
@@ -3403,7 +3403,7 @@ export type UpdateCodeRequest = {
     /**
      * The type of data the QR code contains. Only applies to dynamic codes. Determines how the QR code data is processed and what content type is returned when scanned. Each dataType has specific content structure requirements.
      */
-    dataType?: 'url' | 'wifi' | 'vcard' | 'text' | 'email' | 'event' | 'json' | 'file' | null;
+    dataType?: 'url' | 'wifi' | 'vcard' | 'text' | 'email' | 'event' | 'json' | 'file' | 'scan-info' | null;
     /**
      * Functional content for dynamic QR codes. Structure depends on dataType. url: {url}, wifi: {ssid, password?, security?, hidden?}, vcard: {fullName?, email?, phone?, organization?}, text: {text}, email: {to, subject?, body?}, event: {eventTitle, startDate, endDate?, location?}, file: {fileName, fileUrl, mimeType?}, json: any valid JSON.
      */
@@ -3505,7 +3505,7 @@ export type UpdateCodeOptionsRequest = {
     /**
      * The type of data the QR code contains. Only applies to dynamic codes. Determines how the QR code data is processed and what content type is returned when scanned.
      */
-    dataType?: 'url' | 'wifi' | 'vcard' | 'text' | 'email' | 'event' | 'json' | 'file';
+    dataType?: 'url' | 'wifi' | 'vcard' | 'text' | 'email' | 'event' | 'json' | 'file' | 'scan-info';
     /**
      * Partial QR code generation options to update. All fields are optional. At least one option field must be provided.
      */
@@ -3676,7 +3676,7 @@ export type UpdateCodeOptionsRequest = {
                         fontSize?: number;
                         fontColor?: string;
                         letterSpacing?: number;
-                        fontWeight?: 'normal' | 'bold';
+                        fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                     };
                 } | null;
                 /**
@@ -3699,7 +3699,7 @@ export type UpdateCodeOptionsRequest = {
                         fontSize?: number;
                         fontColor?: string;
                         letterSpacing?: number;
-                        fontWeight?: 'normal' | 'bold';
+                        fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                     };
                 } | null;
                 /**
@@ -3722,7 +3722,7 @@ export type UpdateCodeOptionsRequest = {
                         fontSize?: number;
                         fontColor?: string;
                         letterSpacing?: number;
-                        fontWeight?: 'normal' | 'bold';
+                        fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                     };
                 } | null;
                 /**
@@ -3745,7 +3745,7 @@ export type UpdateCodeOptionsRequest = {
                         fontSize?: number;
                         fontColor?: string;
                         letterSpacing?: number;
-                        fontWeight?: 'normal' | 'bold';
+                        fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                     };
                 } | null;
             } | null;
@@ -5853,7 +5853,7 @@ export type UpdateTemplateOptionsRequest = {
                         fontSize?: number;
                         fontColor?: string;
                         letterSpacing?: number;
-                        fontWeight?: 'normal' | 'bold';
+                        fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                     };
                 } | null;
                 /**
@@ -5876,7 +5876,7 @@ export type UpdateTemplateOptionsRequest = {
                         fontSize?: number;
                         fontColor?: string;
                         letterSpacing?: number;
-                        fontWeight?: 'normal' | 'bold';
+                        fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                     };
                 } | null;
                 /**
@@ -5899,7 +5899,7 @@ export type UpdateTemplateOptionsRequest = {
                         fontSize?: number;
                         fontColor?: string;
                         letterSpacing?: number;
-                        fontWeight?: 'normal' | 'bold';
+                        fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                     };
                 } | null;
                 /**
@@ -5922,7 +5922,7 @@ export type UpdateTemplateOptionsRequest = {
                         fontSize?: number;
                         fontColor?: string;
                         letterSpacing?: number;
-                        fontWeight?: 'normal' | 'bold';
+                        fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                     };
                 } | null;
             } | null;
@@ -6965,7 +6965,7 @@ export type UpdateBorderOptionsRequest = {
                         fontSize?: number;
                         fontColor?: string;
                         letterSpacing?: number;
-                        fontWeight?: 'normal' | 'bold';
+                        fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                     };
                 } | null;
                 /**
@@ -6988,7 +6988,7 @@ export type UpdateBorderOptionsRequest = {
                         fontSize?: number;
                         fontColor?: string;
                         letterSpacing?: number;
-                        fontWeight?: 'normal' | 'bold';
+                        fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                     };
                 } | null;
                 /**
@@ -7011,7 +7011,7 @@ export type UpdateBorderOptionsRequest = {
                         fontSize?: number;
                         fontColor?: string;
                         letterSpacing?: number;
-                        fontWeight?: 'normal' | 'bold';
+                        fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                     };
                 } | null;
                 /**
@@ -7034,7 +7034,7 @@ export type UpdateBorderOptionsRequest = {
                         fontSize?: number;
                         fontColor?: string;
                         letterSpacing?: number;
-                        fontWeight?: 'normal' | 'bold';
+                        fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                     };
                 } | null;
             } | null;
@@ -7465,10 +7465,6 @@ export type GetAuthMeErrors = {
      * Unauthorized
      */
     401: UnauthorizedResponseMessage;
-    /**
-     * Member not found, Organization context not found, or Member has no organizations.
-     */
-    404: UserNotFoundMessage | OrganizationNotFoundMessage;
 };
 
 export type GetAuthMeError = GetAuthMeErrors[keyof GetAuthMeErrors];
@@ -9144,9 +9140,9 @@ export type GetSettingsError = GetSettingsErrors[keyof GetSettingsErrors];
 
 export type GetSettingsResponses = {
     /**
-     * List of all settings with group information
+     * List of all settings with category information
      */
-    200: SettingsWithGroupResponse;
+    200: SettingsWithCategoryResponse;
 };
 
 export type GetSettingsResponse = GetSettingsResponses[keyof GetSettingsResponses];
@@ -9543,7 +9539,7 @@ export type GetWorkspacesByWorkspaceIdSettingsResponses = {
     /**
      * List of all workspace settings with group information
      */
-    200: SettingsWithGroupResponse;
+    200: SettingsWithCategoryResponse;
 };
 
 export type GetWorkspacesByWorkspaceIdSettingsResponse = GetWorkspacesByWorkspaceIdSettingsResponses[keyof GetWorkspacesByWorkspaceIdSettingsResponses];
@@ -11168,6 +11164,43 @@ export type PostCodesBulkGetResponses = {
 };
 
 export type PostCodesBulkGetResponse = PostCodesBulkGetResponses[keyof PostCodesBulkGetResponses];
+
+export type PostCodesGenetateCanvasPngData = {
+    body?: GenerateCodeRequest;
+    path?: never;
+    query?: never;
+    url: '/codes/genetate/canvas-png';
+};
+
+export type PostCodesGenetateCanvasPngErrors = {
+    /**
+     * Invalid input data
+     */
+    400: ValidationErrorResponseMessage;
+    /**
+     * Unauthorized
+     */
+    401: UnauthorizedResponseMessage;
+    /**
+     * Forbidden
+     */
+    403: ForbiddenResponseMessage;
+    /**
+     * Organization or code not found.
+     */
+    404: CodeNotFoundMessage | OrganizationNotFoundMessage;
+};
+
+export type PostCodesGenetateCanvasPngError = PostCodesGenetateCanvasPngErrors[keyof PostCodesGenetateCanvasPngErrors];
+
+export type PostCodesGenetateCanvasPngResponses = {
+    /**
+     * Generated QR Code PNG via Canvas
+     */
+    200: Blob | File;
+};
+
+export type PostCodesGenetateCanvasPngResponse = PostCodesGenetateCanvasPngResponses[keyof PostCodesGenetateCanvasPngResponses];
 
 export type PostCodesGenerateByTypeData = {
     body?: GenerateCodeRequest;
@@ -13668,5 +13701,5 @@ export type PostWorkspacesByWorkspaceIdRouterRuleTemplatesResponses = {
 };
 
 export type ClientOptions = {
-    baseUrl: 'https://api.qr-platform.com/v1' | (string & {});
+    baseUrl: 'http://localhost:8787/v1' | (string & {});
 };

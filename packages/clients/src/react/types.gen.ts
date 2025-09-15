@@ -1554,9 +1554,9 @@ export type PlanNotFoundMessage = {
 };
 
 /**
- * List of settings with group information
+ * List of settings with category information
  */
-export type SettingsWithGroupResponse = Array<SettingWithGroup>;
+export type SettingsWithCategoryResponse = Array<SettingWithCategory>;
 
 /**
  * Setting response data
@@ -1581,13 +1581,13 @@ export type SettingResponse = {
 };
 
 /**
- * Setting with group information
+ * Setting with category information
  */
-export type SettingWithGroup = SettingResponse & {
+export type SettingWithCategory = SettingResponse & {
     /**
-     * Type of setting (service or custom)
+     * Category of setting (service or custom)
      */
-    group: 'service' | 'custom';
+    category: 'service' | 'custom';
 };
 
 /**
@@ -2363,7 +2363,7 @@ export type TextDecorationStyle = {
     /**
      * Font weight
      */
-    fontWeight?: 'normal' | 'bold';
+    fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
 };
 
 /**
@@ -3676,7 +3676,7 @@ export type UpdateCodeOptionsRequest = {
                         fontSize?: number;
                         fontColor?: string;
                         letterSpacing?: number;
-                        fontWeight?: 'normal' | 'bold';
+                        fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                     };
                 } | null;
                 /**
@@ -3699,7 +3699,7 @@ export type UpdateCodeOptionsRequest = {
                         fontSize?: number;
                         fontColor?: string;
                         letterSpacing?: number;
-                        fontWeight?: 'normal' | 'bold';
+                        fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                     };
                 } | null;
                 /**
@@ -3722,7 +3722,7 @@ export type UpdateCodeOptionsRequest = {
                         fontSize?: number;
                         fontColor?: string;
                         letterSpacing?: number;
-                        fontWeight?: 'normal' | 'bold';
+                        fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                     };
                 } | null;
                 /**
@@ -3745,7 +3745,7 @@ export type UpdateCodeOptionsRequest = {
                         fontSize?: number;
                         fontColor?: string;
                         letterSpacing?: number;
-                        fontWeight?: 'normal' | 'bold';
+                        fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                     };
                 } | null;
             } | null;
@@ -5853,7 +5853,7 @@ export type UpdateTemplateOptionsRequest = {
                         fontSize?: number;
                         fontColor?: string;
                         letterSpacing?: number;
-                        fontWeight?: 'normal' | 'bold';
+                        fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                     };
                 } | null;
                 /**
@@ -5876,7 +5876,7 @@ export type UpdateTemplateOptionsRequest = {
                         fontSize?: number;
                         fontColor?: string;
                         letterSpacing?: number;
-                        fontWeight?: 'normal' | 'bold';
+                        fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                     };
                 } | null;
                 /**
@@ -5899,7 +5899,7 @@ export type UpdateTemplateOptionsRequest = {
                         fontSize?: number;
                         fontColor?: string;
                         letterSpacing?: number;
-                        fontWeight?: 'normal' | 'bold';
+                        fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                     };
                 } | null;
                 /**
@@ -5922,7 +5922,7 @@ export type UpdateTemplateOptionsRequest = {
                         fontSize?: number;
                         fontColor?: string;
                         letterSpacing?: number;
-                        fontWeight?: 'normal' | 'bold';
+                        fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                     };
                 } | null;
             } | null;
@@ -6965,7 +6965,7 @@ export type UpdateBorderOptionsRequest = {
                         fontSize?: number;
                         fontColor?: string;
                         letterSpacing?: number;
-                        fontWeight?: 'normal' | 'bold';
+                        fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                     };
                 } | null;
                 /**
@@ -6988,7 +6988,7 @@ export type UpdateBorderOptionsRequest = {
                         fontSize?: number;
                         fontColor?: string;
                         letterSpacing?: number;
-                        fontWeight?: 'normal' | 'bold';
+                        fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                     };
                 } | null;
                 /**
@@ -7011,7 +7011,7 @@ export type UpdateBorderOptionsRequest = {
                         fontSize?: number;
                         fontColor?: string;
                         letterSpacing?: number;
-                        fontWeight?: 'normal' | 'bold';
+                        fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                     };
                 } | null;
                 /**
@@ -7034,7 +7034,7 @@ export type UpdateBorderOptionsRequest = {
                         fontSize?: number;
                         fontColor?: string;
                         letterSpacing?: number;
-                        fontWeight?: 'normal' | 'bold';
+                        fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                     };
                 } | null;
             } | null;
@@ -7465,10 +7465,6 @@ export type GetAuthMeErrors = {
      * Unauthorized
      */
     401: UnauthorizedResponseMessage;
-    /**
-     * Member not found, Organization context not found, or Member has no organizations.
-     */
-    404: UserNotFoundMessage | OrganizationNotFoundMessage;
 };
 
 export type GetAuthMeError = GetAuthMeErrors[keyof GetAuthMeErrors];
@@ -9144,9 +9140,9 @@ export type GetSettingsError = GetSettingsErrors[keyof GetSettingsErrors];
 
 export type GetSettingsResponses = {
     /**
-     * List of all settings with group information
+     * List of all settings with category information
      */
-    200: SettingsWithGroupResponse;
+    200: SettingsWithCategoryResponse;
 };
 
 export type GetSettingsResponse = GetSettingsResponses[keyof GetSettingsResponses];
@@ -9543,7 +9539,7 @@ export type GetWorkspacesByWorkspaceIdSettingsResponses = {
     /**
      * List of all workspace settings with group information
      */
-    200: SettingsWithGroupResponse;
+    200: SettingsWithCategoryResponse;
 };
 
 export type GetWorkspacesByWorkspaceIdSettingsResponse = GetWorkspacesByWorkspaceIdSettingsResponses[keyof GetWorkspacesByWorkspaceIdSettingsResponses];
@@ -11168,6 +11164,43 @@ export type PostCodesBulkGetResponses = {
 };
 
 export type PostCodesBulkGetResponse = PostCodesBulkGetResponses[keyof PostCodesBulkGetResponses];
+
+export type PostCodesGenetateCanvasPngData = {
+    body?: GenerateCodeRequest;
+    path?: never;
+    query?: never;
+    url: '/codes/genetate/canvas-png';
+};
+
+export type PostCodesGenetateCanvasPngErrors = {
+    /**
+     * Invalid input data
+     */
+    400: ValidationErrorResponseMessage;
+    /**
+     * Unauthorized
+     */
+    401: UnauthorizedResponseMessage;
+    /**
+     * Forbidden
+     */
+    403: ForbiddenResponseMessage;
+    /**
+     * Organization or code not found.
+     */
+    404: CodeNotFoundMessage | OrganizationNotFoundMessage;
+};
+
+export type PostCodesGenetateCanvasPngError = PostCodesGenetateCanvasPngErrors[keyof PostCodesGenetateCanvasPngErrors];
+
+export type PostCodesGenetateCanvasPngResponses = {
+    /**
+     * Generated QR Code PNG via Canvas
+     */
+    200: Blob | File;
+};
+
+export type PostCodesGenetateCanvasPngResponse = PostCodesGenetateCanvasPngResponses[keyof PostCodesGenetateCanvasPngResponses];
 
 export type PostCodesGenerateByTypeData = {
     body?: GenerateCodeRequest;
