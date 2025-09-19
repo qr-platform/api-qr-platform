@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.deleteSettingsCustomBySettingSlug = exports.postSettingsCustom = exports.getSettingsCustom = exports.getSettings = exports.getPlansCurrent = exports.getPlans = exports.getRoles = exports.getWorkspacesByWorkspaceIdMembers = exports.postWorkspacesByWorkspaceIdMembersByUserIdRole = exports.getWorkspacesByWorkspaceIdMembersByUserIdRole = exports.deleteWorkspacesByWorkspaceIdMembersByUserIdRole = exports.putWorkspacesByWorkspaceId = exports.getWorkspacesByWorkspaceId = exports.deleteWorkspacesByWorkspaceId = exports.postWorkspaces = exports.getWorkspaces = exports.deleteMembersByUserIdRoleByRoleName = exports.postMembersByUserIdRole = exports.getMembersByUserIdRoles = exports.deleteMembersByUserId = exports.postMembers = exports.getMembers = exports.getInvitesByTokenDecline = exports.getInvitesByTokenAccept = exports.deleteInvitesByInvitationId = exports.getInvitesMe = exports.postInvites = exports.getInvites = exports.postOrgsCurrentByOrgId = exports.postOrgsFirst = exports.putOrgs = exports.getOrgsCurrent = exports.putApiKeysByApiKeyIdStatus = exports.putApiKeysByApiKeyId = exports.getApiKeysByApiKeyId = exports.deleteApiKeysByApiKeyId = exports.postApiKeys = exports.getApiKeys = exports.postAuthPasswordChange = exports.postAuthPasswordResetVerify = exports.postAuthPasswordReset = exports.getAuthSignOut = exports.getAuthMe = exports.postAuthEmailVerify = exports.postAuthEmailVerifySend = exports.postAuthSignInVerify = exports.postAuthSignIn = exports.postAuthRegisterVerifyResend = exports.postAuthRegisterVerify = exports.postAuthRegister = void 0;
 exports.deleteCodesByCodeIdVersionsByVersionLinks = exports.getCodesByCodeIdVersionByVersionByTypeLink = exports.getCodesByCodeIdVersionByVersionByType = exports.postCodesByCodeIdVersionByVersionRestore = exports.getCodesByCodeIdVersions = exports.deleteCodesByCodeIdVersions = exports.getCodesByCodeIdVersionByVersion = exports.postCodesLinksRefresh = exports.postCodesByCodeIdValidate = exports.postCodesValidate = exports.postCodesGenerateByType = exports.postCodesGenetateCanvasPng = exports.postCodesBulkGet = exports.postCodesByCodeIdRestore = exports.deleteCodesByCodeIdPermanent = exports.deleteCodesPermanent = exports.putCodesByCodeIdOptions = exports.postCodes = exports.getCodes = exports.deleteCodes = exports.putCodesByCodeId = exports.getCodesByCodeId = exports.deleteCodesByCodeId = exports.getCodesLinks = exports.getCodesDeleted = exports.putCodesByCodeIdRouterRulesByRouterRuleId = exports.getCodesByCodeIdRouterRulesByRouterRuleId = exports.deleteCodesByCodeIdRouterRulesByRouterRuleId = exports.postCodesByCodeIdRouterRules = exports.getCodesByCodeIdRouterRules = exports.getCodesByCodeIdScans = exports.getWorkspacesByWorkspaceIdSettingsServiceBySettingSlugValue = exports.putWorkspacesByWorkspaceIdSettingsServiceBySettingSlug = exports.getWorkspacesByWorkspaceIdSettingsServiceBySettingSlug = exports.deleteWorkspacesByWorkspaceIdSettingsServiceBySettingSlug = exports.getWorkspacesByWorkspaceIdSettingsService = exports.getWorkspacesByWorkspaceIdSettingsCustomBySettingSlugValue = exports.putWorkspacesByWorkspaceIdSettingsCustomBySettingSlug = exports.getWorkspacesByWorkspaceIdSettingsCustomBySettingSlug = exports.deleteWorkspacesByWorkspaceIdSettingsCustomBySettingSlug = exports.postWorkspacesByWorkspaceIdSettingsCustom = exports.getWorkspacesByWorkspaceIdSettingsCustom = exports.getWorkspacesByWorkspaceIdSettings = exports.getSettingsServiceBySettingSlugValue = exports.putSettingsServiceBySettingSlug = exports.getSettingsServiceBySettingSlug = exports.getSettingsService = exports.getSettingsCustomBySettingSlugValue = exports.putSettingsCustomBySettingSlug = exports.getSettingsCustomBySettingSlug = void 0;
-exports.postWorkspacesByWorkspaceIdRouterRuleTemplates = exports.getWorkspacesByWorkspaceIdRouterRules = exports.getRouterRules = exports.putRouterRuleTemplatesByRouterRuleTemplateId = exports.getRouterRuleTemplatesByRouterRuleTemplateId = exports.deleteRouterRuleTemplatesByRouterRuleTemplateId = exports.postRouterRuleTemplates = exports.getRouterRuleTemplates = exports.getCountryCodes = exports.getBordersWorkspaceByWorkspaceId = exports.putBordersByBorderIdOptions = exports.putBordersByBorderId = exports.getBordersByBorderId = exports.deleteBordersByBorderId = exports.getBordersBase = exports.postBorders = exports.getBorders = exports.getTextsWorkspaceByWorkspaceId = exports.putTextsByTextIdOptions = exports.putTextsByTextId = exports.getTextsByTextId = exports.deleteTextsByTextId = exports.getTextsBase = exports.postTexts = exports.getTexts = exports.getStylesWorkspaceByWorkspaceId = exports.putStylesByStyleIdOptions = exports.putStylesByStyleId = exports.getStylesByStyleId = exports.deleteStylesByStyleId = exports.getStylesBase = exports.postStyles = exports.getStyles = exports.getTemplatesWorkspaceByWorkspaceId = exports.putTemplatesByTemplateIdOptions = exports.putTemplatesByTemplateId = exports.getTemplatesByTemplateId = exports.deleteTemplatesByTemplateId = exports.getTemplatesBase = exports.postTemplates = exports.getTemplates = exports.deleteCodesByCodeIdLinksByType = exports.deleteCodesByCodeIdLinks = exports.getCodesByCodeIdByTypeLink = exports.getCodesByCodeIdByType = exports.deleteCodesByCodeIdVersionsLinksByType = exports.deleteCodesByCodeIdVersionsLinks = exports.deleteCodesByCodeIdVersionsByVersionLinksByType = void 0;
+exports.postWorkspacesByWorkspaceIdRouterRuleTemplates = exports.getWorkspacesByWorkspaceIdRouterRules = exports.getRouterRules = exports.putRouterRuleTemplatesByRouterRuleTemplateId = exports.getRouterRuleTemplatesByRouterRuleTemplateId = exports.deleteRouterRuleTemplatesByRouterRuleTemplateId = exports.postRouterRuleTemplates = exports.getRouterRuleTemplates = exports.getCountryCodes = exports.getBordersWorkspaceByWorkspaceId = exports.putBordersByBorderIdOptions = exports.putBordersByBorderId = exports.getBordersByBorderId = exports.deleteBordersByBorderId = exports.getBordersBase = exports.postBorders = exports.getBorders = exports.getTextsWorkspaceByWorkspaceId = exports.putTextsByTextIdOptions = exports.putTextsByTextId = exports.getTextsByTextId = exports.deleteTextsByTextId = exports.getTextsBase = exports.postTexts = exports.getTexts = exports.getStylesWorkspaceByWorkspaceId = exports.putStylesByStyleIdOptions = exports.putStylesByStyleId = exports.getStylesByStyleId = exports.deleteStylesByStyleId = exports.getStylesBase = exports.postStyles = exports.getStyles = exports.getTemplatesWorkspaceByWorkspaceId = exports.putTemplatesByTemplateIdOptions = exports.putTemplatesByTemplateId = exports.getTemplatesByTemplateId = exports.deleteTemplatesByTemplateId = exports.getTemplatesBase = exports.postTemplates = exports.getTemplates = exports.getScansByScanId = exports.deleteCodesByCodeIdLinksByType = exports.deleteCodesByCodeIdLinks = exports.getCodesByCodeIdByTypeLink = exports.getCodesByCodeIdByType = exports.deleteCodesByCodeIdVersionsLinksByType = exports.deleteCodesByCodeIdVersionsLinks = exports.deleteCodesByCodeIdVersionsByVersionLinksByType = void 0;
 const client_gen_1 = require("./client.gen");
 /**
  * Register New User
@@ -13,16 +13,16 @@ const postAuthRegister = (options) => {
     return (options?.client ?? client_gen_1.client).post({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/auth/register',
+        url: "/auth/register",
         ...options,
         headers: {
-            'Content-Type': 'application/json',
-            ...options?.headers
-        }
+            "Content-Type": "application/json",
+            ...options?.headers,
+        },
     });
 };
 exports.postAuthRegister = postAuthRegister;
@@ -34,16 +34,16 @@ const postAuthRegisterVerify = (options) => {
     return (options?.client ?? client_gen_1.client).post({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/auth/register-verify',
+        url: "/auth/register-verify",
         ...options,
         headers: {
-            'Content-Type': 'application/json',
-            ...options?.headers
-        }
+            "Content-Type": "application/json",
+            ...options?.headers,
+        },
     });
 };
 exports.postAuthRegisterVerify = postAuthRegisterVerify;
@@ -55,16 +55,16 @@ const postAuthRegisterVerifyResend = (options) => {
     return (options?.client ?? client_gen_1.client).post({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/auth/register-verify-resend',
+        url: "/auth/register-verify-resend",
         ...options,
         headers: {
-            'Content-Type': 'application/json',
-            ...options?.headers
-        }
+            "Content-Type": "application/json",
+            ...options?.headers,
+        },
     });
 };
 exports.postAuthRegisterVerifyResend = postAuthRegisterVerifyResend;
@@ -76,16 +76,16 @@ const postAuthSignIn = (options) => {
     return (options?.client ?? client_gen_1.client).post({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/auth/sign-in',
+        url: "/auth/sign-in",
         ...options,
         headers: {
-            'Content-Type': 'application/json',
-            ...options?.headers
-        }
+            "Content-Type": "application/json",
+            ...options?.headers,
+        },
     });
 };
 exports.postAuthSignIn = postAuthSignIn;
@@ -97,16 +97,16 @@ const postAuthSignInVerify = (options) => {
     return (options?.client ?? client_gen_1.client).post({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/auth/sign-in-verify',
+        url: "/auth/sign-in-verify",
         ...options,
         headers: {
-            'Content-Type': 'application/json',
-            ...options?.headers
-        }
+            "Content-Type": "application/json",
+            ...options?.headers,
+        },
     });
 };
 exports.postAuthSignInVerify = postAuthSignInVerify;
@@ -118,16 +118,16 @@ const postAuthEmailVerifySend = (options) => {
     return (options?.client ?? client_gen_1.client).post({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/auth/email-verify-send',
+        url: "/auth/email-verify-send",
         ...options,
         headers: {
-            'Content-Type': 'application/json',
-            ...options?.headers
-        }
+            "Content-Type": "application/json",
+            ...options?.headers,
+        },
     });
 };
 exports.postAuthEmailVerifySend = postAuthEmailVerifySend;
@@ -139,16 +139,16 @@ const postAuthEmailVerify = (options) => {
     return (options?.client ?? client_gen_1.client).post({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/auth/email-verify',
+        url: "/auth/email-verify",
         ...options,
         headers: {
-            'Content-Type': 'application/json',
-            ...options?.headers
-        }
+            "Content-Type": "application/json",
+            ...options?.headers,
+        },
     });
 };
 exports.postAuthEmailVerify = postAuthEmailVerify;
@@ -160,12 +160,12 @@ const getAuthMe = (options) => {
     return (options?.client ?? client_gen_1.client).get({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/auth/me',
-        ...options
+        url: "/auth/me",
+        ...options,
     });
 };
 exports.getAuthMe = getAuthMe;
@@ -177,12 +177,12 @@ const getAuthSignOut = (options) => {
     return (options?.client ?? client_gen_1.client).get({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/auth/sign-out',
-        ...options
+        url: "/auth/sign-out",
+        ...options,
     });
 };
 exports.getAuthSignOut = getAuthSignOut;
@@ -194,16 +194,16 @@ const postAuthPasswordReset = (options) => {
     return (options?.client ?? client_gen_1.client).post({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/auth/password/reset',
+        url: "/auth/password/reset",
         ...options,
         headers: {
-            'Content-Type': 'application/json',
-            ...options?.headers
-        }
+            "Content-Type": "application/json",
+            ...options?.headers,
+        },
     });
 };
 exports.postAuthPasswordReset = postAuthPasswordReset;
@@ -215,16 +215,16 @@ const postAuthPasswordResetVerify = (options) => {
     return (options?.client ?? client_gen_1.client).post({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/auth/password/reset-verify',
+        url: "/auth/password/reset-verify",
         ...options,
         headers: {
-            'Content-Type': 'application/json',
-            ...options?.headers
-        }
+            "Content-Type": "application/json",
+            ...options?.headers,
+        },
     });
 };
 exports.postAuthPasswordResetVerify = postAuthPasswordResetVerify;
@@ -236,16 +236,16 @@ const postAuthPasswordChange = (options) => {
     return (options?.client ?? client_gen_1.client).post({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/auth/password/change',
+        url: "/auth/password/change",
         ...options,
         headers: {
-            'Content-Type': 'application/json',
-            ...options?.headers
-        }
+            "Content-Type": "application/json",
+            ...options?.headers,
+        },
     });
 };
 exports.postAuthPasswordChange = postAuthPasswordChange;
@@ -257,12 +257,12 @@ const getApiKeys = (options) => {
     return (options?.client ?? client_gen_1.client).get({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/api-keys',
-        ...options
+        url: "/api-keys",
+        ...options,
     });
 };
 exports.getApiKeys = getApiKeys;
@@ -274,16 +274,16 @@ const postApiKeys = (options) => {
     return (options?.client ?? client_gen_1.client).post({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/api-keys',
+        url: "/api-keys",
         ...options,
         headers: {
-            'Content-Type': 'application/json',
-            ...options?.headers
-        }
+            "Content-Type": "application/json",
+            ...options?.headers,
+        },
     });
 };
 exports.postApiKeys = postApiKeys;
@@ -295,12 +295,12 @@ const deleteApiKeysByApiKeyId = (options) => {
     return (options.client ?? client_gen_1.client).delete({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/api-keys/{apiKeyId}',
-        ...options
+        url: "/api-keys/{apiKeyId}",
+        ...options,
     });
 };
 exports.deleteApiKeysByApiKeyId = deleteApiKeysByApiKeyId;
@@ -312,12 +312,12 @@ const getApiKeysByApiKeyId = (options) => {
     return (options.client ?? client_gen_1.client).get({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/api-keys/{apiKeyId}',
-        ...options
+        url: "/api-keys/{apiKeyId}",
+        ...options,
     });
 };
 exports.getApiKeysByApiKeyId = getApiKeysByApiKeyId;
@@ -329,16 +329,16 @@ const putApiKeysByApiKeyId = (options) => {
     return (options.client ?? client_gen_1.client).put({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/api-keys/{apiKeyId}',
+        url: "/api-keys/{apiKeyId}",
         ...options,
         headers: {
-            'Content-Type': 'application/json',
-            ...options.headers
-        }
+            "Content-Type": "application/json",
+            ...options.headers,
+        },
     });
 };
 exports.putApiKeysByApiKeyId = putApiKeysByApiKeyId;
@@ -350,16 +350,16 @@ const putApiKeysByApiKeyIdStatus = (options) => {
     return (options.client ?? client_gen_1.client).put({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/api-keys/{apiKeyId}/status',
+        url: "/api-keys/{apiKeyId}/status",
         ...options,
         headers: {
-            'Content-Type': 'application/json',
-            ...options.headers
-        }
+            "Content-Type": "application/json",
+            ...options.headers,
+        },
     });
 };
 exports.putApiKeysByApiKeyIdStatus = putApiKeysByApiKeyIdStatus;
@@ -371,12 +371,12 @@ const getOrgsCurrent = (options) => {
     return (options?.client ?? client_gen_1.client).get({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/orgs/current',
-        ...options
+        url: "/orgs/current",
+        ...options,
     });
 };
 exports.getOrgsCurrent = getOrgsCurrent;
@@ -388,16 +388,16 @@ const putOrgs = (options) => {
     return (options?.client ?? client_gen_1.client).put({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/orgs',
+        url: "/orgs",
         ...options,
         headers: {
-            'Content-Type': 'application/json',
-            ...options?.headers
-        }
+            "Content-Type": "application/json",
+            ...options?.headers,
+        },
     });
 };
 exports.putOrgs = putOrgs;
@@ -409,16 +409,16 @@ const postOrgsFirst = (options) => {
     return (options?.client ?? client_gen_1.client).post({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/orgs/first',
+        url: "/orgs/first",
         ...options,
         headers: {
-            'Content-Type': 'application/json',
-            ...options?.headers
-        }
+            "Content-Type": "application/json",
+            ...options?.headers,
+        },
     });
 };
 exports.postOrgsFirst = postOrgsFirst;
@@ -430,12 +430,12 @@ const postOrgsCurrentByOrgId = (options) => {
     return (options.client ?? client_gen_1.client).post({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/orgs/current/{orgId}',
-        ...options
+        url: "/orgs/current/{orgId}",
+        ...options,
     });
 };
 exports.postOrgsCurrentByOrgId = postOrgsCurrentByOrgId;
@@ -447,12 +447,12 @@ const getInvites = (options) => {
     return (options?.client ?? client_gen_1.client).get({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/invites',
-        ...options
+        url: "/invites",
+        ...options,
     });
 };
 exports.getInvites = getInvites;
@@ -464,16 +464,16 @@ const postInvites = (options) => {
     return (options?.client ?? client_gen_1.client).post({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/invites',
+        url: "/invites",
         ...options,
         headers: {
-            'Content-Type': 'application/json',
-            ...options?.headers
-        }
+            "Content-Type": "application/json",
+            ...options?.headers,
+        },
     });
 };
 exports.postInvites = postInvites;
@@ -485,12 +485,12 @@ const getInvitesMe = (options) => {
     return (options?.client ?? client_gen_1.client).get({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/invites/me',
-        ...options
+        url: "/invites/me",
+        ...options,
     });
 };
 exports.getInvitesMe = getInvitesMe;
@@ -502,12 +502,12 @@ const deleteInvitesByInvitationId = (options) => {
     return (options.client ?? client_gen_1.client).delete({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/invites/{invitationId}',
-        ...options
+        url: "/invites/{invitationId}",
+        ...options,
     });
 };
 exports.deleteInvitesByInvitationId = deleteInvitesByInvitationId;
@@ -519,12 +519,12 @@ const getInvitesByTokenAccept = (options) => {
     return (options.client ?? client_gen_1.client).get({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/invites/{token}/accept',
-        ...options
+        url: "/invites/{token}/accept",
+        ...options,
     });
 };
 exports.getInvitesByTokenAccept = getInvitesByTokenAccept;
@@ -536,12 +536,12 @@ const getInvitesByTokenDecline = (options) => {
     return (options.client ?? client_gen_1.client).get({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/invites/{token}/decline',
-        ...options
+        url: "/invites/{token}/decline",
+        ...options,
     });
 };
 exports.getInvitesByTokenDecline = getInvitesByTokenDecline;
@@ -553,12 +553,12 @@ const getMembers = (options) => {
     return (options?.client ?? client_gen_1.client).get({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/members',
-        ...options
+        url: "/members",
+        ...options,
     });
 };
 exports.getMembers = getMembers;
@@ -570,16 +570,16 @@ const postMembers = (options) => {
     return (options?.client ?? client_gen_1.client).post({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/members',
+        url: "/members",
         ...options,
         headers: {
-            'Content-Type': 'application/json',
-            ...options?.headers
-        }
+            "Content-Type": "application/json",
+            ...options?.headers,
+        },
     });
 };
 exports.postMembers = postMembers;
@@ -591,12 +591,12 @@ const deleteMembersByUserId = (options) => {
     return (options.client ?? client_gen_1.client).delete({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/members/{userId}',
-        ...options
+        url: "/members/{userId}",
+        ...options,
     });
 };
 exports.deleteMembersByUserId = deleteMembersByUserId;
@@ -608,12 +608,12 @@ const getMembersByUserIdRoles = (options) => {
     return (options.client ?? client_gen_1.client).get({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/members/{userId}/roles',
-        ...options
+        url: "/members/{userId}/roles",
+        ...options,
     });
 };
 exports.getMembersByUserIdRoles = getMembersByUserIdRoles;
@@ -625,16 +625,16 @@ const postMembersByUserIdRole = (options) => {
     return (options.client ?? client_gen_1.client).post({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/members/{userId}/role',
+        url: "/members/{userId}/role",
         ...options,
         headers: {
-            'Content-Type': 'application/json',
-            ...options.headers
-        }
+            "Content-Type": "application/json",
+            ...options.headers,
+        },
     });
 };
 exports.postMembersByUserIdRole = postMembersByUserIdRole;
@@ -646,12 +646,12 @@ const deleteMembersByUserIdRoleByRoleName = (options) => {
     return (options.client ?? client_gen_1.client).delete({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/members/{userId}/role/{roleName}',
-        ...options
+        url: "/members/{userId}/role/{roleName}",
+        ...options,
     });
 };
 exports.deleteMembersByUserIdRoleByRoleName = deleteMembersByUserIdRoleByRoleName;
@@ -663,12 +663,12 @@ const getWorkspaces = (options) => {
     return (options?.client ?? client_gen_1.client).get({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/workspaces',
-        ...options
+        url: "/workspaces",
+        ...options,
     });
 };
 exports.getWorkspaces = getWorkspaces;
@@ -680,16 +680,16 @@ const postWorkspaces = (options) => {
     return (options?.client ?? client_gen_1.client).post({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/workspaces',
+        url: "/workspaces",
         ...options,
         headers: {
-            'Content-Type': 'application/json',
-            ...options?.headers
-        }
+            "Content-Type": "application/json",
+            ...options?.headers,
+        },
     });
 };
 exports.postWorkspaces = postWorkspaces;
@@ -701,12 +701,12 @@ const deleteWorkspacesByWorkspaceId = (options) => {
     return (options.client ?? client_gen_1.client).delete({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/workspaces/{workspaceId}',
-        ...options
+        url: "/workspaces/{workspaceId}",
+        ...options,
     });
 };
 exports.deleteWorkspacesByWorkspaceId = deleteWorkspacesByWorkspaceId;
@@ -718,12 +718,12 @@ const getWorkspacesByWorkspaceId = (options) => {
     return (options.client ?? client_gen_1.client).get({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/workspaces/{workspaceId}',
-        ...options
+        url: "/workspaces/{workspaceId}",
+        ...options,
     });
 };
 exports.getWorkspacesByWorkspaceId = getWorkspacesByWorkspaceId;
@@ -735,16 +735,16 @@ const putWorkspacesByWorkspaceId = (options) => {
     return (options.client ?? client_gen_1.client).put({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/workspaces/{workspaceId}',
+        url: "/workspaces/{workspaceId}",
         ...options,
         headers: {
-            'Content-Type': 'application/json',
-            ...options.headers
-        }
+            "Content-Type": "application/json",
+            ...options.headers,
+        },
     });
 };
 exports.putWorkspacesByWorkspaceId = putWorkspacesByWorkspaceId;
@@ -756,12 +756,12 @@ const deleteWorkspacesByWorkspaceIdMembersByUserIdRole = (options) => {
     return (options.client ?? client_gen_1.client).delete({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/workspaces/{workspaceId}/members/{userId}/role',
-        ...options
+        url: "/workspaces/{workspaceId}/members/{userId}/role",
+        ...options,
     });
 };
 exports.deleteWorkspacesByWorkspaceIdMembersByUserIdRole = deleteWorkspacesByWorkspaceIdMembersByUserIdRole;
@@ -773,12 +773,12 @@ const getWorkspacesByWorkspaceIdMembersByUserIdRole = (options) => {
     return (options.client ?? client_gen_1.client).get({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/workspaces/{workspaceId}/members/{userId}/role',
-        ...options
+        url: "/workspaces/{workspaceId}/members/{userId}/role",
+        ...options,
     });
 };
 exports.getWorkspacesByWorkspaceIdMembersByUserIdRole = getWorkspacesByWorkspaceIdMembersByUserIdRole;
@@ -790,16 +790,16 @@ const postWorkspacesByWorkspaceIdMembersByUserIdRole = (options) => {
     return (options.client ?? client_gen_1.client).post({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/workspaces/{workspaceId}/members/{userId}/role',
+        url: "/workspaces/{workspaceId}/members/{userId}/role",
         ...options,
         headers: {
-            'Content-Type': 'application/json',
-            ...options.headers
-        }
+            "Content-Type": "application/json",
+            ...options.headers,
+        },
     });
 };
 exports.postWorkspacesByWorkspaceIdMembersByUserIdRole = postWorkspacesByWorkspaceIdMembersByUserIdRole;
@@ -811,12 +811,12 @@ const getWorkspacesByWorkspaceIdMembers = (options) => {
     return (options.client ?? client_gen_1.client).get({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/workspaces/{workspaceId}/members',
-        ...options
+        url: "/workspaces/{workspaceId}/members",
+        ...options,
     });
 };
 exports.getWorkspacesByWorkspaceIdMembers = getWorkspacesByWorkspaceIdMembers;
@@ -828,12 +828,12 @@ const getRoles = (options) => {
     return (options?.client ?? client_gen_1.client).get({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/roles',
-        ...options
+        url: "/roles",
+        ...options,
     });
 };
 exports.getRoles = getRoles;
@@ -845,12 +845,12 @@ const getPlans = (options) => {
     return (options?.client ?? client_gen_1.client).get({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/plans',
-        ...options
+        url: "/plans",
+        ...options,
     });
 };
 exports.getPlans = getPlans;
@@ -862,12 +862,12 @@ const getPlansCurrent = (options) => {
     return (options?.client ?? client_gen_1.client).get({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/plans/current',
-        ...options
+        url: "/plans/current",
+        ...options,
     });
 };
 exports.getPlansCurrent = getPlansCurrent;
@@ -879,12 +879,12 @@ const getSettings = (options) => {
     return (options?.client ?? client_gen_1.client).get({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/settings',
-        ...options
+        url: "/settings",
+        ...options,
     });
 };
 exports.getSettings = getSettings;
@@ -896,12 +896,12 @@ const getSettingsCustom = (options) => {
     return (options?.client ?? client_gen_1.client).get({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/settings/custom',
-        ...options
+        url: "/settings/custom",
+        ...options,
     });
 };
 exports.getSettingsCustom = getSettingsCustom;
@@ -913,16 +913,16 @@ const postSettingsCustom = (options) => {
     return (options?.client ?? client_gen_1.client).post({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/settings/custom',
+        url: "/settings/custom",
         ...options,
         headers: {
-            'Content-Type': 'application/json',
-            ...options?.headers
-        }
+            "Content-Type": "application/json",
+            ...options?.headers,
+        },
     });
 };
 exports.postSettingsCustom = postSettingsCustom;
@@ -934,12 +934,12 @@ const deleteSettingsCustomBySettingSlug = (options) => {
     return (options.client ?? client_gen_1.client).delete({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/settings/custom/{settingSlug}',
-        ...options
+        url: "/settings/custom/{settingSlug}",
+        ...options,
     });
 };
 exports.deleteSettingsCustomBySettingSlug = deleteSettingsCustomBySettingSlug;
@@ -951,12 +951,12 @@ const getSettingsCustomBySettingSlug = (options) => {
     return (options.client ?? client_gen_1.client).get({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/settings/custom/{settingSlug}',
-        ...options
+        url: "/settings/custom/{settingSlug}",
+        ...options,
     });
 };
 exports.getSettingsCustomBySettingSlug = getSettingsCustomBySettingSlug;
@@ -968,16 +968,16 @@ const putSettingsCustomBySettingSlug = (options) => {
     return (options.client ?? client_gen_1.client).put({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/settings/custom/{settingSlug}',
+        url: "/settings/custom/{settingSlug}",
         ...options,
         headers: {
-            'Content-Type': 'application/json',
-            ...options.headers
-        }
+            "Content-Type": "application/json",
+            ...options.headers,
+        },
     });
 };
 exports.putSettingsCustomBySettingSlug = putSettingsCustomBySettingSlug;
@@ -989,12 +989,12 @@ const getSettingsCustomBySettingSlugValue = (options) => {
     return (options.client ?? client_gen_1.client).get({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/settings/custom/{settingSlug}/value',
-        ...options
+        url: "/settings/custom/{settingSlug}/value",
+        ...options,
     });
 };
 exports.getSettingsCustomBySettingSlugValue = getSettingsCustomBySettingSlugValue;
@@ -1006,12 +1006,12 @@ const getSettingsService = (options) => {
     return (options?.client ?? client_gen_1.client).get({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/settings/service',
-        ...options
+        url: "/settings/service",
+        ...options,
     });
 };
 exports.getSettingsService = getSettingsService;
@@ -1023,12 +1023,12 @@ const getSettingsServiceBySettingSlug = (options) => {
     return (options.client ?? client_gen_1.client).get({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/settings/service/{settingSlug}',
-        ...options
+        url: "/settings/service/{settingSlug}",
+        ...options,
     });
 };
 exports.getSettingsServiceBySettingSlug = getSettingsServiceBySettingSlug;
@@ -1040,16 +1040,16 @@ const putSettingsServiceBySettingSlug = (options) => {
     return (options.client ?? client_gen_1.client).put({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/settings/service/{settingSlug}',
+        url: "/settings/service/{settingSlug}",
         ...options,
         headers: {
-            'Content-Type': 'application/json',
-            ...options.headers
-        }
+            "Content-Type": "application/json",
+            ...options.headers,
+        },
     });
 };
 exports.putSettingsServiceBySettingSlug = putSettingsServiceBySettingSlug;
@@ -1061,12 +1061,12 @@ const getSettingsServiceBySettingSlugValue = (options) => {
     return (options.client ?? client_gen_1.client).get({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/settings/service/{settingSlug}/value',
-        ...options
+        url: "/settings/service/{settingSlug}/value",
+        ...options,
     });
 };
 exports.getSettingsServiceBySettingSlugValue = getSettingsServiceBySettingSlugValue;
@@ -1078,12 +1078,12 @@ const getWorkspacesByWorkspaceIdSettings = (options) => {
     return (options.client ?? client_gen_1.client).get({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/workspaces/{workspaceId}/settings',
-        ...options
+        url: "/workspaces/{workspaceId}/settings",
+        ...options,
     });
 };
 exports.getWorkspacesByWorkspaceIdSettings = getWorkspacesByWorkspaceIdSettings;
@@ -1095,12 +1095,12 @@ const getWorkspacesByWorkspaceIdSettingsCustom = (options) => {
     return (options.client ?? client_gen_1.client).get({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/workspaces/{workspaceId}/settings/custom',
-        ...options
+        url: "/workspaces/{workspaceId}/settings/custom",
+        ...options,
     });
 };
 exports.getWorkspacesByWorkspaceIdSettingsCustom = getWorkspacesByWorkspaceIdSettingsCustom;
@@ -1112,16 +1112,16 @@ const postWorkspacesByWorkspaceIdSettingsCustom = (options) => {
     return (options.client ?? client_gen_1.client).post({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/workspaces/{workspaceId}/settings/custom',
+        url: "/workspaces/{workspaceId}/settings/custom",
         ...options,
         headers: {
-            'Content-Type': 'application/json',
-            ...options.headers
-        }
+            "Content-Type": "application/json",
+            ...options.headers,
+        },
     });
 };
 exports.postWorkspacesByWorkspaceIdSettingsCustom = postWorkspacesByWorkspaceIdSettingsCustom;
@@ -1133,12 +1133,12 @@ const deleteWorkspacesByWorkspaceIdSettingsCustomBySettingSlug = (options) => {
     return (options.client ?? client_gen_1.client).delete({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/workspaces/{workspaceId}/settings/custom/{settingSlug}',
-        ...options
+        url: "/workspaces/{workspaceId}/settings/custom/{settingSlug}",
+        ...options,
     });
 };
 exports.deleteWorkspacesByWorkspaceIdSettingsCustomBySettingSlug = deleteWorkspacesByWorkspaceIdSettingsCustomBySettingSlug;
@@ -1150,12 +1150,12 @@ const getWorkspacesByWorkspaceIdSettingsCustomBySettingSlug = (options) => {
     return (options.client ?? client_gen_1.client).get({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/workspaces/{workspaceId}/settings/custom/{settingSlug}',
-        ...options
+        url: "/workspaces/{workspaceId}/settings/custom/{settingSlug}",
+        ...options,
     });
 };
 exports.getWorkspacesByWorkspaceIdSettingsCustomBySettingSlug = getWorkspacesByWorkspaceIdSettingsCustomBySettingSlug;
@@ -1167,16 +1167,16 @@ const putWorkspacesByWorkspaceIdSettingsCustomBySettingSlug = (options) => {
     return (options.client ?? client_gen_1.client).put({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/workspaces/{workspaceId}/settings/custom/{settingSlug}',
+        url: "/workspaces/{workspaceId}/settings/custom/{settingSlug}",
         ...options,
         headers: {
-            'Content-Type': 'application/json',
-            ...options.headers
-        }
+            "Content-Type": "application/json",
+            ...options.headers,
+        },
     });
 };
 exports.putWorkspacesByWorkspaceIdSettingsCustomBySettingSlug = putWorkspacesByWorkspaceIdSettingsCustomBySettingSlug;
@@ -1188,12 +1188,12 @@ const getWorkspacesByWorkspaceIdSettingsCustomBySettingSlugValue = (options) => 
     return (options.client ?? client_gen_1.client).get({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/workspaces/{workspaceId}/settings/custom/{settingSlug}/value',
-        ...options
+        url: "/workspaces/{workspaceId}/settings/custom/{settingSlug}/value",
+        ...options,
     });
 };
 exports.getWorkspacesByWorkspaceIdSettingsCustomBySettingSlugValue = getWorkspacesByWorkspaceIdSettingsCustomBySettingSlugValue;
@@ -1205,12 +1205,12 @@ const getWorkspacesByWorkspaceIdSettingsService = (options) => {
     return (options.client ?? client_gen_1.client).get({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/workspaces/{workspaceId}/settings/service',
-        ...options
+        url: "/workspaces/{workspaceId}/settings/service",
+        ...options,
     });
 };
 exports.getWorkspacesByWorkspaceIdSettingsService = getWorkspacesByWorkspaceIdSettingsService;
@@ -1222,12 +1222,12 @@ const deleteWorkspacesByWorkspaceIdSettingsServiceBySettingSlug = (options) => {
     return (options.client ?? client_gen_1.client).delete({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/workspaces/{workspaceId}/settings/service/{settingSlug}',
-        ...options
+        url: "/workspaces/{workspaceId}/settings/service/{settingSlug}",
+        ...options,
     });
 };
 exports.deleteWorkspacesByWorkspaceIdSettingsServiceBySettingSlug = deleteWorkspacesByWorkspaceIdSettingsServiceBySettingSlug;
@@ -1239,12 +1239,12 @@ const getWorkspacesByWorkspaceIdSettingsServiceBySettingSlug = (options) => {
     return (options.client ?? client_gen_1.client).get({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/workspaces/{workspaceId}/settings/service/{settingSlug}',
-        ...options
+        url: "/workspaces/{workspaceId}/settings/service/{settingSlug}",
+        ...options,
     });
 };
 exports.getWorkspacesByWorkspaceIdSettingsServiceBySettingSlug = getWorkspacesByWorkspaceIdSettingsServiceBySettingSlug;
@@ -1256,16 +1256,16 @@ const putWorkspacesByWorkspaceIdSettingsServiceBySettingSlug = (options) => {
     return (options.client ?? client_gen_1.client).put({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/workspaces/{workspaceId}/settings/service/{settingSlug}',
+        url: "/workspaces/{workspaceId}/settings/service/{settingSlug}",
         ...options,
         headers: {
-            'Content-Type': 'application/json',
-            ...options.headers
-        }
+            "Content-Type": "application/json",
+            ...options.headers,
+        },
     });
 };
 exports.putWorkspacesByWorkspaceIdSettingsServiceBySettingSlug = putWorkspacesByWorkspaceIdSettingsServiceBySettingSlug;
@@ -1277,12 +1277,12 @@ const getWorkspacesByWorkspaceIdSettingsServiceBySettingSlugValue = (options) =>
     return (options.client ?? client_gen_1.client).get({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/workspaces/{workspaceId}/settings/service/{settingSlug}/value',
-        ...options
+        url: "/workspaces/{workspaceId}/settings/service/{settingSlug}/value",
+        ...options,
     });
 };
 exports.getWorkspacesByWorkspaceIdSettingsServiceBySettingSlugValue = getWorkspacesByWorkspaceIdSettingsServiceBySettingSlugValue;
@@ -1294,12 +1294,12 @@ const getCodesByCodeIdScans = (options) => {
     return (options.client ?? client_gen_1.client).get({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/codes/{codeId}/scans',
-        ...options
+        url: "/codes/{codeId}/scans",
+        ...options,
     });
 };
 exports.getCodesByCodeIdScans = getCodesByCodeIdScans;
@@ -1311,12 +1311,12 @@ const getCodesByCodeIdRouterRules = (options) => {
     return (options.client ?? client_gen_1.client).get({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/codes/{codeId}/router-rules',
-        ...options
+        url: "/codes/{codeId}/router-rules",
+        ...options,
     });
 };
 exports.getCodesByCodeIdRouterRules = getCodesByCodeIdRouterRules;
@@ -1328,16 +1328,16 @@ const postCodesByCodeIdRouterRules = (options) => {
     return (options.client ?? client_gen_1.client).post({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/codes/{codeId}/router-rules',
+        url: "/codes/{codeId}/router-rules",
         ...options,
         headers: {
-            'Content-Type': 'application/json',
-            ...options.headers
-        }
+            "Content-Type": "application/json",
+            ...options.headers,
+        },
     });
 };
 exports.postCodesByCodeIdRouterRules = postCodesByCodeIdRouterRules;
@@ -1349,12 +1349,12 @@ const deleteCodesByCodeIdRouterRulesByRouterRuleId = (options) => {
     return (options.client ?? client_gen_1.client).delete({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/codes/{codeId}/router-rules/{routerRuleId}',
-        ...options
+        url: "/codes/{codeId}/router-rules/{routerRuleId}",
+        ...options,
     });
 };
 exports.deleteCodesByCodeIdRouterRulesByRouterRuleId = deleteCodesByCodeIdRouterRulesByRouterRuleId;
@@ -1366,12 +1366,12 @@ const getCodesByCodeIdRouterRulesByRouterRuleId = (options) => {
     return (options.client ?? client_gen_1.client).get({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/codes/{codeId}/router-rules/{routerRuleId}',
-        ...options
+        url: "/codes/{codeId}/router-rules/{routerRuleId}",
+        ...options,
     });
 };
 exports.getCodesByCodeIdRouterRulesByRouterRuleId = getCodesByCodeIdRouterRulesByRouterRuleId;
@@ -1383,16 +1383,16 @@ const putCodesByCodeIdRouterRulesByRouterRuleId = (options) => {
     return (options.client ?? client_gen_1.client).put({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/codes/{codeId}/router-rules/{routerRuleId}',
+        url: "/codes/{codeId}/router-rules/{routerRuleId}",
         ...options,
         headers: {
-            'Content-Type': 'application/json',
-            ...options.headers
-        }
+            "Content-Type": "application/json",
+            ...options.headers,
+        },
     });
 };
 exports.putCodesByCodeIdRouterRulesByRouterRuleId = putCodesByCodeIdRouterRulesByRouterRuleId;
@@ -1404,12 +1404,12 @@ const getCodesDeleted = (options) => {
     return (options?.client ?? client_gen_1.client).get({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/codes/deleted',
-        ...options
+        url: "/codes/deleted",
+        ...options,
     });
 };
 exports.getCodesDeleted = getCodesDeleted;
@@ -1421,12 +1421,12 @@ const getCodesLinks = (options) => {
     return (options?.client ?? client_gen_1.client).get({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/codes/links',
-        ...options
+        url: "/codes/links",
+        ...options,
     });
 };
 exports.getCodesLinks = getCodesLinks;
@@ -1438,12 +1438,12 @@ const deleteCodesByCodeId = (options) => {
     return (options.client ?? client_gen_1.client).delete({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/codes/{codeId}',
-        ...options
+        url: "/codes/{codeId}",
+        ...options,
     });
 };
 exports.deleteCodesByCodeId = deleteCodesByCodeId;
@@ -1455,12 +1455,12 @@ const getCodesByCodeId = (options) => {
     return (options.client ?? client_gen_1.client).get({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/codes/{codeId}',
-        ...options
+        url: "/codes/{codeId}",
+        ...options,
     });
 };
 exports.getCodesByCodeId = getCodesByCodeId;
@@ -1472,16 +1472,16 @@ const putCodesByCodeId = (options) => {
     return (options.client ?? client_gen_1.client).put({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/codes/{codeId}',
+        url: "/codes/{codeId}",
         ...options,
         headers: {
-            'Content-Type': 'application/json',
-            ...options.headers
-        }
+            "Content-Type": "application/json",
+            ...options.headers,
+        },
     });
 };
 exports.putCodesByCodeId = putCodesByCodeId;
@@ -1493,12 +1493,12 @@ const deleteCodes = (options) => {
     return (options?.client ?? client_gen_1.client).delete({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/codes',
-        ...options
+        url: "/codes",
+        ...options,
     });
 };
 exports.deleteCodes = deleteCodes;
@@ -1510,12 +1510,12 @@ const getCodes = (options) => {
     return (options?.client ?? client_gen_1.client).get({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/codes',
-        ...options
+        url: "/codes",
+        ...options,
     });
 };
 exports.getCodes = getCodes;
@@ -1527,16 +1527,16 @@ const postCodes = (options) => {
     return (options?.client ?? client_gen_1.client).post({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/codes',
+        url: "/codes",
         ...options,
         headers: {
-            'Content-Type': 'application/json',
-            ...options?.headers
-        }
+            "Content-Type": "application/json",
+            ...options?.headers,
+        },
     });
 };
 exports.postCodes = postCodes;
@@ -1548,16 +1548,16 @@ const putCodesByCodeIdOptions = (options) => {
     return (options.client ?? client_gen_1.client).put({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/codes/{codeId}/options',
+        url: "/codes/{codeId}/options",
         ...options,
         headers: {
-            'Content-Type': 'application/json',
-            ...options.headers
-        }
+            "Content-Type": "application/json",
+            ...options.headers,
+        },
     });
 };
 exports.putCodesByCodeIdOptions = putCodesByCodeIdOptions;
@@ -1569,12 +1569,12 @@ const deleteCodesPermanent = (options) => {
     return (options?.client ?? client_gen_1.client).delete({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/codes/permanent',
-        ...options
+        url: "/codes/permanent",
+        ...options,
     });
 };
 exports.deleteCodesPermanent = deleteCodesPermanent;
@@ -1586,12 +1586,12 @@ const deleteCodesByCodeIdPermanent = (options) => {
     return (options.client ?? client_gen_1.client).delete({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/codes/{codeId}/permanent',
-        ...options
+        url: "/codes/{codeId}/permanent",
+        ...options,
     });
 };
 exports.deleteCodesByCodeIdPermanent = deleteCodesByCodeIdPermanent;
@@ -1603,12 +1603,12 @@ const postCodesByCodeIdRestore = (options) => {
     return (options.client ?? client_gen_1.client).post({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/codes/{codeId}/restore',
-        ...options
+        url: "/codes/{codeId}/restore",
+        ...options,
     });
 };
 exports.postCodesByCodeIdRestore = postCodesByCodeIdRestore;
@@ -1620,12 +1620,12 @@ const postCodesBulkGet = (options) => {
     return (options?.client ?? client_gen_1.client).post({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/codes/bulk-get',
-        ...options
+        url: "/codes/bulk-get",
+        ...options,
     });
 };
 exports.postCodesBulkGet = postCodesBulkGet;
@@ -1637,16 +1637,16 @@ const postCodesGenetateCanvasPng = (options) => {
     return (options?.client ?? client_gen_1.client).post({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/codes/genetate/canvas-png',
+        url: "/codes/genetate/canvas-png",
         ...options,
         headers: {
-            'Content-Type': 'application/json',
-            ...options?.headers
-        }
+            "Content-Type": "application/json",
+            ...options?.headers,
+        },
     });
 };
 exports.postCodesGenetateCanvasPng = postCodesGenetateCanvasPng;
@@ -1658,16 +1658,16 @@ const postCodesGenerateByType = (options) => {
     return (options.client ?? client_gen_1.client).post({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/codes/generate/{type}',
+        url: "/codes/generate/{type}",
         ...options,
         headers: {
-            'Content-Type': 'application/json',
-            ...options.headers
-        }
+            "Content-Type": "application/json",
+            ...options.headers,
+        },
     });
 };
 exports.postCodesGenerateByType = postCodesGenerateByType;
@@ -1679,16 +1679,16 @@ const postCodesValidate = (options) => {
     return (options?.client ?? client_gen_1.client).post({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/codes/validate',
+        url: "/codes/validate",
         ...options,
         headers: {
-            'Content-Type': 'application/json',
-            ...options?.headers
-        }
+            "Content-Type": "application/json",
+            ...options?.headers,
+        },
     });
 };
 exports.postCodesValidate = postCodesValidate;
@@ -1700,12 +1700,12 @@ const postCodesByCodeIdValidate = (options) => {
     return (options.client ?? client_gen_1.client).post({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/codes/{codeId}/validate',
-        ...options
+        url: "/codes/{codeId}/validate",
+        ...options,
     });
 };
 exports.postCodesByCodeIdValidate = postCodesByCodeIdValidate;
@@ -1717,12 +1717,12 @@ const postCodesLinksRefresh = (options) => {
     return (options?.client ?? client_gen_1.client).post({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/codes/links/refresh',
-        ...options
+        url: "/codes/links/refresh",
+        ...options,
     });
 };
 exports.postCodesLinksRefresh = postCodesLinksRefresh;
@@ -1734,12 +1734,12 @@ const getCodesByCodeIdVersionByVersion = (options) => {
     return (options.client ?? client_gen_1.client).get({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/codes/{codeId}/version/{version}',
-        ...options
+        url: "/codes/{codeId}/version/{version}",
+        ...options,
     });
 };
 exports.getCodesByCodeIdVersionByVersion = getCodesByCodeIdVersionByVersion;
@@ -1751,12 +1751,12 @@ const deleteCodesByCodeIdVersions = (options) => {
     return (options.client ?? client_gen_1.client).delete({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/codes/{codeId}/versions',
-        ...options
+        url: "/codes/{codeId}/versions",
+        ...options,
     });
 };
 exports.deleteCodesByCodeIdVersions = deleteCodesByCodeIdVersions;
@@ -1768,12 +1768,12 @@ const getCodesByCodeIdVersions = (options) => {
     return (options.client ?? client_gen_1.client).get({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/codes/{codeId}/versions',
-        ...options
+        url: "/codes/{codeId}/versions",
+        ...options,
     });
 };
 exports.getCodesByCodeIdVersions = getCodesByCodeIdVersions;
@@ -1785,12 +1785,12 @@ const postCodesByCodeIdVersionByVersionRestore = (options) => {
     return (options.client ?? client_gen_1.client).post({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/codes/{codeId}/version/{version}/restore',
-        ...options
+        url: "/codes/{codeId}/version/{version}/restore",
+        ...options,
     });
 };
 exports.postCodesByCodeIdVersionByVersionRestore = postCodesByCodeIdVersionByVersionRestore;
@@ -1802,12 +1802,12 @@ const getCodesByCodeIdVersionByVersionByType = (options) => {
     return (options.client ?? client_gen_1.client).get({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/codes/{codeId}/version/{version}/{type}',
-        ...options
+        url: "/codes/{codeId}/version/{version}/{type}",
+        ...options,
     });
 };
 exports.getCodesByCodeIdVersionByVersionByType = getCodesByCodeIdVersionByVersionByType;
@@ -1819,12 +1819,12 @@ const getCodesByCodeIdVersionByVersionByTypeLink = (options) => {
     return (options.client ?? client_gen_1.client).get({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/codes/{codeId}/version/{version}/{type}/link',
-        ...options
+        url: "/codes/{codeId}/version/{version}/{type}/link",
+        ...options,
     });
 };
 exports.getCodesByCodeIdVersionByVersionByTypeLink = getCodesByCodeIdVersionByVersionByTypeLink;
@@ -1836,12 +1836,12 @@ const deleteCodesByCodeIdVersionsByVersionLinks = (options) => {
     return (options.client ?? client_gen_1.client).delete({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/codes/{codeId}/versions/{version}/links',
-        ...options
+        url: "/codes/{codeId}/versions/{version}/links",
+        ...options,
     });
 };
 exports.deleteCodesByCodeIdVersionsByVersionLinks = deleteCodesByCodeIdVersionsByVersionLinks;
@@ -1853,12 +1853,12 @@ const deleteCodesByCodeIdVersionsByVersionLinksByType = (options) => {
     return (options.client ?? client_gen_1.client).delete({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/codes/{codeId}/versions/{version}/links/{type}',
-        ...options
+        url: "/codes/{codeId}/versions/{version}/links/{type}",
+        ...options,
     });
 };
 exports.deleteCodesByCodeIdVersionsByVersionLinksByType = deleteCodesByCodeIdVersionsByVersionLinksByType;
@@ -1870,12 +1870,12 @@ const deleteCodesByCodeIdVersionsLinks = (options) => {
     return (options.client ?? client_gen_1.client).delete({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/codes/{codeId}/versions/links',
-        ...options
+        url: "/codes/{codeId}/versions/links",
+        ...options,
     });
 };
 exports.deleteCodesByCodeIdVersionsLinks = deleteCodesByCodeIdVersionsLinks;
@@ -1887,12 +1887,12 @@ const deleteCodesByCodeIdVersionsLinksByType = (options) => {
     return (options.client ?? client_gen_1.client).delete({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/codes/{codeId}/versions/links/{type}',
-        ...options
+        url: "/codes/{codeId}/versions/links/{type}",
+        ...options,
     });
 };
 exports.deleteCodesByCodeIdVersionsLinksByType = deleteCodesByCodeIdVersionsLinksByType;
@@ -1904,12 +1904,12 @@ const getCodesByCodeIdByType = (options) => {
     return (options.client ?? client_gen_1.client).get({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/codes/{codeId}/{type}',
-        ...options
+        url: "/codes/{codeId}/{type}",
+        ...options,
     });
 };
 exports.getCodesByCodeIdByType = getCodesByCodeIdByType;
@@ -1921,12 +1921,12 @@ const getCodesByCodeIdByTypeLink = (options) => {
     return (options.client ?? client_gen_1.client).get({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/codes/{codeId}/{type}/link',
-        ...options
+        url: "/codes/{codeId}/{type}/link",
+        ...options,
     });
 };
 exports.getCodesByCodeIdByTypeLink = getCodesByCodeIdByTypeLink;
@@ -1938,12 +1938,12 @@ const deleteCodesByCodeIdLinks = (options) => {
     return (options.client ?? client_gen_1.client).delete({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/codes/{codeId}/links',
-        ...options
+        url: "/codes/{codeId}/links",
+        ...options,
     });
 };
 exports.deleteCodesByCodeIdLinks = deleteCodesByCodeIdLinks;
@@ -1955,15 +1955,32 @@ const deleteCodesByCodeIdLinksByType = (options) => {
     return (options.client ?? client_gen_1.client).delete({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/codes/{codeId}/links/{type}',
-        ...options
+        url: "/codes/{codeId}/links/{type}",
+        ...options,
     });
 };
 exports.deleteCodesByCodeIdLinksByType = deleteCodesByCodeIdLinksByType;
+/**
+ * Get scan by ID
+ * Retrieves scan information by scanId in the same format as the scan-info dataType
+ */
+const getScansByScanId = (options) => {
+    return (options.client ?? client_gen_1.client).get({
+        security: [
+            {
+                scheme: "bearer",
+                type: "http",
+            },
+        ],
+        url: "/scans/{scanId}",
+        ...options,
+    });
+};
+exports.getScansByScanId = getScansByScanId;
 /**
  * List all templates
  * Retrieves all templates available to the user, grouped by organization and workspace.
@@ -1972,12 +1989,12 @@ const getTemplates = (options) => {
     return (options?.client ?? client_gen_1.client).get({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/templates',
-        ...options
+        url: "/templates",
+        ...options,
     });
 };
 exports.getTemplates = getTemplates;
@@ -1989,16 +2006,16 @@ const postTemplates = (options) => {
     return (options?.client ?? client_gen_1.client).post({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/templates',
+        url: "/templates",
         ...options,
         headers: {
-            'Content-Type': 'application/json',
-            ...options?.headers
-        }
+            "Content-Type": "application/json",
+            ...options?.headers,
+        },
     });
 };
 exports.postTemplates = postTemplates;
@@ -2010,12 +2027,12 @@ const getTemplatesBase = (options) => {
     return (options?.client ?? client_gen_1.client).get({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/templates/base',
-        ...options
+        url: "/templates/base",
+        ...options,
     });
 };
 exports.getTemplatesBase = getTemplatesBase;
@@ -2027,12 +2044,12 @@ const deleteTemplatesByTemplateId = (options) => {
     return (options.client ?? client_gen_1.client).delete({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/templates/{templateId}',
-        ...options
+        url: "/templates/{templateId}",
+        ...options,
     });
 };
 exports.deleteTemplatesByTemplateId = deleteTemplatesByTemplateId;
@@ -2044,12 +2061,12 @@ const getTemplatesByTemplateId = (options) => {
     return (options.client ?? client_gen_1.client).get({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/templates/{templateId}',
-        ...options
+        url: "/templates/{templateId}",
+        ...options,
     });
 };
 exports.getTemplatesByTemplateId = getTemplatesByTemplateId;
@@ -2061,16 +2078,16 @@ const putTemplatesByTemplateId = (options) => {
     return (options.client ?? client_gen_1.client).put({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/templates/{templateId}',
+        url: "/templates/{templateId}",
         ...options,
         headers: {
-            'Content-Type': 'application/json',
-            ...options.headers
-        }
+            "Content-Type": "application/json",
+            ...options.headers,
+        },
     });
 };
 exports.putTemplatesByTemplateId = putTemplatesByTemplateId;
@@ -2082,16 +2099,16 @@ const putTemplatesByTemplateIdOptions = (options) => {
     return (options.client ?? client_gen_1.client).put({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/templates/{templateId}/options',
+        url: "/templates/{templateId}/options",
         ...options,
         headers: {
-            'Content-Type': 'application/json',
-            ...options.headers
-        }
+            "Content-Type": "application/json",
+            ...options.headers,
+        },
     });
 };
 exports.putTemplatesByTemplateIdOptions = putTemplatesByTemplateIdOptions;
@@ -2103,12 +2120,12 @@ const getTemplatesWorkspaceByWorkspaceId = (options) => {
     return (options.client ?? client_gen_1.client).get({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/templates/workspace/{workspaceId}',
-        ...options
+        url: "/templates/workspace/{workspaceId}",
+        ...options,
     });
 };
 exports.getTemplatesWorkspaceByWorkspaceId = getTemplatesWorkspaceByWorkspaceId;
@@ -2120,12 +2137,12 @@ const getStyles = (options) => {
     return (options?.client ?? client_gen_1.client).get({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/styles',
-        ...options
+        url: "/styles",
+        ...options,
     });
 };
 exports.getStyles = getStyles;
@@ -2137,16 +2154,16 @@ const postStyles = (options) => {
     return (options?.client ?? client_gen_1.client).post({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/styles',
+        url: "/styles",
         ...options,
         headers: {
-            'Content-Type': 'application/json',
-            ...options?.headers
-        }
+            "Content-Type": "application/json",
+            ...options?.headers,
+        },
     });
 };
 exports.postStyles = postStyles;
@@ -2158,12 +2175,12 @@ const getStylesBase = (options) => {
     return (options?.client ?? client_gen_1.client).get({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/styles/base',
-        ...options
+        url: "/styles/base",
+        ...options,
     });
 };
 exports.getStylesBase = getStylesBase;
@@ -2175,12 +2192,12 @@ const deleteStylesByStyleId = (options) => {
     return (options.client ?? client_gen_1.client).delete({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/styles/{styleId}',
-        ...options
+        url: "/styles/{styleId}",
+        ...options,
     });
 };
 exports.deleteStylesByStyleId = deleteStylesByStyleId;
@@ -2192,12 +2209,12 @@ const getStylesByStyleId = (options) => {
     return (options.client ?? client_gen_1.client).get({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/styles/{styleId}',
-        ...options
+        url: "/styles/{styleId}",
+        ...options,
     });
 };
 exports.getStylesByStyleId = getStylesByStyleId;
@@ -2209,16 +2226,16 @@ const putStylesByStyleId = (options) => {
     return (options.client ?? client_gen_1.client).put({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/styles/{styleId}',
+        url: "/styles/{styleId}",
         ...options,
         headers: {
-            'Content-Type': 'application/json',
-            ...options.headers
-        }
+            "Content-Type": "application/json",
+            ...options.headers,
+        },
     });
 };
 exports.putStylesByStyleId = putStylesByStyleId;
@@ -2230,16 +2247,16 @@ const putStylesByStyleIdOptions = (options) => {
     return (options.client ?? client_gen_1.client).put({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/styles/{styleId}/options',
+        url: "/styles/{styleId}/options",
         ...options,
         headers: {
-            'Content-Type': 'application/json',
-            ...options.headers
-        }
+            "Content-Type": "application/json",
+            ...options.headers,
+        },
     });
 };
 exports.putStylesByStyleIdOptions = putStylesByStyleIdOptions;
@@ -2251,12 +2268,12 @@ const getStylesWorkspaceByWorkspaceId = (options) => {
     return (options.client ?? client_gen_1.client).get({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/styles/workspace/{workspaceId}',
-        ...options
+        url: "/styles/workspace/{workspaceId}",
+        ...options,
     });
 };
 exports.getStylesWorkspaceByWorkspaceId = getStylesWorkspaceByWorkspaceId;
@@ -2268,12 +2285,12 @@ const getTexts = (options) => {
     return (options?.client ?? client_gen_1.client).get({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/texts',
-        ...options
+        url: "/texts",
+        ...options,
     });
 };
 exports.getTexts = getTexts;
@@ -2285,16 +2302,16 @@ const postTexts = (options) => {
     return (options?.client ?? client_gen_1.client).post({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/texts',
+        url: "/texts",
         ...options,
         headers: {
-            'Content-Type': 'application/json',
-            ...options?.headers
-        }
+            "Content-Type": "application/json",
+            ...options?.headers,
+        },
     });
 };
 exports.postTexts = postTexts;
@@ -2306,12 +2323,12 @@ const getTextsBase = (options) => {
     return (options?.client ?? client_gen_1.client).get({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/texts/base',
-        ...options
+        url: "/texts/base",
+        ...options,
     });
 };
 exports.getTextsBase = getTextsBase;
@@ -2323,12 +2340,12 @@ const deleteTextsByTextId = (options) => {
     return (options.client ?? client_gen_1.client).delete({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/texts/{textId}',
-        ...options
+        url: "/texts/{textId}",
+        ...options,
     });
 };
 exports.deleteTextsByTextId = deleteTextsByTextId;
@@ -2340,12 +2357,12 @@ const getTextsByTextId = (options) => {
     return (options.client ?? client_gen_1.client).get({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/texts/{textId}',
-        ...options
+        url: "/texts/{textId}",
+        ...options,
     });
 };
 exports.getTextsByTextId = getTextsByTextId;
@@ -2357,16 +2374,16 @@ const putTextsByTextId = (options) => {
     return (options.client ?? client_gen_1.client).put({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/texts/{textId}',
+        url: "/texts/{textId}",
         ...options,
         headers: {
-            'Content-Type': 'application/json',
-            ...options.headers
-        }
+            "Content-Type": "application/json",
+            ...options.headers,
+        },
     });
 };
 exports.putTextsByTextId = putTextsByTextId;
@@ -2378,16 +2395,16 @@ const putTextsByTextIdOptions = (options) => {
     return (options.client ?? client_gen_1.client).put({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/texts/{textId}/options',
+        url: "/texts/{textId}/options",
         ...options,
         headers: {
-            'Content-Type': 'application/json',
-            ...options.headers
-        }
+            "Content-Type": "application/json",
+            ...options.headers,
+        },
     });
 };
 exports.putTextsByTextIdOptions = putTextsByTextIdOptions;
@@ -2399,12 +2416,12 @@ const getTextsWorkspaceByWorkspaceId = (options) => {
     return (options.client ?? client_gen_1.client).get({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/texts/workspace/{workspaceId}',
-        ...options
+        url: "/texts/workspace/{workspaceId}",
+        ...options,
     });
 };
 exports.getTextsWorkspaceByWorkspaceId = getTextsWorkspaceByWorkspaceId;
@@ -2416,12 +2433,12 @@ const getBorders = (options) => {
     return (options?.client ?? client_gen_1.client).get({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/borders',
-        ...options
+        url: "/borders",
+        ...options,
     });
 };
 exports.getBorders = getBorders;
@@ -2433,16 +2450,16 @@ const postBorders = (options) => {
     return (options?.client ?? client_gen_1.client).post({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/borders',
+        url: "/borders",
         ...options,
         headers: {
-            'Content-Type': 'application/json',
-            ...options?.headers
-        }
+            "Content-Type": "application/json",
+            ...options?.headers,
+        },
     });
 };
 exports.postBorders = postBorders;
@@ -2454,12 +2471,12 @@ const getBordersBase = (options) => {
     return (options?.client ?? client_gen_1.client).get({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/borders/base',
-        ...options
+        url: "/borders/base",
+        ...options,
     });
 };
 exports.getBordersBase = getBordersBase;
@@ -2471,12 +2488,12 @@ const deleteBordersByBorderId = (options) => {
     return (options.client ?? client_gen_1.client).delete({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/borders/{borderId}',
-        ...options
+        url: "/borders/{borderId}",
+        ...options,
     });
 };
 exports.deleteBordersByBorderId = deleteBordersByBorderId;
@@ -2488,12 +2505,12 @@ const getBordersByBorderId = (options) => {
     return (options.client ?? client_gen_1.client).get({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/borders/{borderId}',
-        ...options
+        url: "/borders/{borderId}",
+        ...options,
     });
 };
 exports.getBordersByBorderId = getBordersByBorderId;
@@ -2505,16 +2522,16 @@ const putBordersByBorderId = (options) => {
     return (options.client ?? client_gen_1.client).put({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/borders/{borderId}',
+        url: "/borders/{borderId}",
         ...options,
         headers: {
-            'Content-Type': 'application/json',
-            ...options.headers
-        }
+            "Content-Type": "application/json",
+            ...options.headers,
+        },
     });
 };
 exports.putBordersByBorderId = putBordersByBorderId;
@@ -2526,16 +2543,16 @@ const putBordersByBorderIdOptions = (options) => {
     return (options.client ?? client_gen_1.client).put({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/borders/{borderId}/options',
+        url: "/borders/{borderId}/options",
         ...options,
         headers: {
-            'Content-Type': 'application/json',
-            ...options.headers
-        }
+            "Content-Type": "application/json",
+            ...options.headers,
+        },
     });
 };
 exports.putBordersByBorderIdOptions = putBordersByBorderIdOptions;
@@ -2547,12 +2564,12 @@ const getBordersWorkspaceByWorkspaceId = (options) => {
     return (options.client ?? client_gen_1.client).get({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/borders/workspace/{workspaceId}',
-        ...options
+        url: "/borders/workspace/{workspaceId}",
+        ...options,
     });
 };
 exports.getBordersWorkspaceByWorkspaceId = getBordersWorkspaceByWorkspaceId;
@@ -2564,12 +2581,12 @@ const getCountryCodes = (options) => {
     return (options?.client ?? client_gen_1.client).get({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/country-codes',
-        ...options
+        url: "/country-codes",
+        ...options,
     });
 };
 exports.getCountryCodes = getCountryCodes;
@@ -2581,12 +2598,12 @@ const getRouterRuleTemplates = (options) => {
     return (options?.client ?? client_gen_1.client).get({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/router-rule-templates',
-        ...options
+        url: "/router-rule-templates",
+        ...options,
     });
 };
 exports.getRouterRuleTemplates = getRouterRuleTemplates;
@@ -2598,16 +2615,16 @@ const postRouterRuleTemplates = (options) => {
     return (options?.client ?? client_gen_1.client).post({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/router-rule-templates',
+        url: "/router-rule-templates",
         ...options,
         headers: {
-            'Content-Type': 'application/json',
-            ...options?.headers
-        }
+            "Content-Type": "application/json",
+            ...options?.headers,
+        },
     });
 };
 exports.postRouterRuleTemplates = postRouterRuleTemplates;
@@ -2619,12 +2636,12 @@ const deleteRouterRuleTemplatesByRouterRuleTemplateId = (options) => {
     return (options.client ?? client_gen_1.client).delete({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/router-rule-templates/{routerRuleTemplateId}',
-        ...options
+        url: "/router-rule-templates/{routerRuleTemplateId}",
+        ...options,
     });
 };
 exports.deleteRouterRuleTemplatesByRouterRuleTemplateId = deleteRouterRuleTemplatesByRouterRuleTemplateId;
@@ -2636,12 +2653,12 @@ const getRouterRuleTemplatesByRouterRuleTemplateId = (options) => {
     return (options.client ?? client_gen_1.client).get({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/router-rule-templates/{routerRuleTemplateId}',
-        ...options
+        url: "/router-rule-templates/{routerRuleTemplateId}",
+        ...options,
     });
 };
 exports.getRouterRuleTemplatesByRouterRuleTemplateId = getRouterRuleTemplatesByRouterRuleTemplateId;
@@ -2653,16 +2670,16 @@ const putRouterRuleTemplatesByRouterRuleTemplateId = (options) => {
     return (options.client ?? client_gen_1.client).put({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/router-rule-templates/{routerRuleTemplateId}',
+        url: "/router-rule-templates/{routerRuleTemplateId}",
         ...options,
         headers: {
-            'Content-Type': 'application/json',
-            ...options.headers
-        }
+            "Content-Type": "application/json",
+            ...options.headers,
+        },
     });
 };
 exports.putRouterRuleTemplatesByRouterRuleTemplateId = putRouterRuleTemplatesByRouterRuleTemplateId;
@@ -2674,12 +2691,12 @@ const getRouterRules = (options) => {
     return (options?.client ?? client_gen_1.client).get({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/router-rules',
-        ...options
+        url: "/router-rules",
+        ...options,
     });
 };
 exports.getRouterRules = getRouterRules;
@@ -2691,12 +2708,12 @@ const getWorkspacesByWorkspaceIdRouterRules = (options) => {
     return (options.client ?? client_gen_1.client).get({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/workspaces/{workspaceId}/router-rules',
-        ...options
+        url: "/workspaces/{workspaceId}/router-rules",
+        ...options,
     });
 };
 exports.getWorkspacesByWorkspaceIdRouterRules = getWorkspacesByWorkspaceIdRouterRules;
@@ -2708,16 +2725,16 @@ const postWorkspacesByWorkspaceIdRouterRuleTemplates = (options) => {
     return (options.client ?? client_gen_1.client).post({
         security: [
             {
-                scheme: 'bearer',
-                type: 'http'
-            }
+                scheme: "bearer",
+                type: "http",
+            },
         ],
-        url: '/workspaces/{workspaceId}/router-rule-templates',
+        url: "/workspaces/{workspaceId}/router-rule-templates",
         ...options,
         headers: {
-            'Content-Type': 'application/json',
-            ...options.headers
-        }
+            "Content-Type": "application/json",
+            ...options.headers,
+        },
     });
 };
 exports.postWorkspacesByWorkspaceIdRouterRuleTemplates = postWorkspacesByWorkspaceIdRouterRuleTemplates;

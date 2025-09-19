@@ -1,5 +1,5 @@
-import type { ClientOptions } from './types.gen';
-import { type Config, type ClientOptions as DefaultClientOptions } from './client';
+import type { ClientOptions } from "./types.gen";
+import { type Config, type ClientOptions as DefaultClientOptions } from "./client";
 /**
  * The `createClientConfig()` function will be called on client initialization
  * and the returned object will become the client's initial configuration.
