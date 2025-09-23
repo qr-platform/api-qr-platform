@@ -4,15 +4,18 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.postOrgsFirstMutation = exports.postOrgsFirstOptions = exports.postOrgsFirstQueryKey = exports.putOrgsMutation = exports.getOrgsCurrentOptions = exports.getOrgsCurrentQueryKey = exports.putApiKeysByApiKeyIdStatusMutation = exports.putApiKeysByApiKeyIdMutation = exports.getApiKeysByApiKeyIdOptions = exports.getApiKeysByApiKeyIdQueryKey = exports.deleteApiKeysByApiKeyIdMutation = exports.postApiKeysMutation = exports.postApiKeysOptions = exports.postApiKeysQueryKey = exports.getApiKeysOptions = exports.getApiKeysQueryKey = exports.postAuthPasswordChangeMutation = exports.postAuthPasswordChangeOptions = exports.postAuthPasswordChangeQueryKey = exports.postAuthPasswordResetVerifyMutation = exports.postAuthPasswordResetVerifyOptions = exports.postAuthPasswordResetVerifyQueryKey = exports.postAuthPasswordResetMutation = exports.postAuthPasswordResetOptions = exports.postAuthPasswordResetQueryKey = exports.getAuthSignOutOptions = exports.getAuthSignOutQueryKey = exports.getAuthMeOptions = exports.getAuthMeQueryKey = exports.postAuthEmailVerifyMutation = exports.postAuthEmailVerifyOptions = exports.postAuthEmailVerifyQueryKey = exports.postAuthEmailVerifySendMutation = exports.postAuthEmailVerifySendOptions = exports.postAuthEmailVerifySendQueryKey = exports.postAuthSignInVerifyMutation = exports.postAuthSignInVerifyOptions = exports.postAuthSignInVerifyQueryKey = exports.postAuthSignInMutation = exports.postAuthSignInOptions = exports.postAuthSignInQueryKey = exports.postAuthRegisterVerifyResendMutation = exports.postAuthRegisterVerifyResendOptions = exports.postAuthRegisterVerifyResendQueryKey = exports.postAuthRegisterVerifyMutation = exports.postAuthRegisterVerifyOptions = exports.postAuthRegisterVerifyQueryKey = exports.postAuthRegisterMutation = exports.postAuthRegisterOptions = exports.postAuthRegisterQueryKey = void 0;
 exports.getPlansCurrentOptions = exports.getPlansCurrentQueryKey = exports.getPlansOptions = exports.getPlansQueryKey = exports.getRolesOptions = exports.getRolesQueryKey = exports.getWorkspacesByWorkspaceIdMembersOptions = exports.getWorkspacesByWorkspaceIdMembersQueryKey = exports.postWorkspacesByWorkspaceIdMembersByUserIdRoleMutation = exports.postWorkspacesByWorkspaceIdMembersByUserIdRoleOptions = exports.postWorkspacesByWorkspaceIdMembersByUserIdRoleQueryKey = exports.getWorkspacesByWorkspaceIdMembersByUserIdRoleOptions = exports.getWorkspacesByWorkspaceIdMembersByUserIdRoleQueryKey = exports.deleteWorkspacesByWorkspaceIdMembersByUserIdRoleMutation = exports.putWorkspacesByWorkspaceIdMutation = exports.getWorkspacesByWorkspaceIdOptions = exports.getWorkspacesByWorkspaceIdQueryKey = exports.deleteWorkspacesByWorkspaceIdMutation = exports.postWorkspacesMutation = exports.postWorkspacesOptions = exports.postWorkspacesQueryKey = exports.getWorkspacesOptions = exports.getWorkspacesQueryKey = exports.deleteMembersByUserIdRoleByRoleNameMutation = exports.postMembersByUserIdRoleMutation = exports.postMembersByUserIdRoleOptions = exports.postMembersByUserIdRoleQueryKey = exports.getMembersByUserIdRolesOptions = exports.getMembersByUserIdRolesQueryKey = exports.deleteMembersByUserIdMutation = exports.postMembersMutation = exports.postMembersOptions = exports.postMembersQueryKey = exports.getMembersOptions = exports.getMembersQueryKey = exports.getInvitesByTokenDeclineOptions = exports.getInvitesByTokenDeclineQueryKey = exports.getInvitesByTokenAcceptOptions = exports.getInvitesByTokenAcceptQueryKey = exports.deleteInvitesByInvitationIdMutation = exports.getInvitesMeOptions = exports.getInvitesMeQueryKey = exports.postInvitesMutation = exports.postInvitesOptions = exports.postInvitesQueryKey = exports.getInvitesOptions = exports.getInvitesQueryKey = exports.postOrgsCurrentByOrgIdMutation = exports.postOrgsCurrentByOrgIdOptions = exports.postOrgsCurrentByOrgIdQueryKey = void 0;
 exports.postCodesByCodeIdRouterRulesQueryKey = exports.getCodesByCodeIdRouterRulesInfiniteOptions = exports.getCodesByCodeIdRouterRulesInfiniteQueryKey = exports.getCodesByCodeIdRouterRulesOptions = exports.getCodesByCodeIdRouterRulesQueryKey = exports.getCodesByCodeIdScansInfiniteOptions = exports.getCodesByCodeIdScansInfiniteQueryKey = exports.getCodesByCodeIdScansOptions = exports.getCodesByCodeIdScansQueryKey = exports.getWorkspacesByWorkspaceIdSettingsServiceBySettingSlugValueOptions = exports.getWorkspacesByWorkspaceIdSettingsServiceBySettingSlugValueQueryKey = exports.putWorkspacesByWorkspaceIdSettingsServiceBySettingSlugMutation = exports.getWorkspacesByWorkspaceIdSettingsServiceBySettingSlugOptions = exports.getWorkspacesByWorkspaceIdSettingsServiceBySettingSlugQueryKey = exports.deleteWorkspacesByWorkspaceIdSettingsServiceBySettingSlugMutation = exports.getWorkspacesByWorkspaceIdSettingsServiceOptions = exports.getWorkspacesByWorkspaceIdSettingsServiceQueryKey = exports.getWorkspacesByWorkspaceIdSettingsCustomBySettingSlugValueOptions = exports.getWorkspacesByWorkspaceIdSettingsCustomBySettingSlugValueQueryKey = exports.putWorkspacesByWorkspaceIdSettingsCustomBySettingSlugMutation = exports.getWorkspacesByWorkspaceIdSettingsCustomBySettingSlugOptions = exports.getWorkspacesByWorkspaceIdSettingsCustomBySettingSlugQueryKey = exports.deleteWorkspacesByWorkspaceIdSettingsCustomBySettingSlugMutation = exports.postWorkspacesByWorkspaceIdSettingsCustomMutation = exports.postWorkspacesByWorkspaceIdSettingsCustomOptions = exports.postWorkspacesByWorkspaceIdSettingsCustomQueryKey = exports.getWorkspacesByWorkspaceIdSettingsCustomOptions = exports.getWorkspacesByWorkspaceIdSettingsCustomQueryKey = exports.getWorkspacesByWorkspaceIdSettingsOptions = exports.getWorkspacesByWorkspaceIdSettingsQueryKey = exports.getSettingsServiceBySettingSlugValueOptions = exports.getSettingsServiceBySettingSlugValueQueryKey = exports.putSettingsServiceBySettingSlugMutation = exports.getSettingsServiceBySettingSlugOptions = exports.getSettingsServiceBySettingSlugQueryKey = exports.getSettingsServiceOptions = exports.getSettingsServiceQueryKey = exports.getSettingsCustomBySettingSlugValueOptions = exports.getSettingsCustomBySettingSlugValueQueryKey = exports.putSettingsCustomBySettingSlugMutation = exports.getSettingsCustomBySettingSlugOptions = exports.getSettingsCustomBySettingSlugQueryKey = exports.deleteSettingsCustomBySettingSlugMutation = exports.postSettingsCustomMutation = exports.postSettingsCustomOptions = exports.postSettingsCustomQueryKey = exports.getSettingsCustomOptions = exports.getSettingsCustomQueryKey = exports.getSettingsOptions = exports.getSettingsQueryKey = void 0;
-exports.postCodesLinksRefreshMutation = exports.postCodesLinksRefreshOptions = exports.postCodesLinksRefreshQueryKey = exports.postCodesByCodeIdValidateMutation = exports.postCodesByCodeIdValidateOptions = exports.postCodesByCodeIdValidateQueryKey = exports.postCodesValidateMutation = exports.postCodesValidateOptions = exports.postCodesValidateQueryKey = exports.postCodesGenerateByTypeMutation = exports.postCodesGenerateByTypeOptions = exports.postCodesGenerateByTypeQueryKey = exports.postCodesGenetateCanvasPngMutation = exports.postCodesGenetateCanvasPngOptions = exports.postCodesGenetateCanvasPngQueryKey = exports.postCodesBulkGetMutation = exports.postCodesBulkGetOptions = exports.postCodesBulkGetQueryKey = exports.postCodesByCodeIdRestoreMutation = exports.postCodesByCodeIdRestoreOptions = exports.postCodesByCodeIdRestoreQueryKey = exports.deleteCodesByCodeIdPermanentMutation = exports.deleteCodesPermanentMutation = exports.putCodesByCodeIdOptionsMutation = exports.postCodesMutation = exports.postCodesOptions = exports.postCodesQueryKey = exports.getCodesInfiniteOptions = exports.getCodesInfiniteQueryKey = exports.getCodesOptions = exports.getCodesQueryKey = exports.deleteCodesMutation = exports.putCodesByCodeIdMutation = exports.getCodesByCodeIdOptions = exports.getCodesByCodeIdQueryKey = exports.deleteCodesByCodeIdMutation = exports.getCodesLinksInfiniteOptions = exports.getCodesLinksInfiniteQueryKey = exports.getCodesLinksOptions = exports.getCodesLinksQueryKey = exports.getCodesDeletedInfiniteOptions = exports.getCodesDeletedInfiniteQueryKey = exports.getCodesDeletedOptions = exports.getCodesDeletedQueryKey = exports.putCodesByCodeIdRouterRulesByRouterRuleIdMutation = exports.getCodesByCodeIdRouterRulesByRouterRuleIdOptions = exports.getCodesByCodeIdRouterRulesByRouterRuleIdQueryKey = exports.deleteCodesByCodeIdRouterRulesByRouterRuleIdMutation = exports.postCodesByCodeIdRouterRulesMutation = exports.postCodesByCodeIdRouterRulesOptions = void 0;
-exports.putStylesByStyleIdOptionsMutation = exports.putStylesByStyleIdMutation = exports.getStylesByStyleIdOptions = exports.getStylesByStyleIdQueryKey = exports.deleteStylesByStyleIdMutation = exports.getStylesBaseOptions = exports.getStylesBaseQueryKey = exports.postStylesMutation = exports.postStylesOptions = exports.postStylesQueryKey = exports.getStylesOptions = exports.getStylesQueryKey = exports.getTemplatesWorkspaceByWorkspaceIdOptions = exports.getTemplatesWorkspaceByWorkspaceIdQueryKey = exports.putTemplatesByTemplateIdOptionsMutation = exports.putTemplatesByTemplateIdMutation = exports.getTemplatesByTemplateIdOptions = exports.getTemplatesByTemplateIdQueryKey = exports.deleteTemplatesByTemplateIdMutation = exports.getTemplatesBaseOptions = exports.getTemplatesBaseQueryKey = exports.postTemplatesMutation = exports.postTemplatesOptions = exports.postTemplatesQueryKey = exports.getTemplatesOptions = exports.getTemplatesQueryKey = exports.getScansByScanIdOptions = exports.getScansByScanIdQueryKey = exports.deleteCodesByCodeIdLinksByTypeMutation = exports.deleteCodesByCodeIdLinksMutation = exports.getCodesByCodeIdByTypeLinkOptions = exports.getCodesByCodeIdByTypeLinkQueryKey = exports.getCodesByCodeIdByTypeOptions = exports.getCodesByCodeIdByTypeQueryKey = exports.deleteCodesByCodeIdVersionsLinksByTypeMutation = exports.deleteCodesByCodeIdVersionsLinksMutation = exports.deleteCodesByCodeIdVersionsByVersionLinksByTypeMutation = exports.deleteCodesByCodeIdVersionsByVersionLinksMutation = exports.getCodesByCodeIdVersionByVersionByTypeLinkOptions = exports.getCodesByCodeIdVersionByVersionByTypeLinkQueryKey = exports.getCodesByCodeIdVersionByVersionByTypeOptions = exports.getCodesByCodeIdVersionByVersionByTypeQueryKey = exports.postCodesByCodeIdVersionByVersionRestoreMutation = exports.postCodesByCodeIdVersionByVersionRestoreOptions = exports.postCodesByCodeIdVersionByVersionRestoreQueryKey = exports.getCodesByCodeIdVersionsOptions = exports.getCodesByCodeIdVersionsQueryKey = exports.deleteCodesByCodeIdVersionsMutation = exports.getCodesByCodeIdVersionByVersionOptions = exports.getCodesByCodeIdVersionByVersionQueryKey = void 0;
-exports.getWorkspacesByWorkspaceIdRouterRulesInfiniteQueryKey = exports.getWorkspacesByWorkspaceIdRouterRulesOptions = exports.getWorkspacesByWorkspaceIdRouterRulesQueryKey = exports.getRouterRulesInfiniteOptions = exports.getRouterRulesInfiniteQueryKey = exports.getRouterRulesOptions = exports.getRouterRulesQueryKey = exports.putRouterRuleTemplatesByRouterRuleTemplateIdMutation = exports.getRouterRuleTemplatesByRouterRuleTemplateIdOptions = exports.getRouterRuleTemplatesByRouterRuleTemplateIdQueryKey = exports.deleteRouterRuleTemplatesByRouterRuleTemplateIdMutation = exports.postRouterRuleTemplatesMutation = exports.postRouterRuleTemplatesOptions = exports.postRouterRuleTemplatesQueryKey = exports.getRouterRuleTemplatesInfiniteOptions = exports.getRouterRuleTemplatesInfiniteQueryKey = exports.getRouterRuleTemplatesOptions = exports.getRouterRuleTemplatesQueryKey = exports.getCountryCodesOptions = exports.getCountryCodesQueryKey = exports.getBordersWorkspaceByWorkspaceIdOptions = exports.getBordersWorkspaceByWorkspaceIdQueryKey = exports.putBordersByBorderIdOptionsMutation = exports.putBordersByBorderIdMutation = exports.getBordersByBorderIdOptions = exports.getBordersByBorderIdQueryKey = exports.deleteBordersByBorderIdMutation = exports.getBordersBaseOptions = exports.getBordersBaseQueryKey = exports.postBordersMutation = exports.postBordersOptions = exports.postBordersQueryKey = exports.getBordersOptions = exports.getBordersQueryKey = exports.getTextsWorkspaceByWorkspaceIdOptions = exports.getTextsWorkspaceByWorkspaceIdQueryKey = exports.putTextsByTextIdOptionsMutation = exports.putTextsByTextIdMutation = exports.getTextsByTextIdOptions = exports.getTextsByTextIdQueryKey = exports.deleteTextsByTextIdMutation = exports.getTextsBaseOptions = exports.getTextsBaseQueryKey = exports.postTextsMutation = exports.postTextsOptions = exports.postTextsQueryKey = exports.getTextsOptions = exports.getTextsQueryKey = exports.getStylesWorkspaceByWorkspaceIdOptions = exports.getStylesWorkspaceByWorkspaceIdQueryKey = void 0;
-exports.postWorkspacesByWorkspaceIdRouterRuleTemplatesMutation = exports.postWorkspacesByWorkspaceIdRouterRuleTemplatesOptions = exports.postWorkspacesByWorkspaceIdRouterRuleTemplatesQueryKey = exports.getWorkspacesByWorkspaceIdRouterRulesInfiniteOptions = void 0;
+exports.postCodesByCodeIdValidateMutation = exports.postCodesByCodeIdValidateOptions = exports.postCodesByCodeIdValidateQueryKey = exports.postCodesValidateMutation = exports.postCodesValidateOptions = exports.postCodesValidateQueryKey = exports.postCodesGenerateByTypeMutation = exports.postCodesGenerateByTypeOptions = exports.postCodesGenerateByTypeQueryKey = exports.postCodesGenetateCanvasPngMutation = exports.postCodesGenetateCanvasPngOptions = exports.postCodesGenetateCanvasPngQueryKey = exports.postCodesBulkGetMutation = exports.postCodesBulkGetOptions = exports.postCodesBulkGetQueryKey = exports.postCodesByCodeIdRestoreMutation = exports.postCodesByCodeIdRestoreOptions = exports.postCodesByCodeIdRestoreQueryKey = exports.deleteCodesByCodeIdPermanentMutation = exports.deleteCodesPermanentMutation = exports.putCodesByCodeIdOptionsMutation = exports.postCodesBulkMutation = exports.postCodesBulkOptions = exports.postCodesBulkQueryKey = exports.postCodesMutation = exports.postCodesOptions = exports.postCodesQueryKey = exports.getCodesInfiniteOptions = exports.getCodesInfiniteQueryKey = exports.getCodesOptions = exports.getCodesQueryKey = exports.deleteCodesMutation = exports.putCodesByCodeIdMutation = exports.getCodesByCodeIdOptions = exports.getCodesByCodeIdQueryKey = exports.deleteCodesByCodeIdMutation = exports.getCodesLinksInfiniteOptions = exports.getCodesLinksInfiniteQueryKey = exports.getCodesLinksOptions = exports.getCodesLinksQueryKey = exports.getCodesDeletedInfiniteOptions = exports.getCodesDeletedInfiniteQueryKey = exports.getCodesDeletedOptions = exports.getCodesDeletedQueryKey = exports.putCodesByCodeIdRouterRulesByRouterRuleIdMutation = exports.getCodesByCodeIdRouterRulesByRouterRuleIdOptions = exports.getCodesByCodeIdRouterRulesByRouterRuleIdQueryKey = exports.deleteCodesByCodeIdRouterRulesByRouterRuleIdMutation = exports.postCodesByCodeIdRouterRulesMutation = exports.postCodesByCodeIdRouterRulesOptions = void 0;
+exports.getStylesByStyleIdQueryKey = exports.deleteStylesByStyleIdMutation = exports.getStylesBaseOptions = exports.getStylesBaseQueryKey = exports.postStylesMutation = exports.postStylesOptions = exports.postStylesQueryKey = exports.getStylesOptions = exports.getStylesQueryKey = exports.getTemplatesWorkspaceByWorkspaceIdOptions = exports.getTemplatesWorkspaceByWorkspaceIdQueryKey = exports.putTemplatesByTemplateIdOptionsMutation = exports.putTemplatesByTemplateIdMutation = exports.getTemplatesByTemplateIdOptions = exports.getTemplatesByTemplateIdQueryKey = exports.deleteTemplatesByTemplateIdMutation = exports.getTemplatesBaseOptions = exports.getTemplatesBaseQueryKey = exports.postTemplatesMutation = exports.postTemplatesOptions = exports.postTemplatesQueryKey = exports.getTemplatesOptions = exports.getTemplatesQueryKey = exports.getScansByScanIdOptions = exports.getScansByScanIdQueryKey = exports.deleteCodesByCodeIdLinksByTypeMutation = exports.deleteCodesByCodeIdLinksMutation = exports.getCodesByCodeIdByTypeLinkOptions = exports.getCodesByCodeIdByTypeLinkQueryKey = exports.getCodesByCodeIdByTypeOptions = exports.getCodesByCodeIdByTypeQueryKey = exports.deleteCodesByCodeIdVersionsLinksByTypeMutation = exports.deleteCodesByCodeIdVersionsLinksMutation = exports.deleteCodesByCodeIdVersionsByVersionLinksByTypeMutation = exports.deleteCodesByCodeIdVersionsByVersionLinksMutation = exports.getCodesByCodeIdVersionByVersionByTypeLinkOptions = exports.getCodesByCodeIdVersionByVersionByTypeLinkQueryKey = exports.getCodesByCodeIdVersionByVersionByTypeOptions = exports.getCodesByCodeIdVersionByVersionByTypeQueryKey = exports.postCodesByCodeIdVersionByVersionRestoreMutation = exports.postCodesByCodeIdVersionByVersionRestoreOptions = exports.postCodesByCodeIdVersionByVersionRestoreQueryKey = exports.getCodesByCodeIdVersionsOptions = exports.getCodesByCodeIdVersionsQueryKey = exports.deleteCodesByCodeIdVersionsMutation = exports.getCodesByCodeIdVersionByVersionOptions = exports.getCodesByCodeIdVersionByVersionQueryKey = exports.postCodesLinksRefreshMutation = exports.postCodesLinksRefreshOptions = exports.postCodesLinksRefreshQueryKey = void 0;
+exports.getRouterRulesInfiniteOptions = exports.getRouterRulesInfiniteQueryKey = exports.getRouterRulesOptions = exports.getRouterRulesQueryKey = exports.putRouterRuleTemplatesByRouterRuleTemplateIdMutation = exports.getRouterRuleTemplatesByRouterRuleTemplateIdOptions = exports.getRouterRuleTemplatesByRouterRuleTemplateIdQueryKey = exports.deleteRouterRuleTemplatesByRouterRuleTemplateIdMutation = exports.postRouterRuleTemplatesMutation = exports.postRouterRuleTemplatesOptions = exports.postRouterRuleTemplatesQueryKey = exports.getRouterRuleTemplatesInfiniteOptions = exports.getRouterRuleTemplatesInfiniteQueryKey = exports.getRouterRuleTemplatesOptions = exports.getRouterRuleTemplatesQueryKey = exports.getCountryCodesOptions = exports.getCountryCodesQueryKey = exports.getBordersWorkspaceByWorkspaceIdOptions = exports.getBordersWorkspaceByWorkspaceIdQueryKey = exports.putBordersByBorderIdOptionsMutation = exports.putBordersByBorderIdMutation = exports.getBordersByBorderIdOptions = exports.getBordersByBorderIdQueryKey = exports.deleteBordersByBorderIdMutation = exports.getBordersBaseOptions = exports.getBordersBaseQueryKey = exports.postBordersMutation = exports.postBordersOptions = exports.postBordersQueryKey = exports.getBordersOptions = exports.getBordersQueryKey = exports.getTextsWorkspaceByWorkspaceIdOptions = exports.getTextsWorkspaceByWorkspaceIdQueryKey = exports.putTextsByTextIdOptionsMutation = exports.putTextsByTextIdMutation = exports.getTextsByTextIdOptions = exports.getTextsByTextIdQueryKey = exports.deleteTextsByTextIdMutation = exports.getTextsBaseOptions = exports.getTextsBaseQueryKey = exports.postTextsMutation = exports.postTextsOptions = exports.postTextsQueryKey = exports.getTextsOptions = exports.getTextsQueryKey = exports.getStylesWorkspaceByWorkspaceIdOptions = exports.getStylesWorkspaceByWorkspaceIdQueryKey = exports.putStylesByStyleIdOptionsMutation = exports.putStylesByStyleIdMutation = exports.getStylesByStyleIdOptions = void 0;
+exports.postWorkspacesByWorkspaceIdRouterRuleTemplatesMutation = exports.postWorkspacesByWorkspaceIdRouterRuleTemplatesOptions = exports.postWorkspacesByWorkspaceIdRouterRuleTemplatesQueryKey = exports.getWorkspacesByWorkspaceIdRouterRulesInfiniteOptions = exports.getWorkspacesByWorkspaceIdRouterRulesInfiniteQueryKey = exports.getWorkspacesByWorkspaceIdRouterRulesOptions = exports.getWorkspacesByWorkspaceIdRouterRulesQueryKey = void 0;
 const sdk_gen_1 = require("../sdk.gen");
 const react_query_1 = require("@tanstack/react-query");
 const client_gen_1 = require("../client.gen");
 const createQueryKey = (id, options, infinite) => {
-    const params = { _id: id, baseUrl: (options?.client ?? client_gen_1.client).getConfig().baseUrl };
+    const params = {
+        _id: id,
+        baseUrl: (options?.client ?? client_gen_1.client).getConfig().baseUrl,
+    };
     if (infinite) {
         params._infinite = infinite;
     }
@@ -28,11 +31,9 @@ const createQueryKey = (id, options, infinite) => {
     if (options?.query) {
         params.query = options.query;
     }
-    return [
-        params
-    ];
+    return [params];
 };
-const postAuthRegisterQueryKey = (options) => createQueryKey('postAuthRegister', options);
+const postAuthRegisterQueryKey = (options) => createQueryKey("postAuthRegister", options);
 exports.postAuthRegisterQueryKey = postAuthRegisterQueryKey;
 /**
  * Register New User
@@ -45,11 +46,11 @@ const postAuthRegisterOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.postAuthRegisterQueryKey)(options)
+        queryKey: (0, exports.postAuthRegisterQueryKey)(options),
     });
 };
 exports.postAuthRegisterOptions = postAuthRegisterOptions;
@@ -63,15 +64,15 @@ const postAuthRegisterMutation = (options) => {
             const { data } = await (0, sdk_gen_1.postAuthRegister)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
 exports.postAuthRegisterMutation = postAuthRegisterMutation;
-const postAuthRegisterVerifyQueryKey = (options) => createQueryKey('postAuthRegisterVerify', options);
+const postAuthRegisterVerifyQueryKey = (options) => createQueryKey("postAuthRegisterVerify", options);
 exports.postAuthRegisterVerifyQueryKey = postAuthRegisterVerifyQueryKey;
 /**
  * Verify Registration Code or Token
@@ -84,11 +85,11 @@ const postAuthRegisterVerifyOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.postAuthRegisterVerifyQueryKey)(options)
+        queryKey: (0, exports.postAuthRegisterVerifyQueryKey)(options),
     });
 };
 exports.postAuthRegisterVerifyOptions = postAuthRegisterVerifyOptions;
@@ -102,15 +103,15 @@ const postAuthRegisterVerifyMutation = (options) => {
             const { data } = await (0, sdk_gen_1.postAuthRegisterVerify)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
 exports.postAuthRegisterVerifyMutation = postAuthRegisterVerifyMutation;
-const postAuthRegisterVerifyResendQueryKey = (options) => createQueryKey('postAuthRegisterVerifyResend', options);
+const postAuthRegisterVerifyResendQueryKey = (options) => createQueryKey("postAuthRegisterVerifyResend", options);
 exports.postAuthRegisterVerifyResendQueryKey = postAuthRegisterVerifyResendQueryKey;
 /**
  * Resend Registration Verification Code and Token
@@ -123,11 +124,11 @@ const postAuthRegisterVerifyResendOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.postAuthRegisterVerifyResendQueryKey)(options)
+        queryKey: (0, exports.postAuthRegisterVerifyResendQueryKey)(options),
     });
 };
 exports.postAuthRegisterVerifyResendOptions = postAuthRegisterVerifyResendOptions;
@@ -141,15 +142,15 @@ const postAuthRegisterVerifyResendMutation = (options) => {
             const { data } = await (0, sdk_gen_1.postAuthRegisterVerifyResend)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
 exports.postAuthRegisterVerifyResendMutation = postAuthRegisterVerifyResendMutation;
-const postAuthSignInQueryKey = (options) => createQueryKey('postAuthSignIn', options);
+const postAuthSignInQueryKey = (options) => createQueryKey("postAuthSignIn", options);
 exports.postAuthSignInQueryKey = postAuthSignInQueryKey;
 /**
  * Sign In User
@@ -162,11 +163,11 @@ const postAuthSignInOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.postAuthSignInQueryKey)(options)
+        queryKey: (0, exports.postAuthSignInQueryKey)(options),
     });
 };
 exports.postAuthSignInOptions = postAuthSignInOptions;
@@ -180,15 +181,15 @@ const postAuthSignInMutation = (options) => {
             const { data } = await (0, sdk_gen_1.postAuthSignIn)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
 exports.postAuthSignInMutation = postAuthSignInMutation;
-const postAuthSignInVerifyQueryKey = (options) => createQueryKey('postAuthSignInVerify', options);
+const postAuthSignInVerifyQueryKey = (options) => createQueryKey("postAuthSignInVerify", options);
 exports.postAuthSignInVerifyQueryKey = postAuthSignInVerifyQueryKey;
 /**
  * Verify Sign In Code or Token
@@ -201,11 +202,11 @@ const postAuthSignInVerifyOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.postAuthSignInVerifyQueryKey)(options)
+        queryKey: (0, exports.postAuthSignInVerifyQueryKey)(options),
     });
 };
 exports.postAuthSignInVerifyOptions = postAuthSignInVerifyOptions;
@@ -219,15 +220,15 @@ const postAuthSignInVerifyMutation = (options) => {
             const { data } = await (0, sdk_gen_1.postAuthSignInVerify)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
 exports.postAuthSignInVerifyMutation = postAuthSignInVerifyMutation;
-const postAuthEmailVerifySendQueryKey = (options) => createQueryKey('postAuthEmailVerifySend', options);
+const postAuthEmailVerifySendQueryKey = (options) => createQueryKey("postAuthEmailVerifySend", options);
 exports.postAuthEmailVerifySendQueryKey = postAuthEmailVerifySendQueryKey;
 /**
  * Send Email Verification Code and Token
@@ -240,11 +241,11 @@ const postAuthEmailVerifySendOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.postAuthEmailVerifySendQueryKey)(options)
+        queryKey: (0, exports.postAuthEmailVerifySendQueryKey)(options),
     });
 };
 exports.postAuthEmailVerifySendOptions = postAuthEmailVerifySendOptions;
@@ -258,15 +259,15 @@ const postAuthEmailVerifySendMutation = (options) => {
             const { data } = await (0, sdk_gen_1.postAuthEmailVerifySend)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
 exports.postAuthEmailVerifySendMutation = postAuthEmailVerifySendMutation;
-const postAuthEmailVerifyQueryKey = (options) => createQueryKey('postAuthEmailVerify', options);
+const postAuthEmailVerifyQueryKey = (options) => createQueryKey("postAuthEmailVerify", options);
 exports.postAuthEmailVerifyQueryKey = postAuthEmailVerifyQueryKey;
 /**
  * Verify Email Address
@@ -279,11 +280,11 @@ const postAuthEmailVerifyOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.postAuthEmailVerifyQueryKey)(options)
+        queryKey: (0, exports.postAuthEmailVerifyQueryKey)(options),
     });
 };
 exports.postAuthEmailVerifyOptions = postAuthEmailVerifyOptions;
@@ -297,15 +298,15 @@ const postAuthEmailVerifyMutation = (options) => {
             const { data } = await (0, sdk_gen_1.postAuthEmailVerify)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
 exports.postAuthEmailVerifyMutation = postAuthEmailVerifyMutation;
-const getAuthMeQueryKey = (options) => createQueryKey('getAuthMe', options);
+const getAuthMeQueryKey = (options) => createQueryKey("getAuthMe", options);
 exports.getAuthMeQueryKey = getAuthMeQueryKey;
 /**
  * Get Current User
@@ -318,15 +319,15 @@ const getAuthMeOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getAuthMeQueryKey)(options)
+        queryKey: (0, exports.getAuthMeQueryKey)(options),
     });
 };
 exports.getAuthMeOptions = getAuthMeOptions;
-const getAuthSignOutQueryKey = (options) => createQueryKey('getAuthSignOut', options);
+const getAuthSignOutQueryKey = (options) => createQueryKey("getAuthSignOut", options);
 exports.getAuthSignOutQueryKey = getAuthSignOutQueryKey;
 /**
  * Sign Out User
@@ -339,15 +340,15 @@ const getAuthSignOutOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getAuthSignOutQueryKey)(options)
+        queryKey: (0, exports.getAuthSignOutQueryKey)(options),
     });
 };
 exports.getAuthSignOutOptions = getAuthSignOutOptions;
-const postAuthPasswordResetQueryKey = (options) => createQueryKey('postAuthPasswordReset', options);
+const postAuthPasswordResetQueryKey = (options) => createQueryKey("postAuthPasswordReset", options);
 exports.postAuthPasswordResetQueryKey = postAuthPasswordResetQueryKey;
 /**
  * Request Password Reset
@@ -360,11 +361,11 @@ const postAuthPasswordResetOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.postAuthPasswordResetQueryKey)(options)
+        queryKey: (0, exports.postAuthPasswordResetQueryKey)(options),
     });
 };
 exports.postAuthPasswordResetOptions = postAuthPasswordResetOptions;
@@ -378,15 +379,15 @@ const postAuthPasswordResetMutation = (options) => {
             const { data } = await (0, sdk_gen_1.postAuthPasswordReset)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
 exports.postAuthPasswordResetMutation = postAuthPasswordResetMutation;
-const postAuthPasswordResetVerifyQueryKey = (options) => createQueryKey('postAuthPasswordResetVerify', options);
+const postAuthPasswordResetVerifyQueryKey = (options) => createQueryKey("postAuthPasswordResetVerify", options);
 exports.postAuthPasswordResetVerifyQueryKey = postAuthPasswordResetVerifyQueryKey;
 /**
  * Verify Password Reset
@@ -399,11 +400,11 @@ const postAuthPasswordResetVerifyOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.postAuthPasswordResetVerifyQueryKey)(options)
+        queryKey: (0, exports.postAuthPasswordResetVerifyQueryKey)(options),
     });
 };
 exports.postAuthPasswordResetVerifyOptions = postAuthPasswordResetVerifyOptions;
@@ -417,15 +418,15 @@ const postAuthPasswordResetVerifyMutation = (options) => {
             const { data } = await (0, sdk_gen_1.postAuthPasswordResetVerify)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
 exports.postAuthPasswordResetVerifyMutation = postAuthPasswordResetVerifyMutation;
-const postAuthPasswordChangeQueryKey = (options) => createQueryKey('postAuthPasswordChange', options);
+const postAuthPasswordChangeQueryKey = (options) => createQueryKey("postAuthPasswordChange", options);
 exports.postAuthPasswordChangeQueryKey = postAuthPasswordChangeQueryKey;
 /**
  * Change Password
@@ -438,11 +439,11 @@ const postAuthPasswordChangeOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.postAuthPasswordChangeQueryKey)(options)
+        queryKey: (0, exports.postAuthPasswordChangeQueryKey)(options),
     });
 };
 exports.postAuthPasswordChangeOptions = postAuthPasswordChangeOptions;
@@ -456,15 +457,15 @@ const postAuthPasswordChangeMutation = (options) => {
             const { data } = await (0, sdk_gen_1.postAuthPasswordChange)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
 exports.postAuthPasswordChangeMutation = postAuthPasswordChangeMutation;
-const getApiKeysQueryKey = (options) => createQueryKey('getApiKeys', options);
+const getApiKeysQueryKey = (options) => createQueryKey("getApiKeys", options);
 exports.getApiKeysQueryKey = getApiKeysQueryKey;
 /**
  * List API keys
@@ -477,15 +478,15 @@ const getApiKeysOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getApiKeysQueryKey)(options)
+        queryKey: (0, exports.getApiKeysQueryKey)(options),
     });
 };
 exports.getApiKeysOptions = getApiKeysOptions;
-const postApiKeysQueryKey = (options) => createQueryKey('postApiKeys', options);
+const postApiKeysQueryKey = (options) => createQueryKey("postApiKeys", options);
 exports.postApiKeysQueryKey = postApiKeysQueryKey;
 /**
  * Create API key
@@ -498,11 +499,11 @@ const postApiKeysOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.postApiKeysQueryKey)(options)
+        queryKey: (0, exports.postApiKeysQueryKey)(options),
     });
 };
 exports.postApiKeysOptions = postApiKeysOptions;
@@ -516,10 +517,10 @@ const postApiKeysMutation = (options) => {
             const { data } = await (0, sdk_gen_1.postApiKeys)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
@@ -534,15 +535,15 @@ const deleteApiKeysByApiKeyIdMutation = (options) => {
             const { data } = await (0, sdk_gen_1.deleteApiKeysByApiKeyId)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
 exports.deleteApiKeysByApiKeyIdMutation = deleteApiKeysByApiKeyIdMutation;
-const getApiKeysByApiKeyIdQueryKey = (options) => createQueryKey('getApiKeysByApiKeyId', options);
+const getApiKeysByApiKeyIdQueryKey = (options) => createQueryKey("getApiKeysByApiKeyId", options);
 exports.getApiKeysByApiKeyIdQueryKey = getApiKeysByApiKeyIdQueryKey;
 /**
  * Get API key details
@@ -555,11 +556,11 @@ const getApiKeysByApiKeyIdOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getApiKeysByApiKeyIdQueryKey)(options)
+        queryKey: (0, exports.getApiKeysByApiKeyIdQueryKey)(options),
     });
 };
 exports.getApiKeysByApiKeyIdOptions = getApiKeysByApiKeyIdOptions;
@@ -573,10 +574,10 @@ const putApiKeysByApiKeyIdMutation = (options) => {
             const { data } = await (0, sdk_gen_1.putApiKeysByApiKeyId)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
@@ -591,15 +592,15 @@ const putApiKeysByApiKeyIdStatusMutation = (options) => {
             const { data } = await (0, sdk_gen_1.putApiKeysByApiKeyIdStatus)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
 exports.putApiKeysByApiKeyIdStatusMutation = putApiKeysByApiKeyIdStatusMutation;
-const getOrgsCurrentQueryKey = (options) => createQueryKey('getOrgsCurrent', options);
+const getOrgsCurrentQueryKey = (options) => createQueryKey("getOrgsCurrent", options);
 exports.getOrgsCurrentQueryKey = getOrgsCurrentQueryKey;
 /**
  * Get current organization
@@ -612,11 +613,11 @@ const getOrgsCurrentOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getOrgsCurrentQueryKey)(options)
+        queryKey: (0, exports.getOrgsCurrentQueryKey)(options),
     });
 };
 exports.getOrgsCurrentOptions = getOrgsCurrentOptions;
@@ -630,15 +631,15 @@ const putOrgsMutation = (options) => {
             const { data } = await (0, sdk_gen_1.putOrgs)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
 exports.putOrgsMutation = putOrgsMutation;
-const postOrgsFirstQueryKey = (options) => createQueryKey('postOrgsFirst', options);
+const postOrgsFirstQueryKey = (options) => createQueryKey("postOrgsFirst", options);
 exports.postOrgsFirstQueryKey = postOrgsFirstQueryKey;
 /**
  * Create first organization
@@ -651,11 +652,11 @@ const postOrgsFirstOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.postOrgsFirstQueryKey)(options)
+        queryKey: (0, exports.postOrgsFirstQueryKey)(options),
     });
 };
 exports.postOrgsFirstOptions = postOrgsFirstOptions;
@@ -669,15 +670,15 @@ const postOrgsFirstMutation = (options) => {
             const { data } = await (0, sdk_gen_1.postOrgsFirst)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
 exports.postOrgsFirstMutation = postOrgsFirstMutation;
-const postOrgsCurrentByOrgIdQueryKey = (options) => createQueryKey('postOrgsCurrentByOrgId', options);
+const postOrgsCurrentByOrgIdQueryKey = (options) => createQueryKey("postOrgsCurrentByOrgId", options);
 exports.postOrgsCurrentByOrgIdQueryKey = postOrgsCurrentByOrgIdQueryKey;
 /**
  * Switch current organization
@@ -690,11 +691,11 @@ const postOrgsCurrentByOrgIdOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.postOrgsCurrentByOrgIdQueryKey)(options)
+        queryKey: (0, exports.postOrgsCurrentByOrgIdQueryKey)(options),
     });
 };
 exports.postOrgsCurrentByOrgIdOptions = postOrgsCurrentByOrgIdOptions;
@@ -708,15 +709,15 @@ const postOrgsCurrentByOrgIdMutation = (options) => {
             const { data } = await (0, sdk_gen_1.postOrgsCurrentByOrgId)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
 exports.postOrgsCurrentByOrgIdMutation = postOrgsCurrentByOrgIdMutation;
-const getInvitesQueryKey = (options) => createQueryKey('getInvites', options);
+const getInvitesQueryKey = (options) => createQueryKey("getInvites", options);
 exports.getInvitesQueryKey = getInvitesQueryKey;
 /**
  * List organization invitations
@@ -729,15 +730,15 @@ const getInvitesOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getInvitesQueryKey)(options)
+        queryKey: (0, exports.getInvitesQueryKey)(options),
     });
 };
 exports.getInvitesOptions = getInvitesOptions;
-const postInvitesQueryKey = (options) => createQueryKey('postInvites', options);
+const postInvitesQueryKey = (options) => createQueryKey("postInvites", options);
 exports.postInvitesQueryKey = postInvitesQueryKey;
 /**
  * Create invitation
@@ -750,11 +751,11 @@ const postInvitesOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.postInvitesQueryKey)(options)
+        queryKey: (0, exports.postInvitesQueryKey)(options),
     });
 };
 exports.postInvitesOptions = postInvitesOptions;
@@ -768,15 +769,15 @@ const postInvitesMutation = (options) => {
             const { data } = await (0, sdk_gen_1.postInvites)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
 exports.postInvitesMutation = postInvitesMutation;
-const getInvitesMeQueryKey = (options) => createQueryKey('getInvitesMe', options);
+const getInvitesMeQueryKey = (options) => createQueryKey("getInvitesMe", options);
 exports.getInvitesMeQueryKey = getInvitesMeQueryKey;
 /**
  * List my invitations
@@ -789,11 +790,11 @@ const getInvitesMeOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getInvitesMeQueryKey)(options)
+        queryKey: (0, exports.getInvitesMeQueryKey)(options),
     });
 };
 exports.getInvitesMeOptions = getInvitesMeOptions;
@@ -807,15 +808,15 @@ const deleteInvitesByInvitationIdMutation = (options) => {
             const { data } = await (0, sdk_gen_1.deleteInvitesByInvitationId)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
 exports.deleteInvitesByInvitationIdMutation = deleteInvitesByInvitationIdMutation;
-const getInvitesByTokenAcceptQueryKey = (options) => createQueryKey('getInvitesByTokenAccept', options);
+const getInvitesByTokenAcceptQueryKey = (options) => createQueryKey("getInvitesByTokenAccept", options);
 exports.getInvitesByTokenAcceptQueryKey = getInvitesByTokenAcceptQueryKey;
 /**
  * Accept invitation
@@ -828,15 +829,15 @@ const getInvitesByTokenAcceptOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getInvitesByTokenAcceptQueryKey)(options)
+        queryKey: (0, exports.getInvitesByTokenAcceptQueryKey)(options),
     });
 };
 exports.getInvitesByTokenAcceptOptions = getInvitesByTokenAcceptOptions;
-const getInvitesByTokenDeclineQueryKey = (options) => createQueryKey('getInvitesByTokenDecline', options);
+const getInvitesByTokenDeclineQueryKey = (options) => createQueryKey("getInvitesByTokenDecline", options);
 exports.getInvitesByTokenDeclineQueryKey = getInvitesByTokenDeclineQueryKey;
 /**
  * Decline invitation
@@ -849,15 +850,15 @@ const getInvitesByTokenDeclineOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getInvitesByTokenDeclineQueryKey)(options)
+        queryKey: (0, exports.getInvitesByTokenDeclineQueryKey)(options),
     });
 };
 exports.getInvitesByTokenDeclineOptions = getInvitesByTokenDeclineOptions;
-const getMembersQueryKey = (options) => createQueryKey('getMembers', options);
+const getMembersQueryKey = (options) => createQueryKey("getMembers", options);
 exports.getMembersQueryKey = getMembersQueryKey;
 /**
  * List organization members
@@ -870,15 +871,15 @@ const getMembersOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getMembersQueryKey)(options)
+        queryKey: (0, exports.getMembersQueryKey)(options),
     });
 };
 exports.getMembersOptions = getMembersOptions;
-const postMembersQueryKey = (options) => createQueryKey('postMembers', options);
+const postMembersQueryKey = (options) => createQueryKey("postMembers", options);
 exports.postMembersQueryKey = postMembersQueryKey;
 /**
  * Add a member to organization
@@ -891,11 +892,11 @@ const postMembersOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.postMembersQueryKey)(options)
+        queryKey: (0, exports.postMembersQueryKey)(options),
     });
 };
 exports.postMembersOptions = postMembersOptions;
@@ -909,10 +910,10 @@ const postMembersMutation = (options) => {
             const { data } = await (0, sdk_gen_1.postMembers)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
@@ -927,15 +928,15 @@ const deleteMembersByUserIdMutation = (options) => {
             const { data } = await (0, sdk_gen_1.deleteMembersByUserId)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
 exports.deleteMembersByUserIdMutation = deleteMembersByUserIdMutation;
-const getMembersByUserIdRolesQueryKey = (options) => createQueryKey('getMembersByUserIdRoles', options);
+const getMembersByUserIdRolesQueryKey = (options) => createQueryKey("getMembersByUserIdRoles", options);
 exports.getMembersByUserIdRolesQueryKey = getMembersByUserIdRolesQueryKey;
 /**
  * Get member roles
@@ -948,15 +949,15 @@ const getMembersByUserIdRolesOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getMembersByUserIdRolesQueryKey)(options)
+        queryKey: (0, exports.getMembersByUserIdRolesQueryKey)(options),
     });
 };
 exports.getMembersByUserIdRolesOptions = getMembersByUserIdRolesOptions;
-const postMembersByUserIdRoleQueryKey = (options) => createQueryKey('postMembersByUserIdRole', options);
+const postMembersByUserIdRoleQueryKey = (options) => createQueryKey("postMembersByUserIdRole", options);
 exports.postMembersByUserIdRoleQueryKey = postMembersByUserIdRoleQueryKey;
 /**
  * Add role to member
@@ -969,11 +970,11 @@ const postMembersByUserIdRoleOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.postMembersByUserIdRoleQueryKey)(options)
+        queryKey: (0, exports.postMembersByUserIdRoleQueryKey)(options),
     });
 };
 exports.postMembersByUserIdRoleOptions = postMembersByUserIdRoleOptions;
@@ -987,10 +988,10 @@ const postMembersByUserIdRoleMutation = (options) => {
             const { data } = await (0, sdk_gen_1.postMembersByUserIdRole)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
@@ -1005,15 +1006,15 @@ const deleteMembersByUserIdRoleByRoleNameMutation = (options) => {
             const { data } = await (0, sdk_gen_1.deleteMembersByUserIdRoleByRoleName)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
 exports.deleteMembersByUserIdRoleByRoleNameMutation = deleteMembersByUserIdRoleByRoleNameMutation;
-const getWorkspacesQueryKey = (options) => createQueryKey('getWorkspaces', options);
+const getWorkspacesQueryKey = (options) => createQueryKey("getWorkspaces", options);
 exports.getWorkspacesQueryKey = getWorkspacesQueryKey;
 /**
  * List workspaces
@@ -1026,15 +1027,15 @@ const getWorkspacesOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getWorkspacesQueryKey)(options)
+        queryKey: (0, exports.getWorkspacesQueryKey)(options),
     });
 };
 exports.getWorkspacesOptions = getWorkspacesOptions;
-const postWorkspacesQueryKey = (options) => createQueryKey('postWorkspaces', options);
+const postWorkspacesQueryKey = (options) => createQueryKey("postWorkspaces", options);
 exports.postWorkspacesQueryKey = postWorkspacesQueryKey;
 /**
  * Create a new workspace
@@ -1047,11 +1048,11 @@ const postWorkspacesOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.postWorkspacesQueryKey)(options)
+        queryKey: (0, exports.postWorkspacesQueryKey)(options),
     });
 };
 exports.postWorkspacesOptions = postWorkspacesOptions;
@@ -1065,10 +1066,10 @@ const postWorkspacesMutation = (options) => {
             const { data } = await (0, sdk_gen_1.postWorkspaces)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
@@ -1083,15 +1084,15 @@ const deleteWorkspacesByWorkspaceIdMutation = (options) => {
             const { data } = await (0, sdk_gen_1.deleteWorkspacesByWorkspaceId)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
 exports.deleteWorkspacesByWorkspaceIdMutation = deleteWorkspacesByWorkspaceIdMutation;
-const getWorkspacesByWorkspaceIdQueryKey = (options) => createQueryKey('getWorkspacesByWorkspaceId', options);
+const getWorkspacesByWorkspaceIdQueryKey = (options) => createQueryKey("getWorkspacesByWorkspaceId", options);
 exports.getWorkspacesByWorkspaceIdQueryKey = getWorkspacesByWorkspaceIdQueryKey;
 /**
  * Get workspace by ID
@@ -1104,11 +1105,11 @@ const getWorkspacesByWorkspaceIdOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getWorkspacesByWorkspaceIdQueryKey)(options)
+        queryKey: (0, exports.getWorkspacesByWorkspaceIdQueryKey)(options),
     });
 };
 exports.getWorkspacesByWorkspaceIdOptions = getWorkspacesByWorkspaceIdOptions;
@@ -1122,10 +1123,10 @@ const putWorkspacesByWorkspaceIdMutation = (options) => {
             const { data } = await (0, sdk_gen_1.putWorkspacesByWorkspaceId)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
@@ -1140,15 +1141,15 @@ const deleteWorkspacesByWorkspaceIdMembersByUserIdRoleMutation = (options) => {
             const { data } = await (0, sdk_gen_1.deleteWorkspacesByWorkspaceIdMembersByUserIdRole)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
 exports.deleteWorkspacesByWorkspaceIdMembersByUserIdRoleMutation = deleteWorkspacesByWorkspaceIdMembersByUserIdRoleMutation;
-const getWorkspacesByWorkspaceIdMembersByUserIdRoleQueryKey = (options) => createQueryKey('getWorkspacesByWorkspaceIdMembersByUserIdRole', options);
+const getWorkspacesByWorkspaceIdMembersByUserIdRoleQueryKey = (options) => createQueryKey("getWorkspacesByWorkspaceIdMembersByUserIdRole", options);
 exports.getWorkspacesByWorkspaceIdMembersByUserIdRoleQueryKey = getWorkspacesByWorkspaceIdMembersByUserIdRoleQueryKey;
 /**
  * Get user roles in workspace
@@ -1161,15 +1162,15 @@ const getWorkspacesByWorkspaceIdMembersByUserIdRoleOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getWorkspacesByWorkspaceIdMembersByUserIdRoleQueryKey)(options)
+        queryKey: (0, exports.getWorkspacesByWorkspaceIdMembersByUserIdRoleQueryKey)(options),
     });
 };
 exports.getWorkspacesByWorkspaceIdMembersByUserIdRoleOptions = getWorkspacesByWorkspaceIdMembersByUserIdRoleOptions;
-const postWorkspacesByWorkspaceIdMembersByUserIdRoleQueryKey = (options) => createQueryKey('postWorkspacesByWorkspaceIdMembersByUserIdRole', options);
+const postWorkspacesByWorkspaceIdMembersByUserIdRoleQueryKey = (options) => createQueryKey("postWorkspacesByWorkspaceIdMembersByUserIdRole", options);
 exports.postWorkspacesByWorkspaceIdMembersByUserIdRoleQueryKey = postWorkspacesByWorkspaceIdMembersByUserIdRoleQueryKey;
 /**
  * Add role to workspace member
@@ -1182,11 +1183,11 @@ const postWorkspacesByWorkspaceIdMembersByUserIdRoleOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.postWorkspacesByWorkspaceIdMembersByUserIdRoleQueryKey)(options)
+        queryKey: (0, exports.postWorkspacesByWorkspaceIdMembersByUserIdRoleQueryKey)(options),
     });
 };
 exports.postWorkspacesByWorkspaceIdMembersByUserIdRoleOptions = postWorkspacesByWorkspaceIdMembersByUserIdRoleOptions;
@@ -1200,15 +1201,15 @@ const postWorkspacesByWorkspaceIdMembersByUserIdRoleMutation = (options) => {
             const { data } = await (0, sdk_gen_1.postWorkspacesByWorkspaceIdMembersByUserIdRole)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
 exports.postWorkspacesByWorkspaceIdMembersByUserIdRoleMutation = postWorkspacesByWorkspaceIdMembersByUserIdRoleMutation;
-const getWorkspacesByWorkspaceIdMembersQueryKey = (options) => createQueryKey('getWorkspacesByWorkspaceIdMembers', options);
+const getWorkspacesByWorkspaceIdMembersQueryKey = (options) => createQueryKey("getWorkspacesByWorkspaceIdMembers", options);
 exports.getWorkspacesByWorkspaceIdMembersQueryKey = getWorkspacesByWorkspaceIdMembersQueryKey;
 /**
  * List workspace members
@@ -1221,15 +1222,15 @@ const getWorkspacesByWorkspaceIdMembersOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getWorkspacesByWorkspaceIdMembersQueryKey)(options)
+        queryKey: (0, exports.getWorkspacesByWorkspaceIdMembersQueryKey)(options),
     });
 };
 exports.getWorkspacesByWorkspaceIdMembersOptions = getWorkspacesByWorkspaceIdMembersOptions;
-const getRolesQueryKey = (options) => createQueryKey('getRoles', options);
+const getRolesQueryKey = (options) => createQueryKey("getRoles", options);
 exports.getRolesQueryKey = getRolesQueryKey;
 /**
  * List all roles
@@ -1242,15 +1243,15 @@ const getRolesOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getRolesQueryKey)(options)
+        queryKey: (0, exports.getRolesQueryKey)(options),
     });
 };
 exports.getRolesOptions = getRolesOptions;
-const getPlansQueryKey = (options) => createQueryKey('getPlans', options);
+const getPlansQueryKey = (options) => createQueryKey("getPlans", options);
 exports.getPlansQueryKey = getPlansQueryKey;
 /**
  * List available plans
@@ -1263,15 +1264,15 @@ const getPlansOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getPlansQueryKey)(options)
+        queryKey: (0, exports.getPlansQueryKey)(options),
     });
 };
 exports.getPlansOptions = getPlansOptions;
-const getPlansCurrentQueryKey = (options) => createQueryKey('getPlansCurrent', options);
+const getPlansCurrentQueryKey = (options) => createQueryKey("getPlansCurrent", options);
 exports.getPlansCurrentQueryKey = getPlansCurrentQueryKey;
 /**
  * Get current plan
@@ -1284,15 +1285,15 @@ const getPlansCurrentOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getPlansCurrentQueryKey)(options)
+        queryKey: (0, exports.getPlansCurrentQueryKey)(options),
     });
 };
 exports.getPlansCurrentOptions = getPlansCurrentOptions;
-const getSettingsQueryKey = (options) => createQueryKey('getSettings', options);
+const getSettingsQueryKey = (options) => createQueryKey("getSettings", options);
 exports.getSettingsQueryKey = getSettingsQueryKey;
 /**
  * Get all organization settings
@@ -1305,15 +1306,15 @@ const getSettingsOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getSettingsQueryKey)(options)
+        queryKey: (0, exports.getSettingsQueryKey)(options),
     });
 };
 exports.getSettingsOptions = getSettingsOptions;
-const getSettingsCustomQueryKey = (options) => createQueryKey('getSettingsCustom', options);
+const getSettingsCustomQueryKey = (options) => createQueryKey("getSettingsCustom", options);
 exports.getSettingsCustomQueryKey = getSettingsCustomQueryKey;
 /**
  * Get all custom settings
@@ -1326,15 +1327,15 @@ const getSettingsCustomOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getSettingsCustomQueryKey)(options)
+        queryKey: (0, exports.getSettingsCustomQueryKey)(options),
     });
 };
 exports.getSettingsCustomOptions = getSettingsCustomOptions;
-const postSettingsCustomQueryKey = (options) => createQueryKey('postSettingsCustom', options);
+const postSettingsCustomQueryKey = (options) => createQueryKey("postSettingsCustom", options);
 exports.postSettingsCustomQueryKey = postSettingsCustomQueryKey;
 /**
  * Create custom setting
@@ -1347,11 +1348,11 @@ const postSettingsCustomOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.postSettingsCustomQueryKey)(options)
+        queryKey: (0, exports.postSettingsCustomQueryKey)(options),
     });
 };
 exports.postSettingsCustomOptions = postSettingsCustomOptions;
@@ -1365,10 +1366,10 @@ const postSettingsCustomMutation = (options) => {
             const { data } = await (0, sdk_gen_1.postSettingsCustom)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
@@ -1383,15 +1384,15 @@ const deleteSettingsCustomBySettingSlugMutation = (options) => {
             const { data } = await (0, sdk_gen_1.deleteSettingsCustomBySettingSlug)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
 exports.deleteSettingsCustomBySettingSlugMutation = deleteSettingsCustomBySettingSlugMutation;
-const getSettingsCustomBySettingSlugQueryKey = (options) => createQueryKey('getSettingsCustomBySettingSlug', options);
+const getSettingsCustomBySettingSlugQueryKey = (options) => createQueryKey("getSettingsCustomBySettingSlug", options);
 exports.getSettingsCustomBySettingSlugQueryKey = getSettingsCustomBySettingSlugQueryKey;
 /**
  * Get custom setting by slug
@@ -1404,11 +1405,11 @@ const getSettingsCustomBySettingSlugOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getSettingsCustomBySettingSlugQueryKey)(options)
+        queryKey: (0, exports.getSettingsCustomBySettingSlugQueryKey)(options),
     });
 };
 exports.getSettingsCustomBySettingSlugOptions = getSettingsCustomBySettingSlugOptions;
@@ -1422,15 +1423,15 @@ const putSettingsCustomBySettingSlugMutation = (options) => {
             const { data } = await (0, sdk_gen_1.putSettingsCustomBySettingSlug)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
 exports.putSettingsCustomBySettingSlugMutation = putSettingsCustomBySettingSlugMutation;
-const getSettingsCustomBySettingSlugValueQueryKey = (options) => createQueryKey('getSettingsCustomBySettingSlugValue', options);
+const getSettingsCustomBySettingSlugValueQueryKey = (options) => createQueryKey("getSettingsCustomBySettingSlugValue", options);
 exports.getSettingsCustomBySettingSlugValueQueryKey = getSettingsCustomBySettingSlugValueQueryKey;
 /**
  * Get custom setting value
@@ -1443,15 +1444,15 @@ const getSettingsCustomBySettingSlugValueOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getSettingsCustomBySettingSlugValueQueryKey)(options)
+        queryKey: (0, exports.getSettingsCustomBySettingSlugValueQueryKey)(options),
     });
 };
 exports.getSettingsCustomBySettingSlugValueOptions = getSettingsCustomBySettingSlugValueOptions;
-const getSettingsServiceQueryKey = (options) => createQueryKey('getSettingsService', options);
+const getSettingsServiceQueryKey = (options) => createQueryKey("getSettingsService", options);
 exports.getSettingsServiceQueryKey = getSettingsServiceQueryKey;
 /**
  * Get all service settings
@@ -1464,15 +1465,15 @@ const getSettingsServiceOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getSettingsServiceQueryKey)(options)
+        queryKey: (0, exports.getSettingsServiceQueryKey)(options),
     });
 };
 exports.getSettingsServiceOptions = getSettingsServiceOptions;
-const getSettingsServiceBySettingSlugQueryKey = (options) => createQueryKey('getSettingsServiceBySettingSlug', options);
+const getSettingsServiceBySettingSlugQueryKey = (options) => createQueryKey("getSettingsServiceBySettingSlug", options);
 exports.getSettingsServiceBySettingSlugQueryKey = getSettingsServiceBySettingSlugQueryKey;
 /**
  * Get service setting by slug
@@ -1485,11 +1486,11 @@ const getSettingsServiceBySettingSlugOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getSettingsServiceBySettingSlugQueryKey)(options)
+        queryKey: (0, exports.getSettingsServiceBySettingSlugQueryKey)(options),
     });
 };
 exports.getSettingsServiceBySettingSlugOptions = getSettingsServiceBySettingSlugOptions;
@@ -1503,15 +1504,15 @@ const putSettingsServiceBySettingSlugMutation = (options) => {
             const { data } = await (0, sdk_gen_1.putSettingsServiceBySettingSlug)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
 exports.putSettingsServiceBySettingSlugMutation = putSettingsServiceBySettingSlugMutation;
-const getSettingsServiceBySettingSlugValueQueryKey = (options) => createQueryKey('getSettingsServiceBySettingSlugValue', options);
+const getSettingsServiceBySettingSlugValueQueryKey = (options) => createQueryKey("getSettingsServiceBySettingSlugValue", options);
 exports.getSettingsServiceBySettingSlugValueQueryKey = getSettingsServiceBySettingSlugValueQueryKey;
 /**
  * Get service setting value
@@ -1524,15 +1525,15 @@ const getSettingsServiceBySettingSlugValueOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getSettingsServiceBySettingSlugValueQueryKey)(options)
+        queryKey: (0, exports.getSettingsServiceBySettingSlugValueQueryKey)(options),
     });
 };
 exports.getSettingsServiceBySettingSlugValueOptions = getSettingsServiceBySettingSlugValueOptions;
-const getWorkspacesByWorkspaceIdSettingsQueryKey = (options) => createQueryKey('getWorkspacesByWorkspaceIdSettings', options);
+const getWorkspacesByWorkspaceIdSettingsQueryKey = (options) => createQueryKey("getWorkspacesByWorkspaceIdSettings", options);
 exports.getWorkspacesByWorkspaceIdSettingsQueryKey = getWorkspacesByWorkspaceIdSettingsQueryKey;
 /**
  * Get all workspace settings
@@ -1545,15 +1546,15 @@ const getWorkspacesByWorkspaceIdSettingsOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getWorkspacesByWorkspaceIdSettingsQueryKey)(options)
+        queryKey: (0, exports.getWorkspacesByWorkspaceIdSettingsQueryKey)(options),
     });
 };
 exports.getWorkspacesByWorkspaceIdSettingsOptions = getWorkspacesByWorkspaceIdSettingsOptions;
-const getWorkspacesByWorkspaceIdSettingsCustomQueryKey = (options) => createQueryKey('getWorkspacesByWorkspaceIdSettingsCustom', options);
+const getWorkspacesByWorkspaceIdSettingsCustomQueryKey = (options) => createQueryKey("getWorkspacesByWorkspaceIdSettingsCustom", options);
 exports.getWorkspacesByWorkspaceIdSettingsCustomQueryKey = getWorkspacesByWorkspaceIdSettingsCustomQueryKey;
 /**
  * Get all workspace custom settings
@@ -1566,15 +1567,15 @@ const getWorkspacesByWorkspaceIdSettingsCustomOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getWorkspacesByWorkspaceIdSettingsCustomQueryKey)(options)
+        queryKey: (0, exports.getWorkspacesByWorkspaceIdSettingsCustomQueryKey)(options),
     });
 };
 exports.getWorkspacesByWorkspaceIdSettingsCustomOptions = getWorkspacesByWorkspaceIdSettingsCustomOptions;
-const postWorkspacesByWorkspaceIdSettingsCustomQueryKey = (options) => createQueryKey('postWorkspacesByWorkspaceIdSettingsCustom', options);
+const postWorkspacesByWorkspaceIdSettingsCustomQueryKey = (options) => createQueryKey("postWorkspacesByWorkspaceIdSettingsCustom", options);
 exports.postWorkspacesByWorkspaceIdSettingsCustomQueryKey = postWorkspacesByWorkspaceIdSettingsCustomQueryKey;
 /**
  * Create workspace custom setting
@@ -1587,11 +1588,11 @@ const postWorkspacesByWorkspaceIdSettingsCustomOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.postWorkspacesByWorkspaceIdSettingsCustomQueryKey)(options)
+        queryKey: (0, exports.postWorkspacesByWorkspaceIdSettingsCustomQueryKey)(options),
     });
 };
 exports.postWorkspacesByWorkspaceIdSettingsCustomOptions = postWorkspacesByWorkspaceIdSettingsCustomOptions;
@@ -1605,10 +1606,10 @@ const postWorkspacesByWorkspaceIdSettingsCustomMutation = (options) => {
             const { data } = await (0, sdk_gen_1.postWorkspacesByWorkspaceIdSettingsCustom)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
@@ -1623,15 +1624,15 @@ const deleteWorkspacesByWorkspaceIdSettingsCustomBySettingSlugMutation = (option
             const { data } = await (0, sdk_gen_1.deleteWorkspacesByWorkspaceIdSettingsCustomBySettingSlug)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
 exports.deleteWorkspacesByWorkspaceIdSettingsCustomBySettingSlugMutation = deleteWorkspacesByWorkspaceIdSettingsCustomBySettingSlugMutation;
-const getWorkspacesByWorkspaceIdSettingsCustomBySettingSlugQueryKey = (options) => createQueryKey('getWorkspacesByWorkspaceIdSettingsCustomBySettingSlug', options);
+const getWorkspacesByWorkspaceIdSettingsCustomBySettingSlugQueryKey = (options) => createQueryKey("getWorkspacesByWorkspaceIdSettingsCustomBySettingSlug", options);
 exports.getWorkspacesByWorkspaceIdSettingsCustomBySettingSlugQueryKey = getWorkspacesByWorkspaceIdSettingsCustomBySettingSlugQueryKey;
 /**
  * Get workspace custom setting by slug
@@ -1644,11 +1645,11 @@ const getWorkspacesByWorkspaceIdSettingsCustomBySettingSlugOptions = (options) =
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getWorkspacesByWorkspaceIdSettingsCustomBySettingSlugQueryKey)(options)
+        queryKey: (0, exports.getWorkspacesByWorkspaceIdSettingsCustomBySettingSlugQueryKey)(options),
     });
 };
 exports.getWorkspacesByWorkspaceIdSettingsCustomBySettingSlugOptions = getWorkspacesByWorkspaceIdSettingsCustomBySettingSlugOptions;
@@ -1662,15 +1663,15 @@ const putWorkspacesByWorkspaceIdSettingsCustomBySettingSlugMutation = (options) 
             const { data } = await (0, sdk_gen_1.putWorkspacesByWorkspaceIdSettingsCustomBySettingSlug)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
 exports.putWorkspacesByWorkspaceIdSettingsCustomBySettingSlugMutation = putWorkspacesByWorkspaceIdSettingsCustomBySettingSlugMutation;
-const getWorkspacesByWorkspaceIdSettingsCustomBySettingSlugValueQueryKey = (options) => createQueryKey('getWorkspacesByWorkspaceIdSettingsCustomBySettingSlugValue', options);
+const getWorkspacesByWorkspaceIdSettingsCustomBySettingSlugValueQueryKey = (options) => createQueryKey("getWorkspacesByWorkspaceIdSettingsCustomBySettingSlugValue", options);
 exports.getWorkspacesByWorkspaceIdSettingsCustomBySettingSlugValueQueryKey = getWorkspacesByWorkspaceIdSettingsCustomBySettingSlugValueQueryKey;
 /**
  * Get workspace custom setting value
@@ -1683,15 +1684,15 @@ const getWorkspacesByWorkspaceIdSettingsCustomBySettingSlugValueOptions = (optio
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getWorkspacesByWorkspaceIdSettingsCustomBySettingSlugValueQueryKey)(options)
+        queryKey: (0, exports.getWorkspacesByWorkspaceIdSettingsCustomBySettingSlugValueQueryKey)(options),
     });
 };
 exports.getWorkspacesByWorkspaceIdSettingsCustomBySettingSlugValueOptions = getWorkspacesByWorkspaceIdSettingsCustomBySettingSlugValueOptions;
-const getWorkspacesByWorkspaceIdSettingsServiceQueryKey = (options) => createQueryKey('getWorkspacesByWorkspaceIdSettingsService', options);
+const getWorkspacesByWorkspaceIdSettingsServiceQueryKey = (options) => createQueryKey("getWorkspacesByWorkspaceIdSettingsService", options);
 exports.getWorkspacesByWorkspaceIdSettingsServiceQueryKey = getWorkspacesByWorkspaceIdSettingsServiceQueryKey;
 /**
  * Get all workspace service settings
@@ -1704,11 +1705,11 @@ const getWorkspacesByWorkspaceIdSettingsServiceOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getWorkspacesByWorkspaceIdSettingsServiceQueryKey)(options)
+        queryKey: (0, exports.getWorkspacesByWorkspaceIdSettingsServiceQueryKey)(options),
     });
 };
 exports.getWorkspacesByWorkspaceIdSettingsServiceOptions = getWorkspacesByWorkspaceIdSettingsServiceOptions;
@@ -1722,15 +1723,15 @@ const deleteWorkspacesByWorkspaceIdSettingsServiceBySettingSlugMutation = (optio
             const { data } = await (0, sdk_gen_1.deleteWorkspacesByWorkspaceIdSettingsServiceBySettingSlug)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
 exports.deleteWorkspacesByWorkspaceIdSettingsServiceBySettingSlugMutation = deleteWorkspacesByWorkspaceIdSettingsServiceBySettingSlugMutation;
-const getWorkspacesByWorkspaceIdSettingsServiceBySettingSlugQueryKey = (options) => createQueryKey('getWorkspacesByWorkspaceIdSettingsServiceBySettingSlug', options);
+const getWorkspacesByWorkspaceIdSettingsServiceBySettingSlugQueryKey = (options) => createQueryKey("getWorkspacesByWorkspaceIdSettingsServiceBySettingSlug", options);
 exports.getWorkspacesByWorkspaceIdSettingsServiceBySettingSlugQueryKey = getWorkspacesByWorkspaceIdSettingsServiceBySettingSlugQueryKey;
 /**
  * Get workspace service setting by slug
@@ -1743,11 +1744,11 @@ const getWorkspacesByWorkspaceIdSettingsServiceBySettingSlugOptions = (options) 
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getWorkspacesByWorkspaceIdSettingsServiceBySettingSlugQueryKey)(options)
+        queryKey: (0, exports.getWorkspacesByWorkspaceIdSettingsServiceBySettingSlugQueryKey)(options),
     });
 };
 exports.getWorkspacesByWorkspaceIdSettingsServiceBySettingSlugOptions = getWorkspacesByWorkspaceIdSettingsServiceBySettingSlugOptions;
@@ -1761,15 +1762,15 @@ const putWorkspacesByWorkspaceIdSettingsServiceBySettingSlugMutation = (options)
             const { data } = await (0, sdk_gen_1.putWorkspacesByWorkspaceIdSettingsServiceBySettingSlug)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
 exports.putWorkspacesByWorkspaceIdSettingsServiceBySettingSlugMutation = putWorkspacesByWorkspaceIdSettingsServiceBySettingSlugMutation;
-const getWorkspacesByWorkspaceIdSettingsServiceBySettingSlugValueQueryKey = (options) => createQueryKey('getWorkspacesByWorkspaceIdSettingsServiceBySettingSlugValue', options);
+const getWorkspacesByWorkspaceIdSettingsServiceBySettingSlugValueQueryKey = (options) => createQueryKey("getWorkspacesByWorkspaceIdSettingsServiceBySettingSlugValue", options);
 exports.getWorkspacesByWorkspaceIdSettingsServiceBySettingSlugValueQueryKey = getWorkspacesByWorkspaceIdSettingsServiceBySettingSlugValueQueryKey;
 /**
  * Get workspace service setting value
@@ -1782,15 +1783,15 @@ const getWorkspacesByWorkspaceIdSettingsServiceBySettingSlugValueOptions = (opti
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getWorkspacesByWorkspaceIdSettingsServiceBySettingSlugValueQueryKey)(options)
+        queryKey: (0, exports.getWorkspacesByWorkspaceIdSettingsServiceBySettingSlugValueQueryKey)(options),
     });
 };
 exports.getWorkspacesByWorkspaceIdSettingsServiceBySettingSlugValueOptions = getWorkspacesByWorkspaceIdSettingsServiceBySettingSlugValueOptions;
-const getCodesByCodeIdScansQueryKey = (options) => createQueryKey('getCodesByCodeIdScans', options);
+const getCodesByCodeIdScansQueryKey = (options) => createQueryKey("getCodesByCodeIdScans", options);
 exports.getCodesByCodeIdScansQueryKey = getCodesByCodeIdScansQueryKey;
 /**
  * List QR Code Scans
@@ -1803,45 +1804,45 @@ const getCodesByCodeIdScansOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getCodesByCodeIdScansQueryKey)(options)
+        queryKey: (0, exports.getCodesByCodeIdScansQueryKey)(options),
     });
 };
 exports.getCodesByCodeIdScansOptions = getCodesByCodeIdScansOptions;
 const createInfiniteParams = (queryKey, page) => {
     const params = {
-        ...queryKey[0]
+        ...queryKey[0],
     };
     if (page.body) {
         params.body = {
             ...queryKey[0].body,
-            ...page.body
+            ...page.body,
         };
     }
     if (page.headers) {
         params.headers = {
             ...queryKey[0].headers,
-            ...page.headers
+            ...page.headers,
         };
     }
     if (page.path) {
         params.path = {
             ...queryKey[0].path,
-            ...page.path
+            ...page.path,
         };
     }
     if (page.query) {
         params.query = {
             ...queryKey[0].query,
-            ...page.query
+            ...page.query,
         };
     }
     return params;
 };
-const getCodesByCodeIdScansInfiniteQueryKey = (options) => createQueryKey('getCodesByCodeIdScans', options, true);
+const getCodesByCodeIdScansInfiniteQueryKey = (options) => createQueryKey("getCodesByCodeIdScans", options, true);
 exports.getCodesByCodeIdScansInfiniteQueryKey = getCodesByCodeIdScansInfiniteQueryKey;
 /**
  * List QR Code Scans
@@ -1853,25 +1854,27 @@ const getCodesByCodeIdScansInfiniteOptions = (options) => {
     {
         queryFn: async ({ pageParam, queryKey, signal }) => {
             // @ts-ignore
-            const page = typeof pageParam === 'object' ? pageParam : {
-                query: {
-                    page: pageParam
-                }
-            };
+            const page = typeof pageParam === "object"
+                ? pageParam
+                : {
+                    query: {
+                        page: pageParam,
+                    },
+                };
             const params = createInfiniteParams(queryKey, page);
             const { data } = await (0, sdk_gen_1.getCodesByCodeIdScans)({
                 ...options,
                 ...params,
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getCodesByCodeIdScansInfiniteQueryKey)(options)
+        queryKey: (0, exports.getCodesByCodeIdScansInfiniteQueryKey)(options),
     });
 };
 exports.getCodesByCodeIdScansInfiniteOptions = getCodesByCodeIdScansInfiniteOptions;
-const getCodesByCodeIdRouterRulesQueryKey = (options) => createQueryKey('getCodesByCodeIdRouterRules', options);
+const getCodesByCodeIdRouterRulesQueryKey = (options) => createQueryKey("getCodesByCodeIdRouterRules", options);
 exports.getCodesByCodeIdRouterRulesQueryKey = getCodesByCodeIdRouterRulesQueryKey;
 /**
  * List Router Rule Assignments
@@ -1884,15 +1887,15 @@ const getCodesByCodeIdRouterRulesOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getCodesByCodeIdRouterRulesQueryKey)(options)
+        queryKey: (0, exports.getCodesByCodeIdRouterRulesQueryKey)(options),
     });
 };
 exports.getCodesByCodeIdRouterRulesOptions = getCodesByCodeIdRouterRulesOptions;
-const getCodesByCodeIdRouterRulesInfiniteQueryKey = (options) => createQueryKey('getCodesByCodeIdRouterRules', options, true);
+const getCodesByCodeIdRouterRulesInfiniteQueryKey = (options) => createQueryKey("getCodesByCodeIdRouterRules", options, true);
 exports.getCodesByCodeIdRouterRulesInfiniteQueryKey = getCodesByCodeIdRouterRulesInfiniteQueryKey;
 /**
  * List Router Rule Assignments
@@ -1904,25 +1907,27 @@ const getCodesByCodeIdRouterRulesInfiniteOptions = (options) => {
     {
         queryFn: async ({ pageParam, queryKey, signal }) => {
             // @ts-ignore
-            const page = typeof pageParam === 'object' ? pageParam : {
-                query: {
-                    page: pageParam
-                }
-            };
+            const page = typeof pageParam === "object"
+                ? pageParam
+                : {
+                    query: {
+                        page: pageParam,
+                    },
+                };
             const params = createInfiniteParams(queryKey, page);
             const { data } = await (0, sdk_gen_1.getCodesByCodeIdRouterRules)({
                 ...options,
                 ...params,
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getCodesByCodeIdRouterRulesInfiniteQueryKey)(options)
+        queryKey: (0, exports.getCodesByCodeIdRouterRulesInfiniteQueryKey)(options),
     });
 };
 exports.getCodesByCodeIdRouterRulesInfiniteOptions = getCodesByCodeIdRouterRulesInfiniteOptions;
-const postCodesByCodeIdRouterRulesQueryKey = (options) => createQueryKey('postCodesByCodeIdRouterRules', options);
+const postCodesByCodeIdRouterRulesQueryKey = (options) => createQueryKey("postCodesByCodeIdRouterRules", options);
 exports.postCodesByCodeIdRouterRulesQueryKey = postCodesByCodeIdRouterRulesQueryKey;
 /**
  * Create Router Rule Assignment
@@ -1935,11 +1940,11 @@ const postCodesByCodeIdRouterRulesOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.postCodesByCodeIdRouterRulesQueryKey)(options)
+        queryKey: (0, exports.postCodesByCodeIdRouterRulesQueryKey)(options),
     });
 };
 exports.postCodesByCodeIdRouterRulesOptions = postCodesByCodeIdRouterRulesOptions;
@@ -1953,10 +1958,10 @@ const postCodesByCodeIdRouterRulesMutation = (options) => {
             const { data } = await (0, sdk_gen_1.postCodesByCodeIdRouterRules)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
@@ -1971,15 +1976,15 @@ const deleteCodesByCodeIdRouterRulesByRouterRuleIdMutation = (options) => {
             const { data } = await (0, sdk_gen_1.deleteCodesByCodeIdRouterRulesByRouterRuleId)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
 exports.deleteCodesByCodeIdRouterRulesByRouterRuleIdMutation = deleteCodesByCodeIdRouterRulesByRouterRuleIdMutation;
-const getCodesByCodeIdRouterRulesByRouterRuleIdQueryKey = (options) => createQueryKey('getCodesByCodeIdRouterRulesByRouterRuleId', options);
+const getCodesByCodeIdRouterRulesByRouterRuleIdQueryKey = (options) => createQueryKey("getCodesByCodeIdRouterRulesByRouterRuleId", options);
 exports.getCodesByCodeIdRouterRulesByRouterRuleIdQueryKey = getCodesByCodeIdRouterRulesByRouterRuleIdQueryKey;
 /**
  * Get Router Rule Assignment
@@ -1992,11 +1997,11 @@ const getCodesByCodeIdRouterRulesByRouterRuleIdOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getCodesByCodeIdRouterRulesByRouterRuleIdQueryKey)(options)
+        queryKey: (0, exports.getCodesByCodeIdRouterRulesByRouterRuleIdQueryKey)(options),
     });
 };
 exports.getCodesByCodeIdRouterRulesByRouterRuleIdOptions = getCodesByCodeIdRouterRulesByRouterRuleIdOptions;
@@ -2010,15 +2015,15 @@ const putCodesByCodeIdRouterRulesByRouterRuleIdMutation = (options) => {
             const { data } = await (0, sdk_gen_1.putCodesByCodeIdRouterRulesByRouterRuleId)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
 exports.putCodesByCodeIdRouterRulesByRouterRuleIdMutation = putCodesByCodeIdRouterRulesByRouterRuleIdMutation;
-const getCodesDeletedQueryKey = (options) => createQueryKey('getCodesDeleted', options);
+const getCodesDeletedQueryKey = (options) => createQueryKey("getCodesDeleted", options);
 exports.getCodesDeletedQueryKey = getCodesDeletedQueryKey;
 /**
  * List Soft Deleted QR Codes
@@ -2031,15 +2036,15 @@ const getCodesDeletedOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getCodesDeletedQueryKey)(options)
+        queryKey: (0, exports.getCodesDeletedQueryKey)(options),
     });
 };
 exports.getCodesDeletedOptions = getCodesDeletedOptions;
-const getCodesDeletedInfiniteQueryKey = (options) => createQueryKey('getCodesDeleted', options, true);
+const getCodesDeletedInfiniteQueryKey = (options) => createQueryKey("getCodesDeleted", options, true);
 exports.getCodesDeletedInfiniteQueryKey = getCodesDeletedInfiniteQueryKey;
 /**
  * List Soft Deleted QR Codes
@@ -2051,25 +2056,27 @@ const getCodesDeletedInfiniteOptions = (options) => {
     {
         queryFn: async ({ pageParam, queryKey, signal }) => {
             // @ts-ignore
-            const page = typeof pageParam === 'object' ? pageParam : {
-                query: {
-                    page: pageParam
-                }
-            };
+            const page = typeof pageParam === "object"
+                ? pageParam
+                : {
+                    query: {
+                        page: pageParam,
+                    },
+                };
             const params = createInfiniteParams(queryKey, page);
             const { data } = await (0, sdk_gen_1.getCodesDeleted)({
                 ...options,
                 ...params,
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getCodesDeletedInfiniteQueryKey)(options)
+        queryKey: (0, exports.getCodesDeletedInfiniteQueryKey)(options),
     });
 };
 exports.getCodesDeletedInfiniteOptions = getCodesDeletedInfiniteOptions;
-const getCodesLinksQueryKey = (options) => createQueryKey('getCodesLinks', options);
+const getCodesLinksQueryKey = (options) => createQueryKey("getCodesLinks", options);
 exports.getCodesLinksQueryKey = getCodesLinksQueryKey;
 /**
  * List QR Code Links
@@ -2082,15 +2089,15 @@ const getCodesLinksOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getCodesLinksQueryKey)(options)
+        queryKey: (0, exports.getCodesLinksQueryKey)(options),
     });
 };
 exports.getCodesLinksOptions = getCodesLinksOptions;
-const getCodesLinksInfiniteQueryKey = (options) => createQueryKey('getCodesLinks', options, true);
+const getCodesLinksInfiniteQueryKey = (options) => createQueryKey("getCodesLinks", options, true);
 exports.getCodesLinksInfiniteQueryKey = getCodesLinksInfiniteQueryKey;
 /**
  * List QR Code Links
@@ -2102,21 +2109,23 @@ const getCodesLinksInfiniteOptions = (options) => {
     {
         queryFn: async ({ pageParam, queryKey, signal }) => {
             // @ts-ignore
-            const page = typeof pageParam === 'object' ? pageParam : {
-                query: {
-                    page: pageParam
-                }
-            };
+            const page = typeof pageParam === "object"
+                ? pageParam
+                : {
+                    query: {
+                        page: pageParam,
+                    },
+                };
             const params = createInfiniteParams(queryKey, page);
             const { data } = await (0, sdk_gen_1.getCodesLinks)({
                 ...options,
                 ...params,
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getCodesLinksInfiniteQueryKey)(options)
+        queryKey: (0, exports.getCodesLinksInfiniteQueryKey)(options),
     });
 };
 exports.getCodesLinksInfiniteOptions = getCodesLinksInfiniteOptions;
@@ -2130,15 +2139,15 @@ const deleteCodesByCodeIdMutation = (options) => {
             const { data } = await (0, sdk_gen_1.deleteCodesByCodeId)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
 exports.deleteCodesByCodeIdMutation = deleteCodesByCodeIdMutation;
-const getCodesByCodeIdQueryKey = (options) => createQueryKey('getCodesByCodeId', options);
+const getCodesByCodeIdQueryKey = (options) => createQueryKey("getCodesByCodeId", options);
 exports.getCodesByCodeIdQueryKey = getCodesByCodeIdQueryKey;
 /**
  * Get QR Code
@@ -2151,11 +2160,11 @@ const getCodesByCodeIdOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getCodesByCodeIdQueryKey)(options)
+        queryKey: (0, exports.getCodesByCodeIdQueryKey)(options),
     });
 };
 exports.getCodesByCodeIdOptions = getCodesByCodeIdOptions;
@@ -2169,10 +2178,10 @@ const putCodesByCodeIdMutation = (options) => {
             const { data } = await (0, sdk_gen_1.putCodesByCodeId)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
@@ -2187,15 +2196,15 @@ const deleteCodesMutation = (options) => {
             const { data } = await (0, sdk_gen_1.deleteCodes)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
 exports.deleteCodesMutation = deleteCodesMutation;
-const getCodesQueryKey = (options) => createQueryKey('getCodes', options);
+const getCodesQueryKey = (options) => createQueryKey("getCodes", options);
 exports.getCodesQueryKey = getCodesQueryKey;
 /**
  * List QR Codes
@@ -2208,15 +2217,15 @@ const getCodesOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getCodesQueryKey)(options)
+        queryKey: (0, exports.getCodesQueryKey)(options),
     });
 };
 exports.getCodesOptions = getCodesOptions;
-const getCodesInfiniteQueryKey = (options) => createQueryKey('getCodes', options, true);
+const getCodesInfiniteQueryKey = (options) => createQueryKey("getCodes", options, true);
 exports.getCodesInfiniteQueryKey = getCodesInfiniteQueryKey;
 /**
  * List QR Codes
@@ -2228,25 +2237,27 @@ const getCodesInfiniteOptions = (options) => {
     {
         queryFn: async ({ pageParam, queryKey, signal }) => {
             // @ts-ignore
-            const page = typeof pageParam === 'object' ? pageParam : {
-                query: {
-                    page: pageParam
-                }
-            };
+            const page = typeof pageParam === "object"
+                ? pageParam
+                : {
+                    query: {
+                        page: pageParam,
+                    },
+                };
             const params = createInfiniteParams(queryKey, page);
             const { data } = await (0, sdk_gen_1.getCodes)({
                 ...options,
                 ...params,
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getCodesInfiniteQueryKey)(options)
+        queryKey: (0, exports.getCodesInfiniteQueryKey)(options),
     });
 };
 exports.getCodesInfiniteOptions = getCodesInfiniteOptions;
-const postCodesQueryKey = (options) => createQueryKey('postCodes', options);
+const postCodesQueryKey = (options) => createQueryKey("postCodes", options);
 exports.postCodesQueryKey = postCodesQueryKey;
 /**
  * Create QR Code
@@ -2259,11 +2270,11 @@ const postCodesOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.postCodesQueryKey)(options)
+        queryKey: (0, exports.postCodesQueryKey)(options),
     });
 };
 exports.postCodesOptions = postCodesOptions;
@@ -2277,14 +2288,53 @@ const postCodesMutation = (options) => {
             const { data } = await (0, sdk_gen_1.postCodes)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
 exports.postCodesMutation = postCodesMutation;
+const postCodesBulkQueryKey = (options) => createQueryKey("postCodesBulk", options);
+exports.postCodesBulkQueryKey = postCodesBulkQueryKey;
+/**
+ * Bulk Create QR Codes
+ * Creates up to 20 QR codes in a single request. Each payload is validated and processed independently, returning partial success results with per-item error reporting.
+ */
+const postCodesBulkOptions = (options) => {
+    return (0, react_query_1.queryOptions)({
+        queryFn: async ({ queryKey, signal }) => {
+            const { data } = await (0, sdk_gen_1.postCodesBulk)({
+                ...options,
+                ...queryKey[0],
+                signal,
+                throwOnError: true,
+            });
+            return data;
+        },
+        queryKey: (0, exports.postCodesBulkQueryKey)(options),
+    });
+};
+exports.postCodesBulkOptions = postCodesBulkOptions;
+/**
+ * Bulk Create QR Codes
+ * Creates up to 20 QR codes in a single request. Each payload is validated and processed independently, returning partial success results with per-item error reporting.
+ */
+const postCodesBulkMutation = (options) => {
+    const mutationOptions = {
+        mutationFn: async (localOptions) => {
+            const { data } = await (0, sdk_gen_1.postCodesBulk)({
+                ...options,
+                ...localOptions,
+                throwOnError: true,
+            });
+            return data;
+        },
+    };
+    return mutationOptions;
+};
+exports.postCodesBulkMutation = postCodesBulkMutation;
 /**
  * Partially update QR Code Options
  * Partially updates an existing QR Code's options using a deep merge. This will create a new version of the QR Code. Supports updating dataType for dynamic codes, which changes how the QR code content is processed when scanned (e.g., returning WiFi configuration instead of URL redirect).
@@ -2295,10 +2345,10 @@ const putCodesByCodeIdOptionsMutation = (options) => {
             const { data } = await (0, sdk_gen_1.putCodesByCodeIdOptions)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
@@ -2313,10 +2363,10 @@ const deleteCodesPermanentMutation = (options) => {
             const { data } = await (0, sdk_gen_1.deleteCodesPermanent)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
@@ -2331,15 +2381,15 @@ const deleteCodesByCodeIdPermanentMutation = (options) => {
             const { data } = await (0, sdk_gen_1.deleteCodesByCodeIdPermanent)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
 exports.deleteCodesByCodeIdPermanentMutation = deleteCodesByCodeIdPermanentMutation;
-const postCodesByCodeIdRestoreQueryKey = (options) => createQueryKey('postCodesByCodeIdRestore', options);
+const postCodesByCodeIdRestoreQueryKey = (options) => createQueryKey("postCodesByCodeIdRestore", options);
 exports.postCodesByCodeIdRestoreQueryKey = postCodesByCodeIdRestoreQueryKey;
 /**
  * Restore QR Code
@@ -2352,11 +2402,11 @@ const postCodesByCodeIdRestoreOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.postCodesByCodeIdRestoreQueryKey)(options)
+        queryKey: (0, exports.postCodesByCodeIdRestoreQueryKey)(options),
     });
 };
 exports.postCodesByCodeIdRestoreOptions = postCodesByCodeIdRestoreOptions;
@@ -2370,15 +2420,15 @@ const postCodesByCodeIdRestoreMutation = (options) => {
             const { data } = await (0, sdk_gen_1.postCodesByCodeIdRestore)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
 exports.postCodesByCodeIdRestoreMutation = postCodesByCodeIdRestoreMutation;
-const postCodesBulkGetQueryKey = (options) => createQueryKey('postCodesBulkGet', options);
+const postCodesBulkGetQueryKey = (options) => createQueryKey("postCodesBulkGet", options);
 exports.postCodesBulkGetQueryKey = postCodesBulkGetQueryKey;
 /**
  * Bulk Get QR Codes by ID List
@@ -2391,11 +2441,11 @@ const postCodesBulkGetOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.postCodesBulkGetQueryKey)(options)
+        queryKey: (0, exports.postCodesBulkGetQueryKey)(options),
     });
 };
 exports.postCodesBulkGetOptions = postCodesBulkGetOptions;
@@ -2409,15 +2459,15 @@ const postCodesBulkGetMutation = (options) => {
             const { data } = await (0, sdk_gen_1.postCodesBulkGet)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
 exports.postCodesBulkGetMutation = postCodesBulkGetMutation;
-const postCodesGenetateCanvasPngQueryKey = (options) => createQueryKey('postCodesGenetateCanvasPng', options);
+const postCodesGenetateCanvasPngQueryKey = (options) => createQueryKey("postCodesGenetateCanvasPng", options);
 exports.postCodesGenetateCanvasPngQueryKey = postCodesGenetateCanvasPngQueryKey;
 /**
  * Generate QR Code PNG via Canvas
@@ -2430,11 +2480,11 @@ const postCodesGenetateCanvasPngOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.postCodesGenetateCanvasPngQueryKey)(options)
+        queryKey: (0, exports.postCodesGenetateCanvasPngQueryKey)(options),
     });
 };
 exports.postCodesGenetateCanvasPngOptions = postCodesGenetateCanvasPngOptions;
@@ -2448,15 +2498,15 @@ const postCodesGenetateCanvasPngMutation = (options) => {
             const { data } = await (0, sdk_gen_1.postCodesGenetateCanvasPng)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
 exports.postCodesGenetateCanvasPngMutation = postCodesGenetateCanvasPngMutation;
-const postCodesGenerateByTypeQueryKey = (options) => createQueryKey('postCodesGenerateByType', options);
+const postCodesGenerateByTypeQueryKey = (options) => createQueryKey("postCodesGenerateByType", options);
 exports.postCodesGenerateByTypeQueryKey = postCodesGenerateByTypeQueryKey;
 /**
  * Generate QR Code File Content
@@ -2469,11 +2519,11 @@ const postCodesGenerateByTypeOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.postCodesGenerateByTypeQueryKey)(options)
+        queryKey: (0, exports.postCodesGenerateByTypeQueryKey)(options),
     });
 };
 exports.postCodesGenerateByTypeOptions = postCodesGenerateByTypeOptions;
@@ -2487,15 +2537,15 @@ const postCodesGenerateByTypeMutation = (options) => {
             const { data } = await (0, sdk_gen_1.postCodesGenerateByType)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
 exports.postCodesGenerateByTypeMutation = postCodesGenerateByTypeMutation;
-const postCodesValidateQueryKey = (options) => createQueryKey('postCodesValidate', options);
+const postCodesValidateQueryKey = (options) => createQueryKey("postCodesValidate", options);
 exports.postCodesValidateQueryKey = postCodesValidateQueryKey;
 /**
  * Validate QR Code Options
@@ -2508,11 +2558,11 @@ const postCodesValidateOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.postCodesValidateQueryKey)(options)
+        queryKey: (0, exports.postCodesValidateQueryKey)(options),
     });
 };
 exports.postCodesValidateOptions = postCodesValidateOptions;
@@ -2526,15 +2576,15 @@ const postCodesValidateMutation = (options) => {
             const { data } = await (0, sdk_gen_1.postCodesValidate)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
 exports.postCodesValidateMutation = postCodesValidateMutation;
-const postCodesByCodeIdValidateQueryKey = (options) => createQueryKey('postCodesByCodeIdValidate', options);
+const postCodesByCodeIdValidateQueryKey = (options) => createQueryKey("postCodesByCodeIdValidate", options);
 exports.postCodesByCodeIdValidateQueryKey = postCodesByCodeIdValidateQueryKey;
 /**
  * Validate Existing QR Code
@@ -2547,11 +2597,11 @@ const postCodesByCodeIdValidateOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.postCodesByCodeIdValidateQueryKey)(options)
+        queryKey: (0, exports.postCodesByCodeIdValidateQueryKey)(options),
     });
 };
 exports.postCodesByCodeIdValidateOptions = postCodesByCodeIdValidateOptions;
@@ -2565,15 +2615,15 @@ const postCodesByCodeIdValidateMutation = (options) => {
             const { data } = await (0, sdk_gen_1.postCodesByCodeIdValidate)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
 exports.postCodesByCodeIdValidateMutation = postCodesByCodeIdValidateMutation;
-const postCodesLinksRefreshQueryKey = (options) => createQueryKey('postCodesLinksRefresh', options);
+const postCodesLinksRefreshQueryKey = (options) => createQueryKey("postCodesLinksRefresh", options);
 exports.postCodesLinksRefreshQueryKey = postCodesLinksRefreshQueryKey;
 /**
  * Bulk Refresh QR Code Links
@@ -2586,11 +2636,11 @@ const postCodesLinksRefreshOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.postCodesLinksRefreshQueryKey)(options)
+        queryKey: (0, exports.postCodesLinksRefreshQueryKey)(options),
     });
 };
 exports.postCodesLinksRefreshOptions = postCodesLinksRefreshOptions;
@@ -2604,15 +2654,15 @@ const postCodesLinksRefreshMutation = (options) => {
             const { data } = await (0, sdk_gen_1.postCodesLinksRefresh)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
 exports.postCodesLinksRefreshMutation = postCodesLinksRefreshMutation;
-const getCodesByCodeIdVersionByVersionQueryKey = (options) => createQueryKey('getCodesByCodeIdVersionByVersion', options);
+const getCodesByCodeIdVersionByVersionQueryKey = (options) => createQueryKey("getCodesByCodeIdVersionByVersion", options);
 exports.getCodesByCodeIdVersionByVersionQueryKey = getCodesByCodeIdVersionByVersionQueryKey;
 /**
  * Get QR Code version
@@ -2625,11 +2675,11 @@ const getCodesByCodeIdVersionByVersionOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getCodesByCodeIdVersionByVersionQueryKey)(options)
+        queryKey: (0, exports.getCodesByCodeIdVersionByVersionQueryKey)(options),
     });
 };
 exports.getCodesByCodeIdVersionByVersionOptions = getCodesByCodeIdVersionByVersionOptions;
@@ -2643,15 +2693,15 @@ const deleteCodesByCodeIdVersionsMutation = (options) => {
             const { data } = await (0, sdk_gen_1.deleteCodesByCodeIdVersions)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
 exports.deleteCodesByCodeIdVersionsMutation = deleteCodesByCodeIdVersionsMutation;
-const getCodesByCodeIdVersionsQueryKey = (options) => createQueryKey('getCodesByCodeIdVersions', options);
+const getCodesByCodeIdVersionsQueryKey = (options) => createQueryKey("getCodesByCodeIdVersions", options);
 exports.getCodesByCodeIdVersionsQueryKey = getCodesByCodeIdVersionsQueryKey;
 /**
  * List QR Code versions
@@ -2664,15 +2714,15 @@ const getCodesByCodeIdVersionsOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getCodesByCodeIdVersionsQueryKey)(options)
+        queryKey: (0, exports.getCodesByCodeIdVersionsQueryKey)(options),
     });
 };
 exports.getCodesByCodeIdVersionsOptions = getCodesByCodeIdVersionsOptions;
-const postCodesByCodeIdVersionByVersionRestoreQueryKey = (options) => createQueryKey('postCodesByCodeIdVersionByVersionRestore', options);
+const postCodesByCodeIdVersionByVersionRestoreQueryKey = (options) => createQueryKey("postCodesByCodeIdVersionByVersionRestore", options);
 exports.postCodesByCodeIdVersionByVersionRestoreQueryKey = postCodesByCodeIdVersionByVersionRestoreQueryKey;
 /**
  * Restore QR Code Version
@@ -2685,11 +2735,11 @@ const postCodesByCodeIdVersionByVersionRestoreOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.postCodesByCodeIdVersionByVersionRestoreQueryKey)(options)
+        queryKey: (0, exports.postCodesByCodeIdVersionByVersionRestoreQueryKey)(options),
     });
 };
 exports.postCodesByCodeIdVersionByVersionRestoreOptions = postCodesByCodeIdVersionByVersionRestoreOptions;
@@ -2703,15 +2753,15 @@ const postCodesByCodeIdVersionByVersionRestoreMutation = (options) => {
             const { data } = await (0, sdk_gen_1.postCodesByCodeIdVersionByVersionRestore)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
 exports.postCodesByCodeIdVersionByVersionRestoreMutation = postCodesByCodeIdVersionByVersionRestoreMutation;
-const getCodesByCodeIdVersionByVersionByTypeQueryKey = (options) => createQueryKey('getCodesByCodeIdVersionByVersionByType', options);
+const getCodesByCodeIdVersionByVersionByTypeQueryKey = (options) => createQueryKey("getCodesByCodeIdVersionByVersionByType", options);
 exports.getCodesByCodeIdVersionByVersionByTypeQueryKey = getCodesByCodeIdVersionByVersionByTypeQueryKey;
 /**
  * Get QR Code Version File Content
@@ -2724,15 +2774,15 @@ const getCodesByCodeIdVersionByVersionByTypeOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getCodesByCodeIdVersionByVersionByTypeQueryKey)(options)
+        queryKey: (0, exports.getCodesByCodeIdVersionByVersionByTypeQueryKey)(options),
     });
 };
 exports.getCodesByCodeIdVersionByVersionByTypeOptions = getCodesByCodeIdVersionByVersionByTypeOptions;
-const getCodesByCodeIdVersionByVersionByTypeLinkQueryKey = (options) => createQueryKey('getCodesByCodeIdVersionByVersionByTypeLink', options);
+const getCodesByCodeIdVersionByVersionByTypeLinkQueryKey = (options) => createQueryKey("getCodesByCodeIdVersionByVersionByTypeLink", options);
 exports.getCodesByCodeIdVersionByVersionByTypeLinkQueryKey = getCodesByCodeIdVersionByVersionByTypeLinkQueryKey;
 /**
  * Get QR Code Version Link
@@ -2745,11 +2795,11 @@ const getCodesByCodeIdVersionByVersionByTypeLinkOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getCodesByCodeIdVersionByVersionByTypeLinkQueryKey)(options)
+        queryKey: (0, exports.getCodesByCodeIdVersionByVersionByTypeLinkQueryKey)(options),
     });
 };
 exports.getCodesByCodeIdVersionByVersionByTypeLinkOptions = getCodesByCodeIdVersionByVersionByTypeLinkOptions;
@@ -2763,10 +2813,10 @@ const deleteCodesByCodeIdVersionsByVersionLinksMutation = (options) => {
             const { data } = await (0, sdk_gen_1.deleteCodesByCodeIdVersionsByVersionLinks)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
@@ -2781,10 +2831,10 @@ const deleteCodesByCodeIdVersionsByVersionLinksByTypeMutation = (options) => {
             const { data } = await (0, sdk_gen_1.deleteCodesByCodeIdVersionsByVersionLinksByType)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
@@ -2799,10 +2849,10 @@ const deleteCodesByCodeIdVersionsLinksMutation = (options) => {
             const { data } = await (0, sdk_gen_1.deleteCodesByCodeIdVersionsLinks)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
@@ -2817,15 +2867,15 @@ const deleteCodesByCodeIdVersionsLinksByTypeMutation = (options) => {
             const { data } = await (0, sdk_gen_1.deleteCodesByCodeIdVersionsLinksByType)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
 exports.deleteCodesByCodeIdVersionsLinksByTypeMutation = deleteCodesByCodeIdVersionsLinksByTypeMutation;
-const getCodesByCodeIdByTypeQueryKey = (options) => createQueryKey('getCodesByCodeIdByType', options);
+const getCodesByCodeIdByTypeQueryKey = (options) => createQueryKey("getCodesByCodeIdByType", options);
 exports.getCodesByCodeIdByTypeQueryKey = getCodesByCodeIdByTypeQueryKey;
 /**
  * Get QR Code File Content (SVG, PNG, PDF)
@@ -2838,15 +2888,15 @@ const getCodesByCodeIdByTypeOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getCodesByCodeIdByTypeQueryKey)(options)
+        queryKey: (0, exports.getCodesByCodeIdByTypeQueryKey)(options),
     });
 };
 exports.getCodesByCodeIdByTypeOptions = getCodesByCodeIdByTypeOptions;
-const getCodesByCodeIdByTypeLinkQueryKey = (options) => createQueryKey('getCodesByCodeIdByTypeLink', options);
+const getCodesByCodeIdByTypeLinkQueryKey = (options) => createQueryKey("getCodesByCodeIdByTypeLink", options);
 exports.getCodesByCodeIdByTypeLinkQueryKey = getCodesByCodeIdByTypeLinkQueryKey;
 /**
  * Get QR Code link
@@ -2859,11 +2909,11 @@ const getCodesByCodeIdByTypeLinkOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getCodesByCodeIdByTypeLinkQueryKey)(options)
+        queryKey: (0, exports.getCodesByCodeIdByTypeLinkQueryKey)(options),
     });
 };
 exports.getCodesByCodeIdByTypeLinkOptions = getCodesByCodeIdByTypeLinkOptions;
@@ -2877,10 +2927,10 @@ const deleteCodesByCodeIdLinksMutation = (options) => {
             const { data } = await (0, sdk_gen_1.deleteCodesByCodeIdLinks)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
@@ -2895,15 +2945,15 @@ const deleteCodesByCodeIdLinksByTypeMutation = (options) => {
             const { data } = await (0, sdk_gen_1.deleteCodesByCodeIdLinksByType)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
 exports.deleteCodesByCodeIdLinksByTypeMutation = deleteCodesByCodeIdLinksByTypeMutation;
-const getScansByScanIdQueryKey = (options) => createQueryKey('getScansByScanId', options);
+const getScansByScanIdQueryKey = (options) => createQueryKey("getScansByScanId", options);
 exports.getScansByScanIdQueryKey = getScansByScanIdQueryKey;
 /**
  * Get scan by ID
@@ -2916,15 +2966,15 @@ const getScansByScanIdOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getScansByScanIdQueryKey)(options)
+        queryKey: (0, exports.getScansByScanIdQueryKey)(options),
     });
 };
 exports.getScansByScanIdOptions = getScansByScanIdOptions;
-const getTemplatesQueryKey = (options) => createQueryKey('getTemplates', options);
+const getTemplatesQueryKey = (options) => createQueryKey("getTemplates", options);
 exports.getTemplatesQueryKey = getTemplatesQueryKey;
 /**
  * List all templates
@@ -2937,15 +2987,15 @@ const getTemplatesOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getTemplatesQueryKey)(options)
+        queryKey: (0, exports.getTemplatesQueryKey)(options),
     });
 };
 exports.getTemplatesOptions = getTemplatesOptions;
-const postTemplatesQueryKey = (options) => createQueryKey('postTemplates', options);
+const postTemplatesQueryKey = (options) => createQueryKey("postTemplates", options);
 exports.postTemplatesQueryKey = postTemplatesQueryKey;
 /**
  * Create a new template
@@ -2958,11 +3008,11 @@ const postTemplatesOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.postTemplatesQueryKey)(options)
+        queryKey: (0, exports.postTemplatesQueryKey)(options),
     });
 };
 exports.postTemplatesOptions = postTemplatesOptions;
@@ -2976,15 +3026,15 @@ const postTemplatesMutation = (options) => {
             const { data } = await (0, sdk_gen_1.postTemplates)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
 exports.postTemplatesMutation = postTemplatesMutation;
-const getTemplatesBaseQueryKey = (options) => createQueryKey('getTemplatesBase', options);
+const getTemplatesBaseQueryKey = (options) => createQueryKey("getTemplatesBase", options);
 exports.getTemplatesBaseQueryKey = getTemplatesBaseQueryKey;
 /**
  * List base templates
@@ -2997,11 +3047,11 @@ const getTemplatesBaseOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getTemplatesBaseQueryKey)(options)
+        queryKey: (0, exports.getTemplatesBaseQueryKey)(options),
     });
 };
 exports.getTemplatesBaseOptions = getTemplatesBaseOptions;
@@ -3015,15 +3065,15 @@ const deleteTemplatesByTemplateIdMutation = (options) => {
             const { data } = await (0, sdk_gen_1.deleteTemplatesByTemplateId)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
 exports.deleteTemplatesByTemplateIdMutation = deleteTemplatesByTemplateIdMutation;
-const getTemplatesByTemplateIdQueryKey = (options) => createQueryKey('getTemplatesByTemplateId', options);
+const getTemplatesByTemplateIdQueryKey = (options) => createQueryKey("getTemplatesByTemplateId", options);
 exports.getTemplatesByTemplateIdQueryKey = getTemplatesByTemplateIdQueryKey;
 /**
  * Get template by ID
@@ -3036,11 +3086,11 @@ const getTemplatesByTemplateIdOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getTemplatesByTemplateIdQueryKey)(options)
+        queryKey: (0, exports.getTemplatesByTemplateIdQueryKey)(options),
     });
 };
 exports.getTemplatesByTemplateIdOptions = getTemplatesByTemplateIdOptions;
@@ -3054,10 +3104,10 @@ const putTemplatesByTemplateIdMutation = (options) => {
             const { data } = await (0, sdk_gen_1.putTemplatesByTemplateId)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
@@ -3072,15 +3122,15 @@ const putTemplatesByTemplateIdOptionsMutation = (options) => {
             const { data } = await (0, sdk_gen_1.putTemplatesByTemplateIdOptions)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
 exports.putTemplatesByTemplateIdOptionsMutation = putTemplatesByTemplateIdOptionsMutation;
-const getTemplatesWorkspaceByWorkspaceIdQueryKey = (options) => createQueryKey('getTemplatesWorkspaceByWorkspaceId', options);
+const getTemplatesWorkspaceByWorkspaceIdQueryKey = (options) => createQueryKey("getTemplatesWorkspaceByWorkspaceId", options);
 exports.getTemplatesWorkspaceByWorkspaceIdQueryKey = getTemplatesWorkspaceByWorkspaceIdQueryKey;
 /**
  * List templates for a workspace
@@ -3093,15 +3143,15 @@ const getTemplatesWorkspaceByWorkspaceIdOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getTemplatesWorkspaceByWorkspaceIdQueryKey)(options)
+        queryKey: (0, exports.getTemplatesWorkspaceByWorkspaceIdQueryKey)(options),
     });
 };
 exports.getTemplatesWorkspaceByWorkspaceIdOptions = getTemplatesWorkspaceByWorkspaceIdOptions;
-const getStylesQueryKey = (options) => createQueryKey('getStyles', options);
+const getStylesQueryKey = (options) => createQueryKey("getStyles", options);
 exports.getStylesQueryKey = getStylesQueryKey;
 /**
  * List all styles
@@ -3114,15 +3164,15 @@ const getStylesOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getStylesQueryKey)(options)
+        queryKey: (0, exports.getStylesQueryKey)(options),
     });
 };
 exports.getStylesOptions = getStylesOptions;
-const postStylesQueryKey = (options) => createQueryKey('postStyles', options);
+const postStylesQueryKey = (options) => createQueryKey("postStyles", options);
 exports.postStylesQueryKey = postStylesQueryKey;
 /**
  * Create a new style
@@ -3135,11 +3185,11 @@ const postStylesOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.postStylesQueryKey)(options)
+        queryKey: (0, exports.postStylesQueryKey)(options),
     });
 };
 exports.postStylesOptions = postStylesOptions;
@@ -3153,15 +3203,15 @@ const postStylesMutation = (options) => {
             const { data } = await (0, sdk_gen_1.postStyles)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
 exports.postStylesMutation = postStylesMutation;
-const getStylesBaseQueryKey = (options) => createQueryKey('getStylesBase', options);
+const getStylesBaseQueryKey = (options) => createQueryKey("getStylesBase", options);
 exports.getStylesBaseQueryKey = getStylesBaseQueryKey;
 /**
  * List base styles
@@ -3174,11 +3224,11 @@ const getStylesBaseOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getStylesBaseQueryKey)(options)
+        queryKey: (0, exports.getStylesBaseQueryKey)(options),
     });
 };
 exports.getStylesBaseOptions = getStylesBaseOptions;
@@ -3192,15 +3242,15 @@ const deleteStylesByStyleIdMutation = (options) => {
             const { data } = await (0, sdk_gen_1.deleteStylesByStyleId)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
 exports.deleteStylesByStyleIdMutation = deleteStylesByStyleIdMutation;
-const getStylesByStyleIdQueryKey = (options) => createQueryKey('getStylesByStyleId', options);
+const getStylesByStyleIdQueryKey = (options) => createQueryKey("getStylesByStyleId", options);
 exports.getStylesByStyleIdQueryKey = getStylesByStyleIdQueryKey;
 /**
  * Get style by ID
@@ -3213,11 +3263,11 @@ const getStylesByStyleIdOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getStylesByStyleIdQueryKey)(options)
+        queryKey: (0, exports.getStylesByStyleIdQueryKey)(options),
     });
 };
 exports.getStylesByStyleIdOptions = getStylesByStyleIdOptions;
@@ -3231,10 +3281,10 @@ const putStylesByStyleIdMutation = (options) => {
             const { data } = await (0, sdk_gen_1.putStylesByStyleId)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
@@ -3249,15 +3299,15 @@ const putStylesByStyleIdOptionsMutation = (options) => {
             const { data } = await (0, sdk_gen_1.putStylesByStyleIdOptions)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
 exports.putStylesByStyleIdOptionsMutation = putStylesByStyleIdOptionsMutation;
-const getStylesWorkspaceByWorkspaceIdQueryKey = (options) => createQueryKey('getStylesWorkspaceByWorkspaceId', options);
+const getStylesWorkspaceByWorkspaceIdQueryKey = (options) => createQueryKey("getStylesWorkspaceByWorkspaceId", options);
 exports.getStylesWorkspaceByWorkspaceIdQueryKey = getStylesWorkspaceByWorkspaceIdQueryKey;
 /**
  * List styles for a workspace
@@ -3270,15 +3320,15 @@ const getStylesWorkspaceByWorkspaceIdOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getStylesWorkspaceByWorkspaceIdQueryKey)(options)
+        queryKey: (0, exports.getStylesWorkspaceByWorkspaceIdQueryKey)(options),
     });
 };
 exports.getStylesWorkspaceByWorkspaceIdOptions = getStylesWorkspaceByWorkspaceIdOptions;
-const getTextsQueryKey = (options) => createQueryKey('getTexts', options);
+const getTextsQueryKey = (options) => createQueryKey("getTexts", options);
 exports.getTextsQueryKey = getTextsQueryKey;
 /**
  * List all texts
@@ -3291,15 +3341,15 @@ const getTextsOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getTextsQueryKey)(options)
+        queryKey: (0, exports.getTextsQueryKey)(options),
     });
 };
 exports.getTextsOptions = getTextsOptions;
-const postTextsQueryKey = (options) => createQueryKey('postTexts', options);
+const postTextsQueryKey = (options) => createQueryKey("postTexts", options);
 exports.postTextsQueryKey = postTextsQueryKey;
 /**
  * Create a new text
@@ -3312,11 +3362,11 @@ const postTextsOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.postTextsQueryKey)(options)
+        queryKey: (0, exports.postTextsQueryKey)(options),
     });
 };
 exports.postTextsOptions = postTextsOptions;
@@ -3330,15 +3380,15 @@ const postTextsMutation = (options) => {
             const { data } = await (0, sdk_gen_1.postTexts)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
 exports.postTextsMutation = postTextsMutation;
-const getTextsBaseQueryKey = (options) => createQueryKey('getTextsBase', options);
+const getTextsBaseQueryKey = (options) => createQueryKey("getTextsBase", options);
 exports.getTextsBaseQueryKey = getTextsBaseQueryKey;
 /**
  * List base texts
@@ -3351,11 +3401,11 @@ const getTextsBaseOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getTextsBaseQueryKey)(options)
+        queryKey: (0, exports.getTextsBaseQueryKey)(options),
     });
 };
 exports.getTextsBaseOptions = getTextsBaseOptions;
@@ -3369,15 +3419,15 @@ const deleteTextsByTextIdMutation = (options) => {
             const { data } = await (0, sdk_gen_1.deleteTextsByTextId)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
 exports.deleteTextsByTextIdMutation = deleteTextsByTextIdMutation;
-const getTextsByTextIdQueryKey = (options) => createQueryKey('getTextsByTextId', options);
+const getTextsByTextIdQueryKey = (options) => createQueryKey("getTextsByTextId", options);
 exports.getTextsByTextIdQueryKey = getTextsByTextIdQueryKey;
 /**
  * Get text by ID
@@ -3390,11 +3440,11 @@ const getTextsByTextIdOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getTextsByTextIdQueryKey)(options)
+        queryKey: (0, exports.getTextsByTextIdQueryKey)(options),
     });
 };
 exports.getTextsByTextIdOptions = getTextsByTextIdOptions;
@@ -3408,10 +3458,10 @@ const putTextsByTextIdMutation = (options) => {
             const { data } = await (0, sdk_gen_1.putTextsByTextId)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
@@ -3426,15 +3476,15 @@ const putTextsByTextIdOptionsMutation = (options) => {
             const { data } = await (0, sdk_gen_1.putTextsByTextIdOptions)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
 exports.putTextsByTextIdOptionsMutation = putTextsByTextIdOptionsMutation;
-const getTextsWorkspaceByWorkspaceIdQueryKey = (options) => createQueryKey('getTextsWorkspaceByWorkspaceId', options);
+const getTextsWorkspaceByWorkspaceIdQueryKey = (options) => createQueryKey("getTextsWorkspaceByWorkspaceId", options);
 exports.getTextsWorkspaceByWorkspaceIdQueryKey = getTextsWorkspaceByWorkspaceIdQueryKey;
 /**
  * List texts for a workspace
@@ -3447,15 +3497,15 @@ const getTextsWorkspaceByWorkspaceIdOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getTextsWorkspaceByWorkspaceIdQueryKey)(options)
+        queryKey: (0, exports.getTextsWorkspaceByWorkspaceIdQueryKey)(options),
     });
 };
 exports.getTextsWorkspaceByWorkspaceIdOptions = getTextsWorkspaceByWorkspaceIdOptions;
-const getBordersQueryKey = (options) => createQueryKey('getBorders', options);
+const getBordersQueryKey = (options) => createQueryKey("getBorders", options);
 exports.getBordersQueryKey = getBordersQueryKey;
 /**
  * List all borders
@@ -3468,15 +3518,15 @@ const getBordersOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getBordersQueryKey)(options)
+        queryKey: (0, exports.getBordersQueryKey)(options),
     });
 };
 exports.getBordersOptions = getBordersOptions;
-const postBordersQueryKey = (options) => createQueryKey('postBorders', options);
+const postBordersQueryKey = (options) => createQueryKey("postBorders", options);
 exports.postBordersQueryKey = postBordersQueryKey;
 /**
  * Create a new border
@@ -3489,11 +3539,11 @@ const postBordersOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.postBordersQueryKey)(options)
+        queryKey: (0, exports.postBordersQueryKey)(options),
     });
 };
 exports.postBordersOptions = postBordersOptions;
@@ -3507,15 +3557,15 @@ const postBordersMutation = (options) => {
             const { data } = await (0, sdk_gen_1.postBorders)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
 exports.postBordersMutation = postBordersMutation;
-const getBordersBaseQueryKey = (options) => createQueryKey('getBordersBase', options);
+const getBordersBaseQueryKey = (options) => createQueryKey("getBordersBase", options);
 exports.getBordersBaseQueryKey = getBordersBaseQueryKey;
 /**
  * List base borders
@@ -3528,11 +3578,11 @@ const getBordersBaseOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getBordersBaseQueryKey)(options)
+        queryKey: (0, exports.getBordersBaseQueryKey)(options),
     });
 };
 exports.getBordersBaseOptions = getBordersBaseOptions;
@@ -3546,15 +3596,15 @@ const deleteBordersByBorderIdMutation = (options) => {
             const { data } = await (0, sdk_gen_1.deleteBordersByBorderId)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
 exports.deleteBordersByBorderIdMutation = deleteBordersByBorderIdMutation;
-const getBordersByBorderIdQueryKey = (options) => createQueryKey('getBordersByBorderId', options);
+const getBordersByBorderIdQueryKey = (options) => createQueryKey("getBordersByBorderId", options);
 exports.getBordersByBorderIdQueryKey = getBordersByBorderIdQueryKey;
 /**
  * Get border by ID
@@ -3567,11 +3617,11 @@ const getBordersByBorderIdOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getBordersByBorderIdQueryKey)(options)
+        queryKey: (0, exports.getBordersByBorderIdQueryKey)(options),
     });
 };
 exports.getBordersByBorderIdOptions = getBordersByBorderIdOptions;
@@ -3585,10 +3635,10 @@ const putBordersByBorderIdMutation = (options) => {
             const { data } = await (0, sdk_gen_1.putBordersByBorderId)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
@@ -3603,15 +3653,15 @@ const putBordersByBorderIdOptionsMutation = (options) => {
             const { data } = await (0, sdk_gen_1.putBordersByBorderIdOptions)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
 exports.putBordersByBorderIdOptionsMutation = putBordersByBorderIdOptionsMutation;
-const getBordersWorkspaceByWorkspaceIdQueryKey = (options) => createQueryKey('getBordersWorkspaceByWorkspaceId', options);
+const getBordersWorkspaceByWorkspaceIdQueryKey = (options) => createQueryKey("getBordersWorkspaceByWorkspaceId", options);
 exports.getBordersWorkspaceByWorkspaceIdQueryKey = getBordersWorkspaceByWorkspaceIdQueryKey;
 /**
  * List borders for a workspace
@@ -3624,15 +3674,15 @@ const getBordersWorkspaceByWorkspaceIdOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getBordersWorkspaceByWorkspaceIdQueryKey)(options)
+        queryKey: (0, exports.getBordersWorkspaceByWorkspaceIdQueryKey)(options),
     });
 };
 exports.getBordersWorkspaceByWorkspaceIdOptions = getBordersWorkspaceByWorkspaceIdOptions;
-const getCountryCodesQueryKey = (options) => createQueryKey('getCountryCodes', options);
+const getCountryCodesQueryKey = (options) => createQueryKey("getCountryCodes", options);
 exports.getCountryCodesQueryKey = getCountryCodesQueryKey;
 /**
  * List All Country Codes
@@ -3645,15 +3695,15 @@ const getCountryCodesOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getCountryCodesQueryKey)(options)
+        queryKey: (0, exports.getCountryCodesQueryKey)(options),
     });
 };
 exports.getCountryCodesOptions = getCountryCodesOptions;
-const getRouterRuleTemplatesQueryKey = (options) => createQueryKey('getRouterRuleTemplates', options);
+const getRouterRuleTemplatesQueryKey = (options) => createQueryKey("getRouterRuleTemplates", options);
 exports.getRouterRuleTemplatesQueryKey = getRouterRuleTemplatesQueryKey;
 /**
  * List Router Rule Templates
@@ -3666,15 +3716,15 @@ const getRouterRuleTemplatesOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getRouterRuleTemplatesQueryKey)(options)
+        queryKey: (0, exports.getRouterRuleTemplatesQueryKey)(options),
     });
 };
 exports.getRouterRuleTemplatesOptions = getRouterRuleTemplatesOptions;
-const getRouterRuleTemplatesInfiniteQueryKey = (options) => createQueryKey('getRouterRuleTemplates', options, true);
+const getRouterRuleTemplatesInfiniteQueryKey = (options) => createQueryKey("getRouterRuleTemplates", options, true);
 exports.getRouterRuleTemplatesInfiniteQueryKey = getRouterRuleTemplatesInfiniteQueryKey;
 /**
  * List Router Rule Templates
@@ -3686,25 +3736,27 @@ const getRouterRuleTemplatesInfiniteOptions = (options) => {
     {
         queryFn: async ({ pageParam, queryKey, signal }) => {
             // @ts-ignore
-            const page = typeof pageParam === 'object' ? pageParam : {
-                query: {
-                    page: pageParam
-                }
-            };
+            const page = typeof pageParam === "object"
+                ? pageParam
+                : {
+                    query: {
+                        page: pageParam,
+                    },
+                };
             const params = createInfiniteParams(queryKey, page);
             const { data } = await (0, sdk_gen_1.getRouterRuleTemplates)({
                 ...options,
                 ...params,
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getRouterRuleTemplatesInfiniteQueryKey)(options)
+        queryKey: (0, exports.getRouterRuleTemplatesInfiniteQueryKey)(options),
     });
 };
 exports.getRouterRuleTemplatesInfiniteOptions = getRouterRuleTemplatesInfiniteOptions;
-const postRouterRuleTemplatesQueryKey = (options) => createQueryKey('postRouterRuleTemplates', options);
+const postRouterRuleTemplatesQueryKey = (options) => createQueryKey("postRouterRuleTemplates", options);
 exports.postRouterRuleTemplatesQueryKey = postRouterRuleTemplatesQueryKey;
 /**
  * Create Router Rule Template
@@ -3717,11 +3769,11 @@ const postRouterRuleTemplatesOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.postRouterRuleTemplatesQueryKey)(options)
+        queryKey: (0, exports.postRouterRuleTemplatesQueryKey)(options),
     });
 };
 exports.postRouterRuleTemplatesOptions = postRouterRuleTemplatesOptions;
@@ -3735,10 +3787,10 @@ const postRouterRuleTemplatesMutation = (options) => {
             const { data } = await (0, sdk_gen_1.postRouterRuleTemplates)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
@@ -3753,15 +3805,15 @@ const deleteRouterRuleTemplatesByRouterRuleTemplateIdMutation = (options) => {
             const { data } = await (0, sdk_gen_1.deleteRouterRuleTemplatesByRouterRuleTemplateId)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
 exports.deleteRouterRuleTemplatesByRouterRuleTemplateIdMutation = deleteRouterRuleTemplatesByRouterRuleTemplateIdMutation;
-const getRouterRuleTemplatesByRouterRuleTemplateIdQueryKey = (options) => createQueryKey('getRouterRuleTemplatesByRouterRuleTemplateId', options);
+const getRouterRuleTemplatesByRouterRuleTemplateIdQueryKey = (options) => createQueryKey("getRouterRuleTemplatesByRouterRuleTemplateId", options);
 exports.getRouterRuleTemplatesByRouterRuleTemplateIdQueryKey = getRouterRuleTemplatesByRouterRuleTemplateIdQueryKey;
 /**
  * Get Router Rule Template
@@ -3774,11 +3826,11 @@ const getRouterRuleTemplatesByRouterRuleTemplateIdOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getRouterRuleTemplatesByRouterRuleTemplateIdQueryKey)(options)
+        queryKey: (0, exports.getRouterRuleTemplatesByRouterRuleTemplateIdQueryKey)(options),
     });
 };
 exports.getRouterRuleTemplatesByRouterRuleTemplateIdOptions = getRouterRuleTemplatesByRouterRuleTemplateIdOptions;
@@ -3792,15 +3844,15 @@ const putRouterRuleTemplatesByRouterRuleTemplateIdMutation = (options) => {
             const { data } = await (0, sdk_gen_1.putRouterRuleTemplatesByRouterRuleTemplateId)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };
 exports.putRouterRuleTemplatesByRouterRuleTemplateIdMutation = putRouterRuleTemplatesByRouterRuleTemplateIdMutation;
-const getRouterRulesQueryKey = (options) => createQueryKey('getRouterRules', options);
+const getRouterRulesQueryKey = (options) => createQueryKey("getRouterRules", options);
 exports.getRouterRulesQueryKey = getRouterRulesQueryKey;
 /**
  * List Organization Router Rules
@@ -3813,15 +3865,15 @@ const getRouterRulesOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getRouterRulesQueryKey)(options)
+        queryKey: (0, exports.getRouterRulesQueryKey)(options),
     });
 };
 exports.getRouterRulesOptions = getRouterRulesOptions;
-const getRouterRulesInfiniteQueryKey = (options) => createQueryKey('getRouterRules', options, true);
+const getRouterRulesInfiniteQueryKey = (options) => createQueryKey("getRouterRules", options, true);
 exports.getRouterRulesInfiniteQueryKey = getRouterRulesInfiniteQueryKey;
 /**
  * List Organization Router Rules
@@ -3833,25 +3885,27 @@ const getRouterRulesInfiniteOptions = (options) => {
     {
         queryFn: async ({ pageParam, queryKey, signal }) => {
             // @ts-ignore
-            const page = typeof pageParam === 'object' ? pageParam : {
-                query: {
-                    page: pageParam
-                }
-            };
+            const page = typeof pageParam === "object"
+                ? pageParam
+                : {
+                    query: {
+                        page: pageParam,
+                    },
+                };
             const params = createInfiniteParams(queryKey, page);
             const { data } = await (0, sdk_gen_1.getRouterRules)({
                 ...options,
                 ...params,
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getRouterRulesInfiniteQueryKey)(options)
+        queryKey: (0, exports.getRouterRulesInfiniteQueryKey)(options),
     });
 };
 exports.getRouterRulesInfiniteOptions = getRouterRulesInfiniteOptions;
-const getWorkspacesByWorkspaceIdRouterRulesQueryKey = (options) => createQueryKey('getWorkspacesByWorkspaceIdRouterRules', options);
+const getWorkspacesByWorkspaceIdRouterRulesQueryKey = (options) => createQueryKey("getWorkspacesByWorkspaceIdRouterRules", options);
 exports.getWorkspacesByWorkspaceIdRouterRulesQueryKey = getWorkspacesByWorkspaceIdRouterRulesQueryKey;
 /**
  * List Workspace Router Rule Assignments
@@ -3864,15 +3918,15 @@ const getWorkspacesByWorkspaceIdRouterRulesOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getWorkspacesByWorkspaceIdRouterRulesQueryKey)(options)
+        queryKey: (0, exports.getWorkspacesByWorkspaceIdRouterRulesQueryKey)(options),
     });
 };
 exports.getWorkspacesByWorkspaceIdRouterRulesOptions = getWorkspacesByWorkspaceIdRouterRulesOptions;
-const getWorkspacesByWorkspaceIdRouterRulesInfiniteQueryKey = (options) => createQueryKey('getWorkspacesByWorkspaceIdRouterRules', options, true);
+const getWorkspacesByWorkspaceIdRouterRulesInfiniteQueryKey = (options) => createQueryKey("getWorkspacesByWorkspaceIdRouterRules", options, true);
 exports.getWorkspacesByWorkspaceIdRouterRulesInfiniteQueryKey = getWorkspacesByWorkspaceIdRouterRulesInfiniteQueryKey;
 /**
  * List Workspace Router Rule Assignments
@@ -3884,25 +3938,27 @@ const getWorkspacesByWorkspaceIdRouterRulesInfiniteOptions = (options) => {
     {
         queryFn: async ({ pageParam, queryKey, signal }) => {
             // @ts-ignore
-            const page = typeof pageParam === 'object' ? pageParam : {
-                query: {
-                    page: pageParam
-                }
-            };
+            const page = typeof pageParam === "object"
+                ? pageParam
+                : {
+                    query: {
+                        page: pageParam,
+                    },
+                };
             const params = createInfiniteParams(queryKey, page);
             const { data } = await (0, sdk_gen_1.getWorkspacesByWorkspaceIdRouterRules)({
                 ...options,
                 ...params,
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.getWorkspacesByWorkspaceIdRouterRulesInfiniteQueryKey)(options)
+        queryKey: (0, exports.getWorkspacesByWorkspaceIdRouterRulesInfiniteQueryKey)(options),
     });
 };
 exports.getWorkspacesByWorkspaceIdRouterRulesInfiniteOptions = getWorkspacesByWorkspaceIdRouterRulesInfiniteOptions;
-const postWorkspacesByWorkspaceIdRouterRuleTemplatesQueryKey = (options) => createQueryKey('postWorkspacesByWorkspaceIdRouterRuleTemplates', options);
+const postWorkspacesByWorkspaceIdRouterRuleTemplatesQueryKey = (options) => createQueryKey("postWorkspacesByWorkspaceIdRouterRuleTemplates", options);
 exports.postWorkspacesByWorkspaceIdRouterRuleTemplatesQueryKey = postWorkspacesByWorkspaceIdRouterRuleTemplatesQueryKey;
 /**
  * Create Workspace Router Rule Template
@@ -3915,11 +3971,11 @@ const postWorkspacesByWorkspaceIdRouterRuleTemplatesOptions = (options) => {
                 ...options,
                 ...queryKey[0],
                 signal,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
         },
-        queryKey: (0, exports.postWorkspacesByWorkspaceIdRouterRuleTemplatesQueryKey)(options)
+        queryKey: (0, exports.postWorkspacesByWorkspaceIdRouterRuleTemplatesQueryKey)(options),
     });
 };
 exports.postWorkspacesByWorkspaceIdRouterRuleTemplatesOptions = postWorkspacesByWorkspaceIdRouterRuleTemplatesOptions;
@@ -3933,10 +3989,10 @@ const postWorkspacesByWorkspaceIdRouterRuleTemplatesMutation = (options) => {
             const { data } = await (0, sdk_gen_1.postWorkspacesByWorkspaceIdRouterRuleTemplates)({
                 ...options,
                 ...localOptions,
-                throwOnError: true
+                throwOnError: true,
             });
             return data;
-        }
+        },
     };
     return mutationOptions;
 };

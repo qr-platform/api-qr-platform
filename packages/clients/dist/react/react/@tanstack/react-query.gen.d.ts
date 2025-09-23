@@ -1,8 +1,8 @@
-import { type Options } from '../sdk.gen';
-import { type UseMutationOptions, type InfiniteData } from '@tanstack/react-query';
-import type { PostAuthRegisterData, PostAuthRegisterError, PostAuthRegisterResponse, PostAuthRegisterVerifyData, PostAuthRegisterVerifyError, PostAuthRegisterVerifyResponse, PostAuthRegisterVerifyResendData, PostAuthRegisterVerifyResendError, PostAuthRegisterVerifyResendResponse, PostAuthSignInData, PostAuthSignInError, PostAuthSignInResponse, PostAuthSignInVerifyData, PostAuthSignInVerifyError, PostAuthSignInVerifyResponse, PostAuthEmailVerifySendData, PostAuthEmailVerifySendError, PostAuthEmailVerifySendResponse, PostAuthEmailVerifyData, PostAuthEmailVerifyError, PostAuthEmailVerifyResponse, GetAuthMeData, GetAuthSignOutData, PostAuthPasswordResetData, PostAuthPasswordResetError, PostAuthPasswordResetResponse, PostAuthPasswordResetVerifyData, PostAuthPasswordResetVerifyError, PostAuthPasswordResetVerifyResponse, PostAuthPasswordChangeData, PostAuthPasswordChangeError, PostAuthPasswordChangeResponse, GetApiKeysData, PostApiKeysData, PostApiKeysError, PostApiKeysResponse, DeleteApiKeysByApiKeyIdData, DeleteApiKeysByApiKeyIdError, DeleteApiKeysByApiKeyIdResponse, GetApiKeysByApiKeyIdData, PutApiKeysByApiKeyIdData, PutApiKeysByApiKeyIdError, PutApiKeysByApiKeyIdResponse, PutApiKeysByApiKeyIdStatusData, PutApiKeysByApiKeyIdStatusError, PutApiKeysByApiKeyIdStatusResponse, GetOrgsCurrentData, PutOrgsData, PutOrgsError, PutOrgsResponse, PostOrgsFirstData, PostOrgsFirstError, PostOrgsFirstResponse, PostOrgsCurrentByOrgIdData, PostOrgsCurrentByOrgIdError, PostOrgsCurrentByOrgIdResponse, GetInvitesData, PostInvitesData, PostInvitesError, PostInvitesResponse, GetInvitesMeData, DeleteInvitesByInvitationIdData, DeleteInvitesByInvitationIdError, DeleteInvitesByInvitationIdResponse, GetInvitesByTokenAcceptData, GetInvitesByTokenDeclineData, GetMembersData, PostMembersData, PostMembersError, PostMembersResponse, DeleteMembersByUserIdData, DeleteMembersByUserIdError, DeleteMembersByUserIdResponse, GetMembersByUserIdRolesData, PostMembersByUserIdRoleData, PostMembersByUserIdRoleError, PostMembersByUserIdRoleResponse, DeleteMembersByUserIdRoleByRoleNameData, DeleteMembersByUserIdRoleByRoleNameError, DeleteMembersByUserIdRoleByRoleNameResponse, GetWorkspacesData, PostWorkspacesData, PostWorkspacesError, PostWorkspacesResponse, DeleteWorkspacesByWorkspaceIdData, DeleteWorkspacesByWorkspaceIdError, DeleteWorkspacesByWorkspaceIdResponse, GetWorkspacesByWorkspaceIdData, PutWorkspacesByWorkspaceIdData, PutWorkspacesByWorkspaceIdError, PutWorkspacesByWorkspaceIdResponse, DeleteWorkspacesByWorkspaceIdMembersByUserIdRoleData, DeleteWorkspacesByWorkspaceIdMembersByUserIdRoleError, DeleteWorkspacesByWorkspaceIdMembersByUserIdRoleResponse, GetWorkspacesByWorkspaceIdMembersByUserIdRoleData, PostWorkspacesByWorkspaceIdMembersByUserIdRoleData, PostWorkspacesByWorkspaceIdMembersByUserIdRoleError, PostWorkspacesByWorkspaceIdMembersByUserIdRoleResponse, GetWorkspacesByWorkspaceIdMembersData, GetRolesData, GetPlansData, GetPlansCurrentData, GetSettingsData, GetSettingsCustomData, PostSettingsCustomData, PostSettingsCustomError, PostSettingsCustomResponse, DeleteSettingsCustomBySettingSlugData, DeleteSettingsCustomBySettingSlugError, DeleteSettingsCustomBySettingSlugResponse, GetSettingsCustomBySettingSlugData, PutSettingsCustomBySettingSlugData, PutSettingsCustomBySettingSlugError, PutSettingsCustomBySettingSlugResponse, GetSettingsCustomBySettingSlugValueData, GetSettingsServiceData, GetSettingsServiceBySettingSlugData, PutSettingsServiceBySettingSlugData, PutSettingsServiceBySettingSlugError, PutSettingsServiceBySettingSlugResponse, GetSettingsServiceBySettingSlugValueData, GetWorkspacesByWorkspaceIdSettingsData, GetWorkspacesByWorkspaceIdSettingsCustomData, PostWorkspacesByWorkspaceIdSettingsCustomData, PostWorkspacesByWorkspaceIdSettingsCustomError, PostWorkspacesByWorkspaceIdSettingsCustomResponse, DeleteWorkspacesByWorkspaceIdSettingsCustomBySettingSlugData, DeleteWorkspacesByWorkspaceIdSettingsCustomBySettingSlugError, DeleteWorkspacesByWorkspaceIdSettingsCustomBySettingSlugResponse, GetWorkspacesByWorkspaceIdSettingsCustomBySettingSlugData, PutWorkspacesByWorkspaceIdSettingsCustomBySettingSlugData, PutWorkspacesByWorkspaceIdSettingsCustomBySettingSlugError, PutWorkspacesByWorkspaceIdSettingsCustomBySettingSlugResponse, GetWorkspacesByWorkspaceIdSettingsCustomBySettingSlugValueData, GetWorkspacesByWorkspaceIdSettingsServiceData, DeleteWorkspacesByWorkspaceIdSettingsServiceBySettingSlugData, DeleteWorkspacesByWorkspaceIdSettingsServiceBySettingSlugError, DeleteWorkspacesByWorkspaceIdSettingsServiceBySettingSlugResponse, GetWorkspacesByWorkspaceIdSettingsServiceBySettingSlugData, PutWorkspacesByWorkspaceIdSettingsServiceBySettingSlugData, PutWorkspacesByWorkspaceIdSettingsServiceBySettingSlugError, PutWorkspacesByWorkspaceIdSettingsServiceBySettingSlugResponse, GetWorkspacesByWorkspaceIdSettingsServiceBySettingSlugValueData, GetCodesByCodeIdScansData, GetCodesByCodeIdScansError, GetCodesByCodeIdRouterRulesData, GetCodesByCodeIdRouterRulesError, PostCodesByCodeIdRouterRulesData, PostCodesByCodeIdRouterRulesError, PostCodesByCodeIdRouterRulesResponse, DeleteCodesByCodeIdRouterRulesByRouterRuleIdData, DeleteCodesByCodeIdRouterRulesByRouterRuleIdError, DeleteCodesByCodeIdRouterRulesByRouterRuleIdResponse, GetCodesByCodeIdRouterRulesByRouterRuleIdData, PutCodesByCodeIdRouterRulesByRouterRuleIdData, PutCodesByCodeIdRouterRulesByRouterRuleIdError, PutCodesByCodeIdRouterRulesByRouterRuleIdResponse, GetCodesDeletedData, GetCodesDeletedError, GetCodesLinksData, GetCodesLinksError, DeleteCodesByCodeIdData, DeleteCodesByCodeIdError, DeleteCodesByCodeIdResponse, GetCodesByCodeIdData, PutCodesByCodeIdData, PutCodesByCodeIdError, PutCodesByCodeIdResponse, DeleteCodesData, DeleteCodesError, DeleteCodesResponse, GetCodesData, GetCodesError, PostCodesData, PostCodesError, PostCodesResponse, PutCodesByCodeIdOptionsData, PutCodesByCodeIdOptionsError, PutCodesByCodeIdOptionsResponse, DeleteCodesPermanentData, DeleteCodesPermanentError, DeleteCodesPermanentResponse, DeleteCodesByCodeIdPermanentData, DeleteCodesByCodeIdPermanentError, DeleteCodesByCodeIdPermanentResponse, PostCodesByCodeIdRestoreData, PostCodesByCodeIdRestoreError, PostCodesByCodeIdRestoreResponse, PostCodesBulkGetData, PostCodesBulkGetError, PostCodesBulkGetResponse, PostCodesGenetateCanvasPngData, PostCodesGenetateCanvasPngError, PostCodesGenetateCanvasPngResponse, PostCodesGenerateByTypeData, PostCodesGenerateByTypeError, PostCodesGenerateByTypeResponse, PostCodesValidateData, PostCodesValidateError, PostCodesValidateResponse, PostCodesByCodeIdValidateData, PostCodesByCodeIdValidateError, PostCodesByCodeIdValidateResponse, PostCodesLinksRefreshData, PostCodesLinksRefreshError, PostCodesLinksRefreshResponse, GetCodesByCodeIdVersionByVersionData, DeleteCodesByCodeIdVersionsData, DeleteCodesByCodeIdVersionsError, DeleteCodesByCodeIdVersionsResponse, GetCodesByCodeIdVersionsData, PostCodesByCodeIdVersionByVersionRestoreData, PostCodesByCodeIdVersionByVersionRestoreError, PostCodesByCodeIdVersionByVersionRestoreResponse, GetCodesByCodeIdVersionByVersionByTypeData, GetCodesByCodeIdVersionByVersionByTypeLinkData, DeleteCodesByCodeIdVersionsByVersionLinksData, DeleteCodesByCodeIdVersionsByVersionLinksError, DeleteCodesByCodeIdVersionsByVersionLinksResponse, DeleteCodesByCodeIdVersionsByVersionLinksByTypeData, DeleteCodesByCodeIdVersionsByVersionLinksByTypeError, DeleteCodesByCodeIdVersionsByVersionLinksByTypeResponse, DeleteCodesByCodeIdVersionsLinksData, DeleteCodesByCodeIdVersionsLinksError, DeleteCodesByCodeIdVersionsLinksResponse, DeleteCodesByCodeIdVersionsLinksByTypeData, DeleteCodesByCodeIdVersionsLinksByTypeError, DeleteCodesByCodeIdVersionsLinksByTypeResponse, GetCodesByCodeIdByTypeData, GetCodesByCodeIdByTypeLinkData, DeleteCodesByCodeIdLinksData, DeleteCodesByCodeIdLinksError, DeleteCodesByCodeIdLinksResponse, DeleteCodesByCodeIdLinksByTypeData, DeleteCodesByCodeIdLinksByTypeError, DeleteCodesByCodeIdLinksByTypeResponse, GetScansByScanIdData, GetTemplatesData, PostTemplatesData, PostTemplatesError, PostTemplatesResponse, GetTemplatesBaseData, DeleteTemplatesByTemplateIdData, DeleteTemplatesByTemplateIdError, DeleteTemplatesByTemplateIdResponse, GetTemplatesByTemplateIdData, PutTemplatesByTemplateIdData, PutTemplatesByTemplateIdError, PutTemplatesByTemplateIdResponse, PutTemplatesByTemplateIdOptionsData, PutTemplatesByTemplateIdOptionsError, PutTemplatesByTemplateIdOptionsResponse, GetTemplatesWorkspaceByWorkspaceIdData, GetStylesData, PostStylesData, PostStylesError, PostStylesResponse, GetStylesBaseData, DeleteStylesByStyleIdData, DeleteStylesByStyleIdError, DeleteStylesByStyleIdResponse, GetStylesByStyleIdData, PutStylesByStyleIdData, PutStylesByStyleIdError, PutStylesByStyleIdResponse, PutStylesByStyleIdOptionsData, PutStylesByStyleIdOptionsError, PutStylesByStyleIdOptionsResponse, GetStylesWorkspaceByWorkspaceIdData, GetTextsData, PostTextsData, PostTextsError, PostTextsResponse, GetTextsBaseData, DeleteTextsByTextIdData, DeleteTextsByTextIdError, DeleteTextsByTextIdResponse, GetTextsByTextIdData, PutTextsByTextIdData, PutTextsByTextIdError, PutTextsByTextIdResponse, PutTextsByTextIdOptionsData, PutTextsByTextIdOptionsError, PutTextsByTextIdOptionsResponse, GetTextsWorkspaceByWorkspaceIdData, GetBordersData, PostBordersData, PostBordersError, PostBordersResponse, GetBordersBaseData, DeleteBordersByBorderIdData, DeleteBordersByBorderIdError, DeleteBordersByBorderIdResponse, GetBordersByBorderIdData, PutBordersByBorderIdData, PutBordersByBorderIdError, PutBordersByBorderIdResponse, PutBordersByBorderIdOptionsData, PutBordersByBorderIdOptionsError, PutBordersByBorderIdOptionsResponse, GetBordersWorkspaceByWorkspaceIdData, GetCountryCodesData, GetRouterRuleTemplatesData, GetRouterRuleTemplatesError, PostRouterRuleTemplatesData, PostRouterRuleTemplatesError, DeleteRouterRuleTemplatesByRouterRuleTemplateIdData, DeleteRouterRuleTemplatesByRouterRuleTemplateIdError, DeleteRouterRuleTemplatesByRouterRuleTemplateIdResponse, GetRouterRuleTemplatesByRouterRuleTemplateIdData, PutRouterRuleTemplatesByRouterRuleTemplateIdData, PutRouterRuleTemplatesByRouterRuleTemplateIdError, GetRouterRulesData, GetRouterRulesError, GetWorkspacesByWorkspaceIdRouterRulesData, GetWorkspacesByWorkspaceIdRouterRulesError, PostWorkspacesByWorkspaceIdRouterRuleTemplatesData, PostWorkspacesByWorkspaceIdRouterRuleTemplatesError } from '../types.gen';
+import { type Options } from "../sdk.gen";
+import { type UseMutationOptions, type InfiniteData } from "@tanstack/react-query";
+import type { PostAuthRegisterData, PostAuthRegisterError, PostAuthRegisterResponse, PostAuthRegisterVerifyData, PostAuthRegisterVerifyError, PostAuthRegisterVerifyResponse, PostAuthRegisterVerifyResendData, PostAuthRegisterVerifyResendError, PostAuthRegisterVerifyResendResponse, PostAuthSignInData, PostAuthSignInError, PostAuthSignInResponse, PostAuthSignInVerifyData, PostAuthSignInVerifyError, PostAuthSignInVerifyResponse, PostAuthEmailVerifySendData, PostAuthEmailVerifySendError, PostAuthEmailVerifySendResponse, PostAuthEmailVerifyData, PostAuthEmailVerifyError, PostAuthEmailVerifyResponse, GetAuthMeData, GetAuthSignOutData, PostAuthPasswordResetData, PostAuthPasswordResetError, PostAuthPasswordResetResponse, PostAuthPasswordResetVerifyData, PostAuthPasswordResetVerifyError, PostAuthPasswordResetVerifyResponse, PostAuthPasswordChangeData, PostAuthPasswordChangeError, PostAuthPasswordChangeResponse, GetApiKeysData, PostApiKeysData, PostApiKeysError, PostApiKeysResponse, DeleteApiKeysByApiKeyIdData, DeleteApiKeysByApiKeyIdError, DeleteApiKeysByApiKeyIdResponse, GetApiKeysByApiKeyIdData, PutApiKeysByApiKeyIdData, PutApiKeysByApiKeyIdError, PutApiKeysByApiKeyIdResponse, PutApiKeysByApiKeyIdStatusData, PutApiKeysByApiKeyIdStatusError, PutApiKeysByApiKeyIdStatusResponse, GetOrgsCurrentData, PutOrgsData, PutOrgsError, PutOrgsResponse, PostOrgsFirstData, PostOrgsFirstError, PostOrgsFirstResponse, PostOrgsCurrentByOrgIdData, PostOrgsCurrentByOrgIdError, PostOrgsCurrentByOrgIdResponse, GetInvitesData, PostInvitesData, PostInvitesError, PostInvitesResponse, GetInvitesMeData, DeleteInvitesByInvitationIdData, DeleteInvitesByInvitationIdError, DeleteInvitesByInvitationIdResponse, GetInvitesByTokenAcceptData, GetInvitesByTokenDeclineData, GetMembersData, PostMembersData, PostMembersError, PostMembersResponse, DeleteMembersByUserIdData, DeleteMembersByUserIdError, DeleteMembersByUserIdResponse, GetMembersByUserIdRolesData, PostMembersByUserIdRoleData, PostMembersByUserIdRoleError, PostMembersByUserIdRoleResponse, DeleteMembersByUserIdRoleByRoleNameData, DeleteMembersByUserIdRoleByRoleNameError, DeleteMembersByUserIdRoleByRoleNameResponse, GetWorkspacesData, PostWorkspacesData, PostWorkspacesError, PostWorkspacesResponse, DeleteWorkspacesByWorkspaceIdData, DeleteWorkspacesByWorkspaceIdError, DeleteWorkspacesByWorkspaceIdResponse, GetWorkspacesByWorkspaceIdData, PutWorkspacesByWorkspaceIdData, PutWorkspacesByWorkspaceIdError, PutWorkspacesByWorkspaceIdResponse, DeleteWorkspacesByWorkspaceIdMembersByUserIdRoleData, DeleteWorkspacesByWorkspaceIdMembersByUserIdRoleError, DeleteWorkspacesByWorkspaceIdMembersByUserIdRoleResponse, GetWorkspacesByWorkspaceIdMembersByUserIdRoleData, PostWorkspacesByWorkspaceIdMembersByUserIdRoleData, PostWorkspacesByWorkspaceIdMembersByUserIdRoleError, PostWorkspacesByWorkspaceIdMembersByUserIdRoleResponse, GetWorkspacesByWorkspaceIdMembersData, GetRolesData, GetPlansData, GetPlansCurrentData, GetSettingsData, GetSettingsCustomData, PostSettingsCustomData, PostSettingsCustomError, PostSettingsCustomResponse, DeleteSettingsCustomBySettingSlugData, DeleteSettingsCustomBySettingSlugError, DeleteSettingsCustomBySettingSlugResponse, GetSettingsCustomBySettingSlugData, PutSettingsCustomBySettingSlugData, PutSettingsCustomBySettingSlugError, PutSettingsCustomBySettingSlugResponse, GetSettingsCustomBySettingSlugValueData, GetSettingsServiceData, GetSettingsServiceBySettingSlugData, PutSettingsServiceBySettingSlugData, PutSettingsServiceBySettingSlugError, PutSettingsServiceBySettingSlugResponse, GetSettingsServiceBySettingSlugValueData, GetWorkspacesByWorkspaceIdSettingsData, GetWorkspacesByWorkspaceIdSettingsCustomData, PostWorkspacesByWorkspaceIdSettingsCustomData, PostWorkspacesByWorkspaceIdSettingsCustomError, PostWorkspacesByWorkspaceIdSettingsCustomResponse, DeleteWorkspacesByWorkspaceIdSettingsCustomBySettingSlugData, DeleteWorkspacesByWorkspaceIdSettingsCustomBySettingSlugError, DeleteWorkspacesByWorkspaceIdSettingsCustomBySettingSlugResponse, GetWorkspacesByWorkspaceIdSettingsCustomBySettingSlugData, PutWorkspacesByWorkspaceIdSettingsCustomBySettingSlugData, PutWorkspacesByWorkspaceIdSettingsCustomBySettingSlugError, PutWorkspacesByWorkspaceIdSettingsCustomBySettingSlugResponse, GetWorkspacesByWorkspaceIdSettingsCustomBySettingSlugValueData, GetWorkspacesByWorkspaceIdSettingsServiceData, DeleteWorkspacesByWorkspaceIdSettingsServiceBySettingSlugData, DeleteWorkspacesByWorkspaceIdSettingsServiceBySettingSlugError, DeleteWorkspacesByWorkspaceIdSettingsServiceBySettingSlugResponse, GetWorkspacesByWorkspaceIdSettingsServiceBySettingSlugData, PutWorkspacesByWorkspaceIdSettingsServiceBySettingSlugData, PutWorkspacesByWorkspaceIdSettingsServiceBySettingSlugError, PutWorkspacesByWorkspaceIdSettingsServiceBySettingSlugResponse, GetWorkspacesByWorkspaceIdSettingsServiceBySettingSlugValueData, GetCodesByCodeIdScansData, GetCodesByCodeIdScansError, GetCodesByCodeIdRouterRulesData, GetCodesByCodeIdRouterRulesError, PostCodesByCodeIdRouterRulesData, PostCodesByCodeIdRouterRulesError, PostCodesByCodeIdRouterRulesResponse, DeleteCodesByCodeIdRouterRulesByRouterRuleIdData, DeleteCodesByCodeIdRouterRulesByRouterRuleIdError, DeleteCodesByCodeIdRouterRulesByRouterRuleIdResponse, GetCodesByCodeIdRouterRulesByRouterRuleIdData, PutCodesByCodeIdRouterRulesByRouterRuleIdData, PutCodesByCodeIdRouterRulesByRouterRuleIdError, PutCodesByCodeIdRouterRulesByRouterRuleIdResponse, GetCodesDeletedData, GetCodesDeletedError, GetCodesLinksData, GetCodesLinksError, DeleteCodesByCodeIdData, DeleteCodesByCodeIdError, DeleteCodesByCodeIdResponse, GetCodesByCodeIdData, PutCodesByCodeIdData, PutCodesByCodeIdError, PutCodesByCodeIdResponse, DeleteCodesData, DeleteCodesError, DeleteCodesResponse, GetCodesData, GetCodesError, PostCodesData, PostCodesError, PostCodesResponse, PostCodesBulkData, PostCodesBulkError, PostCodesBulkResponse, PutCodesByCodeIdOptionsData, PutCodesByCodeIdOptionsError, PutCodesByCodeIdOptionsResponse, DeleteCodesPermanentData, DeleteCodesPermanentError, DeleteCodesPermanentResponse, DeleteCodesByCodeIdPermanentData, DeleteCodesByCodeIdPermanentError, DeleteCodesByCodeIdPermanentResponse, PostCodesByCodeIdRestoreData, PostCodesByCodeIdRestoreError, PostCodesByCodeIdRestoreResponse, PostCodesBulkGetData, PostCodesBulkGetError, PostCodesBulkGetResponse, PostCodesGenetateCanvasPngData, PostCodesGenetateCanvasPngError, PostCodesGenetateCanvasPngResponse, PostCodesGenerateByTypeData, PostCodesGenerateByTypeError, PostCodesGenerateByTypeResponse, PostCodesValidateData, PostCodesValidateError, PostCodesValidateResponse, PostCodesByCodeIdValidateData, PostCodesByCodeIdValidateError, PostCodesByCodeIdValidateResponse, PostCodesLinksRefreshData, PostCodesLinksRefreshError, PostCodesLinksRefreshResponse, GetCodesByCodeIdVersionByVersionData, DeleteCodesByCodeIdVersionsData, DeleteCodesByCodeIdVersionsError, DeleteCodesByCodeIdVersionsResponse, GetCodesByCodeIdVersionsData, PostCodesByCodeIdVersionByVersionRestoreData, PostCodesByCodeIdVersionByVersionRestoreError, PostCodesByCodeIdVersionByVersionRestoreResponse, GetCodesByCodeIdVersionByVersionByTypeData, GetCodesByCodeIdVersionByVersionByTypeLinkData, DeleteCodesByCodeIdVersionsByVersionLinksData, DeleteCodesByCodeIdVersionsByVersionLinksError, DeleteCodesByCodeIdVersionsByVersionLinksResponse, DeleteCodesByCodeIdVersionsByVersionLinksByTypeData, DeleteCodesByCodeIdVersionsByVersionLinksByTypeError, DeleteCodesByCodeIdVersionsByVersionLinksByTypeResponse, DeleteCodesByCodeIdVersionsLinksData, DeleteCodesByCodeIdVersionsLinksError, DeleteCodesByCodeIdVersionsLinksResponse, DeleteCodesByCodeIdVersionsLinksByTypeData, DeleteCodesByCodeIdVersionsLinksByTypeError, DeleteCodesByCodeIdVersionsLinksByTypeResponse, GetCodesByCodeIdByTypeData, GetCodesByCodeIdByTypeLinkData, DeleteCodesByCodeIdLinksData, DeleteCodesByCodeIdLinksError, DeleteCodesByCodeIdLinksResponse, DeleteCodesByCodeIdLinksByTypeData, DeleteCodesByCodeIdLinksByTypeError, DeleteCodesByCodeIdLinksByTypeResponse, GetScansByScanIdData, GetTemplatesData, PostTemplatesData, PostTemplatesError, PostTemplatesResponse, GetTemplatesBaseData, DeleteTemplatesByTemplateIdData, DeleteTemplatesByTemplateIdError, DeleteTemplatesByTemplateIdResponse, GetTemplatesByTemplateIdData, PutTemplatesByTemplateIdData, PutTemplatesByTemplateIdError, PutTemplatesByTemplateIdResponse, PutTemplatesByTemplateIdOptionsData, PutTemplatesByTemplateIdOptionsError, PutTemplatesByTemplateIdOptionsResponse, GetTemplatesWorkspaceByWorkspaceIdData, GetStylesData, PostStylesData, PostStylesError, PostStylesResponse, GetStylesBaseData, DeleteStylesByStyleIdData, DeleteStylesByStyleIdError, DeleteStylesByStyleIdResponse, GetStylesByStyleIdData, PutStylesByStyleIdData, PutStylesByStyleIdError, PutStylesByStyleIdResponse, PutStylesByStyleIdOptionsData, PutStylesByStyleIdOptionsError, PutStylesByStyleIdOptionsResponse, GetStylesWorkspaceByWorkspaceIdData, GetTextsData, PostTextsData, PostTextsError, PostTextsResponse, GetTextsBaseData, DeleteTextsByTextIdData, DeleteTextsByTextIdError, DeleteTextsByTextIdResponse, GetTextsByTextIdData, PutTextsByTextIdData, PutTextsByTextIdError, PutTextsByTextIdResponse, PutTextsByTextIdOptionsData, PutTextsByTextIdOptionsError, PutTextsByTextIdOptionsResponse, GetTextsWorkspaceByWorkspaceIdData, GetBordersData, PostBordersData, PostBordersError, PostBordersResponse, GetBordersBaseData, DeleteBordersByBorderIdData, DeleteBordersByBorderIdError, DeleteBordersByBorderIdResponse, GetBordersByBorderIdData, PutBordersByBorderIdData, PutBordersByBorderIdError, PutBordersByBorderIdResponse, PutBordersByBorderIdOptionsData, PutBordersByBorderIdOptionsError, PutBordersByBorderIdOptionsResponse, GetBordersWorkspaceByWorkspaceIdData, GetCountryCodesData, GetRouterRuleTemplatesData, GetRouterRuleTemplatesError, PostRouterRuleTemplatesData, PostRouterRuleTemplatesError, DeleteRouterRuleTemplatesByRouterRuleTemplateIdData, DeleteRouterRuleTemplatesByRouterRuleTemplateIdError, DeleteRouterRuleTemplatesByRouterRuleTemplateIdResponse, GetRouterRuleTemplatesByRouterRuleTemplateIdData, PutRouterRuleTemplatesByRouterRuleTemplateIdData, PutRouterRuleTemplatesByRouterRuleTemplateIdError, GetRouterRulesData, GetRouterRulesError, GetWorkspacesByWorkspaceIdRouterRulesData, GetWorkspacesByWorkspaceIdRouterRulesError, PostWorkspacesByWorkspaceIdRouterRuleTemplatesData, PostWorkspacesByWorkspaceIdRouterRuleTemplatesError } from "../types.gen";
 export type QueryKey<TOptions extends Options> = [
-    Pick<TOptions, 'baseUrl' | 'body' | 'headers' | 'path' | 'query'> & {
+    Pick<TOptions, "baseUrl" | "body" | "headers" | "path" | "query"> & {
         _id: string;
         _infinite?: boolean;
     }
@@ -23040,6 +23040,2732 @@ export declare const postCodesOptions: (options?: Options<PostCodesData>) => imp
  * Creates a new QR Code with the specified data and options. Supports different dataTypes for dynamic codes including WiFi configuration, contact cards (vCard), plain text, email composition, calendar events, file downloads, and custom JSON data. Each dataType has specific metadata requirements that determine how the QR code is processed when scanned.
  */
 export declare const postCodesMutation: (options?: Partial<Options<PostCodesData>>) => UseMutationOptions<PostCodesResponse, PostCodesError, Options<PostCodesData>>;
+export declare const postCodesBulkQueryKey: (options?: Options<PostCodesBulkData>) => [Pick<Options<PostCodesBulkData>, "query" | "body" | "headers" | "path" | "baseUrl"> & {
+    _id: string;
+    _infinite?: boolean;
+}];
+/**
+ * Bulk Create QR Codes
+ * Creates up to 20 QR codes in a single request. Each payload is validated and processed independently, returning partial success results with per-item error reporting.
+ */
+export declare const postCodesBulkOptions: (options?: Options<PostCodesBulkData>) => import("@tanstack/react-query").OmitKeyof<import("@tanstack/react-query").UseQueryOptions<{
+    data: Array<{
+        id: string;
+        name: string;
+        type?: "static" | "dynamic";
+        dataType?: "url" | "wifi" | "vcard" | "text" | "email" | "event" | "json" | "file" | "scan-info" | null;
+        shortAlias?: string | null;
+        dynamicData?: {
+            [key: string]: unknown;
+        } | null;
+        data: string;
+        description: string | null;
+        totalScans: number | null;
+        metadata: {
+            [key: string]: unknown;
+        } | null;
+        options: {
+            data: string;
+            shape?: "square" | "circle" | null;
+            margin?: number | null;
+            isResponsive?: boolean | null;
+            scale?: number | null;
+            offset?: number | null;
+            verticalOffset?: number | null;
+            horizontalOffset?: number | null;
+            qrOptions?: {
+                typeNumber?: number | null;
+                mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+            } | null;
+            dotsOptions?: {
+                type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                color?: string | null;
+                size?: number | null;
+                gradient?: {
+                    type?: "linear" | "radial";
+                    rotation?: number;
+                    colorStops?: Array<{
+                        offset?: number;
+                        color?: string;
+                    }>;
+                } | null;
+            } | null;
+            cornersSquareOptions?: {
+                type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                color?: string | null;
+                gradient?: {
+                    type?: "linear" | "radial";
+                    rotation?: number;
+                    colorStops?: Array<{
+                        offset?: number;
+                        color?: string;
+                    }>;
+                } | null;
+            } | null;
+            cornersDotOptions?: {
+                type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                color?: string | null;
+                gradient?: {
+                    type?: "linear" | "radial";
+                    rotation?: number;
+                    colorStops?: Array<{
+                        offset?: number;
+                        color?: string;
+                    }>;
+                } | null;
+            } | null;
+            backgroundOptions?: {
+                color?: string | null;
+                round?: number | string | null;
+                gradient?: {
+                    type?: "linear" | "radial";
+                    rotation?: number;
+                    colorStops?: Array<{
+                        offset?: number;
+                        color?: string;
+                    }>;
+                } | null;
+            } | false;
+            image?: string | unknown | null;
+            imageOptions?: {
+                mode?: "center" | "overlay" | "background" | null;
+                imageSize?: number | null;
+                margin?: number | null;
+                crossOrigin?: string | null;
+                fill?: {
+                    color?: string | null;
+                    gradient?: {
+                        type?: "linear" | "radial";
+                        rotation?: number;
+                        colorStops?: Array<{
+                            offset?: number;
+                            color?: string;
+                        }>;
+                    } | null;
+                } | null;
+            } | null;
+            borderOptions?: {
+                hasBorder?: boolean | null;
+                thickness?: number | null;
+                color?: string | null;
+                radius?: string | null;
+                noBorderThickness?: number | null;
+                background?: string | null;
+                inner?: {
+                    radius?: string | null;
+                    scale?: number | null;
+                    horizontalOffset?: number | null;
+                    verticalOffset?: number | null;
+                } | null;
+                borderOuter?: {
+                    color?: string;
+                    thickness?: number;
+                } | null;
+                borderInner?: {
+                    color?: string;
+                    thickness?: number;
+                } | null;
+                decorations?: {
+                    top?: {
+                        disabled?: boolean;
+                        enableText?: boolean;
+                        offset?: number;
+                        curveAdjustment?: number;
+                        curveDisabled?: boolean;
+                        curveRadius?: string;
+                        type?: "text" | "image";
+                        value?: string;
+                        style?: {
+                            fontFace?: string;
+                            fontSize?: number;
+                            fontColor?: string;
+                            letterSpacing?: number;
+                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                        };
+                    } | null;
+                    right?: {
+                        disabled?: boolean;
+                        enableText?: boolean;
+                        offset?: number;
+                        curveAdjustment?: number;
+                        curveDisabled?: boolean;
+                        curveRadius?: string;
+                        type?: "text" | "image";
+                        value?: string;
+                        style?: {
+                            fontFace?: string;
+                            fontSize?: number;
+                            fontColor?: string;
+                            letterSpacing?: number;
+                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                        };
+                    } | null;
+                    bottom?: {
+                        disabled?: boolean;
+                        enableText?: boolean;
+                        offset?: number;
+                        curveAdjustment?: number;
+                        curveDisabled?: boolean;
+                        curveRadius?: string;
+                        type?: "text" | "image";
+                        value?: string;
+                        style?: {
+                            fontFace?: string;
+                            fontSize?: number;
+                            fontColor?: string;
+                            letterSpacing?: number;
+                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                        };
+                    } | null;
+                    left?: {
+                        disabled?: boolean;
+                        enableText?: boolean;
+                        offset?: number;
+                        curveAdjustment?: number;
+                        curveDisabled?: boolean;
+                        curveRadius?: string;
+                        type?: "text" | "image";
+                        value?: string;
+                        style?: {
+                            fontFace?: string;
+                            fontSize?: number;
+                            fontColor?: string;
+                            letterSpacing?: number;
+                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                        };
+                    } | null;
+                } | null;
+            } | null;
+        };
+        styleId: string | null;
+        templateId: string | null;
+        borderId: string | null;
+        textId: string | null;
+        style?: {
+            id?: string | null;
+            name?: string | null;
+            options: {
+                primaryColor?: string | null;
+                secondaryColor?: string | null;
+                thirdColor?: string | null;
+                backgroundColor?: string | null;
+                dotsGradient?: {
+                    type?: "linear" | "radial";
+                    rotation?: number;
+                    colorStops?: Array<{
+                        offset?: number;
+                        color?: string;
+                    }>;
+                } | null;
+                cornersDotGradient?: {
+                    type?: "linear" | "radial";
+                    rotation?: number;
+                    colorStops?: Array<{
+                        offset?: number;
+                        color?: string;
+                    }>;
+                } | null;
+                cornersGradient?: {
+                    type?: "linear" | "radial";
+                    rotation?: number;
+                    colorStops?: Array<{
+                        offset?: number;
+                        color?: string;
+                    }>;
+                } | null;
+                backgroundGradient?: {
+                    type?: "linear" | "radial";
+                    rotation?: number;
+                    colorStops?: Array<{
+                        offset?: number;
+                        color?: string;
+                    }>;
+                } | null;
+                dotShape?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                cornerSquareShape?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                cornerDotShape?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                logo?: string | unknown | null;
+                logoSize?: number | null;
+                logoMode?: "center" | "overlay" | "background" | null;
+                logoMargin?: number | null;
+                logoBackgroundColor?: string | null;
+                logoPadding?: number | null;
+                logoRadius?: string | number | null;
+                borderColor?: string | null;
+                borderThickness?: number | null;
+                borderRadius?: string | number | null;
+                borderInnerColor?: string | null;
+                borderInnerThickness?: number | null;
+                borderInnerRadius?: string | number | null;
+                borderOuterColor?: string | null;
+                borderOuterThickness?: number | null;
+                borderTextTop?: string | null;
+                borderTextRight?: string | null;
+                borderTextBottom?: string | null;
+                borderTextLeft?: string | null;
+                borderFontFace?: string | null;
+                borderFontSize?: number | null;
+                borderFontColor?: string | null;
+                borderLetterSpacing?: number | null;
+                borderTextTransform?: "uppercase" | "lowercase" | "capitalize" | null;
+                borderFontWeight?: string;
+            };
+        };
+        template?: {
+            id?: string | null;
+            name?: string | null;
+            options?: {
+                shape?: "square" | "circle" | null;
+                margin?: number | null;
+                isResponsive?: boolean | null;
+                scale?: number | null;
+                offset?: number | null;
+                verticalOffset?: number | null;
+                horizontalOffset?: number | null;
+                qrOptions?: {
+                    typeNumber?: number | null;
+                    mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                    errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                } | null;
+                dotsOptions?: {
+                    type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                    color?: string | null;
+                    size?: number | null;
+                    gradient?: {
+                        type?: "linear" | "radial";
+                        rotation?: number;
+                        colorStops?: Array<{
+                            offset?: number;
+                            color?: string;
+                        }>;
+                    } | null;
+                } | null;
+                cornersSquareOptions?: {
+                    type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    color?: string | null;
+                    gradient?: {
+                        type?: "linear" | "radial";
+                        rotation?: number;
+                        colorStops?: Array<{
+                            offset?: number;
+                            color?: string;
+                        }>;
+                    } | null;
+                } | null;
+                cornersDotOptions?: {
+                    type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    color?: string | null;
+                    gradient?: {
+                        type?: "linear" | "radial";
+                        rotation?: number;
+                        colorStops?: Array<{
+                            offset?: number;
+                            color?: string;
+                        }>;
+                    } | null;
+                } | null;
+                backgroundOptions?: {
+                    color?: string | null;
+                    round?: number | string | null;
+                    gradient?: {
+                        type?: "linear" | "radial";
+                        rotation?: number;
+                        colorStops?: Array<{
+                            offset?: number;
+                            color?: string;
+                        }>;
+                    } | null;
+                } | false;
+                image?: string | unknown | null;
+                imageOptions?: {
+                    mode?: "center" | "overlay" | "background" | null;
+                    imageSize?: number | null;
+                    margin?: number | null;
+                    crossOrigin?: string | null;
+                    fill?: {
+                        color?: string | null;
+                        gradient?: {
+                            type?: "linear" | "radial";
+                            rotation?: number;
+                            colorStops?: Array<{
+                                offset?: number;
+                                color?: string;
+                            }>;
+                        } | null;
+                    } | null;
+                } | null;
+                borderOptions?: {
+                    hasBorder?: boolean | null;
+                    thickness?: number | null;
+                    color?: string | null;
+                    radius?: string | null;
+                    noBorderThickness?: number | null;
+                    background?: string | null;
+                    inner?: {
+                        radius?: string | null;
+                        scale?: number | null;
+                        horizontalOffset?: number | null;
+                        verticalOffset?: number | null;
+                    } | null;
+                    borderOuter?: {
+                        color?: string;
+                        thickness?: number;
+                    } | null;
+                    borderInner?: {
+                        color?: string;
+                        thickness?: number;
+                    } | null;
+                    decorations?: {
+                        top?: {
+                            disabled?: boolean;
+                            enableText?: boolean;
+                            offset?: number;
+                            curveAdjustment?: number;
+                            curveDisabled?: boolean;
+                            curveRadius?: string;
+                            type?: "text" | "image";
+                            value?: string;
+                            style?: {
+                                fontFace?: string;
+                                fontSize?: number;
+                                fontColor?: string;
+                                letterSpacing?: number;
+                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            };
+                        } | null;
+                        right?: {
+                            disabled?: boolean;
+                            enableText?: boolean;
+                            offset?: number;
+                            curveAdjustment?: number;
+                            curveDisabled?: boolean;
+                            curveRadius?: string;
+                            type?: "text" | "image";
+                            value?: string;
+                            style?: {
+                                fontFace?: string;
+                                fontSize?: number;
+                                fontColor?: string;
+                                letterSpacing?: number;
+                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            };
+                        } | null;
+                        bottom?: {
+                            disabled?: boolean;
+                            enableText?: boolean;
+                            offset?: number;
+                            curveAdjustment?: number;
+                            curveDisabled?: boolean;
+                            curveRadius?: string;
+                            type?: "text" | "image";
+                            value?: string;
+                            style?: {
+                                fontFace?: string;
+                                fontSize?: number;
+                                fontColor?: string;
+                                letterSpacing?: number;
+                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            };
+                        } | null;
+                        left?: {
+                            disabled?: boolean;
+                            enableText?: boolean;
+                            offset?: number;
+                            curveAdjustment?: number;
+                            curveDisabled?: boolean;
+                            curveRadius?: string;
+                            type?: "text" | "image";
+                            value?: string;
+                            style?: {
+                                fontFace?: string;
+                                fontSize?: number;
+                                fontColor?: string;
+                                letterSpacing?: number;
+                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            };
+                        } | null;
+                    } | null;
+                } | null;
+                data?: string;
+            };
+        };
+        border?: {
+            id?: string | null;
+            name?: string | null;
+            options: {
+                shape?: "square" | "circle" | null;
+                margin?: number | null;
+                isResponsive?: boolean | null;
+                scale?: number | null;
+                offset?: number | null;
+                verticalOffset?: number | null;
+                horizontalOffset?: number | null;
+                qrOptions?: {
+                    typeNumber?: number | null;
+                    mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                    errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                } | null;
+                dotsOptions?: {
+                    type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                    color?: string | null;
+                    size?: number | null;
+                    gradient?: {
+                        type?: "linear" | "radial";
+                        rotation?: number;
+                        colorStops?: Array<{
+                            offset?: number;
+                            color?: string;
+                        }>;
+                    } | null;
+                } | null;
+                cornersSquareOptions?: {
+                    type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    color?: string | null;
+                    gradient?: {
+                        type?: "linear" | "radial";
+                        rotation?: number;
+                        colorStops?: Array<{
+                            offset?: number;
+                            color?: string;
+                        }>;
+                    } | null;
+                } | null;
+                cornersDotOptions?: {
+                    type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    color?: string | null;
+                    gradient?: {
+                        type?: "linear" | "radial";
+                        rotation?: number;
+                        colorStops?: Array<{
+                            offset?: number;
+                            color?: string;
+                        }>;
+                    } | null;
+                } | null;
+                backgroundOptions?: {
+                    color?: string | null;
+                    round?: number | string | null;
+                    gradient?: {
+                        type?: "linear" | "radial";
+                        rotation?: number;
+                        colorStops?: Array<{
+                            offset?: number;
+                            color?: string;
+                        }>;
+                    } | null;
+                } | false;
+                image?: string | unknown | null;
+                imageOptions?: {
+                    mode?: "center" | "overlay" | "background" | null;
+                    imageSize?: number | null;
+                    margin?: number | null;
+                    crossOrigin?: string | null;
+                    fill?: {
+                        color?: string | null;
+                        gradient?: {
+                            type?: "linear" | "radial";
+                            rotation?: number;
+                            colorStops?: Array<{
+                                offset?: number;
+                                color?: string;
+                            }>;
+                        } | null;
+                    } | null;
+                } | null;
+                borderOptions: {
+                    hasBorder?: boolean | null;
+                    thickness?: number | null;
+                    color?: string | null;
+                    radius?: string | null;
+                    noBorderThickness?: number | null;
+                    background?: string | null;
+                    inner?: {
+                        radius?: string | null;
+                        scale?: number | null;
+                        horizontalOffset?: number | null;
+                        verticalOffset?: number | null;
+                    } | null;
+                    borderOuter?: {
+                        color?: string;
+                        thickness?: number;
+                    } | null;
+                    borderInner?: {
+                        color?: string;
+                        thickness?: number;
+                    } | null;
+                    decorations?: {
+                        top?: {
+                            disabled?: boolean;
+                            enableText?: boolean;
+                            offset?: number;
+                            curveAdjustment?: number;
+                            curveDisabled?: boolean;
+                            curveRadius?: string;
+                            type?: "text" | "image";
+                            value?: string;
+                            style?: {
+                                fontFace?: string;
+                                fontSize?: number;
+                                fontColor?: string;
+                                letterSpacing?: number;
+                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            };
+                        } | null;
+                        right?: {
+                            disabled?: boolean;
+                            enableText?: boolean;
+                            offset?: number;
+                            curveAdjustment?: number;
+                            curveDisabled?: boolean;
+                            curveRadius?: string;
+                            type?: "text" | "image";
+                            value?: string;
+                            style?: {
+                                fontFace?: string;
+                                fontSize?: number;
+                                fontColor?: string;
+                                letterSpacing?: number;
+                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            };
+                        } | null;
+                        bottom?: {
+                            disabled?: boolean;
+                            enableText?: boolean;
+                            offset?: number;
+                            curveAdjustment?: number;
+                            curveDisabled?: boolean;
+                            curveRadius?: string;
+                            type?: "text" | "image";
+                            value?: string;
+                            style?: {
+                                fontFace?: string;
+                                fontSize?: number;
+                                fontColor?: string;
+                                letterSpacing?: number;
+                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            };
+                        } | null;
+                        left?: {
+                            disabled?: boolean;
+                            enableText?: boolean;
+                            offset?: number;
+                            curveAdjustment?: number;
+                            curveDisabled?: boolean;
+                            curveRadius?: string;
+                            type?: "text" | "image";
+                            value?: string;
+                            style?: {
+                                fontFace?: string;
+                                fontSize?: number;
+                                fontColor?: string;
+                                letterSpacing?: number;
+                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            };
+                        } | null;
+                    } | null;
+                };
+            };
+        };
+        text?: {
+            id?: string | null;
+            name?: string | null;
+            options: {
+                value?: string | null;
+                topValue?: string | null;
+                bottomValue?: string | null;
+                rightValue?: string | null;
+                leftValue?: string | null;
+            };
+        };
+        workspaceId: string | null;
+        isValid: boolean | null;
+        validatedAt: string | null;
+        version: number;
+        isDeleted?: boolean;
+        createdByUser?: {
+            id: string;
+            name: string;
+            email: string;
+        } | null;
+        updatedByUser?: {
+            id: string;
+            name: string;
+            email: string;
+        } | null;
+        createdByApiKey?: {
+            id: string;
+            name: string;
+            roleName: string;
+        } | null;
+        updatedByApiKey?: {
+            id: string;
+            name: string;
+            roleName: string;
+        } | null;
+        createdAt?: string | null;
+        updatedAt?: string | null;
+        links?: Array<{
+            format: string;
+            url: string;
+        }>;
+    }>;
+    summary: {
+        requested: number;
+        created: number;
+        failed: number;
+        skipped: number;
+    };
+    errors?: Array<{
+        index: number;
+        name?: string;
+        message: string;
+        reasons: Array<string>;
+    }>;
+}, Error, {
+    data: Array<{
+        id: string;
+        name: string;
+        type?: "static" | "dynamic";
+        dataType?: "url" | "wifi" | "vcard" | "text" | "email" | "event" | "json" | "file" | "scan-info" | null;
+        shortAlias?: string | null;
+        dynamicData?: {
+            [key: string]: unknown;
+        } | null;
+        data: string;
+        description: string | null;
+        totalScans: number | null;
+        metadata: {
+            [key: string]: unknown;
+        } | null;
+        options: {
+            data: string;
+            shape?: "square" | "circle" | null;
+            margin?: number | null;
+            isResponsive?: boolean | null;
+            scale?: number | null;
+            offset?: number | null;
+            verticalOffset?: number | null;
+            horizontalOffset?: number | null;
+            qrOptions?: {
+                typeNumber?: number | null;
+                mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+            } | null;
+            dotsOptions?: {
+                type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                color?: string | null;
+                size?: number | null;
+                gradient?: {
+                    type?: "linear" | "radial";
+                    rotation?: number;
+                    colorStops?: Array<{
+                        offset?: number;
+                        color?: string;
+                    }>;
+                } | null;
+            } | null;
+            cornersSquareOptions?: {
+                type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                color?: string | null;
+                gradient?: {
+                    type?: "linear" | "radial";
+                    rotation?: number;
+                    colorStops?: Array<{
+                        offset?: number;
+                        color?: string;
+                    }>;
+                } | null;
+            } | null;
+            cornersDotOptions?: {
+                type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                color?: string | null;
+                gradient?: {
+                    type?: "linear" | "radial";
+                    rotation?: number;
+                    colorStops?: Array<{
+                        offset?: number;
+                        color?: string;
+                    }>;
+                } | null;
+            } | null;
+            backgroundOptions?: {
+                color?: string | null;
+                round?: number | string | null;
+                gradient?: {
+                    type?: "linear" | "radial";
+                    rotation?: number;
+                    colorStops?: Array<{
+                        offset?: number;
+                        color?: string;
+                    }>;
+                } | null;
+            } | false;
+            image?: string | unknown | null;
+            imageOptions?: {
+                mode?: "center" | "overlay" | "background" | null;
+                imageSize?: number | null;
+                margin?: number | null;
+                crossOrigin?: string | null;
+                fill?: {
+                    color?: string | null;
+                    gradient?: {
+                        type?: "linear" | "radial";
+                        rotation?: number;
+                        colorStops?: Array<{
+                            offset?: number;
+                            color?: string;
+                        }>;
+                    } | null;
+                } | null;
+            } | null;
+            borderOptions?: {
+                hasBorder?: boolean | null;
+                thickness?: number | null;
+                color?: string | null;
+                radius?: string | null;
+                noBorderThickness?: number | null;
+                background?: string | null;
+                inner?: {
+                    radius?: string | null;
+                    scale?: number | null;
+                    horizontalOffset?: number | null;
+                    verticalOffset?: number | null;
+                } | null;
+                borderOuter?: {
+                    color?: string;
+                    thickness?: number;
+                } | null;
+                borderInner?: {
+                    color?: string;
+                    thickness?: number;
+                } | null;
+                decorations?: {
+                    top?: {
+                        disabled?: boolean;
+                        enableText?: boolean;
+                        offset?: number;
+                        curveAdjustment?: number;
+                        curveDisabled?: boolean;
+                        curveRadius?: string;
+                        type?: "text" | "image";
+                        value?: string;
+                        style?: {
+                            fontFace?: string;
+                            fontSize?: number;
+                            fontColor?: string;
+                            letterSpacing?: number;
+                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                        };
+                    } | null;
+                    right?: {
+                        disabled?: boolean;
+                        enableText?: boolean;
+                        offset?: number;
+                        curveAdjustment?: number;
+                        curveDisabled?: boolean;
+                        curveRadius?: string;
+                        type?: "text" | "image";
+                        value?: string;
+                        style?: {
+                            fontFace?: string;
+                            fontSize?: number;
+                            fontColor?: string;
+                            letterSpacing?: number;
+                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                        };
+                    } | null;
+                    bottom?: {
+                        disabled?: boolean;
+                        enableText?: boolean;
+                        offset?: number;
+                        curveAdjustment?: number;
+                        curveDisabled?: boolean;
+                        curveRadius?: string;
+                        type?: "text" | "image";
+                        value?: string;
+                        style?: {
+                            fontFace?: string;
+                            fontSize?: number;
+                            fontColor?: string;
+                            letterSpacing?: number;
+                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                        };
+                    } | null;
+                    left?: {
+                        disabled?: boolean;
+                        enableText?: boolean;
+                        offset?: number;
+                        curveAdjustment?: number;
+                        curveDisabled?: boolean;
+                        curveRadius?: string;
+                        type?: "text" | "image";
+                        value?: string;
+                        style?: {
+                            fontFace?: string;
+                            fontSize?: number;
+                            fontColor?: string;
+                            letterSpacing?: number;
+                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                        };
+                    } | null;
+                } | null;
+            } | null;
+        };
+        styleId: string | null;
+        templateId: string | null;
+        borderId: string | null;
+        textId: string | null;
+        style?: {
+            id?: string | null;
+            name?: string | null;
+            options: {
+                primaryColor?: string | null;
+                secondaryColor?: string | null;
+                thirdColor?: string | null;
+                backgroundColor?: string | null;
+                dotsGradient?: {
+                    type?: "linear" | "radial";
+                    rotation?: number;
+                    colorStops?: Array<{
+                        offset?: number;
+                        color?: string;
+                    }>;
+                } | null;
+                cornersDotGradient?: {
+                    type?: "linear" | "radial";
+                    rotation?: number;
+                    colorStops?: Array<{
+                        offset?: number;
+                        color?: string;
+                    }>;
+                } | null;
+                cornersGradient?: {
+                    type?: "linear" | "radial";
+                    rotation?: number;
+                    colorStops?: Array<{
+                        offset?: number;
+                        color?: string;
+                    }>;
+                } | null;
+                backgroundGradient?: {
+                    type?: "linear" | "radial";
+                    rotation?: number;
+                    colorStops?: Array<{
+                        offset?: number;
+                        color?: string;
+                    }>;
+                } | null;
+                dotShape?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                cornerSquareShape?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                cornerDotShape?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                logo?: string | unknown | null;
+                logoSize?: number | null;
+                logoMode?: "center" | "overlay" | "background" | null;
+                logoMargin?: number | null;
+                logoBackgroundColor?: string | null;
+                logoPadding?: number | null;
+                logoRadius?: string | number | null;
+                borderColor?: string | null;
+                borderThickness?: number | null;
+                borderRadius?: string | number | null;
+                borderInnerColor?: string | null;
+                borderInnerThickness?: number | null;
+                borderInnerRadius?: string | number | null;
+                borderOuterColor?: string | null;
+                borderOuterThickness?: number | null;
+                borderTextTop?: string | null;
+                borderTextRight?: string | null;
+                borderTextBottom?: string | null;
+                borderTextLeft?: string | null;
+                borderFontFace?: string | null;
+                borderFontSize?: number | null;
+                borderFontColor?: string | null;
+                borderLetterSpacing?: number | null;
+                borderTextTransform?: "uppercase" | "lowercase" | "capitalize" | null;
+                borderFontWeight?: string;
+            };
+        };
+        template?: {
+            id?: string | null;
+            name?: string | null;
+            options?: {
+                shape?: "square" | "circle" | null;
+                margin?: number | null;
+                isResponsive?: boolean | null;
+                scale?: number | null;
+                offset?: number | null;
+                verticalOffset?: number | null;
+                horizontalOffset?: number | null;
+                qrOptions?: {
+                    typeNumber?: number | null;
+                    mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                    errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                } | null;
+                dotsOptions?: {
+                    type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                    color?: string | null;
+                    size?: number | null;
+                    gradient?: {
+                        type?: "linear" | "radial";
+                        rotation?: number;
+                        colorStops?: Array<{
+                            offset?: number;
+                            color?: string;
+                        }>;
+                    } | null;
+                } | null;
+                cornersSquareOptions?: {
+                    type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    color?: string | null;
+                    gradient?: {
+                        type?: "linear" | "radial";
+                        rotation?: number;
+                        colorStops?: Array<{
+                            offset?: number;
+                            color?: string;
+                        }>;
+                    } | null;
+                } | null;
+                cornersDotOptions?: {
+                    type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    color?: string | null;
+                    gradient?: {
+                        type?: "linear" | "radial";
+                        rotation?: number;
+                        colorStops?: Array<{
+                            offset?: number;
+                            color?: string;
+                        }>;
+                    } | null;
+                } | null;
+                backgroundOptions?: {
+                    color?: string | null;
+                    round?: number | string | null;
+                    gradient?: {
+                        type?: "linear" | "radial";
+                        rotation?: number;
+                        colorStops?: Array<{
+                            offset?: number;
+                            color?: string;
+                        }>;
+                    } | null;
+                } | false;
+                image?: string | unknown | null;
+                imageOptions?: {
+                    mode?: "center" | "overlay" | "background" | null;
+                    imageSize?: number | null;
+                    margin?: number | null;
+                    crossOrigin?: string | null;
+                    fill?: {
+                        color?: string | null;
+                        gradient?: {
+                            type?: "linear" | "radial";
+                            rotation?: number;
+                            colorStops?: Array<{
+                                offset?: number;
+                                color?: string;
+                            }>;
+                        } | null;
+                    } | null;
+                } | null;
+                borderOptions?: {
+                    hasBorder?: boolean | null;
+                    thickness?: number | null;
+                    color?: string | null;
+                    radius?: string | null;
+                    noBorderThickness?: number | null;
+                    background?: string | null;
+                    inner?: {
+                        radius?: string | null;
+                        scale?: number | null;
+                        horizontalOffset?: number | null;
+                        verticalOffset?: number | null;
+                    } | null;
+                    borderOuter?: {
+                        color?: string;
+                        thickness?: number;
+                    } | null;
+                    borderInner?: {
+                        color?: string;
+                        thickness?: number;
+                    } | null;
+                    decorations?: {
+                        top?: {
+                            disabled?: boolean;
+                            enableText?: boolean;
+                            offset?: number;
+                            curveAdjustment?: number;
+                            curveDisabled?: boolean;
+                            curveRadius?: string;
+                            type?: "text" | "image";
+                            value?: string;
+                            style?: {
+                                fontFace?: string;
+                                fontSize?: number;
+                                fontColor?: string;
+                                letterSpacing?: number;
+                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            };
+                        } | null;
+                        right?: {
+                            disabled?: boolean;
+                            enableText?: boolean;
+                            offset?: number;
+                            curveAdjustment?: number;
+                            curveDisabled?: boolean;
+                            curveRadius?: string;
+                            type?: "text" | "image";
+                            value?: string;
+                            style?: {
+                                fontFace?: string;
+                                fontSize?: number;
+                                fontColor?: string;
+                                letterSpacing?: number;
+                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            };
+                        } | null;
+                        bottom?: {
+                            disabled?: boolean;
+                            enableText?: boolean;
+                            offset?: number;
+                            curveAdjustment?: number;
+                            curveDisabled?: boolean;
+                            curveRadius?: string;
+                            type?: "text" | "image";
+                            value?: string;
+                            style?: {
+                                fontFace?: string;
+                                fontSize?: number;
+                                fontColor?: string;
+                                letterSpacing?: number;
+                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            };
+                        } | null;
+                        left?: {
+                            disabled?: boolean;
+                            enableText?: boolean;
+                            offset?: number;
+                            curveAdjustment?: number;
+                            curveDisabled?: boolean;
+                            curveRadius?: string;
+                            type?: "text" | "image";
+                            value?: string;
+                            style?: {
+                                fontFace?: string;
+                                fontSize?: number;
+                                fontColor?: string;
+                                letterSpacing?: number;
+                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            };
+                        } | null;
+                    } | null;
+                } | null;
+                data?: string;
+            };
+        };
+        border?: {
+            id?: string | null;
+            name?: string | null;
+            options: {
+                shape?: "square" | "circle" | null;
+                margin?: number | null;
+                isResponsive?: boolean | null;
+                scale?: number | null;
+                offset?: number | null;
+                verticalOffset?: number | null;
+                horizontalOffset?: number | null;
+                qrOptions?: {
+                    typeNumber?: number | null;
+                    mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                    errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                } | null;
+                dotsOptions?: {
+                    type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                    color?: string | null;
+                    size?: number | null;
+                    gradient?: {
+                        type?: "linear" | "radial";
+                        rotation?: number;
+                        colorStops?: Array<{
+                            offset?: number;
+                            color?: string;
+                        }>;
+                    } | null;
+                } | null;
+                cornersSquareOptions?: {
+                    type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    color?: string | null;
+                    gradient?: {
+                        type?: "linear" | "radial";
+                        rotation?: number;
+                        colorStops?: Array<{
+                            offset?: number;
+                            color?: string;
+                        }>;
+                    } | null;
+                } | null;
+                cornersDotOptions?: {
+                    type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    color?: string | null;
+                    gradient?: {
+                        type?: "linear" | "radial";
+                        rotation?: number;
+                        colorStops?: Array<{
+                            offset?: number;
+                            color?: string;
+                        }>;
+                    } | null;
+                } | null;
+                backgroundOptions?: {
+                    color?: string | null;
+                    round?: number | string | null;
+                    gradient?: {
+                        type?: "linear" | "radial";
+                        rotation?: number;
+                        colorStops?: Array<{
+                            offset?: number;
+                            color?: string;
+                        }>;
+                    } | null;
+                } | false;
+                image?: string | unknown | null;
+                imageOptions?: {
+                    mode?: "center" | "overlay" | "background" | null;
+                    imageSize?: number | null;
+                    margin?: number | null;
+                    crossOrigin?: string | null;
+                    fill?: {
+                        color?: string | null;
+                        gradient?: {
+                            type?: "linear" | "radial";
+                            rotation?: number;
+                            colorStops?: Array<{
+                                offset?: number;
+                                color?: string;
+                            }>;
+                        } | null;
+                    } | null;
+                } | null;
+                borderOptions: {
+                    hasBorder?: boolean | null;
+                    thickness?: number | null;
+                    color?: string | null;
+                    radius?: string | null;
+                    noBorderThickness?: number | null;
+                    background?: string | null;
+                    inner?: {
+                        radius?: string | null;
+                        scale?: number | null;
+                        horizontalOffset?: number | null;
+                        verticalOffset?: number | null;
+                    } | null;
+                    borderOuter?: {
+                        color?: string;
+                        thickness?: number;
+                    } | null;
+                    borderInner?: {
+                        color?: string;
+                        thickness?: number;
+                    } | null;
+                    decorations?: {
+                        top?: {
+                            disabled?: boolean;
+                            enableText?: boolean;
+                            offset?: number;
+                            curveAdjustment?: number;
+                            curveDisabled?: boolean;
+                            curveRadius?: string;
+                            type?: "text" | "image";
+                            value?: string;
+                            style?: {
+                                fontFace?: string;
+                                fontSize?: number;
+                                fontColor?: string;
+                                letterSpacing?: number;
+                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            };
+                        } | null;
+                        right?: {
+                            disabled?: boolean;
+                            enableText?: boolean;
+                            offset?: number;
+                            curveAdjustment?: number;
+                            curveDisabled?: boolean;
+                            curveRadius?: string;
+                            type?: "text" | "image";
+                            value?: string;
+                            style?: {
+                                fontFace?: string;
+                                fontSize?: number;
+                                fontColor?: string;
+                                letterSpacing?: number;
+                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            };
+                        } | null;
+                        bottom?: {
+                            disabled?: boolean;
+                            enableText?: boolean;
+                            offset?: number;
+                            curveAdjustment?: number;
+                            curveDisabled?: boolean;
+                            curveRadius?: string;
+                            type?: "text" | "image";
+                            value?: string;
+                            style?: {
+                                fontFace?: string;
+                                fontSize?: number;
+                                fontColor?: string;
+                                letterSpacing?: number;
+                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            };
+                        } | null;
+                        left?: {
+                            disabled?: boolean;
+                            enableText?: boolean;
+                            offset?: number;
+                            curveAdjustment?: number;
+                            curveDisabled?: boolean;
+                            curveRadius?: string;
+                            type?: "text" | "image";
+                            value?: string;
+                            style?: {
+                                fontFace?: string;
+                                fontSize?: number;
+                                fontColor?: string;
+                                letterSpacing?: number;
+                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            };
+                        } | null;
+                    } | null;
+                };
+            };
+        };
+        text?: {
+            id?: string | null;
+            name?: string | null;
+            options: {
+                value?: string | null;
+                topValue?: string | null;
+                bottomValue?: string | null;
+                rightValue?: string | null;
+                leftValue?: string | null;
+            };
+        };
+        workspaceId: string | null;
+        isValid: boolean | null;
+        validatedAt: string | null;
+        version: number;
+        isDeleted?: boolean;
+        createdByUser?: {
+            id: string;
+            name: string;
+            email: string;
+        } | null;
+        updatedByUser?: {
+            id: string;
+            name: string;
+            email: string;
+        } | null;
+        createdByApiKey?: {
+            id: string;
+            name: string;
+            roleName: string;
+        } | null;
+        updatedByApiKey?: {
+            id: string;
+            name: string;
+            roleName: string;
+        } | null;
+        createdAt?: string | null;
+        updatedAt?: string | null;
+        links?: Array<{
+            format: string;
+            url: string;
+        }>;
+    }>;
+    summary: {
+        requested: number;
+        created: number;
+        failed: number;
+        skipped: number;
+    };
+    errors?: Array<{
+        index: number;
+        name?: string;
+        message: string;
+        reasons: Array<string>;
+    }>;
+}, [Pick<Options<PostCodesBulkData>, "query" | "body" | "headers" | "path" | "baseUrl"> & {
+    _id: string;
+    _infinite?: boolean;
+}]>, "queryFn"> & {
+    queryFn?: import("@tanstack/react-query").QueryFunction<{
+        data: Array<{
+            id: string;
+            name: string;
+            type?: "static" | "dynamic";
+            dataType?: "url" | "wifi" | "vcard" | "text" | "email" | "event" | "json" | "file" | "scan-info" | null;
+            shortAlias?: string | null;
+            dynamicData?: {
+                [key: string]: unknown;
+            } | null;
+            data: string;
+            description: string | null;
+            totalScans: number | null;
+            metadata: {
+                [key: string]: unknown;
+            } | null;
+            options: {
+                data: string;
+                shape?: "square" | "circle" | null;
+                margin?: number | null;
+                isResponsive?: boolean | null;
+                scale?: number | null;
+                offset?: number | null;
+                verticalOffset?: number | null;
+                horizontalOffset?: number | null;
+                qrOptions?: {
+                    typeNumber?: number | null;
+                    mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                    errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                } | null;
+                dotsOptions?: {
+                    type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                    color?: string | null;
+                    size?: number | null;
+                    gradient?: {
+                        type?: "linear" | "radial";
+                        rotation?: number;
+                        colorStops?: Array<{
+                            offset?: number;
+                            color?: string;
+                        }>;
+                    } | null;
+                } | null;
+                cornersSquareOptions?: {
+                    type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    color?: string | null;
+                    gradient?: {
+                        type?: "linear" | "radial";
+                        rotation?: number;
+                        colorStops?: Array<{
+                            offset?: number;
+                            color?: string;
+                        }>;
+                    } | null;
+                } | null;
+                cornersDotOptions?: {
+                    type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    color?: string | null;
+                    gradient?: {
+                        type?: "linear" | "radial";
+                        rotation?: number;
+                        colorStops?: Array<{
+                            offset?: number;
+                            color?: string;
+                        }>;
+                    } | null;
+                } | null;
+                backgroundOptions?: {
+                    color?: string | null;
+                    round?: number | string | null;
+                    gradient?: {
+                        type?: "linear" | "radial";
+                        rotation?: number;
+                        colorStops?: Array<{
+                            offset?: number;
+                            color?: string;
+                        }>;
+                    } | null;
+                } | false;
+                image?: string | unknown | null;
+                imageOptions?: {
+                    mode?: "center" | "overlay" | "background" | null;
+                    imageSize?: number | null;
+                    margin?: number | null;
+                    crossOrigin?: string | null;
+                    fill?: {
+                        color?: string | null;
+                        gradient?: {
+                            type?: "linear" | "radial";
+                            rotation?: number;
+                            colorStops?: Array<{
+                                offset?: number;
+                                color?: string;
+                            }>;
+                        } | null;
+                    } | null;
+                } | null;
+                borderOptions?: {
+                    hasBorder?: boolean | null;
+                    thickness?: number | null;
+                    color?: string | null;
+                    radius?: string | null;
+                    noBorderThickness?: number | null;
+                    background?: string | null;
+                    inner?: {
+                        radius?: string | null;
+                        scale?: number | null;
+                        horizontalOffset?: number | null;
+                        verticalOffset?: number | null;
+                    } | null;
+                    borderOuter?: {
+                        color?: string;
+                        thickness?: number;
+                    } | null;
+                    borderInner?: {
+                        color?: string;
+                        thickness?: number;
+                    } | null;
+                    decorations?: {
+                        top?: {
+                            disabled?: boolean;
+                            enableText?: boolean;
+                            offset?: number;
+                            curveAdjustment?: number;
+                            curveDisabled?: boolean;
+                            curveRadius?: string;
+                            type?: "text" | "image";
+                            value?: string;
+                            style?: {
+                                fontFace?: string;
+                                fontSize?: number;
+                                fontColor?: string;
+                                letterSpacing?: number;
+                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            };
+                        } | null;
+                        right?: {
+                            disabled?: boolean;
+                            enableText?: boolean;
+                            offset?: number;
+                            curveAdjustment?: number;
+                            curveDisabled?: boolean;
+                            curveRadius?: string;
+                            type?: "text" | "image";
+                            value?: string;
+                            style?: {
+                                fontFace?: string;
+                                fontSize?: number;
+                                fontColor?: string;
+                                letterSpacing?: number;
+                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            };
+                        } | null;
+                        bottom?: {
+                            disabled?: boolean;
+                            enableText?: boolean;
+                            offset?: number;
+                            curveAdjustment?: number;
+                            curveDisabled?: boolean;
+                            curveRadius?: string;
+                            type?: "text" | "image";
+                            value?: string;
+                            style?: {
+                                fontFace?: string;
+                                fontSize?: number;
+                                fontColor?: string;
+                                letterSpacing?: number;
+                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            };
+                        } | null;
+                        left?: {
+                            disabled?: boolean;
+                            enableText?: boolean;
+                            offset?: number;
+                            curveAdjustment?: number;
+                            curveDisabled?: boolean;
+                            curveRadius?: string;
+                            type?: "text" | "image";
+                            value?: string;
+                            style?: {
+                                fontFace?: string;
+                                fontSize?: number;
+                                fontColor?: string;
+                                letterSpacing?: number;
+                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            };
+                        } | null;
+                    } | null;
+                } | null;
+            };
+            styleId: string | null;
+            templateId: string | null;
+            borderId: string | null;
+            textId: string | null;
+            style?: {
+                id?: string | null;
+                name?: string | null;
+                options: {
+                    primaryColor?: string | null;
+                    secondaryColor?: string | null;
+                    thirdColor?: string | null;
+                    backgroundColor?: string | null;
+                    dotsGradient?: {
+                        type?: "linear" | "radial";
+                        rotation?: number;
+                        colorStops?: Array<{
+                            offset?: number;
+                            color?: string;
+                        }>;
+                    } | null;
+                    cornersDotGradient?: {
+                        type?: "linear" | "radial";
+                        rotation?: number;
+                        colorStops?: Array<{
+                            offset?: number;
+                            color?: string;
+                        }>;
+                    } | null;
+                    cornersGradient?: {
+                        type?: "linear" | "radial";
+                        rotation?: number;
+                        colorStops?: Array<{
+                            offset?: number;
+                            color?: string;
+                        }>;
+                    } | null;
+                    backgroundGradient?: {
+                        type?: "linear" | "radial";
+                        rotation?: number;
+                        colorStops?: Array<{
+                            offset?: number;
+                            color?: string;
+                        }>;
+                    } | null;
+                    dotShape?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                    cornerSquareShape?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    cornerDotShape?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    logo?: string | unknown | null;
+                    logoSize?: number | null;
+                    logoMode?: "center" | "overlay" | "background" | null;
+                    logoMargin?: number | null;
+                    logoBackgroundColor?: string | null;
+                    logoPadding?: number | null;
+                    logoRadius?: string | number | null;
+                    borderColor?: string | null;
+                    borderThickness?: number | null;
+                    borderRadius?: string | number | null;
+                    borderInnerColor?: string | null;
+                    borderInnerThickness?: number | null;
+                    borderInnerRadius?: string | number | null;
+                    borderOuterColor?: string | null;
+                    borderOuterThickness?: number | null;
+                    borderTextTop?: string | null;
+                    borderTextRight?: string | null;
+                    borderTextBottom?: string | null;
+                    borderTextLeft?: string | null;
+                    borderFontFace?: string | null;
+                    borderFontSize?: number | null;
+                    borderFontColor?: string | null;
+                    borderLetterSpacing?: number | null;
+                    borderTextTransform?: "uppercase" | "lowercase" | "capitalize" | null;
+                    borderFontWeight?: string;
+                };
+            };
+            template?: {
+                id?: string | null;
+                name?: string | null;
+                options?: {
+                    shape?: "square" | "circle" | null;
+                    margin?: number | null;
+                    isResponsive?: boolean | null;
+                    scale?: number | null;
+                    offset?: number | null;
+                    verticalOffset?: number | null;
+                    horizontalOffset?: number | null;
+                    qrOptions?: {
+                        typeNumber?: number | null;
+                        mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                        errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                    } | null;
+                    dotsOptions?: {
+                        type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                        color?: string | null;
+                        size?: number | null;
+                        gradient?: {
+                            type?: "linear" | "radial";
+                            rotation?: number;
+                            colorStops?: Array<{
+                                offset?: number;
+                                color?: string;
+                            }>;
+                        } | null;
+                    } | null;
+                    cornersSquareOptions?: {
+                        type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                        color?: string | null;
+                        gradient?: {
+                            type?: "linear" | "radial";
+                            rotation?: number;
+                            colorStops?: Array<{
+                                offset?: number;
+                                color?: string;
+                            }>;
+                        } | null;
+                    } | null;
+                    cornersDotOptions?: {
+                        type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                        color?: string | null;
+                        gradient?: {
+                            type?: "linear" | "radial";
+                            rotation?: number;
+                            colorStops?: Array<{
+                                offset?: number;
+                                color?: string;
+                            }>;
+                        } | null;
+                    } | null;
+                    backgroundOptions?: {
+                        color?: string | null;
+                        round?: number | string | null;
+                        gradient?: {
+                            type?: "linear" | "radial";
+                            rotation?: number;
+                            colorStops?: Array<{
+                                offset?: number;
+                                color?: string;
+                            }>;
+                        } | null;
+                    } | false;
+                    image?: string | unknown | null;
+                    imageOptions?: {
+                        mode?: "center" | "overlay" | "background" | null;
+                        imageSize?: number | null;
+                        margin?: number | null;
+                        crossOrigin?: string | null;
+                        fill?: {
+                            color?: string | null;
+                            gradient?: {
+                                type?: "linear" | "radial";
+                                rotation?: number;
+                                colorStops?: Array<{
+                                    offset?: number;
+                                    color?: string;
+                                }>;
+                            } | null;
+                        } | null;
+                    } | null;
+                    borderOptions?: {
+                        hasBorder?: boolean | null;
+                        thickness?: number | null;
+                        color?: string | null;
+                        radius?: string | null;
+                        noBorderThickness?: number | null;
+                        background?: string | null;
+                        inner?: {
+                            radius?: string | null;
+                            scale?: number | null;
+                            horizontalOffset?: number | null;
+                            verticalOffset?: number | null;
+                        } | null;
+                        borderOuter?: {
+                            color?: string;
+                            thickness?: number;
+                        } | null;
+                        borderInner?: {
+                            color?: string;
+                            thickness?: number;
+                        } | null;
+                        decorations?: {
+                            top?: {
+                                disabled?: boolean;
+                                enableText?: boolean;
+                                offset?: number;
+                                curveAdjustment?: number;
+                                curveDisabled?: boolean;
+                                curveRadius?: string;
+                                type?: "text" | "image";
+                                value?: string;
+                                style?: {
+                                    fontFace?: string;
+                                    fontSize?: number;
+                                    fontColor?: string;
+                                    letterSpacing?: number;
+                                    fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                };
+                            } | null;
+                            right?: {
+                                disabled?: boolean;
+                                enableText?: boolean;
+                                offset?: number;
+                                curveAdjustment?: number;
+                                curveDisabled?: boolean;
+                                curveRadius?: string;
+                                type?: "text" | "image";
+                                value?: string;
+                                style?: {
+                                    fontFace?: string;
+                                    fontSize?: number;
+                                    fontColor?: string;
+                                    letterSpacing?: number;
+                                    fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                };
+                            } | null;
+                            bottom?: {
+                                disabled?: boolean;
+                                enableText?: boolean;
+                                offset?: number;
+                                curveAdjustment?: number;
+                                curveDisabled?: boolean;
+                                curveRadius?: string;
+                                type?: "text" | "image";
+                                value?: string;
+                                style?: {
+                                    fontFace?: string;
+                                    fontSize?: number;
+                                    fontColor?: string;
+                                    letterSpacing?: number;
+                                    fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                };
+                            } | null;
+                            left?: {
+                                disabled?: boolean;
+                                enableText?: boolean;
+                                offset?: number;
+                                curveAdjustment?: number;
+                                curveDisabled?: boolean;
+                                curveRadius?: string;
+                                type?: "text" | "image";
+                                value?: string;
+                                style?: {
+                                    fontFace?: string;
+                                    fontSize?: number;
+                                    fontColor?: string;
+                                    letterSpacing?: number;
+                                    fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                };
+                            } | null;
+                        } | null;
+                    } | null;
+                    data?: string;
+                };
+            };
+            border?: {
+                id?: string | null;
+                name?: string | null;
+                options: {
+                    shape?: "square" | "circle" | null;
+                    margin?: number | null;
+                    isResponsive?: boolean | null;
+                    scale?: number | null;
+                    offset?: number | null;
+                    verticalOffset?: number | null;
+                    horizontalOffset?: number | null;
+                    qrOptions?: {
+                        typeNumber?: number | null;
+                        mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                        errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                    } | null;
+                    dotsOptions?: {
+                        type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                        color?: string | null;
+                        size?: number | null;
+                        gradient?: {
+                            type?: "linear" | "radial";
+                            rotation?: number;
+                            colorStops?: Array<{
+                                offset?: number;
+                                color?: string;
+                            }>;
+                        } | null;
+                    } | null;
+                    cornersSquareOptions?: {
+                        type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                        color?: string | null;
+                        gradient?: {
+                            type?: "linear" | "radial";
+                            rotation?: number;
+                            colorStops?: Array<{
+                                offset?: number;
+                                color?: string;
+                            }>;
+                        } | null;
+                    } | null;
+                    cornersDotOptions?: {
+                        type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                        color?: string | null;
+                        gradient?: {
+                            type?: "linear" | "radial";
+                            rotation?: number;
+                            colorStops?: Array<{
+                                offset?: number;
+                                color?: string;
+                            }>;
+                        } | null;
+                    } | null;
+                    backgroundOptions?: {
+                        color?: string | null;
+                        round?: number | string | null;
+                        gradient?: {
+                            type?: "linear" | "radial";
+                            rotation?: number;
+                            colorStops?: Array<{
+                                offset?: number;
+                                color?: string;
+                            }>;
+                        } | null;
+                    } | false;
+                    image?: string | unknown | null;
+                    imageOptions?: {
+                        mode?: "center" | "overlay" | "background" | null;
+                        imageSize?: number | null;
+                        margin?: number | null;
+                        crossOrigin?: string | null;
+                        fill?: {
+                            color?: string | null;
+                            gradient?: {
+                                type?: "linear" | "radial";
+                                rotation?: number;
+                                colorStops?: Array<{
+                                    offset?: number;
+                                    color?: string;
+                                }>;
+                            } | null;
+                        } | null;
+                    } | null;
+                    borderOptions: {
+                        hasBorder?: boolean | null;
+                        thickness?: number | null;
+                        color?: string | null;
+                        radius?: string | null;
+                        noBorderThickness?: number | null;
+                        background?: string | null;
+                        inner?: {
+                            radius?: string | null;
+                            scale?: number | null;
+                            horizontalOffset?: number | null;
+                            verticalOffset?: number | null;
+                        } | null;
+                        borderOuter?: {
+                            color?: string;
+                            thickness?: number;
+                        } | null;
+                        borderInner?: {
+                            color?: string;
+                            thickness?: number;
+                        } | null;
+                        decorations?: {
+                            top?: {
+                                disabled?: boolean;
+                                enableText?: boolean;
+                                offset?: number;
+                                curveAdjustment?: number;
+                                curveDisabled?: boolean;
+                                curveRadius?: string;
+                                type?: "text" | "image";
+                                value?: string;
+                                style?: {
+                                    fontFace?: string;
+                                    fontSize?: number;
+                                    fontColor?: string;
+                                    letterSpacing?: number;
+                                    fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                };
+                            } | null;
+                            right?: {
+                                disabled?: boolean;
+                                enableText?: boolean;
+                                offset?: number;
+                                curveAdjustment?: number;
+                                curveDisabled?: boolean;
+                                curveRadius?: string;
+                                type?: "text" | "image";
+                                value?: string;
+                                style?: {
+                                    fontFace?: string;
+                                    fontSize?: number;
+                                    fontColor?: string;
+                                    letterSpacing?: number;
+                                    fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                };
+                            } | null;
+                            bottom?: {
+                                disabled?: boolean;
+                                enableText?: boolean;
+                                offset?: number;
+                                curveAdjustment?: number;
+                                curveDisabled?: boolean;
+                                curveRadius?: string;
+                                type?: "text" | "image";
+                                value?: string;
+                                style?: {
+                                    fontFace?: string;
+                                    fontSize?: number;
+                                    fontColor?: string;
+                                    letterSpacing?: number;
+                                    fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                };
+                            } | null;
+                            left?: {
+                                disabled?: boolean;
+                                enableText?: boolean;
+                                offset?: number;
+                                curveAdjustment?: number;
+                                curveDisabled?: boolean;
+                                curveRadius?: string;
+                                type?: "text" | "image";
+                                value?: string;
+                                style?: {
+                                    fontFace?: string;
+                                    fontSize?: number;
+                                    fontColor?: string;
+                                    letterSpacing?: number;
+                                    fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                };
+                            } | null;
+                        } | null;
+                    };
+                };
+            };
+            text?: {
+                id?: string | null;
+                name?: string | null;
+                options: {
+                    value?: string | null;
+                    topValue?: string | null;
+                    bottomValue?: string | null;
+                    rightValue?: string | null;
+                    leftValue?: string | null;
+                };
+            };
+            workspaceId: string | null;
+            isValid: boolean | null;
+            validatedAt: string | null;
+            version: number;
+            isDeleted?: boolean;
+            createdByUser?: {
+                id: string;
+                name: string;
+                email: string;
+            } | null;
+            updatedByUser?: {
+                id: string;
+                name: string;
+                email: string;
+            } | null;
+            createdByApiKey?: {
+                id: string;
+                name: string;
+                roleName: string;
+            } | null;
+            updatedByApiKey?: {
+                id: string;
+                name: string;
+                roleName: string;
+            } | null;
+            createdAt?: string | null;
+            updatedAt?: string | null;
+            links?: Array<{
+                format: string;
+                url: string;
+            }>;
+        }>;
+        summary: {
+            requested: number;
+            created: number;
+            failed: number;
+            skipped: number;
+        };
+        errors?: Array<{
+            index: number;
+            name?: string;
+            message: string;
+            reasons: Array<string>;
+        }>;
+    }, [Pick<Options<PostCodesBulkData>, "query" | "body" | "headers" | "path" | "baseUrl"> & {
+        _id: string;
+        _infinite?: boolean;
+    }], never> | undefined;
+} & {
+    queryKey: [Pick<Options<PostCodesBulkData>, "query" | "body" | "headers" | "path" | "baseUrl"> & {
+        _id: string;
+        _infinite?: boolean;
+    }] & {
+        [dataTagSymbol]: {
+            data: Array<{
+                id: string;
+                name: string;
+                type?: "static" | "dynamic";
+                dataType?: "url" | "wifi" | "vcard" | "text" | "email" | "event" | "json" | "file" | "scan-info" | null;
+                shortAlias?: string | null;
+                dynamicData?: {
+                    [key: string]: unknown;
+                } | null;
+                data: string;
+                description: string | null;
+                totalScans: number | null;
+                metadata: {
+                    [key: string]: unknown;
+                } | null;
+                options: {
+                    data: string;
+                    shape?: "square" | "circle" | null;
+                    margin?: number | null;
+                    isResponsive?: boolean | null;
+                    scale?: number | null;
+                    offset?: number | null;
+                    verticalOffset?: number | null;
+                    horizontalOffset?: number | null;
+                    qrOptions?: {
+                        typeNumber?: number | null;
+                        mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                        errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                    } | null;
+                    dotsOptions?: {
+                        type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                        color?: string | null;
+                        size?: number | null;
+                        gradient?: {
+                            type?: "linear" | "radial";
+                            rotation?: number;
+                            colorStops?: Array<{
+                                offset?: number;
+                                color?: string;
+                            }>;
+                        } | null;
+                    } | null;
+                    cornersSquareOptions?: {
+                        type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                        color?: string | null;
+                        gradient?: {
+                            type?: "linear" | "radial";
+                            rotation?: number;
+                            colorStops?: Array<{
+                                offset?: number;
+                                color?: string;
+                            }>;
+                        } | null;
+                    } | null;
+                    cornersDotOptions?: {
+                        type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                        color?: string | null;
+                        gradient?: {
+                            type?: "linear" | "radial";
+                            rotation?: number;
+                            colorStops?: Array<{
+                                offset?: number;
+                                color?: string;
+                            }>;
+                        } | null;
+                    } | null;
+                    backgroundOptions?: {
+                        color?: string | null;
+                        round?: number | string | null;
+                        gradient?: {
+                            type?: "linear" | "radial";
+                            rotation?: number;
+                            colorStops?: Array<{
+                                offset?: number;
+                                color?: string;
+                            }>;
+                        } | null;
+                    } | false;
+                    image?: string | unknown | null;
+                    imageOptions?: {
+                        mode?: "center" | "overlay" | "background" | null;
+                        imageSize?: number | null;
+                        margin?: number | null;
+                        crossOrigin?: string | null;
+                        fill?: {
+                            color?: string | null;
+                            gradient?: {
+                                type?: "linear" | "radial";
+                                rotation?: number;
+                                colorStops?: Array<{
+                                    offset?: number;
+                                    color?: string;
+                                }>;
+                            } | null;
+                        } | null;
+                    } | null;
+                    borderOptions?: {
+                        hasBorder?: boolean | null;
+                        thickness?: number | null;
+                        color?: string | null;
+                        radius?: string | null;
+                        noBorderThickness?: number | null;
+                        background?: string | null;
+                        inner?: {
+                            radius?: string | null;
+                            scale?: number | null;
+                            horizontalOffset?: number | null;
+                            verticalOffset?: number | null;
+                        } | null;
+                        borderOuter?: {
+                            color?: string;
+                            thickness?: number;
+                        } | null;
+                        borderInner?: {
+                            color?: string;
+                            thickness?: number;
+                        } | null;
+                        decorations?: {
+                            top?: {
+                                disabled?: boolean;
+                                enableText?: boolean;
+                                offset?: number;
+                                curveAdjustment?: number;
+                                curveDisabled?: boolean;
+                                curveRadius?: string;
+                                type?: "text" | "image";
+                                value?: string;
+                                style?: {
+                                    fontFace?: string;
+                                    fontSize?: number;
+                                    fontColor?: string;
+                                    letterSpacing?: number;
+                                    fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                };
+                            } | null;
+                            right?: {
+                                disabled?: boolean;
+                                enableText?: boolean;
+                                offset?: number;
+                                curveAdjustment?: number;
+                                curveDisabled?: boolean;
+                                curveRadius?: string;
+                                type?: "text" | "image";
+                                value?: string;
+                                style?: {
+                                    fontFace?: string;
+                                    fontSize?: number;
+                                    fontColor?: string;
+                                    letterSpacing?: number;
+                                    fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                };
+                            } | null;
+                            bottom?: {
+                                disabled?: boolean;
+                                enableText?: boolean;
+                                offset?: number;
+                                curveAdjustment?: number;
+                                curveDisabled?: boolean;
+                                curveRadius?: string;
+                                type?: "text" | "image";
+                                value?: string;
+                                style?: {
+                                    fontFace?: string;
+                                    fontSize?: number;
+                                    fontColor?: string;
+                                    letterSpacing?: number;
+                                    fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                };
+                            } | null;
+                            left?: {
+                                disabled?: boolean;
+                                enableText?: boolean;
+                                offset?: number;
+                                curveAdjustment?: number;
+                                curveDisabled?: boolean;
+                                curveRadius?: string;
+                                type?: "text" | "image";
+                                value?: string;
+                                style?: {
+                                    fontFace?: string;
+                                    fontSize?: number;
+                                    fontColor?: string;
+                                    letterSpacing?: number;
+                                    fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                };
+                            } | null;
+                        } | null;
+                    } | null;
+                };
+                styleId: string | null;
+                templateId: string | null;
+                borderId: string | null;
+                textId: string | null;
+                style?: {
+                    id?: string | null;
+                    name?: string | null;
+                    options: {
+                        primaryColor?: string | null;
+                        secondaryColor?: string | null;
+                        thirdColor?: string | null;
+                        backgroundColor?: string | null;
+                        dotsGradient?: {
+                            type?: "linear" | "radial";
+                            rotation?: number;
+                            colorStops?: Array<{
+                                offset?: number;
+                                color?: string;
+                            }>;
+                        } | null;
+                        cornersDotGradient?: {
+                            type?: "linear" | "radial";
+                            rotation?: number;
+                            colorStops?: Array<{
+                                offset?: number;
+                                color?: string;
+                            }>;
+                        } | null;
+                        cornersGradient?: {
+                            type?: "linear" | "radial";
+                            rotation?: number;
+                            colorStops?: Array<{
+                                offset?: number;
+                                color?: string;
+                            }>;
+                        } | null;
+                        backgroundGradient?: {
+                            type?: "linear" | "radial";
+                            rotation?: number;
+                            colorStops?: Array<{
+                                offset?: number;
+                                color?: string;
+                            }>;
+                        } | null;
+                        dotShape?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                        cornerSquareShape?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                        cornerDotShape?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                        logo?: string | unknown | null;
+                        logoSize?: number | null;
+                        logoMode?: "center" | "overlay" | "background" | null;
+                        logoMargin?: number | null;
+                        logoBackgroundColor?: string | null;
+                        logoPadding?: number | null;
+                        logoRadius?: string | number | null;
+                        borderColor?: string | null;
+                        borderThickness?: number | null;
+                        borderRadius?: string | number | null;
+                        borderInnerColor?: string | null;
+                        borderInnerThickness?: number | null;
+                        borderInnerRadius?: string | number | null;
+                        borderOuterColor?: string | null;
+                        borderOuterThickness?: number | null;
+                        borderTextTop?: string | null;
+                        borderTextRight?: string | null;
+                        borderTextBottom?: string | null;
+                        borderTextLeft?: string | null;
+                        borderFontFace?: string | null;
+                        borderFontSize?: number | null;
+                        borderFontColor?: string | null;
+                        borderLetterSpacing?: number | null;
+                        borderTextTransform?: "uppercase" | "lowercase" | "capitalize" | null;
+                        borderFontWeight?: string;
+                    };
+                };
+                template?: {
+                    id?: string | null;
+                    name?: string | null;
+                    options?: {
+                        shape?: "square" | "circle" | null;
+                        margin?: number | null;
+                        isResponsive?: boolean | null;
+                        scale?: number | null;
+                        offset?: number | null;
+                        verticalOffset?: number | null;
+                        horizontalOffset?: number | null;
+                        qrOptions?: {
+                            typeNumber?: number | null;
+                            mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                            errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                        } | null;
+                        dotsOptions?: {
+                            type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                            color?: string | null;
+                            size?: number | null;
+                            gradient?: {
+                                type?: "linear" | "radial";
+                                rotation?: number;
+                                colorStops?: Array<{
+                                    offset?: number;
+                                    color?: string;
+                                }>;
+                            } | null;
+                        } | null;
+                        cornersSquareOptions?: {
+                            type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                            color?: string | null;
+                            gradient?: {
+                                type?: "linear" | "radial";
+                                rotation?: number;
+                                colorStops?: Array<{
+                                    offset?: number;
+                                    color?: string;
+                                }>;
+                            } | null;
+                        } | null;
+                        cornersDotOptions?: {
+                            type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                            color?: string | null;
+                            gradient?: {
+                                type?: "linear" | "radial";
+                                rotation?: number;
+                                colorStops?: Array<{
+                                    offset?: number;
+                                    color?: string;
+                                }>;
+                            } | null;
+                        } | null;
+                        backgroundOptions?: {
+                            color?: string | null;
+                            round?: number | string | null;
+                            gradient?: {
+                                type?: "linear" | "radial";
+                                rotation?: number;
+                                colorStops?: Array<{
+                                    offset?: number;
+                                    color?: string;
+                                }>;
+                            } | null;
+                        } | false;
+                        image?: string | unknown | null;
+                        imageOptions?: {
+                            mode?: "center" | "overlay" | "background" | null;
+                            imageSize?: number | null;
+                            margin?: number | null;
+                            crossOrigin?: string | null;
+                            fill?: {
+                                color?: string | null;
+                                gradient?: {
+                                    type?: "linear" | "radial";
+                                    rotation?: number;
+                                    colorStops?: Array<{
+                                        offset?: number;
+                                        color?: string;
+                                    }>;
+                                } | null;
+                            } | null;
+                        } | null;
+                        borderOptions?: {
+                            hasBorder?: boolean | null;
+                            thickness?: number | null;
+                            color?: string | null;
+                            radius?: string | null;
+                            noBorderThickness?: number | null;
+                            background?: string | null;
+                            inner?: {
+                                radius?: string | null;
+                                scale?: number | null;
+                                horizontalOffset?: number | null;
+                                verticalOffset?: number | null;
+                            } | null;
+                            borderOuter?: {
+                                color?: string;
+                                thickness?: number;
+                            } | null;
+                            borderInner?: {
+                                color?: string;
+                                thickness?: number;
+                            } | null;
+                            decorations?: {
+                                top?: {
+                                    disabled?: boolean;
+                                    enableText?: boolean;
+                                    offset?: number;
+                                    curveAdjustment?: number;
+                                    curveDisabled?: boolean;
+                                    curveRadius?: string;
+                                    type?: "text" | "image";
+                                    value?: string;
+                                    style?: {
+                                        fontFace?: string;
+                                        fontSize?: number;
+                                        fontColor?: string;
+                                        letterSpacing?: number;
+                                        fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                    };
+                                } | null;
+                                right?: {
+                                    disabled?: boolean;
+                                    enableText?: boolean;
+                                    offset?: number;
+                                    curveAdjustment?: number;
+                                    curveDisabled?: boolean;
+                                    curveRadius?: string;
+                                    type?: "text" | "image";
+                                    value?: string;
+                                    style?: {
+                                        fontFace?: string;
+                                        fontSize?: number;
+                                        fontColor?: string;
+                                        letterSpacing?: number;
+                                        fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                    };
+                                } | null;
+                                bottom?: {
+                                    disabled?: boolean;
+                                    enableText?: boolean;
+                                    offset?: number;
+                                    curveAdjustment?: number;
+                                    curveDisabled?: boolean;
+                                    curveRadius?: string;
+                                    type?: "text" | "image";
+                                    value?: string;
+                                    style?: {
+                                        fontFace?: string;
+                                        fontSize?: number;
+                                        fontColor?: string;
+                                        letterSpacing?: number;
+                                        fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                    };
+                                } | null;
+                                left?: {
+                                    disabled?: boolean;
+                                    enableText?: boolean;
+                                    offset?: number;
+                                    curveAdjustment?: number;
+                                    curveDisabled?: boolean;
+                                    curveRadius?: string;
+                                    type?: "text" | "image";
+                                    value?: string;
+                                    style?: {
+                                        fontFace?: string;
+                                        fontSize?: number;
+                                        fontColor?: string;
+                                        letterSpacing?: number;
+                                        fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                    };
+                                } | null;
+                            } | null;
+                        } | null;
+                        data?: string;
+                    };
+                };
+                border?: {
+                    id?: string | null;
+                    name?: string | null;
+                    options: {
+                        shape?: "square" | "circle" | null;
+                        margin?: number | null;
+                        isResponsive?: boolean | null;
+                        scale?: number | null;
+                        offset?: number | null;
+                        verticalOffset?: number | null;
+                        horizontalOffset?: number | null;
+                        qrOptions?: {
+                            typeNumber?: number | null;
+                            mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                            errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                        } | null;
+                        dotsOptions?: {
+                            type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                            color?: string | null;
+                            size?: number | null;
+                            gradient?: {
+                                type?: "linear" | "radial";
+                                rotation?: number;
+                                colorStops?: Array<{
+                                    offset?: number;
+                                    color?: string;
+                                }>;
+                            } | null;
+                        } | null;
+                        cornersSquareOptions?: {
+                            type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                            color?: string | null;
+                            gradient?: {
+                                type?: "linear" | "radial";
+                                rotation?: number;
+                                colorStops?: Array<{
+                                    offset?: number;
+                                    color?: string;
+                                }>;
+                            } | null;
+                        } | null;
+                        cornersDotOptions?: {
+                            type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                            color?: string | null;
+                            gradient?: {
+                                type?: "linear" | "radial";
+                                rotation?: number;
+                                colorStops?: Array<{
+                                    offset?: number;
+                                    color?: string;
+                                }>;
+                            } | null;
+                        } | null;
+                        backgroundOptions?: {
+                            color?: string | null;
+                            round?: number | string | null;
+                            gradient?: {
+                                type?: "linear" | "radial";
+                                rotation?: number;
+                                colorStops?: Array<{
+                                    offset?: number;
+                                    color?: string;
+                                }>;
+                            } | null;
+                        } | false;
+                        image?: string | unknown | null;
+                        imageOptions?: {
+                            mode?: "center" | "overlay" | "background" | null;
+                            imageSize?: number | null;
+                            margin?: number | null;
+                            crossOrigin?: string | null;
+                            fill?: {
+                                color?: string | null;
+                                gradient?: {
+                                    type?: "linear" | "radial";
+                                    rotation?: number;
+                                    colorStops?: Array<{
+                                        offset?: number;
+                                        color?: string;
+                                    }>;
+                                } | null;
+                            } | null;
+                        } | null;
+                        borderOptions: {
+                            hasBorder?: boolean | null;
+                            thickness?: number | null;
+                            color?: string | null;
+                            radius?: string | null;
+                            noBorderThickness?: number | null;
+                            background?: string | null;
+                            inner?: {
+                                radius?: string | null;
+                                scale?: number | null;
+                                horizontalOffset?: number | null;
+                                verticalOffset?: number | null;
+                            } | null;
+                            borderOuter?: {
+                                color?: string;
+                                thickness?: number;
+                            } | null;
+                            borderInner?: {
+                                color?: string;
+                                thickness?: number;
+                            } | null;
+                            decorations?: {
+                                top?: {
+                                    disabled?: boolean;
+                                    enableText?: boolean;
+                                    offset?: number;
+                                    curveAdjustment?: number;
+                                    curveDisabled?: boolean;
+                                    curveRadius?: string;
+                                    type?: "text" | "image";
+                                    value?: string;
+                                    style?: {
+                                        fontFace?: string;
+                                        fontSize?: number;
+                                        fontColor?: string;
+                                        letterSpacing?: number;
+                                        fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                    };
+                                } | null;
+                                right?: {
+                                    disabled?: boolean;
+                                    enableText?: boolean;
+                                    offset?: number;
+                                    curveAdjustment?: number;
+                                    curveDisabled?: boolean;
+                                    curveRadius?: string;
+                                    type?: "text" | "image";
+                                    value?: string;
+                                    style?: {
+                                        fontFace?: string;
+                                        fontSize?: number;
+                                        fontColor?: string;
+                                        letterSpacing?: number;
+                                        fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                    };
+                                } | null;
+                                bottom?: {
+                                    disabled?: boolean;
+                                    enableText?: boolean;
+                                    offset?: number;
+                                    curveAdjustment?: number;
+                                    curveDisabled?: boolean;
+                                    curveRadius?: string;
+                                    type?: "text" | "image";
+                                    value?: string;
+                                    style?: {
+                                        fontFace?: string;
+                                        fontSize?: number;
+                                        fontColor?: string;
+                                        letterSpacing?: number;
+                                        fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                    };
+                                } | null;
+                                left?: {
+                                    disabled?: boolean;
+                                    enableText?: boolean;
+                                    offset?: number;
+                                    curveAdjustment?: number;
+                                    curveDisabled?: boolean;
+                                    curveRadius?: string;
+                                    type?: "text" | "image";
+                                    value?: string;
+                                    style?: {
+                                        fontFace?: string;
+                                        fontSize?: number;
+                                        fontColor?: string;
+                                        letterSpacing?: number;
+                                        fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                    };
+                                } | null;
+                            } | null;
+                        };
+                    };
+                };
+                text?: {
+                    id?: string | null;
+                    name?: string | null;
+                    options: {
+                        value?: string | null;
+                        topValue?: string | null;
+                        bottomValue?: string | null;
+                        rightValue?: string | null;
+                        leftValue?: string | null;
+                    };
+                };
+                workspaceId: string | null;
+                isValid: boolean | null;
+                validatedAt: string | null;
+                version: number;
+                isDeleted?: boolean;
+                createdByUser?: {
+                    id: string;
+                    name: string;
+                    email: string;
+                } | null;
+                updatedByUser?: {
+                    id: string;
+                    name: string;
+                    email: string;
+                } | null;
+                createdByApiKey?: {
+                    id: string;
+                    name: string;
+                    roleName: string;
+                } | null;
+                updatedByApiKey?: {
+                    id: string;
+                    name: string;
+                    roleName: string;
+                } | null;
+                createdAt?: string | null;
+                updatedAt?: string | null;
+                links?: Array<{
+                    format: string;
+                    url: string;
+                }>;
+            }>;
+            summary: {
+                requested: number;
+                created: number;
+                failed: number;
+                skipped: number;
+            };
+            errors?: Array<{
+                index: number;
+                name?: string;
+                message: string;
+                reasons: Array<string>;
+            }>;
+        };
+        [dataTagErrorSymbol]: Error;
+    };
+};
+/**
+ * Bulk Create QR Codes
+ * Creates up to 20 QR codes in a single request. Each payload is validated and processed independently, returning partial success results with per-item error reporting.
+ */
+export declare const postCodesBulkMutation: (options?: Partial<Options<PostCodesBulkData>>) => UseMutationOptions<PostCodesBulkResponse, PostCodesBulkError, Options<PostCodesBulkData>>;
 /**
  * Partially update QR Code Options
  * Partially updates an existing QR Code's options using a deep merge. This will create a new version of the QR Code. Supports updating dataType for dynamic codes, which changes how the QR code content is processed when scanned (e.g., returning WiFi configuration instead of URL redirect).

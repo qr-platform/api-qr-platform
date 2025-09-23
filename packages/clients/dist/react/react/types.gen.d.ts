@@ -30,7 +30,7 @@ export type PostAuthRegisterData = {
     };
     path?: never;
     query?: never;
-    url: "/auth/register";
+    url: '/auth/register';
 };
 export type PostAuthRegisterErrors = {
     /**
@@ -124,7 +124,7 @@ export type PostAuthRegisterVerifyData = {
     };
     path?: never;
     query?: never;
-    url: "/auth/register-verify";
+    url: '/auth/register-verify';
 };
 export type PostAuthRegisterVerifyErrors = {
     /**
@@ -218,7 +218,7 @@ export type PostAuthRegisterVerifyResendData = {
     };
     path?: never;
     query?: never;
-    url: "/auth/register-verify-resend";
+    url: '/auth/register-verify-resend';
 };
 export type PostAuthRegisterVerifyResendErrors = {
     /**
@@ -298,7 +298,7 @@ export type PostAuthSignInData = {
     };
     path?: never;
     query?: never;
-    url: "/auth/sign-in";
+    url: '/auth/sign-in';
 };
 export type PostAuthSignInErrors = {
     /**
@@ -405,7 +405,7 @@ export type PostAuthSignInVerifyData = {
     };
     path?: never;
     query?: never;
-    url: "/auth/sign-in-verify";
+    url: '/auth/sign-in-verify';
 };
 export type PostAuthSignInVerifyErrors = {
     /**
@@ -497,7 +497,7 @@ export type PostAuthEmailVerifySendData = {
     };
     path?: never;
     query?: never;
-    url: "/auth/email-verify-send";
+    url: '/auth/email-verify-send';
 };
 export type PostAuthEmailVerifySendErrors = {
     /**
@@ -581,7 +581,7 @@ export type PostAuthEmailVerifyData = {
     };
     path?: never;
     query?: never;
-    url: "/auth/email-verify";
+    url: '/auth/email-verify';
 };
 export type PostAuthEmailVerifyErrors = {
     /**
@@ -651,7 +651,7 @@ export type GetAuthMeData = {
     body?: never;
     path?: never;
     query?: never;
-    url: "/auth/me";
+    url: '/auth/me';
 };
 export type GetAuthMeErrors = {
     /**
@@ -828,7 +828,7 @@ export type GetAuthSignOutData = {
     body?: never;
     path?: never;
     query?: never;
-    url: "/auth/sign-out";
+    url: '/auth/sign-out';
 };
 export type GetAuthSignOutErrors = {
     /**
@@ -873,7 +873,7 @@ export type PostAuthPasswordResetData = {
     };
     path?: never;
     query?: never;
-    url: "/auth/password/reset";
+    url: '/auth/password/reset';
 };
 export type PostAuthPasswordResetErrors = {
     /**
@@ -949,7 +949,7 @@ export type PostAuthPasswordResetVerifyData = {
     };
     path?: never;
     query?: never;
-    url: "/auth/password/reset-verify";
+    url: '/auth/password/reset-verify';
 };
 export type PostAuthPasswordResetVerifyErrors = {
     /**
@@ -975,7 +975,7 @@ export type PostAuthPasswordResetVerifyErrors = {
             code?: string;
         }>;
     } | {
-        message: "Failed to change password";
+        message: 'Failed to change password';
     };
     /**
      * Unauthorized response message
@@ -1027,7 +1027,7 @@ export type PostAuthPasswordChangeData = {
     };
     path?: never;
     query?: never;
-    url: "/auth/password/change";
+    url: '/auth/password/change';
 };
 export type PostAuthPasswordChangeErrors = {
     /**
@@ -1053,7 +1053,7 @@ export type PostAuthPasswordChangeErrors = {
             code?: string;
         }>;
     } | {
-        message: "Failed to change password";
+        message: 'Failed to change password';
     };
     /**
      * Unauthorized response message
@@ -1093,7 +1093,7 @@ export type GetApiKeysData = {
     body?: never;
     path?: never;
     query?: never;
-    url: "/api-keys";
+    url: '/api-keys';
 };
 export type GetApiKeysErrors = {
     /**
@@ -1143,7 +1143,7 @@ export type GetApiKeysResponses = {
         /**
          * Current status of the API key
          */
-        status: "active" | "deleted" | "disabled";
+        status: 'active' | 'deleted' | 'disabled';
         /**
          * Timestamp when the API key expires
          */
@@ -1256,7 +1256,7 @@ export type PostApiKeysData = {
     };
     path?: never;
     query?: never;
-    url: "/api-keys";
+    url: '/api-keys';
 };
 export type PostApiKeysErrors = {
     /**
@@ -1349,7 +1349,7 @@ export type PostApiKeysResponses = {
         /**
          * Current status of the API key
          */
-        status: "active" | "deleted" | "disabled";
+        status: 'active' | 'deleted' | 'disabled';
         /**
          * Timestamp when the API key expires
          */
@@ -1455,7 +1455,7 @@ export type DeleteApiKeysByApiKeyIdData = {
         apiKeyId: string;
     };
     query?: never;
-    url: "/api-keys/{apiKeyId}";
+    url: '/api-keys/{apiKeyId}';
 };
 export type DeleteApiKeysByApiKeyIdErrors = {
     /**
@@ -1507,7 +1507,7 @@ export type GetApiKeysByApiKeyIdData = {
         apiKeyId: string;
     };
     query?: never;
-    url: "/api-keys/{apiKeyId}";
+    url: '/api-keys/{apiKeyId}';
 };
 export type GetApiKeysByApiKeyIdErrors = {
     /**
@@ -1562,7 +1562,7 @@ export type GetApiKeysByApiKeyIdResponses = {
         /**
          * Current status of the API key
          */
-        status: "active" | "deleted" | "disabled";
+        status: 'active' | 'deleted' | 'disabled';
         /**
          * Timestamp when the API key expires
          */
@@ -1676,7 +1676,7 @@ export type PutApiKeysByApiKeyIdData = {
         apiKeyId: string;
     };
     query?: never;
-    url: "/api-keys/{apiKeyId}";
+    url: '/api-keys/{apiKeyId}';
 };
 export type PutApiKeysByApiKeyIdErrors = {
     /**
@@ -1756,7 +1756,7 @@ export type PutApiKeysByApiKeyIdResponses = {
         /**
          * Current status of the API key
          */
-        status: "active" | "deleted" | "disabled";
+        status: 'active' | 'deleted' | 'disabled';
         /**
          * Timestamp when the API key expires
          */
@@ -1857,7 +1857,7 @@ export type PutApiKeysByApiKeyIdStatusData = {
         /**
          * New status for the API key
          */
-        status: "active" | "disabled";
+        status: 'active' | 'disabled';
     };
     path: {
         /**
@@ -1866,7 +1866,7 @@ export type PutApiKeysByApiKeyIdStatusData = {
         apiKeyId: string;
     };
     query?: never;
-    url: "/api-keys/{apiKeyId}/status";
+    url: '/api-keys/{apiKeyId}/status';
 };
 export type PutApiKeysByApiKeyIdStatusErrors = {
     /**
@@ -1946,7 +1946,7 @@ export type PutApiKeysByApiKeyIdStatusResponses = {
         /**
          * Current status of the API key
          */
-        status: "active" | "deleted" | "disabled";
+        status: 'active' | 'deleted' | 'disabled';
         /**
          * Timestamp when the API key expires
          */
@@ -2043,7 +2043,7 @@ export type GetOrgsCurrentData = {
     body?: never;
     path?: never;
     query?: never;
-    url: "/orgs/current";
+    url: '/orgs/current';
 };
 export type GetOrgsCurrentErrors = {
     /**
@@ -2252,7 +2252,7 @@ export type PutOrgsData = {
     };
     path?: never;
     query?: never;
-    url: "/orgs";
+    url: '/orgs';
 };
 export type PutOrgsErrors = {
     /**
@@ -2492,7 +2492,7 @@ export type PostOrgsFirstData = {
     };
     path?: never;
     query?: never;
-    url: "/orgs/first";
+    url: '/orgs/first';
 };
 export type PostOrgsFirstErrors = {
     /**
@@ -2565,7 +2565,7 @@ export type PostOrgsCurrentByOrgIdData = {
         orgId: string;
     };
     query?: never;
-    url: "/orgs/current/{orgId}";
+    url: '/orgs/current/{orgId}';
 };
 export type PostOrgsCurrentByOrgIdErrors = {
     /**
@@ -2606,7 +2606,7 @@ export type GetInvitesData = {
     body?: never;
     path?: never;
     query?: never;
-    url: "/invites";
+    url: '/invites';
 };
 export type GetInvitesErrors = {
     /**
@@ -2660,7 +2660,7 @@ export type GetInvitesResponses = {
         /**
          * Current status of the invitation
          */
-        status: "pending" | "accepted" | "expired" | "declined";
+        status: 'pending' | 'accepted' | 'expired' | 'declined';
         /**
          * Personalized message included in the invitation
          */
@@ -2794,7 +2794,7 @@ export type PostInvitesData = {
     };
     path?: never;
     query?: never;
-    url: "/invites";
+    url: '/invites';
 };
 export type PostInvitesErrors = {
     /**
@@ -2820,7 +2820,7 @@ export type PostInvitesErrors = {
             code?: string;
         }>;
     } | {
-        message: "User already has this role";
+        message: 'User already has this role';
     };
     /**
      * Unauthorized response message
@@ -2885,7 +2885,7 @@ export type PostInvitesResponses = {
         /**
          * Current status of the invitation
          */
-        status: "pending" | "accepted" | "expired" | "declined";
+        status: 'pending' | 'accepted' | 'expired' | 'declined';
         /**
          * Personalized message included in the invitation
          */
@@ -2995,7 +2995,7 @@ export type GetInvitesMeData = {
     body?: never;
     path?: never;
     query?: never;
-    url: "/invites/me";
+    url: '/invites/me';
 };
 export type GetInvitesMeErrors = {
     /**
@@ -3045,7 +3045,7 @@ export type GetInvitesMeResponses = {
         /**
          * Current status of the invitation
          */
-        status: "pending" | "accepted" | "expired" | "declined";
+        status: 'pending' | 'accepted' | 'expired' | 'declined';
         /**
          * Personalized message included in the invitation
          */
@@ -3160,7 +3160,7 @@ export type DeleteInvitesByInvitationIdData = {
         invitationId: string;
     };
     query?: never;
-    url: "/invites/{invitationId}";
+    url: '/invites/{invitationId}';
 };
 export type DeleteInvitesByInvitationIdErrors = {
     /**
@@ -3186,7 +3186,7 @@ export type DeleteInvitesByInvitationIdErrors = {
             code?: string;
         }>;
     } | {
-        message: "Cannot delete accepted invitation";
+        message: 'Cannot delete accepted invitation';
     };
     /**
      * Unauthorized response message
@@ -3231,7 +3231,7 @@ export type GetInvitesByTokenAcceptData = {
         token: string;
     };
     query?: never;
-    url: "/invites/{token}/accept";
+    url: '/invites/{token}/accept';
 };
 export type GetInvitesByTokenAcceptErrors = {
     /**
@@ -3257,11 +3257,11 @@ export type GetInvitesByTokenAcceptErrors = {
             code?: string;
         }>;
     } | {
-        message: "Invitation expired";
+        message: 'Invitation expired';
     } | {
-        message: "Invitation already accepted";
+        message: 'Invitation already accepted';
     } | {
-        message: "Invitation already declined";
+        message: 'Invitation already declined';
     };
     /**
      * Invitation to accept not found or has an invalid status (e.g., already accepted/declined/expired).
@@ -3307,7 +3307,7 @@ export type GetInvitesByTokenDeclineData = {
         token: string;
     };
     query?: never;
-    url: "/invites/{token}/decline";
+    url: '/invites/{token}/decline';
 };
 export type GetInvitesByTokenDeclineErrors = {
     /**
@@ -3333,11 +3333,11 @@ export type GetInvitesByTokenDeclineErrors = {
             code?: string;
         }>;
     } | {
-        message: "Invitation expired";
+        message: 'Invitation expired';
     } | {
-        message: "Invitation already accepted";
+        message: 'Invitation already accepted';
     } | {
-        message: "Invitation already declined";
+        message: 'Invitation already declined';
     };
     /**
      * Invitation to decline not found or has an invalid status (e.g., already accepted/declined/expired).
@@ -3363,7 +3363,7 @@ export type GetMembersData = {
     body?: never;
     path?: never;
     query?: never;
-    url: "/members";
+    url: '/members';
 };
 export type GetMembersErrors = {
     /**
@@ -3547,7 +3547,7 @@ export type PostMembersData = {
     };
     path?: never;
     query?: never;
-    url: "/members";
+    url: '/members';
 };
 export type PostMembersErrors = {
     /**
@@ -3573,7 +3573,7 @@ export type PostMembersErrors = {
             code?: string;
         }>;
     } | {
-        message: "User already has this role";
+        message: 'User already has this role';
     };
     /**
      * Unauthorized response message
@@ -3653,7 +3653,7 @@ export type DeleteMembersByUserIdData = {
         userId: string;
     };
     query?: never;
-    url: "/members/{userId}";
+    url: '/members/{userId}';
 };
 export type DeleteMembersByUserIdErrors = {
     /**
@@ -3699,7 +3699,7 @@ export type GetMembersByUserIdRolesData = {
         userId: string;
     };
     query?: never;
-    url: "/members/{userId}/roles";
+    url: '/members/{userId}/roles';
 };
 export type GetMembersByUserIdRolesErrors = {
     /**
@@ -3795,7 +3795,7 @@ export type PostMembersByUserIdRoleData = {
         userId: string;
     };
     query?: never;
-    url: "/members/{userId}/role";
+    url: '/members/{userId}/role';
 };
 export type PostMembersByUserIdRoleErrors = {
     /**
@@ -3821,7 +3821,7 @@ export type PostMembersByUserIdRoleErrors = {
             code?: string;
         }>;
     } | {
-        message: "User already has this role";
+        message: 'User already has this role';
     };
     /**
      * Unauthorized response message
@@ -3899,7 +3899,7 @@ export type DeleteMembersByUserIdRoleByRoleNameData = {
         roleName: string;
     };
     query?: never;
-    url: "/members/{userId}/role/{roleName}";
+    url: '/members/{userId}/role/{roleName}';
 };
 export type DeleteMembersByUserIdRoleByRoleNameErrors = {
     /**
@@ -3925,7 +3925,7 @@ export type DeleteMembersByUserIdRoleByRoleNameErrors = {
             code?: string;
         }>;
     } | {
-        message: "You cannot remove your own owner role";
+        message: 'You cannot remove your own owner role';
     };
     /**
      * Unauthorized response message
@@ -3973,7 +3973,7 @@ export type GetWorkspacesData = {
     body?: never;
     path?: never;
     query?: never;
-    url: "/workspaces";
+    url: '/workspaces';
 };
 export type GetWorkspacesErrors = {
     /**
@@ -4146,7 +4146,7 @@ export type PostWorkspacesData = {
     };
     path?: never;
     query?: never;
-    url: "/workspaces";
+    url: '/workspaces';
 };
 export type PostWorkspacesErrors = {
     /**
@@ -4172,7 +4172,7 @@ export type PostWorkspacesErrors = {
             code?: string;
         }>;
     } | {
-        message: "Workspace name is already taken";
+        message: 'Workspace name is already taken';
     };
     /**
      * Unauthorized response message
@@ -4313,7 +4313,7 @@ export type DeleteWorkspacesByWorkspaceIdData = {
         workspaceId: string;
     };
     query?: never;
-    url: "/workspaces/{workspaceId}";
+    url: '/workspaces/{workspaceId}';
 };
 export type DeleteWorkspacesByWorkspaceIdErrors = {
     /**
@@ -4339,7 +4339,7 @@ export type DeleteWorkspacesByWorkspaceIdErrors = {
             code?: string;
         }>;
     } | {
-        message: "Workspace is not empty";
+        message: 'Workspace is not empty';
     };
     /**
      * Unauthorized response message
@@ -4387,7 +4387,7 @@ export type GetWorkspacesByWorkspaceIdData = {
         workspaceId: string;
     };
     query?: never;
-    url: "/workspaces/{workspaceId}";
+    url: '/workspaces/{workspaceId}';
 };
 export type GetWorkspacesByWorkspaceIdErrors = {
     /**
@@ -4567,7 +4567,7 @@ export type PutWorkspacesByWorkspaceIdData = {
         workspaceId: string;
     };
     query?: never;
-    url: "/workspaces/{workspaceId}";
+    url: '/workspaces/{workspaceId}';
 };
 export type PutWorkspacesByWorkspaceIdErrors = {
     /**
@@ -4593,7 +4593,7 @@ export type PutWorkspacesByWorkspaceIdErrors = {
             code?: string;
         }>;
     } | {
-        message: "Workspace name is already taken";
+        message: 'Workspace name is already taken';
     };
     /**
      * Unauthorized response message
@@ -4734,7 +4734,7 @@ export type DeleteWorkspacesByWorkspaceIdMembersByUserIdRoleData = {
         userId: string;
     };
     query?: never;
-    url: "/workspaces/{workspaceId}/members/{userId}/role";
+    url: '/workspaces/{workspaceId}/members/{userId}/role';
 };
 export type DeleteWorkspacesByWorkspaceIdMembersByUserIdRoleErrors = {
     /**
@@ -4817,7 +4817,7 @@ export type GetWorkspacesByWorkspaceIdMembersByUserIdRoleData = {
         userId: string;
     };
     query?: never;
-    url: "/workspaces/{workspaceId}/members/{userId}/role";
+    url: '/workspaces/{workspaceId}/members/{userId}/role';
 };
 export type GetWorkspacesByWorkspaceIdMembersByUserIdRoleErrors = {
     /**
@@ -4903,7 +4903,7 @@ export type PostWorkspacesByWorkspaceIdMembersByUserIdRoleData = {
         userId: string;
     };
     query?: never;
-    url: "/workspaces/{workspaceId}/members/{userId}/role";
+    url: '/workspaces/{workspaceId}/members/{userId}/role';
 };
 export type PostWorkspacesByWorkspaceIdMembersByUserIdRoleErrors = {
     /**
@@ -4929,7 +4929,7 @@ export type PostWorkspacesByWorkspaceIdMembersByUserIdRoleErrors = {
             code?: string;
         }>;
     } | {
-        message: "User already has this role in the workspace";
+        message: 'User already has this role in the workspace';
     };
     /**
      * Unauthorized response message
@@ -4987,7 +4987,7 @@ export type GetWorkspacesByWorkspaceIdMembersData = {
         workspaceId: string;
     };
     query?: never;
-    url: "/workspaces/{workspaceId}/members";
+    url: '/workspaces/{workspaceId}/members';
 };
 export type GetWorkspacesByWorkspaceIdMembersErrors = {
     /**
@@ -5159,7 +5159,7 @@ export type GetRolesData = {
          */
         includeScopes?: boolean;
     };
-    url: "/roles";
+    url: '/roles';
 };
 export type GetRolesErrors = {
     /**
@@ -5202,7 +5202,7 @@ export type GetPlansData = {
     body?: never;
     path?: never;
     query?: never;
-    url: "/plans";
+    url: '/plans';
 };
 export type GetPlansErrors = {
     /**
@@ -5224,7 +5224,7 @@ export type GetPlansResponses = {
         /**
          * Unique identifier of the plan
          */
-        name: "plan-free" | "plan-startup" | "plan-business" | "plan-enterprise";
+        name: 'plan-free' | 'plan-startup' | 'plan-business' | 'plan-enterprise';
         /**
          * Human-readable name of the plan
          */
@@ -5254,7 +5254,7 @@ export type GetPlansCurrentData = {
     body?: never;
     path?: never;
     query?: never;
-    url: "/plans/current";
+    url: '/plans/current';
 };
 export type GetPlansCurrentErrors = {
     /**
@@ -5293,7 +5293,7 @@ export type GetPlansCurrentResponses = {
         /**
          * Unique identifier of the plan
          */
-        name: "plan-free" | "plan-startup" | "plan-business" | "plan-enterprise";
+        name: 'plan-free' | 'plan-startup' | 'plan-business' | 'plan-enterprise';
         /**
          * Detailed limits with current usage
          */
@@ -5324,7 +5324,7 @@ export type GetSettingsData = {
     body?: never;
     path?: never;
     query?: never;
-    url: "/settings";
+    url: '/settings';
 };
 export type GetSettingsErrors = {
     /**
@@ -5374,7 +5374,7 @@ export type GetSettingsResponses = {
         /**
          * Category of setting (service or custom)
          */
-        category: "service" | "custom";
+        category: 'service' | 'custom';
     }>;
 };
 export type GetSettingsResponse = GetSettingsResponses[keyof GetSettingsResponses];
@@ -5382,7 +5382,7 @@ export type GetSettingsCustomData = {
     body?: never;
     path?: never;
     query?: never;
-    url: "/settings/custom";
+    url: '/settings/custom';
 };
 export type GetSettingsCustomErrors = {
     /**
@@ -5452,7 +5452,7 @@ export type PostSettingsCustomData = {
     };
     path?: never;
     query?: never;
-    url: "/settings/custom";
+    url: '/settings/custom';
 };
 export type PostSettingsCustomErrors = {
     /**
@@ -5478,11 +5478,11 @@ export type PostSettingsCustomErrors = {
             code?: string;
         }>;
     } | {
-        message: "Setting value is required";
+        message: 'Setting value is required';
     } | {
-        message: "Cannot create setting with a reserved name";
+        message: 'Cannot create setting with a reserved name';
     } | {
-        message: "This setting is not a workspace-overridable service setting";
+        message: 'This setting is not a workspace-overridable service setting';
     };
     /**
      * Unauthorized response message
@@ -5537,14 +5537,14 @@ export type DeleteSettingsCustomBySettingSlugData = {
         settingSlug: string;
     };
     query?: never;
-    url: "/settings/custom/{settingSlug}";
+    url: '/settings/custom/{settingSlug}';
 };
 export type DeleteSettingsCustomBySettingSlugErrors = {
     /**
      * Bad Request when deleting custom setting
      */
     400: {
-        message: "Service settings cannot be deleted";
+        message: 'Service settings cannot be deleted';
     };
     /**
      * Unauthorized response message
@@ -5592,7 +5592,7 @@ export type GetSettingsCustomBySettingSlugData = {
         settingSlug: string;
     };
     query?: never;
-    url: "/settings/custom/{settingSlug}";
+    url: '/settings/custom/{settingSlug}';
 };
 export type GetSettingsCustomBySettingSlugErrors = {
     /**
@@ -5665,7 +5665,7 @@ export type PutSettingsCustomBySettingSlugData = {
         settingSlug: string;
     };
     query?: never;
-    url: "/settings/custom/{settingSlug}";
+    url: '/settings/custom/{settingSlug}';
 };
 export type PutSettingsCustomBySettingSlugErrors = {
     /**
@@ -5691,9 +5691,9 @@ export type PutSettingsCustomBySettingSlugErrors = {
             code?: string;
         }>;
     } | {
-        message: "Setting value is required";
+        message: 'Setting value is required';
     } | {
-        message: "This setting is not a workspace-overridable service setting";
+        message: 'This setting is not a workspace-overridable service setting';
     };
     /**
      * Unauthorized response message
@@ -5753,7 +5753,7 @@ export type GetSettingsCustomBySettingSlugValueData = {
         settingSlug: string;
     };
     query?: never;
-    url: "/settings/custom/{settingSlug}/value";
+    url: '/settings/custom/{settingSlug}/value';
 };
 export type GetSettingsCustomBySettingSlugValueErrors = {
     /**
@@ -5795,7 +5795,7 @@ export type GetSettingsServiceData = {
     body?: never;
     path?: never;
     query?: never;
-    url: "/settings/service";
+    url: '/settings/service';
 };
 export type GetSettingsServiceErrors = {
     /**
@@ -5851,7 +5851,7 @@ export type GetSettingsServiceBySettingSlugData = {
         settingSlug: string;
     };
     query?: never;
-    url: "/settings/service/{settingSlug}";
+    url: '/settings/service/{settingSlug}';
 };
 export type GetSettingsServiceBySettingSlugErrors = {
     /**
@@ -5924,7 +5924,7 @@ export type PutSettingsServiceBySettingSlugData = {
         settingSlug: string;
     };
     query?: never;
-    url: "/settings/service/{settingSlug}";
+    url: '/settings/service/{settingSlug}';
 };
 export type PutSettingsServiceBySettingSlugErrors = {
     /**
@@ -5950,15 +5950,15 @@ export type PutSettingsServiceBySettingSlugErrors = {
             code?: string;
         }>;
     } | {
-        message: "Setting value is required";
+        message: 'Setting value is required';
     } | {
-        message: "The provided slug does not correspond to a valid service setting";
+        message: 'The provided slug does not correspond to a valid service setting';
     } | {
-        message: "The provided value has an incorrect type for this service setting";
+        message: 'The provided value has an incorrect type for this service setting';
     } | {
-        message: "The provided value is invalid for this service setting (e.g., not in allowed list)";
+        message: 'The provided value is invalid for this service setting (e.g., not in allowed list)';
     } | {
-        message: "This service setting cannot be overridden at the workspace level";
+        message: 'This service setting cannot be overridden at the workspace level';
     };
     /**
      * Unauthorized response message
@@ -6018,7 +6018,7 @@ export type GetSettingsServiceBySettingSlugValueData = {
         settingSlug: string;
     };
     query?: never;
-    url: "/settings/service/{settingSlug}/value";
+    url: '/settings/service/{settingSlug}/value';
 };
 export type GetSettingsServiceBySettingSlugValueErrors = {
     /**
@@ -6064,7 +6064,7 @@ export type GetWorkspacesByWorkspaceIdSettingsData = {
         workspaceId: string;
     };
     query?: never;
-    url: "/workspaces/{workspaceId}/settings";
+    url: '/workspaces/{workspaceId}/settings';
 };
 export type GetWorkspacesByWorkspaceIdSettingsErrors = {
     /**
@@ -6114,7 +6114,7 @@ export type GetWorkspacesByWorkspaceIdSettingsResponses = {
         /**
          * Category of setting (service or custom)
          */
-        category: "service" | "custom";
+        category: 'service' | 'custom';
     }>;
 };
 export type GetWorkspacesByWorkspaceIdSettingsResponse = GetWorkspacesByWorkspaceIdSettingsResponses[keyof GetWorkspacesByWorkspaceIdSettingsResponses];
@@ -6124,7 +6124,7 @@ export type GetWorkspacesByWorkspaceIdSettingsCustomData = {
         workspaceId: string;
     };
     query?: never;
-    url: "/workspaces/{workspaceId}/settings/custom";
+    url: '/workspaces/{workspaceId}/settings/custom';
 };
 export type GetWorkspacesByWorkspaceIdSettingsCustomErrors = {
     /**
@@ -6196,7 +6196,7 @@ export type PostWorkspacesByWorkspaceIdSettingsCustomData = {
         workspaceId: string;
     };
     query?: never;
-    url: "/workspaces/{workspaceId}/settings/custom";
+    url: '/workspaces/{workspaceId}/settings/custom';
 };
 export type PostWorkspacesByWorkspaceIdSettingsCustomErrors = {
     /**
@@ -6222,9 +6222,9 @@ export type PostWorkspacesByWorkspaceIdSettingsCustomErrors = {
             code?: string;
         }>;
     } | {
-        message: "Setting value is required";
+        message: 'Setting value is required';
     } | {
-        message: "Cannot create setting with a reserved name";
+        message: 'Cannot create setting with a reserved name';
     };
     /**
      * Unauthorized response message
@@ -6285,14 +6285,14 @@ export type DeleteWorkspacesByWorkspaceIdSettingsCustomBySettingSlugData = {
         workspaceId: string;
     };
     query?: never;
-    url: "/workspaces/{workspaceId}/settings/custom/{settingSlug}";
+    url: '/workspaces/{workspaceId}/settings/custom/{settingSlug}';
 };
 export type DeleteWorkspacesByWorkspaceIdSettingsCustomBySettingSlugErrors = {
     /**
      * Bad Request when deleting custom setting
      */
     400: {
-        message: "Service settings cannot be deleted";
+        message: 'Service settings cannot be deleted';
     };
     /**
      * Unauthorized response message
@@ -6346,7 +6346,7 @@ export type GetWorkspacesByWorkspaceIdSettingsCustomBySettingSlugData = {
         workspaceId: string;
     };
     query?: never;
-    url: "/workspaces/{workspaceId}/settings/custom/{settingSlug}";
+    url: '/workspaces/{workspaceId}/settings/custom/{settingSlug}';
 };
 export type GetWorkspacesByWorkspaceIdSettingsCustomBySettingSlugErrors = {
     /**
@@ -6420,7 +6420,7 @@ export type PutWorkspacesByWorkspaceIdSettingsCustomBySettingSlugData = {
         workspaceId: string;
     };
     query?: never;
-    url: "/workspaces/{workspaceId}/settings/custom/{settingSlug}";
+    url: '/workspaces/{workspaceId}/settings/custom/{settingSlug}';
 };
 export type PutWorkspacesByWorkspaceIdSettingsCustomBySettingSlugErrors = {
     /**
@@ -6446,7 +6446,7 @@ export type PutWorkspacesByWorkspaceIdSettingsCustomBySettingSlugErrors = {
             code?: string;
         }>;
     } | {
-        message: "Setting value is required";
+        message: 'Setting value is required';
     };
     /**
      * Unauthorized response message
@@ -6512,7 +6512,7 @@ export type GetWorkspacesByWorkspaceIdSettingsCustomBySettingSlugValueData = {
         workspaceId: string;
     };
     query?: never;
-    url: "/workspaces/{workspaceId}/settings/custom/{settingSlug}/value";
+    url: '/workspaces/{workspaceId}/settings/custom/{settingSlug}/value';
 };
 export type GetWorkspacesByWorkspaceIdSettingsCustomBySettingSlugValueErrors = {
     /**
@@ -6558,7 +6558,7 @@ export type GetWorkspacesByWorkspaceIdSettingsServiceData = {
         workspaceId: string;
     };
     query?: never;
-    url: "/workspaces/{workspaceId}/settings/service";
+    url: '/workspaces/{workspaceId}/settings/service';
 };
 export type GetWorkspacesByWorkspaceIdSettingsServiceErrors = {
     /**
@@ -6615,16 +6615,16 @@ export type DeleteWorkspacesByWorkspaceIdSettingsServiceBySettingSlugData = {
         workspaceId: string;
     };
     query?: never;
-    url: "/workspaces/{workspaceId}/settings/service/{settingSlug}";
+    url: '/workspaces/{workspaceId}/settings/service/{settingSlug}';
 };
 export type DeleteWorkspacesByWorkspaceIdSettingsServiceBySettingSlugErrors = {
     /**
      * Bad Request when deleting overridden workspace service setting
      */
     400: {
-        message: "Workspace ID is required for this operation";
+        message: 'Workspace ID is required for this operation';
     } | {
-        message: "The provided slug does not correspond to a valid service setting";
+        message: 'The provided slug does not correspond to a valid service setting';
     };
     /**
      * Unauthorized response message
@@ -6678,7 +6678,7 @@ export type GetWorkspacesByWorkspaceIdSettingsServiceBySettingSlugData = {
         workspaceId: string;
     };
     query?: never;
-    url: "/workspaces/{workspaceId}/settings/service/{settingSlug}";
+    url: '/workspaces/{workspaceId}/settings/service/{settingSlug}';
 };
 export type GetWorkspacesByWorkspaceIdSettingsServiceBySettingSlugErrors = {
     /**
@@ -6757,7 +6757,7 @@ export type PutWorkspacesByWorkspaceIdSettingsServiceBySettingSlugData = {
         workspaceId: string;
     };
     query?: never;
-    url: "/workspaces/{workspaceId}/settings/service/{settingSlug}";
+    url: '/workspaces/{workspaceId}/settings/service/{settingSlug}';
 };
 export type PutWorkspacesByWorkspaceIdSettingsServiceBySettingSlugErrors = {
     /**
@@ -6783,13 +6783,13 @@ export type PutWorkspacesByWorkspaceIdSettingsServiceBySettingSlugErrors = {
             code?: string;
         }>;
     } | {
-        message: "Setting value is required";
+        message: 'Setting value is required';
     } | {
-        message: "The provided slug does not correspond to a valid service setting";
+        message: 'The provided slug does not correspond to a valid service setting';
     } | {
-        message: "The provided value has an incorrect type for this service setting";
+        message: 'The provided value has an incorrect type for this service setting';
     } | {
-        message: "The provided value is invalid for this service setting (e.g., not in allowed list)";
+        message: 'The provided value is invalid for this service setting (e.g., not in allowed list)';
     };
     /**
      * Unauthorized response message
@@ -6855,7 +6855,7 @@ export type GetWorkspacesByWorkspaceIdSettingsServiceBySettingSlugValueData = {
         workspaceId: string;
     };
     query?: never;
-    url: "/workspaces/{workspaceId}/settings/service/{settingSlug}/value";
+    url: '/workspaces/{workspaceId}/settings/service/{settingSlug}/value';
 };
 export type GetWorkspacesByWorkspaceIdSettingsServiceBySettingSlugValueErrors = {
     /**
@@ -6920,11 +6920,11 @@ export type GetCodesByCodeIdScansData = {
         /**
          * Field to order results by
          */
-        orderBy?: "scannedAt" | "browser" | "countryCode" | "status";
+        orderBy?: 'scannedAt' | 'browser' | 'countryCode' | 'status';
         /**
          * Direction of ordering
          */
-        orderDirection?: "asc" | "desc";
+        orderDirection?: 'asc' | 'desc';
         /**
          * Filter by browser name
          */
@@ -6956,7 +6956,7 @@ export type GetCodesByCodeIdScansData = {
         /**
          * Filter by scan status (SUCCESS or LIMIT_REACHED)
          */
-        status?: "success" | "limit_reached";
+        status?: 'success' | 'limit_reached';
         /**
          * Filter by scan date range
          */
@@ -6964,7 +6964,7 @@ export type GetCodesByCodeIdScansData = {
             [key: string]: unknown;
         };
     };
-    url: "/codes/{codeId}/scans";
+    url: '/codes/{codeId}/scans';
 };
 export type GetCodesByCodeIdScansErrors = {
     /**
@@ -7048,7 +7048,7 @@ export type GetCodesByCodeIdRouterRulesData = {
         /**
          * Filter rules by router rule type
          */
-        type?: "location" | "continent" | "geo" | "time" | "date" | "timezone" | "language" | "browser" | "os" | "deviceVendor" | "deviceModel" | "scanLimit";
+        type?: 'location' | 'continent' | 'geo' | 'time' | 'date' | 'timezone' | 'language' | 'browser' | 'os' | 'deviceVendor' | 'deviceModel' | 'scanLimit';
         /**
          * Filter rules by specific priority value
          */
@@ -7056,9 +7056,9 @@ export type GetCodesByCodeIdRouterRulesData = {
         /**
          * Filter rules by data type
          */
-        dataType?: "url" | "text" | "email" | "phone" | "sms" | "wifi" | "vcard" | "event";
+        dataType?: 'url' | 'text' | 'email' | 'phone' | 'sms' | 'wifi' | 'vcard' | 'event';
     };
-    url: "/codes/{codeId}/router-rules";
+    url: '/codes/{codeId}/router-rules';
 };
 export type GetCodesByCodeIdRouterRulesErrors = {
     /**
@@ -7182,7 +7182,7 @@ export type GetCodesByCodeIdRouterRulesResponses = {
             /**
              * The type of data the QR code contains. Only applies to dynamic codes. Determines how the QR code data is processed and what content type is returned when scanned. Available options: url (default, standard web redirect), wifi (WiFi configuration), vcard (contact card), text (plain text), email (mailto format), event (calendar event), json (custom JSON), file (file download), scan-info (returns scan information as JSON).
              */
-            dataType: "url" | "wifi" | "vcard" | "text" | "email" | "event" | "json" | "file" | "scan-info";
+            dataType: 'url' | 'wifi' | 'vcard' | 'text' | 'email' | 'event' | 'json' | 'file' | 'scan-info';
             dynamicData: {
                 [key: string]: unknown;
             };
@@ -7284,7 +7284,7 @@ export type PostCodesByCodeIdRouterRulesData = {
         codeId: string;
     };
     query?: never;
-    url: "/codes/{codeId}/router-rules";
+    url: '/codes/{codeId}/router-rules';
 };
 export type PostCodesByCodeIdRouterRulesErrors = {
     /**
@@ -7310,39 +7310,39 @@ export type PostCodesByCodeIdRouterRulesErrors = {
             code?: string;
         }>;
     } | {
-        message: "A router rule with this priority already exists for this QR code";
+        message: 'A router rule with this priority already exists for this QR code';
     } | {
-        message: "Invalid conditions for the specified rule type";
+        message: 'Invalid conditions for the specified rule type';
     } | {
-        message: "scanLimit rules require maxScans to be specified";
+        message: 'scanLimit rules require maxScans to be specified';
     } | {
-        message: "Invalid country code provided for router rule";
+        message: 'Invalid country code provided for router rule';
     } | {
-        error: "COMPOSITE_RULE_NESTING_DEPTH_EXCEEDED";
+        error: 'COMPOSITE_RULE_NESTING_DEPTH_EXCEEDED';
         message: string;
         maxDepth: number;
         actualDepth: number;
     } | {
-        error: "COMPOSITE_RULE_CONDITION_COUNT_EXCEEDED";
+        error: 'COMPOSITE_RULE_CONDITION_COUNT_EXCEEDED';
         message: string;
         maxConditions: number;
         actualConditions: number;
     } | {
-        error: "COMPOSITE_RULE_INVALID_LOGICAL_OPERATOR";
+        error: 'COMPOSITE_RULE_INVALID_LOGICAL_OPERATOR';
         message: string;
         validOperators: Array<string>;
     } | {
-        error: "COMPOSITE_RULE_CONDITIONS_REQUIRED";
+        error: 'COMPOSITE_RULE_CONDITIONS_REQUIRED';
         message: string;
         ruleType: string;
     } | {
-        error: "RULE_MERGED_VALIDATION_ERROR";
+        error: 'RULE_MERGED_VALIDATION_ERROR';
         message: string;
         field: string;
         ruleType: string;
         requiredAction: string;
     } | {
-        error: "RULE_TYPE_CONDITION_MISMATCH_ERROR";
+        error: 'RULE_TYPE_CONDITION_MISMATCH_ERROR';
         message: string;
         requestedType: string;
         existingConditions: boolean;
@@ -7444,7 +7444,7 @@ export type PostCodesByCodeIdRouterRulesResponses = {
         /**
          * The type of data the QR code contains. Only applies to dynamic codes. Determines how the QR code data is processed and what content type is returned when scanned. Available options: url (default, standard web redirect), wifi (WiFi configuration), vcard (contact card), text (plain text), email (mailto format), event (calendar event), json (custom JSON), file (file download), scan-info (returns scan information as JSON).
          */
-        dataType: "url" | "wifi" | "vcard" | "text" | "email" | "event" | "json" | "file" | "scan-info";
+        dataType: 'url' | 'wifi' | 'vcard' | 'text' | 'email' | 'event' | 'json' | 'file' | 'scan-info';
         dynamicData: {
             [key: string]: unknown;
         };
@@ -7546,7 +7546,7 @@ export type DeleteCodesByCodeIdRouterRulesByRouterRuleIdData = {
         routerRuleId: string;
     };
     query?: never;
-    url: "/codes/{codeId}/router-rules/{routerRuleId}";
+    url: '/codes/{codeId}/router-rules/{routerRuleId}';
 };
 export type DeleteCodesByCodeIdRouterRulesByRouterRuleIdErrors = {
     /**
@@ -7621,7 +7621,7 @@ export type GetCodesByCodeIdRouterRulesByRouterRuleIdData = {
         routerRuleId: string;
     };
     query?: never;
-    url: "/codes/{codeId}/router-rules/{routerRuleId}";
+    url: '/codes/{codeId}/router-rules/{routerRuleId}';
 };
 export type GetCodesByCodeIdRouterRulesByRouterRuleIdErrors = {
     /**
@@ -7720,7 +7720,7 @@ export type GetCodesByCodeIdRouterRulesByRouterRuleIdResponses = {
         /**
          * The type of data the QR code contains. Only applies to dynamic codes. Determines how the QR code data is processed and what content type is returned when scanned. Available options: url (default, standard web redirect), wifi (WiFi configuration), vcard (contact card), text (plain text), email (mailto format), event (calendar event), json (custom JSON), file (file download), scan-info (returns scan information as JSON).
          */
-        dataType: "url" | "wifi" | "vcard" | "text" | "email" | "event" | "json" | "file" | "scan-info";
+        dataType: 'url' | 'wifi' | 'vcard' | 'text' | 'email' | 'event' | 'json' | 'file' | 'scan-info';
         dynamicData: {
             [key: string]: unknown;
         };
@@ -7825,7 +7825,7 @@ export type PutCodesByCodeIdRouterRulesByRouterRuleIdData = {
         routerRuleId: string;
     };
     query?: never;
-    url: "/codes/{codeId}/router-rules/{routerRuleId}";
+    url: '/codes/{codeId}/router-rules/{routerRuleId}';
 };
 export type PutCodesByCodeIdRouterRulesByRouterRuleIdErrors = {
     /**
@@ -7851,39 +7851,39 @@ export type PutCodesByCodeIdRouterRulesByRouterRuleIdErrors = {
             code?: string;
         }>;
     } | {
-        message: "A router rule with this priority already exists for this QR code";
+        message: 'A router rule with this priority already exists for this QR code';
     } | {
-        message: "Invalid conditions for the specified rule type";
+        message: 'Invalid conditions for the specified rule type';
     } | {
-        message: "scanLimit rules require maxScans to be specified";
+        message: 'scanLimit rules require maxScans to be specified';
     } | {
-        message: "Invalid country code provided for router rule";
+        message: 'Invalid country code provided for router rule';
     } | {
-        error: "COMPOSITE_RULE_NESTING_DEPTH_EXCEEDED";
+        error: 'COMPOSITE_RULE_NESTING_DEPTH_EXCEEDED';
         message: string;
         maxDepth: number;
         actualDepth: number;
     } | {
-        error: "COMPOSITE_RULE_CONDITION_COUNT_EXCEEDED";
+        error: 'COMPOSITE_RULE_CONDITION_COUNT_EXCEEDED';
         message: string;
         maxConditions: number;
         actualConditions: number;
     } | {
-        error: "COMPOSITE_RULE_INVALID_LOGICAL_OPERATOR";
+        error: 'COMPOSITE_RULE_INVALID_LOGICAL_OPERATOR';
         message: string;
         validOperators: Array<string>;
     } | {
-        error: "COMPOSITE_RULE_CONDITIONS_REQUIRED";
+        error: 'COMPOSITE_RULE_CONDITIONS_REQUIRED';
         message: string;
         ruleType: string;
     } | {
-        error: "RULE_MERGED_VALIDATION_ERROR";
+        error: 'RULE_MERGED_VALIDATION_ERROR';
         message: string;
         field: string;
         ruleType: string;
         requiredAction: string;
     } | {
-        error: "RULE_TYPE_CONDITION_MISMATCH_ERROR";
+        error: 'RULE_TYPE_CONDITION_MISMATCH_ERROR';
         message: string;
         requestedType: string;
         existingConditions: boolean;
@@ -8003,7 +8003,7 @@ export type PutCodesByCodeIdRouterRulesByRouterRuleIdResponses = {
         /**
          * The type of data the QR code contains. Only applies to dynamic codes. Determines how the QR code data is processed and what content type is returned when scanned. Available options: url (default, standard web redirect), wifi (WiFi configuration), vcard (contact card), text (plain text), email (mailto format), event (calendar event), json (custom JSON), file (file download), scan-info (returns scan information as JSON).
          */
-        dataType: "url" | "wifi" | "vcard" | "text" | "email" | "event" | "json" | "file" | "scan-info";
+        dataType: 'url' | 'wifi' | 'vcard' | 'text' | 'email' | 'event' | 'json' | 'file' | 'scan-info';
         dynamicData: {
             [key: string]: unknown;
         };
@@ -8107,11 +8107,11 @@ export type GetCodesDeletedData = {
         /**
          * Field to order results by
          */
-        orderBy?: "createdAt" | "updatedAt" | "name";
+        orderBy?: 'createdAt' | 'updatedAt' | 'name';
         /**
          * Direction of ordering
          */
-        orderDirection?: "asc" | "desc";
+        orderDirection?: 'asc' | 'desc';
         /**
          * Filter by QR code name
          */
@@ -8123,7 +8123,7 @@ export type GetCodesDeletedData = {
         /**
          * Filter by validation status
          */
-        isValid?: "true" | "false" | "null";
+        isValid?: 'true' | 'false' | 'null';
         /**
          * Filter by QR code data content
          */
@@ -8141,7 +8141,7 @@ export type GetCodesDeletedData = {
             [key: string]: unknown;
         };
     };
-    url: "/codes/deleted";
+    url: '/codes/deleted';
 };
 export type GetCodesDeletedErrors = {
     /**
@@ -8231,11 +8231,11 @@ export type GetCodesDeletedResponses = {
             /**
              * Type of the QR code
              */
-            type?: "static" | "dynamic";
+            type?: 'static' | 'dynamic';
             /**
              * The type of data the QR code contains. Only applies to dynamic codes.
              */
-            dataType?: "url" | "wifi" | "vcard" | "text" | "email" | "event" | "json" | "file" | "scan-info" | null;
+            dataType?: 'url' | 'wifi' | 'vcard' | 'text' | 'email' | 'event' | 'json' | 'file' | 'scan-info' | null;
             /**
              * Short alias for the QR code
              */
@@ -8275,7 +8275,7 @@ export type GetCodesDeletedResponses = {
                 /**
                  * Overall shape of the QR code
                  */
-                shape?: "square" | "circle" | null;
+                shape?: 'square' | 'circle' | null;
                 /**
                  * Margin around the QR code in pixels
                  */
@@ -8311,11 +8311,11 @@ export type GetCodesDeletedResponses = {
                     /**
                      * QR code encoding mode
                      */
-                    mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                    mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
                     /**
                      * Error correction level
                      */
-                    errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                    errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
                 } | null;
                 /**
                  * Options for QR code dots
@@ -8324,7 +8324,7 @@ export type GetCodesDeletedResponses = {
                     /**
                      * Type of dots
                      */
-                    type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                    type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                     /**
                      * Color of dots in CSS format
                      */
@@ -8340,7 +8340,7 @@ export type GetCodesDeletedResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -8367,7 +8367,7 @@ export type GetCodesDeletedResponses = {
                     /**
                      * Type of corner squares
                      */
-                    type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Color of corner squares in CSS format
                      */
@@ -8379,7 +8379,7 @@ export type GetCodesDeletedResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -8406,7 +8406,7 @@ export type GetCodesDeletedResponses = {
                     /**
                      * Type of corner dots
                      */
-                    type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Color of corner dots in CSS format
                      */
@@ -8418,7 +8418,7 @@ export type GetCodesDeletedResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -8457,7 +8457,7 @@ export type GetCodesDeletedResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -8488,7 +8488,7 @@ export type GetCodesDeletedResponses = {
                     /**
                      * Mode for embedded image
                      */
-                    mode?: "center" | "overlay" | "background" | null;
+                    mode?: 'center' | 'overlay' | 'background' | null;
                     /**
                      * Size of image relative to QR code (0-1)
                      */
@@ -8516,7 +8516,7 @@ export type GetCodesDeletedResponses = {
                             /**
                              * Type of gradient
                              */
-                            type?: "linear" | "radial";
+                            type?: 'linear' | 'radial';
                             /**
                              * Rotation angle of gradient in degrees
                              */
@@ -8647,7 +8647,7 @@ export type GetCodesDeletedResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -8675,7 +8675,7 @@ export type GetCodesDeletedResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -8709,7 +8709,7 @@ export type GetCodesDeletedResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -8737,7 +8737,7 @@ export type GetCodesDeletedResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -8771,7 +8771,7 @@ export type GetCodesDeletedResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -8799,7 +8799,7 @@ export type GetCodesDeletedResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -8833,7 +8833,7 @@ export type GetCodesDeletedResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -8861,7 +8861,7 @@ export type GetCodesDeletedResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                     } | null;
@@ -8916,7 +8916,7 @@ export type GetCodesDeletedResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -8942,7 +8942,7 @@ export type GetCodesDeletedResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -8968,7 +8968,7 @@ export type GetCodesDeletedResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -8994,7 +8994,7 @@ export type GetCodesDeletedResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -9016,15 +9016,15 @@ export type GetCodesDeletedResponses = {
                     /**
                      * Shape style for the QR code dots
                      */
-                    dotShape?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                    dotShape?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                     /**
                      * Shape style for the QR code corner squares
                      */
-                    cornerSquareShape?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    cornerSquareShape?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Shape style for the QR code corner dots
                      */
-                    cornerDotShape?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    cornerDotShape?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Logo to be placed on the QR code (URL, Base64, Buffer, or Blob)
                      */
@@ -9036,7 +9036,7 @@ export type GetCodesDeletedResponses = {
                     /**
                      * Placement mode for the logo
                      */
-                    logoMode?: "center" | "overlay" | "background" | null;
+                    logoMode?: 'center' | 'overlay' | 'background' | null;
                     /**
                      * Margin around the logo in pixels
                      */
@@ -9120,7 +9120,7 @@ export type GetCodesDeletedResponses = {
                     /**
                      * Text transformation for border text
                      */
-                    borderTextTransform?: "uppercase" | "lowercase" | "capitalize" | null;
+                    borderTextTransform?: 'uppercase' | 'lowercase' | 'capitalize' | null;
                     /**
                      * Font weight for border text
                      */
@@ -9140,7 +9140,7 @@ export type GetCodesDeletedResponses = {
                     /**
                      * Overall shape of the QR code
                      */
-                    shape?: "square" | "circle" | null;
+                    shape?: 'square' | 'circle' | null;
                     /**
                      * Margin around the QR code in pixels
                      */
@@ -9176,11 +9176,11 @@ export type GetCodesDeletedResponses = {
                         /**
                          * QR code encoding mode
                          */
-                        mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                        mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
                         /**
                          * Error correction level
                          */
-                        errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                        errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
                     } | null;
                     /**
                      * Options for QR code dots
@@ -9189,7 +9189,7 @@ export type GetCodesDeletedResponses = {
                         /**
                          * Type of dots
                          */
-                        type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                        type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                         /**
                          * Color of dots in CSS format
                          */
@@ -9205,7 +9205,7 @@ export type GetCodesDeletedResponses = {
                             /**
                              * Type of gradient
                              */
-                            type?: "linear" | "radial";
+                            type?: 'linear' | 'radial';
                             /**
                              * Rotation angle of gradient in degrees
                              */
@@ -9232,7 +9232,7 @@ export type GetCodesDeletedResponses = {
                         /**
                          * Type of corner squares
                          */
-                        type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                        type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                         /**
                          * Color of corner squares in CSS format
                          */
@@ -9244,7 +9244,7 @@ export type GetCodesDeletedResponses = {
                             /**
                              * Type of gradient
                              */
-                            type?: "linear" | "radial";
+                            type?: 'linear' | 'radial';
                             /**
                              * Rotation angle of gradient in degrees
                              */
@@ -9271,7 +9271,7 @@ export type GetCodesDeletedResponses = {
                         /**
                          * Type of corner dots
                          */
-                        type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                        type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                         /**
                          * Color of corner dots in CSS format
                          */
@@ -9283,7 +9283,7 @@ export type GetCodesDeletedResponses = {
                             /**
                              * Type of gradient
                              */
-                            type?: "linear" | "radial";
+                            type?: 'linear' | 'radial';
                             /**
                              * Rotation angle of gradient in degrees
                              */
@@ -9322,7 +9322,7 @@ export type GetCodesDeletedResponses = {
                             /**
                              * Type of gradient
                              */
-                            type?: "linear" | "radial";
+                            type?: 'linear' | 'radial';
                             /**
                              * Rotation angle of gradient in degrees
                              */
@@ -9353,7 +9353,7 @@ export type GetCodesDeletedResponses = {
                         /**
                          * Mode for embedded image
                          */
-                        mode?: "center" | "overlay" | "background" | null;
+                        mode?: 'center' | 'overlay' | 'background' | null;
                         /**
                          * Size of image relative to QR code (0-1)
                          */
@@ -9381,7 +9381,7 @@ export type GetCodesDeletedResponses = {
                                 /**
                                  * Type of gradient
                                  */
-                                type?: "linear" | "radial";
+                                type?: 'linear' | 'radial';
                                 /**
                                  * Rotation angle of gradient in degrees
                                  */
@@ -9512,7 +9512,7 @@ export type GetCodesDeletedResponses = {
                                 /**
                                  * Type of decoration
                                  */
-                                type?: "text" | "image";
+                                type?: 'text' | 'image';
                                 /**
                                  * Content value for decoration
                                  */
@@ -9540,7 +9540,7 @@ export type GetCodesDeletedResponses = {
                                     /**
                                      * Font weight
                                      */
-                                    fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                    fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                                 };
                             } | null;
                             /**
@@ -9574,7 +9574,7 @@ export type GetCodesDeletedResponses = {
                                 /**
                                  * Type of decoration
                                  */
-                                type?: "text" | "image";
+                                type?: 'text' | 'image';
                                 /**
                                  * Content value for decoration
                                  */
@@ -9602,7 +9602,7 @@ export type GetCodesDeletedResponses = {
                                     /**
                                      * Font weight
                                      */
-                                    fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                    fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                                 };
                             } | null;
                             /**
@@ -9636,7 +9636,7 @@ export type GetCodesDeletedResponses = {
                                 /**
                                  * Type of decoration
                                  */
-                                type?: "text" | "image";
+                                type?: 'text' | 'image';
                                 /**
                                  * Content value for decoration
                                  */
@@ -9664,7 +9664,7 @@ export type GetCodesDeletedResponses = {
                                     /**
                                      * Font weight
                                      */
-                                    fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                    fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                                 };
                             } | null;
                             /**
@@ -9698,7 +9698,7 @@ export type GetCodesDeletedResponses = {
                                 /**
                                  * Type of decoration
                                  */
-                                type?: "text" | "image";
+                                type?: 'text' | 'image';
                                 /**
                                  * Content value for decoration
                                  */
@@ -9726,7 +9726,7 @@ export type GetCodesDeletedResponses = {
                                     /**
                                      * Font weight
                                      */
-                                    fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                    fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                                 };
                             } | null;
                         } | null;
@@ -9750,7 +9750,7 @@ export type GetCodesDeletedResponses = {
                     /**
                      * Overall shape of the QR code
                      */
-                    shape?: "square" | "circle" | null;
+                    shape?: 'square' | 'circle' | null;
                     /**
                      * Margin around the QR code in pixels
                      */
@@ -9786,11 +9786,11 @@ export type GetCodesDeletedResponses = {
                         /**
                          * QR code encoding mode
                          */
-                        mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                        mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
                         /**
                          * Error correction level
                          */
-                        errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                        errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
                     } | null;
                     /**
                      * Options for QR code dots
@@ -9799,7 +9799,7 @@ export type GetCodesDeletedResponses = {
                         /**
                          * Type of dots
                          */
-                        type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                        type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                         /**
                          * Color of dots in CSS format
                          */
@@ -9815,7 +9815,7 @@ export type GetCodesDeletedResponses = {
                             /**
                              * Type of gradient
                              */
-                            type?: "linear" | "radial";
+                            type?: 'linear' | 'radial';
                             /**
                              * Rotation angle of gradient in degrees
                              */
@@ -9842,7 +9842,7 @@ export type GetCodesDeletedResponses = {
                         /**
                          * Type of corner squares
                          */
-                        type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                        type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                         /**
                          * Color of corner squares in CSS format
                          */
@@ -9854,7 +9854,7 @@ export type GetCodesDeletedResponses = {
                             /**
                              * Type of gradient
                              */
-                            type?: "linear" | "radial";
+                            type?: 'linear' | 'radial';
                             /**
                              * Rotation angle of gradient in degrees
                              */
@@ -9881,7 +9881,7 @@ export type GetCodesDeletedResponses = {
                         /**
                          * Type of corner dots
                          */
-                        type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                        type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                         /**
                          * Color of corner dots in CSS format
                          */
@@ -9893,7 +9893,7 @@ export type GetCodesDeletedResponses = {
                             /**
                              * Type of gradient
                              */
-                            type?: "linear" | "radial";
+                            type?: 'linear' | 'radial';
                             /**
                              * Rotation angle of gradient in degrees
                              */
@@ -9932,7 +9932,7 @@ export type GetCodesDeletedResponses = {
                             /**
                              * Type of gradient
                              */
-                            type?: "linear" | "radial";
+                            type?: 'linear' | 'radial';
                             /**
                              * Rotation angle of gradient in degrees
                              */
@@ -9963,7 +9963,7 @@ export type GetCodesDeletedResponses = {
                         /**
                          * Mode for embedded image
                          */
-                        mode?: "center" | "overlay" | "background" | null;
+                        mode?: 'center' | 'overlay' | 'background' | null;
                         /**
                          * Size of image relative to QR code (0-1)
                          */
@@ -9991,7 +9991,7 @@ export type GetCodesDeletedResponses = {
                                 /**
                                  * Type of gradient
                                  */
-                                type?: "linear" | "radial";
+                                type?: 'linear' | 'radial';
                                 /**
                                  * Rotation angle of gradient in degrees
                                  */
@@ -10119,7 +10119,7 @@ export type GetCodesDeletedResponses = {
                                 /**
                                  * Type of decoration
                                  */
-                                type?: "text" | "image";
+                                type?: 'text' | 'image';
                                 /**
                                  * Content value for decoration
                                  */
@@ -10147,7 +10147,7 @@ export type GetCodesDeletedResponses = {
                                     /**
                                      * Font weight
                                      */
-                                    fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                    fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                                 };
                             } | null;
                             /**
@@ -10181,7 +10181,7 @@ export type GetCodesDeletedResponses = {
                                 /**
                                  * Type of decoration
                                  */
-                                type?: "text" | "image";
+                                type?: 'text' | 'image';
                                 /**
                                  * Content value for decoration
                                  */
@@ -10209,7 +10209,7 @@ export type GetCodesDeletedResponses = {
                                     /**
                                      * Font weight
                                      */
-                                    fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                    fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                                 };
                             } | null;
                             /**
@@ -10243,7 +10243,7 @@ export type GetCodesDeletedResponses = {
                                 /**
                                  * Type of decoration
                                  */
-                                type?: "text" | "image";
+                                type?: 'text' | 'image';
                                 /**
                                  * Content value for decoration
                                  */
@@ -10271,7 +10271,7 @@ export type GetCodesDeletedResponses = {
                                     /**
                                      * Font weight
                                      */
-                                    fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                    fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                                 };
                             } | null;
                             /**
@@ -10305,7 +10305,7 @@ export type GetCodesDeletedResponses = {
                                 /**
                                  * Type of decoration
                                  */
-                                type?: "text" | "image";
+                                type?: 'text' | 'image';
                                 /**
                                  * Content value for decoration
                                  */
@@ -10333,7 +10333,7 @@ export type GetCodesDeletedResponses = {
                                     /**
                                      * Font weight
                                      */
-                                    fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                    fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                                 };
                             } | null;
                         } | null;
@@ -10500,11 +10500,11 @@ export type GetCodesLinksData = {
         /**
          * Field to order results by
          */
-        orderBy?: "createdAt" | "updatedAt" | "type";
+        orderBy?: 'createdAt' | 'updatedAt' | 'type';
         /**
          * Direction of ordering
          */
-        orderDirection?: "asc" | "desc";
+        orderDirection?: 'asc' | 'desc';
         /**
          * Filter by QR code ID
          */
@@ -10512,7 +10512,7 @@ export type GetCodesLinksData = {
         /**
          * Filter by file type
          */
-        type?: "svg" | "png" | "pdf";
+        type?: 'svg' | 'png' | 'pdf';
         /**
          * Filter by QR code name
          */
@@ -10532,7 +10532,7 @@ export type GetCodesLinksData = {
         /**
          * Filter by QR code validation status
          */
-        codeIsValid?: "true" | "false" | "null";
+        codeIsValid?: 'true' | 'false' | 'null';
         /**
          * Filter by style name
          */
@@ -10548,7 +10548,7 @@ export type GetCodesLinksData = {
         /**
          * Filter by whether this is the current version
          */
-        isCurrentVersion?: "true" | "false";
+        isCurrentVersion?: 'true' | 'false';
         /**
          * Filter by creator user ID
          */
@@ -10574,7 +10574,7 @@ export type GetCodesLinksData = {
          */
         workspaceId?: string;
     };
-    url: "/codes/links";
+    url: '/codes/links';
 };
 export type GetCodesLinksErrors = {
     /**
@@ -10795,14 +10795,14 @@ export type DeleteCodesByCodeIdData = {
         codeId: string;
     };
     query?: never;
-    url: "/codes/{codeId}";
+    url: '/codes/{codeId}';
 };
 export type DeleteCodesByCodeIdErrors = {
     /**
      * QR Code is already deleted.
      */
     400: {
-        message: "QR Code is already deleted";
+        message: 'QR Code is already deleted';
     };
     /**
      * Unauthorized response message
@@ -10853,7 +10853,7 @@ export type GetCodesByCodeIdData = {
         codeId: string;
     };
     query?: never;
-    url: "/codes/{codeId}";
+    url: '/codes/{codeId}';
 };
 export type GetCodesByCodeIdErrors = {
     /**
@@ -10900,11 +10900,11 @@ export type GetCodesByCodeIdResponses = {
         /**
          * Type of the QR code
          */
-        type?: "static" | "dynamic";
+        type?: 'static' | 'dynamic';
         /**
          * The type of data the QR code contains. Only applies to dynamic codes.
          */
-        dataType?: "url" | "wifi" | "vcard" | "text" | "email" | "event" | "json" | "file" | "scan-info" | null;
+        dataType?: 'url' | 'wifi' | 'vcard' | 'text' | 'email' | 'event' | 'json' | 'file' | 'scan-info' | null;
         /**
          * Short alias for the QR code
          */
@@ -10944,7 +10944,7 @@ export type GetCodesByCodeIdResponses = {
             /**
              * Overall shape of the QR code
              */
-            shape?: "square" | "circle" | null;
+            shape?: 'square' | 'circle' | null;
             /**
              * Margin around the QR code in pixels
              */
@@ -10980,11 +10980,11 @@ export type GetCodesByCodeIdResponses = {
                 /**
                  * QR code encoding mode
                  */
-                mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
                 /**
                  * Error correction level
                  */
-                errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
             } | null;
             /**
              * Options for QR code dots
@@ -10993,7 +10993,7 @@ export type GetCodesByCodeIdResponses = {
                 /**
                  * Type of dots
                  */
-                type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                 /**
                  * Color of dots in CSS format
                  */
@@ -11009,7 +11009,7 @@ export type GetCodesByCodeIdResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -11036,7 +11036,7 @@ export type GetCodesByCodeIdResponses = {
                 /**
                  * Type of corner squares
                  */
-                type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Color of corner squares in CSS format
                  */
@@ -11048,7 +11048,7 @@ export type GetCodesByCodeIdResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -11075,7 +11075,7 @@ export type GetCodesByCodeIdResponses = {
                 /**
                  * Type of corner dots
                  */
-                type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Color of corner dots in CSS format
                  */
@@ -11087,7 +11087,7 @@ export type GetCodesByCodeIdResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -11126,7 +11126,7 @@ export type GetCodesByCodeIdResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -11157,7 +11157,7 @@ export type GetCodesByCodeIdResponses = {
                 /**
                  * Mode for embedded image
                  */
-                mode?: "center" | "overlay" | "background" | null;
+                mode?: 'center' | 'overlay' | 'background' | null;
                 /**
                  * Size of image relative to QR code (0-1)
                  */
@@ -11185,7 +11185,7 @@ export type GetCodesByCodeIdResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -11316,7 +11316,7 @@ export type GetCodesByCodeIdResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -11344,7 +11344,7 @@ export type GetCodesByCodeIdResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -11378,7 +11378,7 @@ export type GetCodesByCodeIdResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -11406,7 +11406,7 @@ export type GetCodesByCodeIdResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -11440,7 +11440,7 @@ export type GetCodesByCodeIdResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -11468,7 +11468,7 @@ export type GetCodesByCodeIdResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -11502,7 +11502,7 @@ export type GetCodesByCodeIdResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -11530,7 +11530,7 @@ export type GetCodesByCodeIdResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                 } | null;
@@ -11585,7 +11585,7 @@ export type GetCodesByCodeIdResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -11611,7 +11611,7 @@ export type GetCodesByCodeIdResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -11637,7 +11637,7 @@ export type GetCodesByCodeIdResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -11663,7 +11663,7 @@ export type GetCodesByCodeIdResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -11685,15 +11685,15 @@ export type GetCodesByCodeIdResponses = {
                 /**
                  * Shape style for the QR code dots
                  */
-                dotShape?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                dotShape?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                 /**
                  * Shape style for the QR code corner squares
                  */
-                cornerSquareShape?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                cornerSquareShape?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Shape style for the QR code corner dots
                  */
-                cornerDotShape?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                cornerDotShape?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Logo to be placed on the QR code (URL, Base64, Buffer, or Blob)
                  */
@@ -11705,7 +11705,7 @@ export type GetCodesByCodeIdResponses = {
                 /**
                  * Placement mode for the logo
                  */
-                logoMode?: "center" | "overlay" | "background" | null;
+                logoMode?: 'center' | 'overlay' | 'background' | null;
                 /**
                  * Margin around the logo in pixels
                  */
@@ -11789,7 +11789,7 @@ export type GetCodesByCodeIdResponses = {
                 /**
                  * Text transformation for border text
                  */
-                borderTextTransform?: "uppercase" | "lowercase" | "capitalize" | null;
+                borderTextTransform?: 'uppercase' | 'lowercase' | 'capitalize' | null;
                 /**
                  * Font weight for border text
                  */
@@ -11809,7 +11809,7 @@ export type GetCodesByCodeIdResponses = {
                 /**
                  * Overall shape of the QR code
                  */
-                shape?: "square" | "circle" | null;
+                shape?: 'square' | 'circle' | null;
                 /**
                  * Margin around the QR code in pixels
                  */
@@ -11845,11 +11845,11 @@ export type GetCodesByCodeIdResponses = {
                     /**
                      * QR code encoding mode
                      */
-                    mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                    mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
                     /**
                      * Error correction level
                      */
-                    errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                    errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
                 } | null;
                 /**
                  * Options for QR code dots
@@ -11858,7 +11858,7 @@ export type GetCodesByCodeIdResponses = {
                     /**
                      * Type of dots
                      */
-                    type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                    type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                     /**
                      * Color of dots in CSS format
                      */
@@ -11874,7 +11874,7 @@ export type GetCodesByCodeIdResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -11901,7 +11901,7 @@ export type GetCodesByCodeIdResponses = {
                     /**
                      * Type of corner squares
                      */
-                    type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Color of corner squares in CSS format
                      */
@@ -11913,7 +11913,7 @@ export type GetCodesByCodeIdResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -11940,7 +11940,7 @@ export type GetCodesByCodeIdResponses = {
                     /**
                      * Type of corner dots
                      */
-                    type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Color of corner dots in CSS format
                      */
@@ -11952,7 +11952,7 @@ export type GetCodesByCodeIdResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -11991,7 +11991,7 @@ export type GetCodesByCodeIdResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -12022,7 +12022,7 @@ export type GetCodesByCodeIdResponses = {
                     /**
                      * Mode for embedded image
                      */
-                    mode?: "center" | "overlay" | "background" | null;
+                    mode?: 'center' | 'overlay' | 'background' | null;
                     /**
                      * Size of image relative to QR code (0-1)
                      */
@@ -12050,7 +12050,7 @@ export type GetCodesByCodeIdResponses = {
                             /**
                              * Type of gradient
                              */
-                            type?: "linear" | "radial";
+                            type?: 'linear' | 'radial';
                             /**
                              * Rotation angle of gradient in degrees
                              */
@@ -12181,7 +12181,7 @@ export type GetCodesByCodeIdResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -12209,7 +12209,7 @@ export type GetCodesByCodeIdResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -12243,7 +12243,7 @@ export type GetCodesByCodeIdResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -12271,7 +12271,7 @@ export type GetCodesByCodeIdResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -12305,7 +12305,7 @@ export type GetCodesByCodeIdResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -12333,7 +12333,7 @@ export type GetCodesByCodeIdResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -12367,7 +12367,7 @@ export type GetCodesByCodeIdResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -12395,7 +12395,7 @@ export type GetCodesByCodeIdResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                     } | null;
@@ -12419,7 +12419,7 @@ export type GetCodesByCodeIdResponses = {
                 /**
                  * Overall shape of the QR code
                  */
-                shape?: "square" | "circle" | null;
+                shape?: 'square' | 'circle' | null;
                 /**
                  * Margin around the QR code in pixels
                  */
@@ -12455,11 +12455,11 @@ export type GetCodesByCodeIdResponses = {
                     /**
                      * QR code encoding mode
                      */
-                    mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                    mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
                     /**
                      * Error correction level
                      */
-                    errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                    errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
                 } | null;
                 /**
                  * Options for QR code dots
@@ -12468,7 +12468,7 @@ export type GetCodesByCodeIdResponses = {
                     /**
                      * Type of dots
                      */
-                    type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                    type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                     /**
                      * Color of dots in CSS format
                      */
@@ -12484,7 +12484,7 @@ export type GetCodesByCodeIdResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -12511,7 +12511,7 @@ export type GetCodesByCodeIdResponses = {
                     /**
                      * Type of corner squares
                      */
-                    type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Color of corner squares in CSS format
                      */
@@ -12523,7 +12523,7 @@ export type GetCodesByCodeIdResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -12550,7 +12550,7 @@ export type GetCodesByCodeIdResponses = {
                     /**
                      * Type of corner dots
                      */
-                    type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Color of corner dots in CSS format
                      */
@@ -12562,7 +12562,7 @@ export type GetCodesByCodeIdResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -12601,7 +12601,7 @@ export type GetCodesByCodeIdResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -12632,7 +12632,7 @@ export type GetCodesByCodeIdResponses = {
                     /**
                      * Mode for embedded image
                      */
-                    mode?: "center" | "overlay" | "background" | null;
+                    mode?: 'center' | 'overlay' | 'background' | null;
                     /**
                      * Size of image relative to QR code (0-1)
                      */
@@ -12660,7 +12660,7 @@ export type GetCodesByCodeIdResponses = {
                             /**
                              * Type of gradient
                              */
-                            type?: "linear" | "radial";
+                            type?: 'linear' | 'radial';
                             /**
                              * Rotation angle of gradient in degrees
                              */
@@ -12788,7 +12788,7 @@ export type GetCodesByCodeIdResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -12816,7 +12816,7 @@ export type GetCodesByCodeIdResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -12850,7 +12850,7 @@ export type GetCodesByCodeIdResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -12878,7 +12878,7 @@ export type GetCodesByCodeIdResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -12912,7 +12912,7 @@ export type GetCodesByCodeIdResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -12940,7 +12940,7 @@ export type GetCodesByCodeIdResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -12974,7 +12974,7 @@ export type GetCodesByCodeIdResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -13002,7 +13002,7 @@ export type GetCodesByCodeIdResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                     } | null;
@@ -13161,11 +13161,11 @@ export type PutCodesByCodeIdData = {
         /**
          * Type of QR code
          */
-        type?: "static" | "dynamic";
+        type?: 'static' | 'dynamic';
         /**
          * The type of data the QR code contains. Only applies to dynamic codes. Determines how the QR code data is processed and what content type is returned when scanned. Each dataType has specific content structure requirements.
          */
-        dataType?: "url" | "wifi" | "vcard" | "text" | "email" | "event" | "json" | "file" | "scan-info" | null;
+        dataType?: 'url' | 'wifi' | 'vcard' | 'text' | 'email' | 'event' | 'json' | 'file' | 'scan-info' | null;
         /**
          * Functional content for dynamic QR codes. Structure depends on dataType. url: {url}, wifi: {ssid, password?, security?, hidden?}, vcard: {fullName?, email?, phone?, organization?}, text: {text}, email: {to, subject?, body?}, event: {eventTitle, startDate, endDate?, location?}, file: {fileName, fileUrl, mimeType?}, json: any valid JSON.
          */
@@ -13187,7 +13187,7 @@ export type PutCodesByCodeIdData = {
             /**
              * Overall shape of the QR code
              */
-            shape?: "square" | "circle" | null;
+            shape?: 'square' | 'circle' | null;
             /**
              * Margin around the QR code in pixels
              */
@@ -13223,11 +13223,11 @@ export type PutCodesByCodeIdData = {
                 /**
                  * QR code encoding mode
                  */
-                mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
                 /**
                  * Error correction level
                  */
-                errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
             } | null;
             /**
              * Options for QR code dots
@@ -13236,7 +13236,7 @@ export type PutCodesByCodeIdData = {
                 /**
                  * Type of dots
                  */
-                type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                 /**
                  * Color of dots in CSS format
                  */
@@ -13252,7 +13252,7 @@ export type PutCodesByCodeIdData = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -13279,7 +13279,7 @@ export type PutCodesByCodeIdData = {
                 /**
                  * Type of corner squares
                  */
-                type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Color of corner squares in CSS format
                  */
@@ -13291,7 +13291,7 @@ export type PutCodesByCodeIdData = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -13318,7 +13318,7 @@ export type PutCodesByCodeIdData = {
                 /**
                  * Type of corner dots
                  */
-                type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Color of corner dots in CSS format
                  */
@@ -13330,7 +13330,7 @@ export type PutCodesByCodeIdData = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -13369,7 +13369,7 @@ export type PutCodesByCodeIdData = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -13400,7 +13400,7 @@ export type PutCodesByCodeIdData = {
                 /**
                  * Mode for embedded image
                  */
-                mode?: "center" | "overlay" | "background" | null;
+                mode?: 'center' | 'overlay' | 'background' | null;
                 /**
                  * Size of image relative to QR code (0-1)
                  */
@@ -13428,7 +13428,7 @@ export type PutCodesByCodeIdData = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -13559,7 +13559,7 @@ export type PutCodesByCodeIdData = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -13587,7 +13587,7 @@ export type PutCodesByCodeIdData = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -13621,7 +13621,7 @@ export type PutCodesByCodeIdData = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -13649,7 +13649,7 @@ export type PutCodesByCodeIdData = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -13683,7 +13683,7 @@ export type PutCodesByCodeIdData = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -13711,7 +13711,7 @@ export type PutCodesByCodeIdData = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -13745,7 +13745,7 @@ export type PutCodesByCodeIdData = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -13773,7 +13773,7 @@ export type PutCodesByCodeIdData = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                 } | null;
@@ -13834,7 +13834,7 @@ export type PutCodesByCodeIdData = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -13860,7 +13860,7 @@ export type PutCodesByCodeIdData = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -13886,7 +13886,7 @@ export type PutCodesByCodeIdData = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -13912,7 +13912,7 @@ export type PutCodesByCodeIdData = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -13934,15 +13934,15 @@ export type PutCodesByCodeIdData = {
                 /**
                  * Shape style for the QR code dots
                  */
-                dotShape?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                dotShape?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                 /**
                  * Shape style for the QR code corner squares
                  */
-                cornerSquareShape?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                cornerSquareShape?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Shape style for the QR code corner dots
                  */
-                cornerDotShape?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                cornerDotShape?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Logo to be placed on the QR code (URL, Base64, Buffer, or Blob)
                  */
@@ -13954,7 +13954,7 @@ export type PutCodesByCodeIdData = {
                 /**
                  * Placement mode for the logo
                  */
-                logoMode?: "center" | "overlay" | "background" | null;
+                logoMode?: 'center' | 'overlay' | 'background' | null;
                 /**
                  * Margin around the logo in pixels
                  */
@@ -14038,7 +14038,7 @@ export type PutCodesByCodeIdData = {
                 /**
                  * Text transformation for border text
                  */
-                borderTextTransform?: "uppercase" | "lowercase" | "capitalize" | null;
+                borderTextTransform?: 'uppercase' | 'lowercase' | 'capitalize' | null;
                 /**
                  * Font weight for border text
                  */
@@ -14062,7 +14062,7 @@ export type PutCodesByCodeIdData = {
                 /**
                  * Overall shape of the QR code
                  */
-                shape?: "square" | "circle" | null;
+                shape?: 'square' | 'circle' | null;
                 /**
                  * Margin around the QR code in pixels
                  */
@@ -14098,11 +14098,11 @@ export type PutCodesByCodeIdData = {
                     /**
                      * QR code encoding mode
                      */
-                    mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                    mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
                     /**
                      * Error correction level
                      */
-                    errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                    errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
                 } | null;
                 /**
                  * Options for QR code dots
@@ -14111,7 +14111,7 @@ export type PutCodesByCodeIdData = {
                     /**
                      * Type of dots
                      */
-                    type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                    type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                     /**
                      * Color of dots in CSS format
                      */
@@ -14127,7 +14127,7 @@ export type PutCodesByCodeIdData = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -14154,7 +14154,7 @@ export type PutCodesByCodeIdData = {
                     /**
                      * Type of corner squares
                      */
-                    type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Color of corner squares in CSS format
                      */
@@ -14166,7 +14166,7 @@ export type PutCodesByCodeIdData = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -14193,7 +14193,7 @@ export type PutCodesByCodeIdData = {
                     /**
                      * Type of corner dots
                      */
-                    type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Color of corner dots in CSS format
                      */
@@ -14205,7 +14205,7 @@ export type PutCodesByCodeIdData = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -14244,7 +14244,7 @@ export type PutCodesByCodeIdData = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -14275,7 +14275,7 @@ export type PutCodesByCodeIdData = {
                     /**
                      * Mode for embedded image
                      */
-                    mode?: "center" | "overlay" | "background" | null;
+                    mode?: 'center' | 'overlay' | 'background' | null;
                     /**
                      * Size of image relative to QR code (0-1)
                      */
@@ -14303,7 +14303,7 @@ export type PutCodesByCodeIdData = {
                             /**
                              * Type of gradient
                              */
-                            type?: "linear" | "radial";
+                            type?: 'linear' | 'radial';
                             /**
                              * Rotation angle of gradient in degrees
                              */
@@ -14434,7 +14434,7 @@ export type PutCodesByCodeIdData = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -14462,7 +14462,7 @@ export type PutCodesByCodeIdData = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -14496,7 +14496,7 @@ export type PutCodesByCodeIdData = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -14524,7 +14524,7 @@ export type PutCodesByCodeIdData = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -14558,7 +14558,7 @@ export type PutCodesByCodeIdData = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -14586,7 +14586,7 @@ export type PutCodesByCodeIdData = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -14620,7 +14620,7 @@ export type PutCodesByCodeIdData = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -14648,7 +14648,7 @@ export type PutCodesByCodeIdData = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                     } | null;
@@ -14676,7 +14676,7 @@ export type PutCodesByCodeIdData = {
                 /**
                  * Overall shape of the QR code
                  */
-                shape?: "square" | "circle" | null;
+                shape?: 'square' | 'circle' | null;
                 /**
                  * Margin around the QR code in pixels
                  */
@@ -14712,11 +14712,11 @@ export type PutCodesByCodeIdData = {
                     /**
                      * QR code encoding mode
                      */
-                    mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                    mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
                     /**
                      * Error correction level
                      */
-                    errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                    errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
                 } | null;
                 /**
                  * Options for QR code dots
@@ -14725,7 +14725,7 @@ export type PutCodesByCodeIdData = {
                     /**
                      * Type of dots
                      */
-                    type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                    type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                     /**
                      * Color of dots in CSS format
                      */
@@ -14741,7 +14741,7 @@ export type PutCodesByCodeIdData = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -14768,7 +14768,7 @@ export type PutCodesByCodeIdData = {
                     /**
                      * Type of corner squares
                      */
-                    type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Color of corner squares in CSS format
                      */
@@ -14780,7 +14780,7 @@ export type PutCodesByCodeIdData = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -14807,7 +14807,7 @@ export type PutCodesByCodeIdData = {
                     /**
                      * Type of corner dots
                      */
-                    type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Color of corner dots in CSS format
                      */
@@ -14819,7 +14819,7 @@ export type PutCodesByCodeIdData = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -14858,7 +14858,7 @@ export type PutCodesByCodeIdData = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -14889,7 +14889,7 @@ export type PutCodesByCodeIdData = {
                     /**
                      * Mode for embedded image
                      */
-                    mode?: "center" | "overlay" | "background" | null;
+                    mode?: 'center' | 'overlay' | 'background' | null;
                     /**
                      * Size of image relative to QR code (0-1)
                      */
@@ -14917,7 +14917,7 @@ export type PutCodesByCodeIdData = {
                             /**
                              * Type of gradient
                              */
-                            type?: "linear" | "radial";
+                            type?: 'linear' | 'radial';
                             /**
                              * Rotation angle of gradient in degrees
                              */
@@ -15045,7 +15045,7 @@ export type PutCodesByCodeIdData = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -15073,7 +15073,7 @@ export type PutCodesByCodeIdData = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -15107,7 +15107,7 @@ export type PutCodesByCodeIdData = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -15135,7 +15135,7 @@ export type PutCodesByCodeIdData = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -15169,7 +15169,7 @@ export type PutCodesByCodeIdData = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -15197,7 +15197,7 @@ export type PutCodesByCodeIdData = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -15231,7 +15231,7 @@ export type PutCodesByCodeIdData = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -15259,7 +15259,7 @@ export type PutCodesByCodeIdData = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                     } | null;
@@ -15305,7 +15305,7 @@ export type PutCodesByCodeIdData = {
         /**
          * Format for the generated QR code link. Return existing link if generated before or create new link with provided format.
          */
-        linkFormat?: "svg" | "png" | "pdf";
+        linkFormat?: 'svg' | 'png' | 'pdf';
         /**
          * Whether to validate the QR code during update
          */
@@ -15318,7 +15318,7 @@ export type PutCodesByCodeIdData = {
         codeId: string;
     };
     query?: never;
-    url: "/codes/{codeId}";
+    url: '/codes/{codeId}';
 };
 export type PutCodesByCodeIdErrors = {
     /**
@@ -15346,27 +15346,27 @@ export type PutCodesByCodeIdErrors = {
     } | {
         message: string;
     } | {
-        message: "QR Code is invalid";
+        message: 'QR Code is invalid';
     } | {
-        message: "Invalid code type provided";
+        message: 'Invalid code type provided';
     } | {
-        message: "Cannot update a soft-deleted code. Please restore the code first";
+        message: 'Cannot update a soft-deleted code. Please restore the code first';
     } | {
-        message: "To convert from dynamic to static QR code, you must explicitly set dynamicData to null or remove the dynamicData field from the request body";
+        message: 'To convert from dynamic to static QR code, you must explicitly set dynamicData to null or remove the dynamicData field from the request body';
     } | {
-        message: "Dynamic QR codes require a dynamicData field to be set";
+        message: 'Dynamic QR codes require a dynamicData field to be set';
     } | {
-        message: "QR Code with same shortAlias already exists";
+        message: 'QR Code with same shortAlias already exists';
     } | {
-        message: "To convert from dynamic to static QR code, you must explicitly set shortAlias to null or remove the shortAlias field from the request body";
+        message: 'To convert from dynamic to static QR code, you must explicitly set shortAlias to null or remove the shortAlias field from the request body';
     } | {
-        message: "Dynamic data URL cannot point to the redirect domain. Please use an external domain for the dynamicData URL";
+        message: 'Dynamic data URL cannot point to the redirect domain. Please use an external domain for the dynamicData URL';
     } | {
-        message: "To convert from dynamic to static QR code, you must explicitly set dataType to null or remove the dataType field from the request body";
+        message: 'To convert from dynamic to static QR code, you must explicitly set dataType to null or remove the dataType field from the request body';
     } | {
-        message: "Data type is not allowed for static QR codes, you must explicitly set dataType to null or remove the dataType field from the request body";
+        message: 'Data type is not allowed for static QR codes, you must explicitly set dataType to null or remove the dataType field from the request body';
     } | {
-        message: "Data is not allowed for dynamic QR codes, you must explicitly set data to null or remove the data field from the request body";
+        message: 'Data is not allowed for dynamic QR codes, you must explicitly set data to null or remove the data field from the request body';
     };
     /**
      * Unauthorized response message
@@ -15438,11 +15438,11 @@ export type PutCodesByCodeIdResponses = {
         /**
          * Type of the QR code
          */
-        type?: "static" | "dynamic";
+        type?: 'static' | 'dynamic';
         /**
          * The type of data the QR code contains. Only applies to dynamic codes.
          */
-        dataType?: "url" | "wifi" | "vcard" | "text" | "email" | "event" | "json" | "file" | "scan-info" | null;
+        dataType?: 'url' | 'wifi' | 'vcard' | 'text' | 'email' | 'event' | 'json' | 'file' | 'scan-info' | null;
         /**
          * Short alias for the QR code
          */
@@ -15482,7 +15482,7 @@ export type PutCodesByCodeIdResponses = {
             /**
              * Overall shape of the QR code
              */
-            shape?: "square" | "circle" | null;
+            shape?: 'square' | 'circle' | null;
             /**
              * Margin around the QR code in pixels
              */
@@ -15518,11 +15518,11 @@ export type PutCodesByCodeIdResponses = {
                 /**
                  * QR code encoding mode
                  */
-                mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
                 /**
                  * Error correction level
                  */
-                errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
             } | null;
             /**
              * Options for QR code dots
@@ -15531,7 +15531,7 @@ export type PutCodesByCodeIdResponses = {
                 /**
                  * Type of dots
                  */
-                type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                 /**
                  * Color of dots in CSS format
                  */
@@ -15547,7 +15547,7 @@ export type PutCodesByCodeIdResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -15574,7 +15574,7 @@ export type PutCodesByCodeIdResponses = {
                 /**
                  * Type of corner squares
                  */
-                type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Color of corner squares in CSS format
                  */
@@ -15586,7 +15586,7 @@ export type PutCodesByCodeIdResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -15613,7 +15613,7 @@ export type PutCodesByCodeIdResponses = {
                 /**
                  * Type of corner dots
                  */
-                type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Color of corner dots in CSS format
                  */
@@ -15625,7 +15625,7 @@ export type PutCodesByCodeIdResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -15664,7 +15664,7 @@ export type PutCodesByCodeIdResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -15695,7 +15695,7 @@ export type PutCodesByCodeIdResponses = {
                 /**
                  * Mode for embedded image
                  */
-                mode?: "center" | "overlay" | "background" | null;
+                mode?: 'center' | 'overlay' | 'background' | null;
                 /**
                  * Size of image relative to QR code (0-1)
                  */
@@ -15723,7 +15723,7 @@ export type PutCodesByCodeIdResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -15854,7 +15854,7 @@ export type PutCodesByCodeIdResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -15882,7 +15882,7 @@ export type PutCodesByCodeIdResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -15916,7 +15916,7 @@ export type PutCodesByCodeIdResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -15944,7 +15944,7 @@ export type PutCodesByCodeIdResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -15978,7 +15978,7 @@ export type PutCodesByCodeIdResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -16006,7 +16006,7 @@ export type PutCodesByCodeIdResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -16040,7 +16040,7 @@ export type PutCodesByCodeIdResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -16068,7 +16068,7 @@ export type PutCodesByCodeIdResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                 } | null;
@@ -16123,7 +16123,7 @@ export type PutCodesByCodeIdResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -16149,7 +16149,7 @@ export type PutCodesByCodeIdResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -16175,7 +16175,7 @@ export type PutCodesByCodeIdResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -16201,7 +16201,7 @@ export type PutCodesByCodeIdResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -16223,15 +16223,15 @@ export type PutCodesByCodeIdResponses = {
                 /**
                  * Shape style for the QR code dots
                  */
-                dotShape?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                dotShape?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                 /**
                  * Shape style for the QR code corner squares
                  */
-                cornerSquareShape?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                cornerSquareShape?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Shape style for the QR code corner dots
                  */
-                cornerDotShape?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                cornerDotShape?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Logo to be placed on the QR code (URL, Base64, Buffer, or Blob)
                  */
@@ -16243,7 +16243,7 @@ export type PutCodesByCodeIdResponses = {
                 /**
                  * Placement mode for the logo
                  */
-                logoMode?: "center" | "overlay" | "background" | null;
+                logoMode?: 'center' | 'overlay' | 'background' | null;
                 /**
                  * Margin around the logo in pixels
                  */
@@ -16327,7 +16327,7 @@ export type PutCodesByCodeIdResponses = {
                 /**
                  * Text transformation for border text
                  */
-                borderTextTransform?: "uppercase" | "lowercase" | "capitalize" | null;
+                borderTextTransform?: 'uppercase' | 'lowercase' | 'capitalize' | null;
                 /**
                  * Font weight for border text
                  */
@@ -16347,7 +16347,7 @@ export type PutCodesByCodeIdResponses = {
                 /**
                  * Overall shape of the QR code
                  */
-                shape?: "square" | "circle" | null;
+                shape?: 'square' | 'circle' | null;
                 /**
                  * Margin around the QR code in pixels
                  */
@@ -16383,11 +16383,11 @@ export type PutCodesByCodeIdResponses = {
                     /**
                      * QR code encoding mode
                      */
-                    mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                    mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
                     /**
                      * Error correction level
                      */
-                    errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                    errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
                 } | null;
                 /**
                  * Options for QR code dots
@@ -16396,7 +16396,7 @@ export type PutCodesByCodeIdResponses = {
                     /**
                      * Type of dots
                      */
-                    type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                    type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                     /**
                      * Color of dots in CSS format
                      */
@@ -16412,7 +16412,7 @@ export type PutCodesByCodeIdResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -16439,7 +16439,7 @@ export type PutCodesByCodeIdResponses = {
                     /**
                      * Type of corner squares
                      */
-                    type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Color of corner squares in CSS format
                      */
@@ -16451,7 +16451,7 @@ export type PutCodesByCodeIdResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -16478,7 +16478,7 @@ export type PutCodesByCodeIdResponses = {
                     /**
                      * Type of corner dots
                      */
-                    type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Color of corner dots in CSS format
                      */
@@ -16490,7 +16490,7 @@ export type PutCodesByCodeIdResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -16529,7 +16529,7 @@ export type PutCodesByCodeIdResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -16560,7 +16560,7 @@ export type PutCodesByCodeIdResponses = {
                     /**
                      * Mode for embedded image
                      */
-                    mode?: "center" | "overlay" | "background" | null;
+                    mode?: 'center' | 'overlay' | 'background' | null;
                     /**
                      * Size of image relative to QR code (0-1)
                      */
@@ -16588,7 +16588,7 @@ export type PutCodesByCodeIdResponses = {
                             /**
                              * Type of gradient
                              */
-                            type?: "linear" | "radial";
+                            type?: 'linear' | 'radial';
                             /**
                              * Rotation angle of gradient in degrees
                              */
@@ -16719,7 +16719,7 @@ export type PutCodesByCodeIdResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -16747,7 +16747,7 @@ export type PutCodesByCodeIdResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -16781,7 +16781,7 @@ export type PutCodesByCodeIdResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -16809,7 +16809,7 @@ export type PutCodesByCodeIdResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -16843,7 +16843,7 @@ export type PutCodesByCodeIdResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -16871,7 +16871,7 @@ export type PutCodesByCodeIdResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -16905,7 +16905,7 @@ export type PutCodesByCodeIdResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -16933,7 +16933,7 @@ export type PutCodesByCodeIdResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                     } | null;
@@ -16957,7 +16957,7 @@ export type PutCodesByCodeIdResponses = {
                 /**
                  * Overall shape of the QR code
                  */
-                shape?: "square" | "circle" | null;
+                shape?: 'square' | 'circle' | null;
                 /**
                  * Margin around the QR code in pixels
                  */
@@ -16993,11 +16993,11 @@ export type PutCodesByCodeIdResponses = {
                     /**
                      * QR code encoding mode
                      */
-                    mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                    mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
                     /**
                      * Error correction level
                      */
-                    errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                    errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
                 } | null;
                 /**
                  * Options for QR code dots
@@ -17006,7 +17006,7 @@ export type PutCodesByCodeIdResponses = {
                     /**
                      * Type of dots
                      */
-                    type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                    type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                     /**
                      * Color of dots in CSS format
                      */
@@ -17022,7 +17022,7 @@ export type PutCodesByCodeIdResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -17049,7 +17049,7 @@ export type PutCodesByCodeIdResponses = {
                     /**
                      * Type of corner squares
                      */
-                    type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Color of corner squares in CSS format
                      */
@@ -17061,7 +17061,7 @@ export type PutCodesByCodeIdResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -17088,7 +17088,7 @@ export type PutCodesByCodeIdResponses = {
                     /**
                      * Type of corner dots
                      */
-                    type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Color of corner dots in CSS format
                      */
@@ -17100,7 +17100,7 @@ export type PutCodesByCodeIdResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -17139,7 +17139,7 @@ export type PutCodesByCodeIdResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -17170,7 +17170,7 @@ export type PutCodesByCodeIdResponses = {
                     /**
                      * Mode for embedded image
                      */
-                    mode?: "center" | "overlay" | "background" | null;
+                    mode?: 'center' | 'overlay' | 'background' | null;
                     /**
                      * Size of image relative to QR code (0-1)
                      */
@@ -17198,7 +17198,7 @@ export type PutCodesByCodeIdResponses = {
                             /**
                              * Type of gradient
                              */
-                            type?: "linear" | "radial";
+                            type?: 'linear' | 'radial';
                             /**
                              * Rotation angle of gradient in degrees
                              */
@@ -17326,7 +17326,7 @@ export type PutCodesByCodeIdResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -17354,7 +17354,7 @@ export type PutCodesByCodeIdResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -17388,7 +17388,7 @@ export type PutCodesByCodeIdResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -17416,7 +17416,7 @@ export type PutCodesByCodeIdResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -17450,7 +17450,7 @@ export type PutCodesByCodeIdResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -17478,7 +17478,7 @@ export type PutCodesByCodeIdResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -17512,7 +17512,7 @@ export type PutCodesByCodeIdResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -17540,7 +17540,7 @@ export type PutCodesByCodeIdResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                     } | null;
@@ -17695,7 +17695,7 @@ export type DeleteCodesData = {
     body?: never;
     path?: never;
     query?: never;
-    url: "/codes";
+    url: '/codes';
 };
 export type DeleteCodesErrors = {
     /**
@@ -17796,11 +17796,11 @@ export type GetCodesData = {
         /**
          * Field to order results by
          */
-        orderBy?: "createdAt" | "updatedAt" | "name";
+        orderBy?: 'createdAt' | 'updatedAt' | 'name';
         /**
          * Direction of ordering
          */
-        orderDirection?: "asc" | "desc";
+        orderDirection?: 'asc' | 'desc';
         /**
          * Filter by QR code name
          */
@@ -17812,7 +17812,7 @@ export type GetCodesData = {
         /**
          * Filter by validation status
          */
-        isValid?: "true" | "false" | "null";
+        isValid?: 'true' | 'false' | 'null';
         /**
          * Filter by QR code data content
          */
@@ -17830,7 +17830,7 @@ export type GetCodesData = {
             [key: string]: unknown;
         };
     };
-    url: "/codes";
+    url: '/codes';
 };
 export type GetCodesErrors = {
     /**
@@ -17920,11 +17920,11 @@ export type GetCodesResponses = {
             /**
              * Type of the QR code
              */
-            type?: "static" | "dynamic";
+            type?: 'static' | 'dynamic';
             /**
              * The type of data the QR code contains. Only applies to dynamic codes.
              */
-            dataType?: "url" | "wifi" | "vcard" | "text" | "email" | "event" | "json" | "file" | "scan-info" | null;
+            dataType?: 'url' | 'wifi' | 'vcard' | 'text' | 'email' | 'event' | 'json' | 'file' | 'scan-info' | null;
             /**
              * Short alias for the QR code
              */
@@ -17964,7 +17964,7 @@ export type GetCodesResponses = {
                 /**
                  * Overall shape of the QR code
                  */
-                shape?: "square" | "circle" | null;
+                shape?: 'square' | 'circle' | null;
                 /**
                  * Margin around the QR code in pixels
                  */
@@ -18000,11 +18000,11 @@ export type GetCodesResponses = {
                     /**
                      * QR code encoding mode
                      */
-                    mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                    mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
                     /**
                      * Error correction level
                      */
-                    errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                    errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
                 } | null;
                 /**
                  * Options for QR code dots
@@ -18013,7 +18013,7 @@ export type GetCodesResponses = {
                     /**
                      * Type of dots
                      */
-                    type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                    type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                     /**
                      * Color of dots in CSS format
                      */
@@ -18029,7 +18029,7 @@ export type GetCodesResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -18056,7 +18056,7 @@ export type GetCodesResponses = {
                     /**
                      * Type of corner squares
                      */
-                    type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Color of corner squares in CSS format
                      */
@@ -18068,7 +18068,7 @@ export type GetCodesResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -18095,7 +18095,7 @@ export type GetCodesResponses = {
                     /**
                      * Type of corner dots
                      */
-                    type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Color of corner dots in CSS format
                      */
@@ -18107,7 +18107,7 @@ export type GetCodesResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -18146,7 +18146,7 @@ export type GetCodesResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -18177,7 +18177,7 @@ export type GetCodesResponses = {
                     /**
                      * Mode for embedded image
                      */
-                    mode?: "center" | "overlay" | "background" | null;
+                    mode?: 'center' | 'overlay' | 'background' | null;
                     /**
                      * Size of image relative to QR code (0-1)
                      */
@@ -18205,7 +18205,7 @@ export type GetCodesResponses = {
                             /**
                              * Type of gradient
                              */
-                            type?: "linear" | "radial";
+                            type?: 'linear' | 'radial';
                             /**
                              * Rotation angle of gradient in degrees
                              */
@@ -18336,7 +18336,7 @@ export type GetCodesResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -18364,7 +18364,7 @@ export type GetCodesResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -18398,7 +18398,7 @@ export type GetCodesResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -18426,7 +18426,7 @@ export type GetCodesResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -18460,7 +18460,7 @@ export type GetCodesResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -18488,7 +18488,7 @@ export type GetCodesResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -18522,7 +18522,7 @@ export type GetCodesResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -18550,7 +18550,7 @@ export type GetCodesResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                     } | null;
@@ -18605,7 +18605,7 @@ export type GetCodesResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -18631,7 +18631,7 @@ export type GetCodesResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -18657,7 +18657,7 @@ export type GetCodesResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -18683,7 +18683,7 @@ export type GetCodesResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -18705,15 +18705,15 @@ export type GetCodesResponses = {
                     /**
                      * Shape style for the QR code dots
                      */
-                    dotShape?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                    dotShape?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                     /**
                      * Shape style for the QR code corner squares
                      */
-                    cornerSquareShape?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    cornerSquareShape?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Shape style for the QR code corner dots
                      */
-                    cornerDotShape?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    cornerDotShape?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Logo to be placed on the QR code (URL, Base64, Buffer, or Blob)
                      */
@@ -18725,7 +18725,7 @@ export type GetCodesResponses = {
                     /**
                      * Placement mode for the logo
                      */
-                    logoMode?: "center" | "overlay" | "background" | null;
+                    logoMode?: 'center' | 'overlay' | 'background' | null;
                     /**
                      * Margin around the logo in pixels
                      */
@@ -18809,7 +18809,7 @@ export type GetCodesResponses = {
                     /**
                      * Text transformation for border text
                      */
-                    borderTextTransform?: "uppercase" | "lowercase" | "capitalize" | null;
+                    borderTextTransform?: 'uppercase' | 'lowercase' | 'capitalize' | null;
                     /**
                      * Font weight for border text
                      */
@@ -18829,7 +18829,7 @@ export type GetCodesResponses = {
                     /**
                      * Overall shape of the QR code
                      */
-                    shape?: "square" | "circle" | null;
+                    shape?: 'square' | 'circle' | null;
                     /**
                      * Margin around the QR code in pixels
                      */
@@ -18865,11 +18865,11 @@ export type GetCodesResponses = {
                         /**
                          * QR code encoding mode
                          */
-                        mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                        mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
                         /**
                          * Error correction level
                          */
-                        errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                        errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
                     } | null;
                     /**
                      * Options for QR code dots
@@ -18878,7 +18878,7 @@ export type GetCodesResponses = {
                         /**
                          * Type of dots
                          */
-                        type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                        type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                         /**
                          * Color of dots in CSS format
                          */
@@ -18894,7 +18894,7 @@ export type GetCodesResponses = {
                             /**
                              * Type of gradient
                              */
-                            type?: "linear" | "radial";
+                            type?: 'linear' | 'radial';
                             /**
                              * Rotation angle of gradient in degrees
                              */
@@ -18921,7 +18921,7 @@ export type GetCodesResponses = {
                         /**
                          * Type of corner squares
                          */
-                        type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                        type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                         /**
                          * Color of corner squares in CSS format
                          */
@@ -18933,7 +18933,7 @@ export type GetCodesResponses = {
                             /**
                              * Type of gradient
                              */
-                            type?: "linear" | "radial";
+                            type?: 'linear' | 'radial';
                             /**
                              * Rotation angle of gradient in degrees
                              */
@@ -18960,7 +18960,7 @@ export type GetCodesResponses = {
                         /**
                          * Type of corner dots
                          */
-                        type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                        type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                         /**
                          * Color of corner dots in CSS format
                          */
@@ -18972,7 +18972,7 @@ export type GetCodesResponses = {
                             /**
                              * Type of gradient
                              */
-                            type?: "linear" | "radial";
+                            type?: 'linear' | 'radial';
                             /**
                              * Rotation angle of gradient in degrees
                              */
@@ -19011,7 +19011,7 @@ export type GetCodesResponses = {
                             /**
                              * Type of gradient
                              */
-                            type?: "linear" | "radial";
+                            type?: 'linear' | 'radial';
                             /**
                              * Rotation angle of gradient in degrees
                              */
@@ -19042,7 +19042,7 @@ export type GetCodesResponses = {
                         /**
                          * Mode for embedded image
                          */
-                        mode?: "center" | "overlay" | "background" | null;
+                        mode?: 'center' | 'overlay' | 'background' | null;
                         /**
                          * Size of image relative to QR code (0-1)
                          */
@@ -19070,7 +19070,7 @@ export type GetCodesResponses = {
                                 /**
                                  * Type of gradient
                                  */
-                                type?: "linear" | "radial";
+                                type?: 'linear' | 'radial';
                                 /**
                                  * Rotation angle of gradient in degrees
                                  */
@@ -19201,7 +19201,7 @@ export type GetCodesResponses = {
                                 /**
                                  * Type of decoration
                                  */
-                                type?: "text" | "image";
+                                type?: 'text' | 'image';
                                 /**
                                  * Content value for decoration
                                  */
@@ -19229,7 +19229,7 @@ export type GetCodesResponses = {
                                     /**
                                      * Font weight
                                      */
-                                    fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                    fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                                 };
                             } | null;
                             /**
@@ -19263,7 +19263,7 @@ export type GetCodesResponses = {
                                 /**
                                  * Type of decoration
                                  */
-                                type?: "text" | "image";
+                                type?: 'text' | 'image';
                                 /**
                                  * Content value for decoration
                                  */
@@ -19291,7 +19291,7 @@ export type GetCodesResponses = {
                                     /**
                                      * Font weight
                                      */
-                                    fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                    fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                                 };
                             } | null;
                             /**
@@ -19325,7 +19325,7 @@ export type GetCodesResponses = {
                                 /**
                                  * Type of decoration
                                  */
-                                type?: "text" | "image";
+                                type?: 'text' | 'image';
                                 /**
                                  * Content value for decoration
                                  */
@@ -19353,7 +19353,7 @@ export type GetCodesResponses = {
                                     /**
                                      * Font weight
                                      */
-                                    fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                    fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                                 };
                             } | null;
                             /**
@@ -19387,7 +19387,7 @@ export type GetCodesResponses = {
                                 /**
                                  * Type of decoration
                                  */
-                                type?: "text" | "image";
+                                type?: 'text' | 'image';
                                 /**
                                  * Content value for decoration
                                  */
@@ -19415,7 +19415,7 @@ export type GetCodesResponses = {
                                     /**
                                      * Font weight
                                      */
-                                    fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                    fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                                 };
                             } | null;
                         } | null;
@@ -19439,7 +19439,7 @@ export type GetCodesResponses = {
                     /**
                      * Overall shape of the QR code
                      */
-                    shape?: "square" | "circle" | null;
+                    shape?: 'square' | 'circle' | null;
                     /**
                      * Margin around the QR code in pixels
                      */
@@ -19475,11 +19475,11 @@ export type GetCodesResponses = {
                         /**
                          * QR code encoding mode
                          */
-                        mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                        mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
                         /**
                          * Error correction level
                          */
-                        errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                        errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
                     } | null;
                     /**
                      * Options for QR code dots
@@ -19488,7 +19488,7 @@ export type GetCodesResponses = {
                         /**
                          * Type of dots
                          */
-                        type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                        type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                         /**
                          * Color of dots in CSS format
                          */
@@ -19504,7 +19504,7 @@ export type GetCodesResponses = {
                             /**
                              * Type of gradient
                              */
-                            type?: "linear" | "radial";
+                            type?: 'linear' | 'radial';
                             /**
                              * Rotation angle of gradient in degrees
                              */
@@ -19531,7 +19531,7 @@ export type GetCodesResponses = {
                         /**
                          * Type of corner squares
                          */
-                        type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                        type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                         /**
                          * Color of corner squares in CSS format
                          */
@@ -19543,7 +19543,7 @@ export type GetCodesResponses = {
                             /**
                              * Type of gradient
                              */
-                            type?: "linear" | "radial";
+                            type?: 'linear' | 'radial';
                             /**
                              * Rotation angle of gradient in degrees
                              */
@@ -19570,7 +19570,7 @@ export type GetCodesResponses = {
                         /**
                          * Type of corner dots
                          */
-                        type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                        type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                         /**
                          * Color of corner dots in CSS format
                          */
@@ -19582,7 +19582,7 @@ export type GetCodesResponses = {
                             /**
                              * Type of gradient
                              */
-                            type?: "linear" | "radial";
+                            type?: 'linear' | 'radial';
                             /**
                              * Rotation angle of gradient in degrees
                              */
@@ -19621,7 +19621,7 @@ export type GetCodesResponses = {
                             /**
                              * Type of gradient
                              */
-                            type?: "linear" | "radial";
+                            type?: 'linear' | 'radial';
                             /**
                              * Rotation angle of gradient in degrees
                              */
@@ -19652,7 +19652,7 @@ export type GetCodesResponses = {
                         /**
                          * Mode for embedded image
                          */
-                        mode?: "center" | "overlay" | "background" | null;
+                        mode?: 'center' | 'overlay' | 'background' | null;
                         /**
                          * Size of image relative to QR code (0-1)
                          */
@@ -19680,7 +19680,7 @@ export type GetCodesResponses = {
                                 /**
                                  * Type of gradient
                                  */
-                                type?: "linear" | "radial";
+                                type?: 'linear' | 'radial';
                                 /**
                                  * Rotation angle of gradient in degrees
                                  */
@@ -19808,7 +19808,7 @@ export type GetCodesResponses = {
                                 /**
                                  * Type of decoration
                                  */
-                                type?: "text" | "image";
+                                type?: 'text' | 'image';
                                 /**
                                  * Content value for decoration
                                  */
@@ -19836,7 +19836,7 @@ export type GetCodesResponses = {
                                     /**
                                      * Font weight
                                      */
-                                    fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                    fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                                 };
                             } | null;
                             /**
@@ -19870,7 +19870,7 @@ export type GetCodesResponses = {
                                 /**
                                  * Type of decoration
                                  */
-                                type?: "text" | "image";
+                                type?: 'text' | 'image';
                                 /**
                                  * Content value for decoration
                                  */
@@ -19898,7 +19898,7 @@ export type GetCodesResponses = {
                                     /**
                                      * Font weight
                                      */
-                                    fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                    fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                                 };
                             } | null;
                             /**
@@ -19932,7 +19932,7 @@ export type GetCodesResponses = {
                                 /**
                                  * Type of decoration
                                  */
-                                type?: "text" | "image";
+                                type?: 'text' | 'image';
                                 /**
                                  * Content value for decoration
                                  */
@@ -19960,7 +19960,7 @@ export type GetCodesResponses = {
                                     /**
                                      * Font weight
                                      */
-                                    fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                    fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                                 };
                             } | null;
                             /**
@@ -19994,7 +19994,7 @@ export type GetCodesResponses = {
                                 /**
                                  * Type of decoration
                                  */
-                                type?: "text" | "image";
+                                type?: 'text' | 'image';
                                 /**
                                  * Content value for decoration
                                  */
@@ -20022,7 +20022,7 @@ export type GetCodesResponses = {
                                     /**
                                      * Font weight
                                      */
-                                    fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                    fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                                 };
                             } | null;
                         } | null;
@@ -20182,11 +20182,11 @@ export type PostCodesData = {
         /**
          * Type of QR code
          */
-        type?: "static" | "dynamic";
+        type?: 'static' | 'dynamic';
         /**
          * The type of data the QR code contains. Only applies to dynamic codes. Defaults to "url" for dynamic codes. Each dataType has specific content structure requirements. url: {url}, wifi: {ssid, password?, security?, hidden?}, vcard: {fullName?, email?, phone?, organization?}, text: {text}, email: {to, subject?, body?}, event: {eventTitle, startDate, endDate?, location?}, file: {fileName, fileUrl, mimeType?}, json: any valid JSON.
          */
-        dataType?: "url" | "wifi" | "vcard" | "text" | "email" | "event" | "json" | "file" | "scan-info";
+        dataType?: 'url' | 'wifi' | 'vcard' | 'text' | 'email' | 'event' | 'json' | 'file' | 'scan-info';
         /**
          * Functional content for dynamic QR codes. Structure depends on dataType. url: {url}, wifi: {ssid, password?, security?, hidden?}, vcard: {fullName?, email?, phone?, organization?}, text: {text}, email: {to, subject?, body?}, event: {eventTitle, startDate, endDate?, location?}, file: {fileName, fileUrl, mimeType?}, json: any valid JSON.
          */
@@ -20218,7 +20218,7 @@ export type PostCodesData = {
         /**
          * Format for the generated QR code link
          */
-        linkFormat?: "svg" | "png" | "pdf";
+        linkFormat?: 'svg' | 'png' | 'pdf';
         /**
          * Whether to validate the QR code during creation
          */
@@ -20230,7 +20230,7 @@ export type PostCodesData = {
             /**
              * Overall shape of the QR code
              */
-            shape?: "square" | "circle" | null;
+            shape?: 'square' | 'circle' | null;
             /**
              * Margin around the QR code in pixels
              */
@@ -20266,11 +20266,11 @@ export type PostCodesData = {
                 /**
                  * QR code encoding mode
                  */
-                mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
                 /**
                  * Error correction level
                  */
-                errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
             } | null;
             /**
              * Options for QR code dots
@@ -20279,7 +20279,7 @@ export type PostCodesData = {
                 /**
                  * Type of dots
                  */
-                type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                 /**
                  * Color of dots in CSS format
                  */
@@ -20295,7 +20295,7 @@ export type PostCodesData = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -20322,7 +20322,7 @@ export type PostCodesData = {
                 /**
                  * Type of corner squares
                  */
-                type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Color of corner squares in CSS format
                  */
@@ -20334,7 +20334,7 @@ export type PostCodesData = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -20361,7 +20361,7 @@ export type PostCodesData = {
                 /**
                  * Type of corner dots
                  */
-                type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Color of corner dots in CSS format
                  */
@@ -20373,7 +20373,7 @@ export type PostCodesData = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -20412,7 +20412,7 @@ export type PostCodesData = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -20443,7 +20443,7 @@ export type PostCodesData = {
                 /**
                  * Mode for embedded image
                  */
-                mode?: "center" | "overlay" | "background" | null;
+                mode?: 'center' | 'overlay' | 'background' | null;
                 /**
                  * Size of image relative to QR code (0-1)
                  */
@@ -20471,7 +20471,7 @@ export type PostCodesData = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -20602,7 +20602,7 @@ export type PostCodesData = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -20630,7 +20630,7 @@ export type PostCodesData = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -20664,7 +20664,7 @@ export type PostCodesData = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -20692,7 +20692,7 @@ export type PostCodesData = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -20726,7 +20726,7 @@ export type PostCodesData = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -20754,7 +20754,7 @@ export type PostCodesData = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -20788,7 +20788,7 @@ export type PostCodesData = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -20816,7 +20816,7 @@ export type PostCodesData = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                 } | null;
@@ -20862,7 +20862,7 @@ export type PostCodesData = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -20888,7 +20888,7 @@ export type PostCodesData = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -20914,7 +20914,7 @@ export type PostCodesData = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -20940,7 +20940,7 @@ export type PostCodesData = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -20962,15 +20962,15 @@ export type PostCodesData = {
                 /**
                  * Shape style for the QR code dots
                  */
-                dotShape?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                dotShape?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                 /**
                  * Shape style for the QR code corner squares
                  */
-                cornerSquareShape?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                cornerSquareShape?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Shape style for the QR code corner dots
                  */
-                cornerDotShape?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                cornerDotShape?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Logo to be placed on the QR code (URL, Base64, Buffer, or Blob)
                  */
@@ -20982,7 +20982,7 @@ export type PostCodesData = {
                 /**
                  * Placement mode for the logo
                  */
-                logoMode?: "center" | "overlay" | "background" | null;
+                logoMode?: 'center' | 'overlay' | 'background' | null;
                 /**
                  * Margin around the logo in pixels
                  */
@@ -21066,7 +21066,7 @@ export type PostCodesData = {
                 /**
                  * Text transformation for border text
                  */
-                borderTextTransform?: "uppercase" | "lowercase" | "capitalize" | null;
+                borderTextTransform?: 'uppercase' | 'lowercase' | 'capitalize' | null;
                 /**
                  * Font weight for border text
                  */
@@ -21089,7 +21089,7 @@ export type PostCodesData = {
                 /**
                  * Overall shape of the QR code
                  */
-                shape?: "square" | "circle" | null;
+                shape?: 'square' | 'circle' | null;
                 /**
                  * Margin around the QR code in pixels
                  */
@@ -21125,11 +21125,11 @@ export type PostCodesData = {
                     /**
                      * QR code encoding mode
                      */
-                    mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                    mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
                     /**
                      * Error correction level
                      */
-                    errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                    errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
                 } | null;
                 /**
                  * Options for QR code dots
@@ -21138,7 +21138,7 @@ export type PostCodesData = {
                     /**
                      * Type of dots
                      */
-                    type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                    type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                     /**
                      * Color of dots in CSS format
                      */
@@ -21154,7 +21154,7 @@ export type PostCodesData = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -21181,7 +21181,7 @@ export type PostCodesData = {
                     /**
                      * Type of corner squares
                      */
-                    type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Color of corner squares in CSS format
                      */
@@ -21193,7 +21193,7 @@ export type PostCodesData = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -21220,7 +21220,7 @@ export type PostCodesData = {
                     /**
                      * Type of corner dots
                      */
-                    type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Color of corner dots in CSS format
                      */
@@ -21232,7 +21232,7 @@ export type PostCodesData = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -21271,7 +21271,7 @@ export type PostCodesData = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -21302,7 +21302,7 @@ export type PostCodesData = {
                     /**
                      * Mode for embedded image
                      */
-                    mode?: "center" | "overlay" | "background" | null;
+                    mode?: 'center' | 'overlay' | 'background' | null;
                     /**
                      * Size of image relative to QR code (0-1)
                      */
@@ -21330,7 +21330,7 @@ export type PostCodesData = {
                             /**
                              * Type of gradient
                              */
-                            type?: "linear" | "radial";
+                            type?: 'linear' | 'radial';
                             /**
                              * Rotation angle of gradient in degrees
                              */
@@ -21461,7 +21461,7 @@ export type PostCodesData = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -21489,7 +21489,7 @@ export type PostCodesData = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -21523,7 +21523,7 @@ export type PostCodesData = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -21551,7 +21551,7 @@ export type PostCodesData = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -21585,7 +21585,7 @@ export type PostCodesData = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -21613,7 +21613,7 @@ export type PostCodesData = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -21647,7 +21647,7 @@ export type PostCodesData = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -21675,7 +21675,7 @@ export type PostCodesData = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                     } | null;
@@ -21702,7 +21702,7 @@ export type PostCodesData = {
                 /**
                  * Overall shape of the QR code
                  */
-                shape?: "square" | "circle" | null;
+                shape?: 'square' | 'circle' | null;
                 /**
                  * Margin around the QR code in pixels
                  */
@@ -21738,11 +21738,11 @@ export type PostCodesData = {
                     /**
                      * QR code encoding mode
                      */
-                    mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                    mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
                     /**
                      * Error correction level
                      */
-                    errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                    errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
                 } | null;
                 /**
                  * Options for QR code dots
@@ -21751,7 +21751,7 @@ export type PostCodesData = {
                     /**
                      * Type of dots
                      */
-                    type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                    type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                     /**
                      * Color of dots in CSS format
                      */
@@ -21767,7 +21767,7 @@ export type PostCodesData = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -21794,7 +21794,7 @@ export type PostCodesData = {
                     /**
                      * Type of corner squares
                      */
-                    type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Color of corner squares in CSS format
                      */
@@ -21806,7 +21806,7 @@ export type PostCodesData = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -21833,7 +21833,7 @@ export type PostCodesData = {
                     /**
                      * Type of corner dots
                      */
-                    type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Color of corner dots in CSS format
                      */
@@ -21845,7 +21845,7 @@ export type PostCodesData = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -21884,7 +21884,7 @@ export type PostCodesData = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -21915,7 +21915,7 @@ export type PostCodesData = {
                     /**
                      * Mode for embedded image
                      */
-                    mode?: "center" | "overlay" | "background" | null;
+                    mode?: 'center' | 'overlay' | 'background' | null;
                     /**
                      * Size of image relative to QR code (0-1)
                      */
@@ -21943,7 +21943,7 @@ export type PostCodesData = {
                             /**
                              * Type of gradient
                              */
-                            type?: "linear" | "radial";
+                            type?: 'linear' | 'radial';
                             /**
                              * Rotation angle of gradient in degrees
                              */
@@ -22071,7 +22071,7 @@ export type PostCodesData = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -22099,7 +22099,7 @@ export type PostCodesData = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -22133,7 +22133,7 @@ export type PostCodesData = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -22161,7 +22161,7 @@ export type PostCodesData = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -22195,7 +22195,7 @@ export type PostCodesData = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -22223,7 +22223,7 @@ export type PostCodesData = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -22257,7 +22257,7 @@ export type PostCodesData = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -22285,7 +22285,7 @@ export type PostCodesData = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                     } | null;
@@ -22330,7 +22330,7 @@ export type PostCodesData = {
     };
     path?: never;
     query?: never;
-    url: "/codes";
+    url: '/codes';
 };
 export type PostCodesErrors = {
     /**
@@ -22356,27 +22356,27 @@ export type PostCodesErrors = {
             code?: string;
         }>;
     } | {
-        message: "QR code data is required";
+        message: 'QR code data is required';
     } | {
-        message: "QR Code is invalid";
+        message: 'QR Code is invalid';
     } | {
-        message: "Invalid code type provided";
+        message: 'Invalid code type provided';
     } | {
-        message: "Dynamic data is not allowed for static QR codes, you must explicitly set dynamicData to null or remove the dynamicData field from the request body";
+        message: 'Dynamic data is not allowed for static QR codes, you must explicitly set dynamicData to null or remove the dynamicData field from the request body';
     } | {
-        message: "Dynamic QR codes require a dynamicData field to be set";
+        message: 'Dynamic QR codes require a dynamicData field to be set';
     } | {
-        message: "QR Code with same shortAlias already exists";
+        message: 'QR Code with same shortAlias already exists';
     } | {
-        message: "Short alias is not allowed for static QR codes, you must explicitly set shortAlias to null or remove the shortAlias field from the request body";
+        message: 'Short alias is not allowed for static QR codes, you must explicitly set shortAlias to null or remove the shortAlias field from the request body';
     } | {
-        message: "Dynamic data URL cannot point to the redirect domain. Please use an external domain for the dynamicData URL";
+        message: 'Dynamic data URL cannot point to the redirect domain. Please use an external domain for the dynamicData URL';
     } | {
-        message: "Data type is not allowed for static QR codes, you must explicitly set dataType to null or remove the dataType field from the request body";
+        message: 'Data type is not allowed for static QR codes, you must explicitly set dataType to null or remove the dataType field from the request body';
     } | {
-        message: "To convert from dynamic to static QR code, you must explicitly set dataType to null or remove the dataType field from the request body";
+        message: 'To convert from dynamic to static QR code, you must explicitly set dataType to null or remove the dataType field from the request body';
     } | {
-        message: "Data is not allowed for dynamic QR codes, you must explicitly set data to null or remove the data field from the request body";
+        message: 'Data is not allowed for dynamic QR codes, you must explicitly set data to null or remove the data field from the request body';
     };
     /**
      * Unauthorized response message
@@ -22454,11 +22454,11 @@ export type PostCodesResponses = {
         /**
          * Type of the QR code
          */
-        type?: "static" | "dynamic";
+        type?: 'static' | 'dynamic';
         /**
          * The type of data the QR code contains. Only applies to dynamic codes.
          */
-        dataType?: "url" | "wifi" | "vcard" | "text" | "email" | "event" | "json" | "file" | "scan-info" | null;
+        dataType?: 'url' | 'wifi' | 'vcard' | 'text' | 'email' | 'event' | 'json' | 'file' | 'scan-info' | null;
         /**
          * Short alias for the QR code
          */
@@ -22498,7 +22498,7 @@ export type PostCodesResponses = {
             /**
              * Overall shape of the QR code
              */
-            shape?: "square" | "circle" | null;
+            shape?: 'square' | 'circle' | null;
             /**
              * Margin around the QR code in pixels
              */
@@ -22534,11 +22534,11 @@ export type PostCodesResponses = {
                 /**
                  * QR code encoding mode
                  */
-                mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
                 /**
                  * Error correction level
                  */
-                errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
             } | null;
             /**
              * Options for QR code dots
@@ -22547,7 +22547,7 @@ export type PostCodesResponses = {
                 /**
                  * Type of dots
                  */
-                type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                 /**
                  * Color of dots in CSS format
                  */
@@ -22563,7 +22563,7 @@ export type PostCodesResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -22590,7 +22590,7 @@ export type PostCodesResponses = {
                 /**
                  * Type of corner squares
                  */
-                type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Color of corner squares in CSS format
                  */
@@ -22602,7 +22602,7 @@ export type PostCodesResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -22629,7 +22629,7 @@ export type PostCodesResponses = {
                 /**
                  * Type of corner dots
                  */
-                type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Color of corner dots in CSS format
                  */
@@ -22641,7 +22641,7 @@ export type PostCodesResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -22680,7 +22680,7 @@ export type PostCodesResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -22711,7 +22711,7 @@ export type PostCodesResponses = {
                 /**
                  * Mode for embedded image
                  */
-                mode?: "center" | "overlay" | "background" | null;
+                mode?: 'center' | 'overlay' | 'background' | null;
                 /**
                  * Size of image relative to QR code (0-1)
                  */
@@ -22739,7 +22739,7 @@ export type PostCodesResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -22870,7 +22870,7 @@ export type PostCodesResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -22898,7 +22898,7 @@ export type PostCodesResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -22932,7 +22932,7 @@ export type PostCodesResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -22960,7 +22960,7 @@ export type PostCodesResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -22994,7 +22994,7 @@ export type PostCodesResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -23022,7 +23022,7 @@ export type PostCodesResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -23056,7 +23056,7 @@ export type PostCodesResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -23084,7 +23084,7 @@ export type PostCodesResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                 } | null;
@@ -23139,7 +23139,7 @@ export type PostCodesResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -23165,7 +23165,7 @@ export type PostCodesResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -23191,7 +23191,7 @@ export type PostCodesResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -23217,7 +23217,7 @@ export type PostCodesResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -23239,15 +23239,15 @@ export type PostCodesResponses = {
                 /**
                  * Shape style for the QR code dots
                  */
-                dotShape?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                dotShape?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                 /**
                  * Shape style for the QR code corner squares
                  */
-                cornerSquareShape?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                cornerSquareShape?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Shape style for the QR code corner dots
                  */
-                cornerDotShape?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                cornerDotShape?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Logo to be placed on the QR code (URL, Base64, Buffer, or Blob)
                  */
@@ -23259,7 +23259,7 @@ export type PostCodesResponses = {
                 /**
                  * Placement mode for the logo
                  */
-                logoMode?: "center" | "overlay" | "background" | null;
+                logoMode?: 'center' | 'overlay' | 'background' | null;
                 /**
                  * Margin around the logo in pixels
                  */
@@ -23343,7 +23343,7 @@ export type PostCodesResponses = {
                 /**
                  * Text transformation for border text
                  */
-                borderTextTransform?: "uppercase" | "lowercase" | "capitalize" | null;
+                borderTextTransform?: 'uppercase' | 'lowercase' | 'capitalize' | null;
                 /**
                  * Font weight for border text
                  */
@@ -23363,7 +23363,7 @@ export type PostCodesResponses = {
                 /**
                  * Overall shape of the QR code
                  */
-                shape?: "square" | "circle" | null;
+                shape?: 'square' | 'circle' | null;
                 /**
                  * Margin around the QR code in pixels
                  */
@@ -23399,11 +23399,11 @@ export type PostCodesResponses = {
                     /**
                      * QR code encoding mode
                      */
-                    mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                    mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
                     /**
                      * Error correction level
                      */
-                    errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                    errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
                 } | null;
                 /**
                  * Options for QR code dots
@@ -23412,7 +23412,7 @@ export type PostCodesResponses = {
                     /**
                      * Type of dots
                      */
-                    type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                    type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                     /**
                      * Color of dots in CSS format
                      */
@@ -23428,7 +23428,7 @@ export type PostCodesResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -23455,7 +23455,7 @@ export type PostCodesResponses = {
                     /**
                      * Type of corner squares
                      */
-                    type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Color of corner squares in CSS format
                      */
@@ -23467,7 +23467,7 @@ export type PostCodesResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -23494,7 +23494,7 @@ export type PostCodesResponses = {
                     /**
                      * Type of corner dots
                      */
-                    type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Color of corner dots in CSS format
                      */
@@ -23506,7 +23506,7 @@ export type PostCodesResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -23545,7 +23545,7 @@ export type PostCodesResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -23576,7 +23576,7 @@ export type PostCodesResponses = {
                     /**
                      * Mode for embedded image
                      */
-                    mode?: "center" | "overlay" | "background" | null;
+                    mode?: 'center' | 'overlay' | 'background' | null;
                     /**
                      * Size of image relative to QR code (0-1)
                      */
@@ -23604,7 +23604,7 @@ export type PostCodesResponses = {
                             /**
                              * Type of gradient
                              */
-                            type?: "linear" | "radial";
+                            type?: 'linear' | 'radial';
                             /**
                              * Rotation angle of gradient in degrees
                              */
@@ -23735,7 +23735,7 @@ export type PostCodesResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -23763,7 +23763,7 @@ export type PostCodesResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -23797,7 +23797,7 @@ export type PostCodesResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -23825,7 +23825,7 @@ export type PostCodesResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -23859,7 +23859,7 @@ export type PostCodesResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -23887,7 +23887,7 @@ export type PostCodesResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -23921,7 +23921,7 @@ export type PostCodesResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -23949,7 +23949,7 @@ export type PostCodesResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                     } | null;
@@ -23973,7 +23973,7 @@ export type PostCodesResponses = {
                 /**
                  * Overall shape of the QR code
                  */
-                shape?: "square" | "circle" | null;
+                shape?: 'square' | 'circle' | null;
                 /**
                  * Margin around the QR code in pixels
                  */
@@ -24009,11 +24009,11 @@ export type PostCodesResponses = {
                     /**
                      * QR code encoding mode
                      */
-                    mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                    mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
                     /**
                      * Error correction level
                      */
-                    errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                    errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
                 } | null;
                 /**
                  * Options for QR code dots
@@ -24022,7 +24022,7 @@ export type PostCodesResponses = {
                     /**
                      * Type of dots
                      */
-                    type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                    type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                     /**
                      * Color of dots in CSS format
                      */
@@ -24038,7 +24038,7 @@ export type PostCodesResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -24065,7 +24065,7 @@ export type PostCodesResponses = {
                     /**
                      * Type of corner squares
                      */
-                    type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Color of corner squares in CSS format
                      */
@@ -24077,7 +24077,7 @@ export type PostCodesResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -24104,7 +24104,7 @@ export type PostCodesResponses = {
                     /**
                      * Type of corner dots
                      */
-                    type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Color of corner dots in CSS format
                      */
@@ -24116,7 +24116,7 @@ export type PostCodesResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -24155,7 +24155,7 @@ export type PostCodesResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -24186,7 +24186,7 @@ export type PostCodesResponses = {
                     /**
                      * Mode for embedded image
                      */
-                    mode?: "center" | "overlay" | "background" | null;
+                    mode?: 'center' | 'overlay' | 'background' | null;
                     /**
                      * Size of image relative to QR code (0-1)
                      */
@@ -24214,7 +24214,7 @@ export type PostCodesResponses = {
                             /**
                              * Type of gradient
                              */
-                            type?: "linear" | "radial";
+                            type?: 'linear' | 'radial';
                             /**
                              * Rotation angle of gradient in degrees
                              */
@@ -24342,7 +24342,7 @@ export type PostCodesResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -24370,7 +24370,7 @@ export type PostCodesResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -24404,7 +24404,7 @@ export type PostCodesResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -24432,7 +24432,7 @@ export type PostCodesResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -24466,7 +24466,7 @@ export type PostCodesResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -24494,7 +24494,7 @@ export type PostCodesResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -24528,7 +24528,7 @@ export type PostCodesResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -24556,7 +24556,7 @@ export type PostCodesResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                     } | null;
@@ -24707,303 +24707,15 @@ export type PostCodesResponses = {
     };
 };
 export type PostCodesResponse = PostCodesResponses[keyof PostCodesResponses];
-export type PutCodesByCodeIdOptionsData = {
-    /**
-     * Update code options request
-     */
-    body?: {
-        /**
-         * The type of data the QR code contains. Only applies to dynamic codes. Determines how the QR code data is processed and what content type is returned when scanned.
-         */
-        dataType?: "url" | "wifi" | "vcard" | "text" | "email" | "event" | "json" | "file" | "scan-info";
-        /**
-         * Partial QR code generation options to update. All fields are optional. At least one option field must be provided.
-         */
-        options: {
-            /**
-             * Data to encode in the QR code (required)
-             */
-            data?: string;
-            /**
-             * Shape of the QR code
-             */
-            shape?: "square" | "circle" | null;
-            margin?: number | null;
-            isResponsive?: boolean | null;
-            scale?: number | null;
-            offset?: number | null;
-            verticalOffset?: number | null;
-            horizontalOffset?: number | null;
-            qrOptions?: {
-                typeNumber?: number | null;
-                /**
-                 * QR code encoding mode
-                 */
-                mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
-                /**
-                 * Error correction level (L: 7%, M: 15%, Q: 25%, H: 30%)
-                 */
-                errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
-            } | null;
-            dotsOptions?: {
-                /**
-                 * Type of dots in QR code
-                 */
-                type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
-                color?: string | null;
-                size?: number | null;
-                /**
-                 * Gradient definition
-                 */
-                gradient?: {
-                    type?: "linear" | "radial";
-                    rotation?: number;
-                    colorStops?: Array<{
-                        offset?: number;
-                        color?: string;
-                    }>;
-                } | null;
-            } | null;
-            cornersSquareOptions?: {
-                /**
-                 * Type of corner squares in QR code
-                 */
-                type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
-                color?: string | null;
-                /**
-                 * Gradient definition
-                 */
-                gradient?: {
-                    type?: "linear" | "radial";
-                    rotation?: number;
-                    colorStops?: Array<{
-                        offset?: number;
-                        color?: string;
-                    }>;
-                } | null;
-            } | null;
-            cornersDotOptions?: {
-                /**
-                 * Type of corner dots in QR code
-                 */
-                type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
-                color?: string | null;
-                /**
-                 * Gradient definition
-                 */
-                gradient?: {
-                    type?: "linear" | "radial";
-                    rotation?: number;
-                    colorStops?: Array<{
-                        offset?: number;
-                        color?: string;
-                    }>;
-                } | null;
-            } | null;
-            backgroundOptions?: {
-                /**
-                 * Background color in CSS format
-                 */
-                color?: string | null;
-                /**
-                 * Background corner rounding (0-1 or CSS value)
-                 */
-                round?: number | string | null;
-                /**
-                 * Gradient for background
-                 */
-                gradient?: {
-                    /**
-                     * Type of gradient
-                     */
-                    type?: "linear" | "radial";
-                    /**
-                     * Rotation angle of gradient in degrees
-                     */
-                    rotation?: number;
-                    /**
-                     * Array of color stops in the gradient (min 2)
-                     */
-                    colorStops?: Array<{
-                        /**
-                         * Position of the color stop (0-1)
-                         */
-                        offset?: number;
-                        /**
-                         * Color in CSS format
-                         */
-                        color?: string;
-                    }>;
-                } | null;
-            } | false;
-            image?: string | unknown | null;
-            imageOptions?: {
-                /**
-                 * Mode for embedding images in QR code
-                 */
-                mode?: "center" | "overlay" | "background" | null;
-                imageSize?: number | null;
-                margin?: number | null;
-                crossOrigin?: string | null;
-                fill?: {
-                    color?: string | null;
-                    /**
-                     * Gradient definition
-                     */
-                    gradient?: {
-                        type?: "linear" | "radial";
-                        rotation?: number;
-                        colorStops?: Array<{
-                            offset?: number;
-                            color?: string;
-                        }>;
-                    } | null;
-                } | null;
-            } | null;
-            borderOptions?: {
-                hasBorder?: boolean | null;
-                thickness?: number | null;
-                color?: string | null;
-                radius?: string | null;
-                noBorderThickness?: number | null;
-                background?: string | null;
-                inner?: {
-                    radius?: string | null;
-                    scale?: number | null;
-                    horizontalOffset?: number | null;
-                    verticalOffset?: number | null;
-                } | null;
-                /**
-                 * Inner or outer border configuration
-                 */
-                borderOuter?: {
-                    color?: string;
-                    thickness?: number;
-                } | null;
-                /**
-                 * Inner or outer border configuration
-                 */
-                borderInner?: {
-                    color?: string;
-                    thickness?: number;
-                } | null;
-                decorations?: {
-                    /**
-                     * Options for QR code decoration
-                     */
-                    top?: {
-                        disabled?: boolean;
-                        enableText?: boolean;
-                        offset?: number;
-                        curveAdjustment?: number;
-                        curveDisabled?: boolean;
-                        curveRadius?: string;
-                        type?: "text" | "image";
-                        value?: string;
-                        /**
-                         * Text decoration style
-                         */
-                        style?: {
-                            fontFace?: string;
-                            fontSize?: number;
-                            fontColor?: string;
-                            letterSpacing?: number;
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
-                        };
-                    } | null;
-                    /**
-                     * Options for QR code decoration
-                     */
-                    right?: {
-                        disabled?: boolean;
-                        enableText?: boolean;
-                        offset?: number;
-                        curveAdjustment?: number;
-                        curveDisabled?: boolean;
-                        curveRadius?: string;
-                        type?: "text" | "image";
-                        value?: string;
-                        /**
-                         * Text decoration style
-                         */
-                        style?: {
-                            fontFace?: string;
-                            fontSize?: number;
-                            fontColor?: string;
-                            letterSpacing?: number;
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
-                        };
-                    } | null;
-                    /**
-                     * Options for QR code decoration
-                     */
-                    bottom?: {
-                        disabled?: boolean;
-                        enableText?: boolean;
-                        offset?: number;
-                        curveAdjustment?: number;
-                        curveDisabled?: boolean;
-                        curveRadius?: string;
-                        type?: "text" | "image";
-                        value?: string;
-                        /**
-                         * Text decoration style
-                         */
-                        style?: {
-                            fontFace?: string;
-                            fontSize?: number;
-                            fontColor?: string;
-                            letterSpacing?: number;
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
-                        };
-                    } | null;
-                    /**
-                     * Options for QR code decoration
-                     */
-                    left?: {
-                        disabled?: boolean;
-                        enableText?: boolean;
-                        offset?: number;
-                        curveAdjustment?: number;
-                        curveDisabled?: boolean;
-                        curveRadius?: string;
-                        type?: "text" | "image";
-                        value?: string;
-                        /**
-                         * Text decoration style
-                         */
-                        style?: {
-                            fontFace?: string;
-                            fontSize?: number;
-                            fontColor?: string;
-                            letterSpacing?: number;
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
-                        };
-                    } | null;
-                } | null;
-            } | null;
-        };
-        /**
-         * Format for the generated QR code link. Return existing link if generated before or create new link with provided format.
-         */
-        linkFormat?: "svg" | "png" | "pdf";
-        /**
-         * Whether to validate the QR code after updating options.
-         */
-        validate?: boolean;
-    };
-    path: {
-        /**
-         * Unique identifier of the QR Code
-         */
-        codeId: string;
-    };
+export type PostCodesBulkData = {
+    body?: never;
+    path?: never;
     query?: never;
-    url: "/codes/{codeId}/options";
+    url: '/codes/bulk';
 };
-export type PutCodesByCodeIdOptionsErrors = {
+export type PostCodesBulkErrors = {
     /**
-     * Invalid request to update QR Code Options.
+     * Invalid request for bulk create.
      */
     400: {
         message: string;
@@ -25024,16 +24736,6 @@ export type PutCodesByCodeIdOptionsErrors = {
              */
             code?: string;
         }>;
-    } | {
-        message: string;
-    } | {
-        message: string;
-    } | {
-        message: "QR Code is invalid";
-    } | {
-        message: "Invalid code type provided";
-    } | {
-        message: "Cannot update a soft-deleted code. Please restore the code first";
     };
     /**
      * Unauthorized response message
@@ -25048,947 +24750,87 @@ export type PutCodesByCodeIdOptionsErrors = {
         message: string;
     };
     /**
-     * Organization or code not found.
+     * Organization not found.
      */
     404: {
-        /**
-         * The specified QR code could not be found
-         */
-        message: string;
-    } | {
         /**
          * The specified organization could not be found or is not accessible
          */
         message: string;
     };
-};
-export type PutCodesByCodeIdOptionsError = PutCodesByCodeIdOptionsErrors[keyof PutCodesByCodeIdOptionsErrors];
-export type PutCodesByCodeIdOptionsResponses = {
     /**
-     * QR code response schema
+     * Limit reached response message
+     */
+    429: {
+        message: string;
+    };
+};
+export type PostCodesBulkError = PostCodesBulkErrors[keyof PostCodesBulkErrors];
+export type PostCodesBulkResponses = {
+    /**
+     * Bulk create codes response
      */
     200: {
         /**
-         * Unique identifier for the QR code
+         * Successfully created QR codes
          */
-        id: string;
-        /**
-         * Name of the QR code
-         */
-        name: string;
-        /**
-         * Type of the QR code
-         */
-        type?: "static" | "dynamic";
-        /**
-         * The type of data the QR code contains. Only applies to dynamic codes.
-         */
-        dataType?: "url" | "wifi" | "vcard" | "text" | "email" | "event" | "json" | "file" | "scan-info" | null;
-        /**
-         * Short alias for the QR code
-         */
-        shortAlias?: string | null;
-        /**
-         * Functional content for dynamic QR codes. Structure depends on dataType.
-         */
-        dynamicData?: {
-            [key: string]: unknown;
-        } | null;
-        /**
-         * Data encoded in the QR code
-         */
-        data: string;
-        /**
-         * Description of the QR code
-         */
-        description: string | null;
-        /**
-         * Number of times the QR code has been scanned
-         */
-        totalScans: number | null;
-        /**
-         * Custom user metadata for the QR code as JSON object. This is separate from the dynamicData field and stores additional information that is not part of the functional content.
-         */
-        metadata: {
-            [key: string]: unknown;
-        } | null;
-        /**
-         * Complete configuration for QR code generation
-         */
-        options: {
+        data: Array<{
             /**
-             * Data to encode in the QR code (required)
+             * Unique identifier for the QR code
+             */
+            id: string;
+            /**
+             * Name of the QR code
+             */
+            name: string;
+            /**
+             * Type of the QR code
+             */
+            type?: 'static' | 'dynamic';
+            /**
+             * The type of data the QR code contains. Only applies to dynamic codes.
+             */
+            dataType?: 'url' | 'wifi' | 'vcard' | 'text' | 'email' | 'event' | 'json' | 'file' | 'scan-info' | null;
+            /**
+             * Short alias for the QR code
+             */
+            shortAlias?: string | null;
+            /**
+             * Functional content for dynamic QR codes. Structure depends on dataType.
+             */
+            dynamicData?: {
+                [key: string]: unknown;
+            } | null;
+            /**
+             * Data encoded in the QR code
              */
             data: string;
             /**
-             * Overall shape of the QR code
+             * Description of the QR code
              */
-            shape?: "square" | "circle" | null;
+            description: string | null;
             /**
-             * Margin around the QR code in pixels
+             * Number of times the QR code has been scanned
              */
-            margin?: number | null;
+            totalScans: number | null;
             /**
-             * Whether QR code is responsive
+             * Custom user metadata for the QR code as JSON object. This is separate from the dynamicData field and stores additional information that is not part of the functional content.
              */
-            isResponsive?: boolean | null;
-            /**
-             * Scale factor for QR code (0-1.5)
-             */
-            scale?: number | null;
-            /**
-             * General offset in pixels
-             */
-            offset?: number | null;
-            /**
-             * Vertical offset in pixels
-             */
-            verticalOffset?: number | null;
-            /**
-             * Horizontal offset in pixels
-             */
-            horizontalOffset?: number | null;
-            /**
-             * QR code specific options
-             */
-            qrOptions?: {
-                /**
-                 * QR code type number (0-40)
-                 */
-                typeNumber?: number | null;
-                /**
-                 * QR code encoding mode
-                 */
-                mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
-                /**
-                 * Error correction level
-                 */
-                errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+            metadata: {
+                [key: string]: unknown;
             } | null;
             /**
-             * Options for QR code dots
-             */
-            dotsOptions?: {
-                /**
-                 * Type of dots
-                 */
-                type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
-                /**
-                 * Color of dots in CSS format
-                 */
-                color?: string | null;
-                /**
-                 * Size of dots relative to module size (0-1)
-                 */
-                size?: number | null;
-                /**
-                 * Gradient for dots
-                 */
-                gradient?: {
-                    /**
-                     * Type of gradient
-                     */
-                    type?: "linear" | "radial";
-                    /**
-                     * Rotation angle of gradient in degrees
-                     */
-                    rotation?: number;
-                    /**
-                     * Array of color stops in the gradient (min 2)
-                     */
-                    colorStops?: Array<{
-                        /**
-                         * Position of the color stop (0-1)
-                         */
-                        offset?: number;
-                        /**
-                         * Color in CSS format
-                         */
-                        color?: string;
-                    }>;
-                } | null;
-            } | null;
-            /**
-             * Options for QR code corner squares
-             */
-            cornersSquareOptions?: {
-                /**
-                 * Type of corner squares
-                 */
-                type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
-                /**
-                 * Color of corner squares in CSS format
-                 */
-                color?: string | null;
-                /**
-                 * Gradient for corner squares
-                 */
-                gradient?: {
-                    /**
-                     * Type of gradient
-                     */
-                    type?: "linear" | "radial";
-                    /**
-                     * Rotation angle of gradient in degrees
-                     */
-                    rotation?: number;
-                    /**
-                     * Array of color stops in the gradient (min 2)
-                     */
-                    colorStops?: Array<{
-                        /**
-                         * Position of the color stop (0-1)
-                         */
-                        offset?: number;
-                        /**
-                         * Color in CSS format
-                         */
-                        color?: string;
-                    }>;
-                } | null;
-            } | null;
-            /**
-             * Options for QR code corner dots
-             */
-            cornersDotOptions?: {
-                /**
-                 * Type of corner dots
-                 */
-                type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
-                /**
-                 * Color of corner dots in CSS format
-                 */
-                color?: string | null;
-                /**
-                 * Gradient for corner dots
-                 */
-                gradient?: {
-                    /**
-                     * Type of gradient
-                     */
-                    type?: "linear" | "radial";
-                    /**
-                     * Rotation angle of gradient in degrees
-                     */
-                    rotation?: number;
-                    /**
-                     * Array of color stops in the gradient (min 2)
-                     */
-                    colorStops?: Array<{
-                        /**
-                         * Position of the color stop (0-1)
-                         */
-                        offset?: number;
-                        /**
-                         * Color in CSS format
-                         */
-                        color?: string;
-                    }>;
-                } | null;
-            } | null;
-            /**
-             * Options for QR code background or false to disable
-             */
-            backgroundOptions?: {
-                /**
-                 * Background color in CSS format
-                 */
-                color?: string | null;
-                /**
-                 * Background corner rounding (0-1 or CSS value)
-                 */
-                round?: number | string | null;
-                /**
-                 * Gradient for background
-                 */
-                gradient?: {
-                    /**
-                     * Type of gradient
-                     */
-                    type?: "linear" | "radial";
-                    /**
-                     * Rotation angle of gradient in degrees
-                     */
-                    rotation?: number;
-                    /**
-                     * Array of color stops in the gradient (min 2)
-                     */
-                    colorStops?: Array<{
-                        /**
-                         * Position of the color stop (0-1)
-                         */
-                        offset?: number;
-                        /**
-                         * Color in CSS format
-                         */
-                        color?: string;
-                    }>;
-                } | null;
-            } | false;
-            /**
-             * Image to embed in the QR code (URL, Buffer, or Blob)
-             */
-            image?: string | unknown | null;
-            /**
-             * Options for embedded image
-             */
-            imageOptions?: {
-                /**
-                 * Mode for embedded image
-                 */
-                mode?: "center" | "overlay" | "background" | null;
-                /**
-                 * Size of image relative to QR code (0-1)
-                 */
-                imageSize?: number | null;
-                /**
-                 * Margin around the image in pixels
-                 */
-                margin?: number | null;
-                /**
-                 * Cross-origin attribute for image
-                 */
-                crossOrigin?: string | null;
-                /**
-                 * Fill options for image area
-                 */
-                fill?: {
-                    /**
-                     * Fill color in CSS format
-                     */
-                    color?: string | null;
-                    /**
-                     * Gradient for fill
-                     */
-                    gradient?: {
-                        /**
-                         * Type of gradient
-                         */
-                        type?: "linear" | "radial";
-                        /**
-                         * Rotation angle of gradient in degrees
-                         */
-                        rotation?: number;
-                        /**
-                         * Array of color stops in the gradient (min 2)
-                         */
-                        colorStops?: Array<{
-                            /**
-                             * Position of the color stop (0-1)
-                             */
-                            offset?: number;
-                            /**
-                             * Color in CSS format
-                             */
-                            color?: string;
-                        }>;
-                    } | null;
-                } | null;
-            } | null;
-            /**
-             * Border configuration options
-             */
-            borderOptions?: {
-                /**
-                 * Whether to show border
-                 */
-                hasBorder?: boolean | null;
-                /**
-                 * Border thickness in pixels
-                 */
-                thickness?: number | null;
-                /**
-                 * Border color in CSS format
-                 */
-                color?: string | null;
-                /**
-                 * Border radius in CSS format
-                 */
-                radius?: string | null;
-                /**
-                 * Thickness when no border is shown
-                 */
-                noBorderThickness?: number | null;
-                /**
-                 * Border background color in CSS format
-                 */
-                background?: string | null;
-                /**
-                 * Inner border configuration
-                 */
-                inner?: {
-                    /**
-                     * Inner radius in CSS format
-                     */
-                    radius?: string | null;
-                    /**
-                     * Inner scale factor (0-1.5)
-                     */
-                    scale?: number | null;
-                    /**
-                     * Inner horizontal offset in pixels
-                     */
-                    horizontalOffset?: number | null;
-                    /**
-                     * Inner vertical offset in pixels
-                     */
-                    verticalOffset?: number | null;
-                } | null;
-                /**
-                 * Outer border configuration
-                 */
-                borderOuter?: {
-                    /**
-                     * Border color in CSS format
-                     */
-                    color?: string;
-                    /**
-                     * Border thickness in pixels
-                     */
-                    thickness?: number;
-                } | null;
-                /**
-                 * Inner border configuration
-                 */
-                borderInner?: {
-                    /**
-                     * Border color in CSS format
-                     */
-                    color?: string;
-                    /**
-                     * Border thickness in pixels
-                     */
-                    thickness?: number;
-                } | null;
-                /**
-                 * Border decorations configuration
-                 */
-                decorations?: {
-                    /**
-                     * Top decoration configuration
-                     */
-                    top?: {
-                        /**
-                         * Whether decoration is disabled
-                         */
-                        disabled?: boolean;
-                        /**
-                         * Whether text is enabled
-                         */
-                        enableText?: boolean;
-                        /**
-                         * Offset position in pixels
-                         */
-                        offset?: number;
-                        /**
-                         * Curve adjustment value
-                         */
-                        curveAdjustment?: number;
-                        /**
-                         * Whether curve is disabled
-                         */
-                        curveDisabled?: boolean;
-                        /**
-                         * Curve radius value (CSS format)
-                         */
-                        curveRadius?: string;
-                        /**
-                         * Type of decoration
-                         */
-                        type?: "text" | "image";
-                        /**
-                         * Content value for decoration
-                         */
-                        value?: string;
-                        /**
-                         * Style for text decoration
-                         */
-                        style?: {
-                            /**
-                             * Font face for the text
-                             */
-                            fontFace?: string;
-                            /**
-                             * Font size in pixels
-                             */
-                            fontSize?: number;
-                            /**
-                             * Font color in CSS format
-                             */
-                            fontColor?: string;
-                            /**
-                             * Letter spacing in pixels
-                             */
-                            letterSpacing?: number;
-                            /**
-                             * Font weight
-                             */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
-                        };
-                    } | null;
-                    /**
-                     * Right decoration configuration
-                     */
-                    right?: {
-                        /**
-                         * Whether decoration is disabled
-                         */
-                        disabled?: boolean;
-                        /**
-                         * Whether text is enabled
-                         */
-                        enableText?: boolean;
-                        /**
-                         * Offset position in pixels
-                         */
-                        offset?: number;
-                        /**
-                         * Curve adjustment value
-                         */
-                        curveAdjustment?: number;
-                        /**
-                         * Whether curve is disabled
-                         */
-                        curveDisabled?: boolean;
-                        /**
-                         * Curve radius value (CSS format)
-                         */
-                        curveRadius?: string;
-                        /**
-                         * Type of decoration
-                         */
-                        type?: "text" | "image";
-                        /**
-                         * Content value for decoration
-                         */
-                        value?: string;
-                        /**
-                         * Style for text decoration
-                         */
-                        style?: {
-                            /**
-                             * Font face for the text
-                             */
-                            fontFace?: string;
-                            /**
-                             * Font size in pixels
-                             */
-                            fontSize?: number;
-                            /**
-                             * Font color in CSS format
-                             */
-                            fontColor?: string;
-                            /**
-                             * Letter spacing in pixels
-                             */
-                            letterSpacing?: number;
-                            /**
-                             * Font weight
-                             */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
-                        };
-                    } | null;
-                    /**
-                     * Bottom decoration configuration
-                     */
-                    bottom?: {
-                        /**
-                         * Whether decoration is disabled
-                         */
-                        disabled?: boolean;
-                        /**
-                         * Whether text is enabled
-                         */
-                        enableText?: boolean;
-                        /**
-                         * Offset position in pixels
-                         */
-                        offset?: number;
-                        /**
-                         * Curve adjustment value
-                         */
-                        curveAdjustment?: number;
-                        /**
-                         * Whether curve is disabled
-                         */
-                        curveDisabled?: boolean;
-                        /**
-                         * Curve radius value (CSS format)
-                         */
-                        curveRadius?: string;
-                        /**
-                         * Type of decoration
-                         */
-                        type?: "text" | "image";
-                        /**
-                         * Content value for decoration
-                         */
-                        value?: string;
-                        /**
-                         * Style for text decoration
-                         */
-                        style?: {
-                            /**
-                             * Font face for the text
-                             */
-                            fontFace?: string;
-                            /**
-                             * Font size in pixels
-                             */
-                            fontSize?: number;
-                            /**
-                             * Font color in CSS format
-                             */
-                            fontColor?: string;
-                            /**
-                             * Letter spacing in pixels
-                             */
-                            letterSpacing?: number;
-                            /**
-                             * Font weight
-                             */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
-                        };
-                    } | null;
-                    /**
-                     * Left decoration configuration
-                     */
-                    left?: {
-                        /**
-                         * Whether decoration is disabled
-                         */
-                        disabled?: boolean;
-                        /**
-                         * Whether text is enabled
-                         */
-                        enableText?: boolean;
-                        /**
-                         * Offset position in pixels
-                         */
-                        offset?: number;
-                        /**
-                         * Curve adjustment value
-                         */
-                        curveAdjustment?: number;
-                        /**
-                         * Whether curve is disabled
-                         */
-                        curveDisabled?: boolean;
-                        /**
-                         * Curve radius value (CSS format)
-                         */
-                        curveRadius?: string;
-                        /**
-                         * Type of decoration
-                         */
-                        type?: "text" | "image";
-                        /**
-                         * Content value for decoration
-                         */
-                        value?: string;
-                        /**
-                         * Style for text decoration
-                         */
-                        style?: {
-                            /**
-                             * Font face for the text
-                             */
-                            fontFace?: string;
-                            /**
-                             * Font size in pixels
-                             */
-                            fontSize?: number;
-                            /**
-                             * Font color in CSS format
-                             */
-                            fontColor?: string;
-                            /**
-                             * Letter spacing in pixels
-                             */
-                            letterSpacing?: number;
-                            /**
-                             * Font weight
-                             */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
-                        };
-                    } | null;
-                } | null;
-            } | null;
-        };
-        /**
-         * ID of the style applied to the QR code
-         */
-        styleId: string | null;
-        /**
-         * ID of the template applied to the QR code
-         */
-        templateId: string | null;
-        /**
-         * ID of the border applied to the QR code
-         */
-        borderId: string | null;
-        /**
-         * ID of the text applied to the QR code
-         */
-        textId: string | null;
-        /**
-         * Style object with its configuration
-         */
-        style?: {
-            id?: string | null;
-            name?: string | null;
-            /**
-             * Configuration options for QR code styling
+             * Complete configuration for QR code generation
              */
             options: {
                 /**
-                 * Primary color for QR code elements in CSS format
+                 * Data to encode in the QR code (required)
                  */
-                primaryColor?: string | null;
-                /**
-                 * Secondary color for QR code elements in CSS format
-                 */
-                secondaryColor?: string | null;
-                /**
-                 * Tertiary color for QR code elements in CSS format
-                 */
-                thirdColor?: string | null;
-                /**
-                 * Background color of the QR code in CSS format
-                 */
-                backgroundColor?: string | null;
-                /**
-                 * Gradient configuration for QR code dots
-                 */
-                dotsGradient?: {
-                    /**
-                     * Type of gradient
-                     */
-                    type?: "linear" | "radial";
-                    /**
-                     * Rotation angle of gradient in degrees
-                     */
-                    rotation?: number;
-                    /**
-                     * Array of color stops in the gradient (min 2)
-                     */
-                    colorStops?: Array<{
-                        /**
-                         * Position of the color stop (0-1)
-                         */
-                        offset?: number;
-                        /**
-                         * Color in CSS format
-                         */
-                        color?: string;
-                    }>;
-                } | null;
-                /**
-                 * Gradient configuration for corner dots
-                 */
-                cornersDotGradient?: {
-                    /**
-                     * Type of gradient
-                     */
-                    type?: "linear" | "radial";
-                    /**
-                     * Rotation angle of gradient in degrees
-                     */
-                    rotation?: number;
-                    /**
-                     * Array of color stops in the gradient (min 2)
-                     */
-                    colorStops?: Array<{
-                        /**
-                         * Position of the color stop (0-1)
-                         */
-                        offset?: number;
-                        /**
-                         * Color in CSS format
-                         */
-                        color?: string;
-                    }>;
-                } | null;
-                /**
-                 * Gradient configuration for corners
-                 */
-                cornersGradient?: {
-                    /**
-                     * Type of gradient
-                     */
-                    type?: "linear" | "radial";
-                    /**
-                     * Rotation angle of gradient in degrees
-                     */
-                    rotation?: number;
-                    /**
-                     * Array of color stops in the gradient (min 2)
-                     */
-                    colorStops?: Array<{
-                        /**
-                         * Position of the color stop (0-1)
-                         */
-                        offset?: number;
-                        /**
-                         * Color in CSS format
-                         */
-                        color?: string;
-                    }>;
-                } | null;
-                /**
-                 * Gradient configuration for QR code background
-                 */
-                backgroundGradient?: {
-                    /**
-                     * Type of gradient
-                     */
-                    type?: "linear" | "radial";
-                    /**
-                     * Rotation angle of gradient in degrees
-                     */
-                    rotation?: number;
-                    /**
-                     * Array of color stops in the gradient (min 2)
-                     */
-                    colorStops?: Array<{
-                        /**
-                         * Position of the color stop (0-1)
-                         */
-                        offset?: number;
-                        /**
-                         * Color in CSS format
-                         */
-                        color?: string;
-                    }>;
-                } | null;
-                /**
-                 * Shape style for the QR code dots
-                 */
-                dotShape?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
-                /**
-                 * Shape style for the QR code corner squares
-                 */
-                cornerSquareShape?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
-                /**
-                 * Shape style for the QR code corner dots
-                 */
-                cornerDotShape?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
-                /**
-                 * Logo to be placed on the QR code (URL, Base64, Buffer, or Blob)
-                 */
-                logo?: string | unknown | null;
-                /**
-                 * Size of the logo relative to QR code (0-1)
-                 */
-                logoSize?: number | null;
-                /**
-                 * Placement mode for the logo
-                 */
-                logoMode?: "center" | "overlay" | "background" | null;
-                /**
-                 * Margin around the logo in pixels
-                 */
-                logoMargin?: number | null;
-                /**
-                 * Background color for logo in CSS format
-                 */
-                logoBackgroundColor?: string | null;
-                /**
-                 * Padding around the logo in pixels
-                 */
-                logoPadding?: number | null;
-                /**
-                 * Border radius for logo in pixels or CSS format
-                 */
-                logoRadius?: string | number | null;
-                /**
-                 * Color of the QR code border in CSS format
-                 */
-                borderColor?: string | null;
-                /**
-                 * Thickness of the border in pixels
-                 */
-                borderThickness?: number | null;
-                /**
-                 * Border radius in pixels or CSS format
-                 */
-                borderRadius?: string | number | null;
-                /**
-                 * Color of the inner border in CSS format
-                 */
-                borderInnerColor?: string | null;
-                /**
-                 * Thickness of the inner border in pixels
-                 */
-                borderInnerThickness?: number | null;
-                /**
-                 * Inner border radius in pixels or CSS format
-                 */
-                borderInnerRadius?: string | number | null;
-                /**
-                 * Color of the outer border in CSS format
-                 */
-                borderOuterColor?: string | null;
-                /**
-                 * Thickness of the outer border in pixels
-                 */
-                borderOuterThickness?: number | null;
-                /**
-                 * Text to display on top border
-                 */
-                borderTextTop?: string | null;
-                /**
-                 * Text to display on right border
-                 */
-                borderTextRight?: string | null;
-                /**
-                 * Text to display on bottom border
-                 */
-                borderTextBottom?: string | null;
-                /**
-                 * Text to display on left border
-                 */
-                borderTextLeft?: string | null;
-                /**
-                 * Font family for border text
-                 */
-                borderFontFace?: string | null;
-                /**
-                 * Font size for border text in pixels
-                 */
-                borderFontSize?: number | null;
-                /**
-                 * Font color for border text in CSS format
-                 */
-                borderFontColor?: string | null;
-                /**
-                 * Letter spacing for border text in pixels
-                 */
-                borderLetterSpacing?: number | null;
-                /**
-                 * Text transformation for border text
-                 */
-                borderTextTransform?: "uppercase" | "lowercase" | "capitalize" | null;
-                /**
-                 * Font weight for border text
-                 */
-                borderFontWeight?: string;
-            };
-        };
-        /**
-         * Template object with its configuration
-         */
-        template?: {
-            id?: string | null;
-            name?: string | null;
-            /**
-             * QR code configuration with optional data field
-             */
-            options?: {
+                data: string;
                 /**
                  * Overall shape of the QR code
                  */
-                shape?: "square" | "circle" | null;
+                shape?: 'square' | 'circle' | null;
                 /**
                  * Margin around the QR code in pixels
                  */
@@ -26024,11 +24866,11 @@ export type PutCodesByCodeIdOptionsResponses = {
                     /**
                      * QR code encoding mode
                      */
-                    mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                    mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
                     /**
                      * Error correction level
                      */
-                    errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                    errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
                 } | null;
                 /**
                  * Options for QR code dots
@@ -26037,7 +24879,7 @@ export type PutCodesByCodeIdOptionsResponses = {
                     /**
                      * Type of dots
                      */
-                    type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                    type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                     /**
                      * Color of dots in CSS format
                      */
@@ -26053,7 +24895,7 @@ export type PutCodesByCodeIdOptionsResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -26080,7 +24922,7 @@ export type PutCodesByCodeIdOptionsResponses = {
                     /**
                      * Type of corner squares
                      */
-                    type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Color of corner squares in CSS format
                      */
@@ -26092,7 +24934,7 @@ export type PutCodesByCodeIdOptionsResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -26119,7 +24961,7 @@ export type PutCodesByCodeIdOptionsResponses = {
                     /**
                      * Type of corner dots
                      */
-                    type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Color of corner dots in CSS format
                      */
@@ -26131,7 +24973,7 @@ export type PutCodesByCodeIdOptionsResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -26170,7 +25012,7 @@ export type PutCodesByCodeIdOptionsResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -26201,7 +25043,7 @@ export type PutCodesByCodeIdOptionsResponses = {
                     /**
                      * Mode for embedded image
                      */
-                    mode?: "center" | "overlay" | "background" | null;
+                    mode?: 'center' | 'overlay' | 'background' | null;
                     /**
                      * Size of image relative to QR code (0-1)
                      */
@@ -26229,7 +25071,7 @@ export type PutCodesByCodeIdOptionsResponses = {
                             /**
                              * Type of gradient
                              */
-                            type?: "linear" | "radial";
+                            type?: 'linear' | 'radial';
                             /**
                              * Rotation angle of gradient in degrees
                              */
@@ -26360,7 +25202,7 @@ export type PutCodesByCodeIdOptionsResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -26388,7 +25230,7 @@ export type PutCodesByCodeIdOptionsResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -26422,7 +25264,7 @@ export type PutCodesByCodeIdOptionsResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -26450,7 +25292,7 @@ export type PutCodesByCodeIdOptionsResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -26484,7 +25326,7 @@ export type PutCodesByCodeIdOptionsResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -26512,7 +25354,7 @@ export type PutCodesByCodeIdOptionsResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -26546,7 +25388,7 @@ export type PutCodesByCodeIdOptionsResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -26574,31 +25416,2954 @@ export type PutCodesByCodeIdOptionsResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                     } | null;
                 } | null;
-                /**
-                 * Data to encode in the QR code (optional in this context)
-                 */
-                data?: string;
             };
+            /**
+             * ID of the style applied to the QR code
+             */
+            styleId: string | null;
+            /**
+             * ID of the template applied to the QR code
+             */
+            templateId: string | null;
+            /**
+             * ID of the border applied to the QR code
+             */
+            borderId: string | null;
+            /**
+             * ID of the text applied to the QR code
+             */
+            textId: string | null;
+            /**
+             * Style object with its configuration
+             */
+            style?: {
+                id?: string | null;
+                name?: string | null;
+                /**
+                 * Configuration options for QR code styling
+                 */
+                options: {
+                    /**
+                     * Primary color for QR code elements in CSS format
+                     */
+                    primaryColor?: string | null;
+                    /**
+                     * Secondary color for QR code elements in CSS format
+                     */
+                    secondaryColor?: string | null;
+                    /**
+                     * Tertiary color for QR code elements in CSS format
+                     */
+                    thirdColor?: string | null;
+                    /**
+                     * Background color of the QR code in CSS format
+                     */
+                    backgroundColor?: string | null;
+                    /**
+                     * Gradient configuration for QR code dots
+                     */
+                    dotsGradient?: {
+                        /**
+                         * Type of gradient
+                         */
+                        type?: 'linear' | 'radial';
+                        /**
+                         * Rotation angle of gradient in degrees
+                         */
+                        rotation?: number;
+                        /**
+                         * Array of color stops in the gradient (min 2)
+                         */
+                        colorStops?: Array<{
+                            /**
+                             * Position of the color stop (0-1)
+                             */
+                            offset?: number;
+                            /**
+                             * Color in CSS format
+                             */
+                            color?: string;
+                        }>;
+                    } | null;
+                    /**
+                     * Gradient configuration for corner dots
+                     */
+                    cornersDotGradient?: {
+                        /**
+                         * Type of gradient
+                         */
+                        type?: 'linear' | 'radial';
+                        /**
+                         * Rotation angle of gradient in degrees
+                         */
+                        rotation?: number;
+                        /**
+                         * Array of color stops in the gradient (min 2)
+                         */
+                        colorStops?: Array<{
+                            /**
+                             * Position of the color stop (0-1)
+                             */
+                            offset?: number;
+                            /**
+                             * Color in CSS format
+                             */
+                            color?: string;
+                        }>;
+                    } | null;
+                    /**
+                     * Gradient configuration for corners
+                     */
+                    cornersGradient?: {
+                        /**
+                         * Type of gradient
+                         */
+                        type?: 'linear' | 'radial';
+                        /**
+                         * Rotation angle of gradient in degrees
+                         */
+                        rotation?: number;
+                        /**
+                         * Array of color stops in the gradient (min 2)
+                         */
+                        colorStops?: Array<{
+                            /**
+                             * Position of the color stop (0-1)
+                             */
+                            offset?: number;
+                            /**
+                             * Color in CSS format
+                             */
+                            color?: string;
+                        }>;
+                    } | null;
+                    /**
+                     * Gradient configuration for QR code background
+                     */
+                    backgroundGradient?: {
+                        /**
+                         * Type of gradient
+                         */
+                        type?: 'linear' | 'radial';
+                        /**
+                         * Rotation angle of gradient in degrees
+                         */
+                        rotation?: number;
+                        /**
+                         * Array of color stops in the gradient (min 2)
+                         */
+                        colorStops?: Array<{
+                            /**
+                             * Position of the color stop (0-1)
+                             */
+                            offset?: number;
+                            /**
+                             * Color in CSS format
+                             */
+                            color?: string;
+                        }>;
+                    } | null;
+                    /**
+                     * Shape style for the QR code dots
+                     */
+                    dotShape?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
+                    /**
+                     * Shape style for the QR code corner squares
+                     */
+                    cornerSquareShape?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
+                    /**
+                     * Shape style for the QR code corner dots
+                     */
+                    cornerDotShape?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
+                    /**
+                     * Logo to be placed on the QR code (URL, Base64, Buffer, or Blob)
+                     */
+                    logo?: string | unknown | null;
+                    /**
+                     * Size of the logo relative to QR code (0-1)
+                     */
+                    logoSize?: number | null;
+                    /**
+                     * Placement mode for the logo
+                     */
+                    logoMode?: 'center' | 'overlay' | 'background' | null;
+                    /**
+                     * Margin around the logo in pixels
+                     */
+                    logoMargin?: number | null;
+                    /**
+                     * Background color for logo in CSS format
+                     */
+                    logoBackgroundColor?: string | null;
+                    /**
+                     * Padding around the logo in pixels
+                     */
+                    logoPadding?: number | null;
+                    /**
+                     * Border radius for logo in pixels or CSS format
+                     */
+                    logoRadius?: string | number | null;
+                    /**
+                     * Color of the QR code border in CSS format
+                     */
+                    borderColor?: string | null;
+                    /**
+                     * Thickness of the border in pixels
+                     */
+                    borderThickness?: number | null;
+                    /**
+                     * Border radius in pixels or CSS format
+                     */
+                    borderRadius?: string | number | null;
+                    /**
+                     * Color of the inner border in CSS format
+                     */
+                    borderInnerColor?: string | null;
+                    /**
+                     * Thickness of the inner border in pixels
+                     */
+                    borderInnerThickness?: number | null;
+                    /**
+                     * Inner border radius in pixels or CSS format
+                     */
+                    borderInnerRadius?: string | number | null;
+                    /**
+                     * Color of the outer border in CSS format
+                     */
+                    borderOuterColor?: string | null;
+                    /**
+                     * Thickness of the outer border in pixels
+                     */
+                    borderOuterThickness?: number | null;
+                    /**
+                     * Text to display on top border
+                     */
+                    borderTextTop?: string | null;
+                    /**
+                     * Text to display on right border
+                     */
+                    borderTextRight?: string | null;
+                    /**
+                     * Text to display on bottom border
+                     */
+                    borderTextBottom?: string | null;
+                    /**
+                     * Text to display on left border
+                     */
+                    borderTextLeft?: string | null;
+                    /**
+                     * Font family for border text
+                     */
+                    borderFontFace?: string | null;
+                    /**
+                     * Font size for border text in pixels
+                     */
+                    borderFontSize?: number | null;
+                    /**
+                     * Font color for border text in CSS format
+                     */
+                    borderFontColor?: string | null;
+                    /**
+                     * Letter spacing for border text in pixels
+                     */
+                    borderLetterSpacing?: number | null;
+                    /**
+                     * Text transformation for border text
+                     */
+                    borderTextTransform?: 'uppercase' | 'lowercase' | 'capitalize' | null;
+                    /**
+                     * Font weight for border text
+                     */
+                    borderFontWeight?: string;
+                };
+            };
+            /**
+             * Template object with its configuration
+             */
+            template?: {
+                id?: string | null;
+                name?: string | null;
+                /**
+                 * QR code configuration with optional data field
+                 */
+                options?: {
+                    /**
+                     * Overall shape of the QR code
+                     */
+                    shape?: 'square' | 'circle' | null;
+                    /**
+                     * Margin around the QR code in pixels
+                     */
+                    margin?: number | null;
+                    /**
+                     * Whether QR code is responsive
+                     */
+                    isResponsive?: boolean | null;
+                    /**
+                     * Scale factor for QR code (0-1.5)
+                     */
+                    scale?: number | null;
+                    /**
+                     * General offset in pixels
+                     */
+                    offset?: number | null;
+                    /**
+                     * Vertical offset in pixels
+                     */
+                    verticalOffset?: number | null;
+                    /**
+                     * Horizontal offset in pixels
+                     */
+                    horizontalOffset?: number | null;
+                    /**
+                     * QR code specific options
+                     */
+                    qrOptions?: {
+                        /**
+                         * QR code type number (0-40)
+                         */
+                        typeNumber?: number | null;
+                        /**
+                         * QR code encoding mode
+                         */
+                        mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
+                        /**
+                         * Error correction level
+                         */
+                        errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
+                    } | null;
+                    /**
+                     * Options for QR code dots
+                     */
+                    dotsOptions?: {
+                        /**
+                         * Type of dots
+                         */
+                        type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
+                        /**
+                         * Color of dots in CSS format
+                         */
+                        color?: string | null;
+                        /**
+                         * Size of dots relative to module size (0-1)
+                         */
+                        size?: number | null;
+                        /**
+                         * Gradient for dots
+                         */
+                        gradient?: {
+                            /**
+                             * Type of gradient
+                             */
+                            type?: 'linear' | 'radial';
+                            /**
+                             * Rotation angle of gradient in degrees
+                             */
+                            rotation?: number;
+                            /**
+                             * Array of color stops in the gradient (min 2)
+                             */
+                            colorStops?: Array<{
+                                /**
+                                 * Position of the color stop (0-1)
+                                 */
+                                offset?: number;
+                                /**
+                                 * Color in CSS format
+                                 */
+                                color?: string;
+                            }>;
+                        } | null;
+                    } | null;
+                    /**
+                     * Options for QR code corner squares
+                     */
+                    cornersSquareOptions?: {
+                        /**
+                         * Type of corner squares
+                         */
+                        type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
+                        /**
+                         * Color of corner squares in CSS format
+                         */
+                        color?: string | null;
+                        /**
+                         * Gradient for corner squares
+                         */
+                        gradient?: {
+                            /**
+                             * Type of gradient
+                             */
+                            type?: 'linear' | 'radial';
+                            /**
+                             * Rotation angle of gradient in degrees
+                             */
+                            rotation?: number;
+                            /**
+                             * Array of color stops in the gradient (min 2)
+                             */
+                            colorStops?: Array<{
+                                /**
+                                 * Position of the color stop (0-1)
+                                 */
+                                offset?: number;
+                                /**
+                                 * Color in CSS format
+                                 */
+                                color?: string;
+                            }>;
+                        } | null;
+                    } | null;
+                    /**
+                     * Options for QR code corner dots
+                     */
+                    cornersDotOptions?: {
+                        /**
+                         * Type of corner dots
+                         */
+                        type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
+                        /**
+                         * Color of corner dots in CSS format
+                         */
+                        color?: string | null;
+                        /**
+                         * Gradient for corner dots
+                         */
+                        gradient?: {
+                            /**
+                             * Type of gradient
+                             */
+                            type?: 'linear' | 'radial';
+                            /**
+                             * Rotation angle of gradient in degrees
+                             */
+                            rotation?: number;
+                            /**
+                             * Array of color stops in the gradient (min 2)
+                             */
+                            colorStops?: Array<{
+                                /**
+                                 * Position of the color stop (0-1)
+                                 */
+                                offset?: number;
+                                /**
+                                 * Color in CSS format
+                                 */
+                                color?: string;
+                            }>;
+                        } | null;
+                    } | null;
+                    /**
+                     * Options for QR code background or false to disable
+                     */
+                    backgroundOptions?: {
+                        /**
+                         * Background color in CSS format
+                         */
+                        color?: string | null;
+                        /**
+                         * Background corner rounding (0-1 or CSS value)
+                         */
+                        round?: number | string | null;
+                        /**
+                         * Gradient for background
+                         */
+                        gradient?: {
+                            /**
+                             * Type of gradient
+                             */
+                            type?: 'linear' | 'radial';
+                            /**
+                             * Rotation angle of gradient in degrees
+                             */
+                            rotation?: number;
+                            /**
+                             * Array of color stops in the gradient (min 2)
+                             */
+                            colorStops?: Array<{
+                                /**
+                                 * Position of the color stop (0-1)
+                                 */
+                                offset?: number;
+                                /**
+                                 * Color in CSS format
+                                 */
+                                color?: string;
+                            }>;
+                        } | null;
+                    } | false;
+                    /**
+                     * Image to embed in the QR code (URL, Buffer, or Blob)
+                     */
+                    image?: string | unknown | null;
+                    /**
+                     * Options for embedded image
+                     */
+                    imageOptions?: {
+                        /**
+                         * Mode for embedded image
+                         */
+                        mode?: 'center' | 'overlay' | 'background' | null;
+                        /**
+                         * Size of image relative to QR code (0-1)
+                         */
+                        imageSize?: number | null;
+                        /**
+                         * Margin around the image in pixels
+                         */
+                        margin?: number | null;
+                        /**
+                         * Cross-origin attribute for image
+                         */
+                        crossOrigin?: string | null;
+                        /**
+                         * Fill options for image area
+                         */
+                        fill?: {
+                            /**
+                             * Fill color in CSS format
+                             */
+                            color?: string | null;
+                            /**
+                             * Gradient for fill
+                             */
+                            gradient?: {
+                                /**
+                                 * Type of gradient
+                                 */
+                                type?: 'linear' | 'radial';
+                                /**
+                                 * Rotation angle of gradient in degrees
+                                 */
+                                rotation?: number;
+                                /**
+                                 * Array of color stops in the gradient (min 2)
+                                 */
+                                colorStops?: Array<{
+                                    /**
+                                     * Position of the color stop (0-1)
+                                     */
+                                    offset?: number;
+                                    /**
+                                     * Color in CSS format
+                                     */
+                                    color?: string;
+                                }>;
+                            } | null;
+                        } | null;
+                    } | null;
+                    /**
+                     * Border configuration options
+                     */
+                    borderOptions?: {
+                        /**
+                         * Whether to show border
+                         */
+                        hasBorder?: boolean | null;
+                        /**
+                         * Border thickness in pixels
+                         */
+                        thickness?: number | null;
+                        /**
+                         * Border color in CSS format
+                         */
+                        color?: string | null;
+                        /**
+                         * Border radius in CSS format
+                         */
+                        radius?: string | null;
+                        /**
+                         * Thickness when no border is shown
+                         */
+                        noBorderThickness?: number | null;
+                        /**
+                         * Border background color in CSS format
+                         */
+                        background?: string | null;
+                        /**
+                         * Inner border configuration
+                         */
+                        inner?: {
+                            /**
+                             * Inner radius in CSS format
+                             */
+                            radius?: string | null;
+                            /**
+                             * Inner scale factor (0-1.5)
+                             */
+                            scale?: number | null;
+                            /**
+                             * Inner horizontal offset in pixels
+                             */
+                            horizontalOffset?: number | null;
+                            /**
+                             * Inner vertical offset in pixels
+                             */
+                            verticalOffset?: number | null;
+                        } | null;
+                        /**
+                         * Outer border configuration
+                         */
+                        borderOuter?: {
+                            /**
+                             * Border color in CSS format
+                             */
+                            color?: string;
+                            /**
+                             * Border thickness in pixels
+                             */
+                            thickness?: number;
+                        } | null;
+                        /**
+                         * Inner border configuration
+                         */
+                        borderInner?: {
+                            /**
+                             * Border color in CSS format
+                             */
+                            color?: string;
+                            /**
+                             * Border thickness in pixels
+                             */
+                            thickness?: number;
+                        } | null;
+                        /**
+                         * Border decorations configuration
+                         */
+                        decorations?: {
+                            /**
+                             * Top decoration configuration
+                             */
+                            top?: {
+                                /**
+                                 * Whether decoration is disabled
+                                 */
+                                disabled?: boolean;
+                                /**
+                                 * Whether text is enabled
+                                 */
+                                enableText?: boolean;
+                                /**
+                                 * Offset position in pixels
+                                 */
+                                offset?: number;
+                                /**
+                                 * Curve adjustment value
+                                 */
+                                curveAdjustment?: number;
+                                /**
+                                 * Whether curve is disabled
+                                 */
+                                curveDisabled?: boolean;
+                                /**
+                                 * Curve radius value (CSS format)
+                                 */
+                                curveRadius?: string;
+                                /**
+                                 * Type of decoration
+                                 */
+                                type?: 'text' | 'image';
+                                /**
+                                 * Content value for decoration
+                                 */
+                                value?: string;
+                                /**
+                                 * Style for text decoration
+                                 */
+                                style?: {
+                                    /**
+                                     * Font face for the text
+                                     */
+                                    fontFace?: string;
+                                    /**
+                                     * Font size in pixels
+                                     */
+                                    fontSize?: number;
+                                    /**
+                                     * Font color in CSS format
+                                     */
+                                    fontColor?: string;
+                                    /**
+                                     * Letter spacing in pixels
+                                     */
+                                    letterSpacing?: number;
+                                    /**
+                                     * Font weight
+                                     */
+                                    fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
+                                };
+                            } | null;
+                            /**
+                             * Right decoration configuration
+                             */
+                            right?: {
+                                /**
+                                 * Whether decoration is disabled
+                                 */
+                                disabled?: boolean;
+                                /**
+                                 * Whether text is enabled
+                                 */
+                                enableText?: boolean;
+                                /**
+                                 * Offset position in pixels
+                                 */
+                                offset?: number;
+                                /**
+                                 * Curve adjustment value
+                                 */
+                                curveAdjustment?: number;
+                                /**
+                                 * Whether curve is disabled
+                                 */
+                                curveDisabled?: boolean;
+                                /**
+                                 * Curve radius value (CSS format)
+                                 */
+                                curveRadius?: string;
+                                /**
+                                 * Type of decoration
+                                 */
+                                type?: 'text' | 'image';
+                                /**
+                                 * Content value for decoration
+                                 */
+                                value?: string;
+                                /**
+                                 * Style for text decoration
+                                 */
+                                style?: {
+                                    /**
+                                     * Font face for the text
+                                     */
+                                    fontFace?: string;
+                                    /**
+                                     * Font size in pixels
+                                     */
+                                    fontSize?: number;
+                                    /**
+                                     * Font color in CSS format
+                                     */
+                                    fontColor?: string;
+                                    /**
+                                     * Letter spacing in pixels
+                                     */
+                                    letterSpacing?: number;
+                                    /**
+                                     * Font weight
+                                     */
+                                    fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
+                                };
+                            } | null;
+                            /**
+                             * Bottom decoration configuration
+                             */
+                            bottom?: {
+                                /**
+                                 * Whether decoration is disabled
+                                 */
+                                disabled?: boolean;
+                                /**
+                                 * Whether text is enabled
+                                 */
+                                enableText?: boolean;
+                                /**
+                                 * Offset position in pixels
+                                 */
+                                offset?: number;
+                                /**
+                                 * Curve adjustment value
+                                 */
+                                curveAdjustment?: number;
+                                /**
+                                 * Whether curve is disabled
+                                 */
+                                curveDisabled?: boolean;
+                                /**
+                                 * Curve radius value (CSS format)
+                                 */
+                                curveRadius?: string;
+                                /**
+                                 * Type of decoration
+                                 */
+                                type?: 'text' | 'image';
+                                /**
+                                 * Content value for decoration
+                                 */
+                                value?: string;
+                                /**
+                                 * Style for text decoration
+                                 */
+                                style?: {
+                                    /**
+                                     * Font face for the text
+                                     */
+                                    fontFace?: string;
+                                    /**
+                                     * Font size in pixels
+                                     */
+                                    fontSize?: number;
+                                    /**
+                                     * Font color in CSS format
+                                     */
+                                    fontColor?: string;
+                                    /**
+                                     * Letter spacing in pixels
+                                     */
+                                    letterSpacing?: number;
+                                    /**
+                                     * Font weight
+                                     */
+                                    fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
+                                };
+                            } | null;
+                            /**
+                             * Left decoration configuration
+                             */
+                            left?: {
+                                /**
+                                 * Whether decoration is disabled
+                                 */
+                                disabled?: boolean;
+                                /**
+                                 * Whether text is enabled
+                                 */
+                                enableText?: boolean;
+                                /**
+                                 * Offset position in pixels
+                                 */
+                                offset?: number;
+                                /**
+                                 * Curve adjustment value
+                                 */
+                                curveAdjustment?: number;
+                                /**
+                                 * Whether curve is disabled
+                                 */
+                                curveDisabled?: boolean;
+                                /**
+                                 * Curve radius value (CSS format)
+                                 */
+                                curveRadius?: string;
+                                /**
+                                 * Type of decoration
+                                 */
+                                type?: 'text' | 'image';
+                                /**
+                                 * Content value for decoration
+                                 */
+                                value?: string;
+                                /**
+                                 * Style for text decoration
+                                 */
+                                style?: {
+                                    /**
+                                     * Font face for the text
+                                     */
+                                    fontFace?: string;
+                                    /**
+                                     * Font size in pixels
+                                     */
+                                    fontSize?: number;
+                                    /**
+                                     * Font color in CSS format
+                                     */
+                                    fontColor?: string;
+                                    /**
+                                     * Letter spacing in pixels
+                                     */
+                                    letterSpacing?: number;
+                                    /**
+                                     * Font weight
+                                     */
+                                    fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
+                                };
+                            } | null;
+                        } | null;
+                    } | null;
+                    /**
+                     * Data to encode in the QR code (optional in this context)
+                     */
+                    data?: string;
+                };
+            };
+            /**
+             * Border object with its configuration
+             */
+            border?: {
+                id?: string | null;
+                name?: string | null;
+                /**
+                 * Border options configuration
+                 */
+                options: {
+                    /**
+                     * Overall shape of the QR code
+                     */
+                    shape?: 'square' | 'circle' | null;
+                    /**
+                     * Margin around the QR code in pixels
+                     */
+                    margin?: number | null;
+                    /**
+                     * Whether QR code is responsive
+                     */
+                    isResponsive?: boolean | null;
+                    /**
+                     * Scale factor for QR code (0-1.5)
+                     */
+                    scale?: number | null;
+                    /**
+                     * General offset in pixels
+                     */
+                    offset?: number | null;
+                    /**
+                     * Vertical offset in pixels
+                     */
+                    verticalOffset?: number | null;
+                    /**
+                     * Horizontal offset in pixels
+                     */
+                    horizontalOffset?: number | null;
+                    /**
+                     * QR code specific options
+                     */
+                    qrOptions?: {
+                        /**
+                         * QR code type number (0-40)
+                         */
+                        typeNumber?: number | null;
+                        /**
+                         * QR code encoding mode
+                         */
+                        mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
+                        /**
+                         * Error correction level
+                         */
+                        errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
+                    } | null;
+                    /**
+                     * Options for QR code dots
+                     */
+                    dotsOptions?: {
+                        /**
+                         * Type of dots
+                         */
+                        type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
+                        /**
+                         * Color of dots in CSS format
+                         */
+                        color?: string | null;
+                        /**
+                         * Size of dots relative to module size (0-1)
+                         */
+                        size?: number | null;
+                        /**
+                         * Gradient for dots
+                         */
+                        gradient?: {
+                            /**
+                             * Type of gradient
+                             */
+                            type?: 'linear' | 'radial';
+                            /**
+                             * Rotation angle of gradient in degrees
+                             */
+                            rotation?: number;
+                            /**
+                             * Array of color stops in the gradient (min 2)
+                             */
+                            colorStops?: Array<{
+                                /**
+                                 * Position of the color stop (0-1)
+                                 */
+                                offset?: number;
+                                /**
+                                 * Color in CSS format
+                                 */
+                                color?: string;
+                            }>;
+                        } | null;
+                    } | null;
+                    /**
+                     * Options for QR code corner squares
+                     */
+                    cornersSquareOptions?: {
+                        /**
+                         * Type of corner squares
+                         */
+                        type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
+                        /**
+                         * Color of corner squares in CSS format
+                         */
+                        color?: string | null;
+                        /**
+                         * Gradient for corner squares
+                         */
+                        gradient?: {
+                            /**
+                             * Type of gradient
+                             */
+                            type?: 'linear' | 'radial';
+                            /**
+                             * Rotation angle of gradient in degrees
+                             */
+                            rotation?: number;
+                            /**
+                             * Array of color stops in the gradient (min 2)
+                             */
+                            colorStops?: Array<{
+                                /**
+                                 * Position of the color stop (0-1)
+                                 */
+                                offset?: number;
+                                /**
+                                 * Color in CSS format
+                                 */
+                                color?: string;
+                            }>;
+                        } | null;
+                    } | null;
+                    /**
+                     * Options for QR code corner dots
+                     */
+                    cornersDotOptions?: {
+                        /**
+                         * Type of corner dots
+                         */
+                        type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
+                        /**
+                         * Color of corner dots in CSS format
+                         */
+                        color?: string | null;
+                        /**
+                         * Gradient for corner dots
+                         */
+                        gradient?: {
+                            /**
+                             * Type of gradient
+                             */
+                            type?: 'linear' | 'radial';
+                            /**
+                             * Rotation angle of gradient in degrees
+                             */
+                            rotation?: number;
+                            /**
+                             * Array of color stops in the gradient (min 2)
+                             */
+                            colorStops?: Array<{
+                                /**
+                                 * Position of the color stop (0-1)
+                                 */
+                                offset?: number;
+                                /**
+                                 * Color in CSS format
+                                 */
+                                color?: string;
+                            }>;
+                        } | null;
+                    } | null;
+                    /**
+                     * Options for QR code background or false to disable
+                     */
+                    backgroundOptions?: {
+                        /**
+                         * Background color in CSS format
+                         */
+                        color?: string | null;
+                        /**
+                         * Background corner rounding (0-1 or CSS value)
+                         */
+                        round?: number | string | null;
+                        /**
+                         * Gradient for background
+                         */
+                        gradient?: {
+                            /**
+                             * Type of gradient
+                             */
+                            type?: 'linear' | 'radial';
+                            /**
+                             * Rotation angle of gradient in degrees
+                             */
+                            rotation?: number;
+                            /**
+                             * Array of color stops in the gradient (min 2)
+                             */
+                            colorStops?: Array<{
+                                /**
+                                 * Position of the color stop (0-1)
+                                 */
+                                offset?: number;
+                                /**
+                                 * Color in CSS format
+                                 */
+                                color?: string;
+                            }>;
+                        } | null;
+                    } | false;
+                    /**
+                     * Image to embed in the QR code (URL, Buffer, or Blob)
+                     */
+                    image?: string | unknown | null;
+                    /**
+                     * Options for embedded image
+                     */
+                    imageOptions?: {
+                        /**
+                         * Mode for embedded image
+                         */
+                        mode?: 'center' | 'overlay' | 'background' | null;
+                        /**
+                         * Size of image relative to QR code (0-1)
+                         */
+                        imageSize?: number | null;
+                        /**
+                         * Margin around the image in pixels
+                         */
+                        margin?: number | null;
+                        /**
+                         * Cross-origin attribute for image
+                         */
+                        crossOrigin?: string | null;
+                        /**
+                         * Fill options for image area
+                         */
+                        fill?: {
+                            /**
+                             * Fill color in CSS format
+                             */
+                            color?: string | null;
+                            /**
+                             * Gradient for fill
+                             */
+                            gradient?: {
+                                /**
+                                 * Type of gradient
+                                 */
+                                type?: 'linear' | 'radial';
+                                /**
+                                 * Rotation angle of gradient in degrees
+                                 */
+                                rotation?: number;
+                                /**
+                                 * Array of color stops in the gradient (min 2)
+                                 */
+                                colorStops?: Array<{
+                                    /**
+                                     * Position of the color stop (0-1)
+                                     */
+                                    offset?: number;
+                                    /**
+                                     * Color in CSS format
+                                     */
+                                    color?: string;
+                                }>;
+                            } | null;
+                        } | null;
+                    } | null;
+                    borderOptions: {
+                        /**
+                         * Whether to show border
+                         */
+                        hasBorder?: boolean | null;
+                        /**
+                         * Border thickness in pixels
+                         */
+                        thickness?: number | null;
+                        /**
+                         * Border color in CSS format
+                         */
+                        color?: string | null;
+                        /**
+                         * Border radius in CSS format
+                         */
+                        radius?: string | null;
+                        /**
+                         * Thickness when no border is shown
+                         */
+                        noBorderThickness?: number | null;
+                        /**
+                         * Border background color in CSS format
+                         */
+                        background?: string | null;
+                        /**
+                         * Inner border configuration
+                         */
+                        inner?: {
+                            /**
+                             * Inner radius in CSS format
+                             */
+                            radius?: string | null;
+                            /**
+                             * Inner scale factor (0-1.5)
+                             */
+                            scale?: number | null;
+                            /**
+                             * Inner horizontal offset in pixels
+                             */
+                            horizontalOffset?: number | null;
+                            /**
+                             * Inner vertical offset in pixels
+                             */
+                            verticalOffset?: number | null;
+                        } | null;
+                        /**
+                         * Outer border configuration
+                         */
+                        borderOuter?: {
+                            /**
+                             * Border color in CSS format
+                             */
+                            color?: string;
+                            /**
+                             * Border thickness in pixels
+                             */
+                            thickness?: number;
+                        } | null;
+                        /**
+                         * Inner border configuration
+                         */
+                        borderInner?: {
+                            /**
+                             * Border color in CSS format
+                             */
+                            color?: string;
+                            /**
+                             * Border thickness in pixels
+                             */
+                            thickness?: number;
+                        } | null;
+                        /**
+                         * Border decorations configuration
+                         */
+                        decorations?: {
+                            /**
+                             * Top decoration configuration
+                             */
+                            top?: {
+                                /**
+                                 * Whether decoration is disabled
+                                 */
+                                disabled?: boolean;
+                                /**
+                                 * Whether text is enabled
+                                 */
+                                enableText?: boolean;
+                                /**
+                                 * Offset position in pixels
+                                 */
+                                offset?: number;
+                                /**
+                                 * Curve adjustment value
+                                 */
+                                curveAdjustment?: number;
+                                /**
+                                 * Whether curve is disabled
+                                 */
+                                curveDisabled?: boolean;
+                                /**
+                                 * Curve radius value (CSS format)
+                                 */
+                                curveRadius?: string;
+                                /**
+                                 * Type of decoration
+                                 */
+                                type?: 'text' | 'image';
+                                /**
+                                 * Content value for decoration
+                                 */
+                                value?: string;
+                                /**
+                                 * Style for text decoration
+                                 */
+                                style?: {
+                                    /**
+                                     * Font face for the text
+                                     */
+                                    fontFace?: string;
+                                    /**
+                                     * Font size in pixels
+                                     */
+                                    fontSize?: number;
+                                    /**
+                                     * Font color in CSS format
+                                     */
+                                    fontColor?: string;
+                                    /**
+                                     * Letter spacing in pixels
+                                     */
+                                    letterSpacing?: number;
+                                    /**
+                                     * Font weight
+                                     */
+                                    fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
+                                };
+                            } | null;
+                            /**
+                             * Right decoration configuration
+                             */
+                            right?: {
+                                /**
+                                 * Whether decoration is disabled
+                                 */
+                                disabled?: boolean;
+                                /**
+                                 * Whether text is enabled
+                                 */
+                                enableText?: boolean;
+                                /**
+                                 * Offset position in pixels
+                                 */
+                                offset?: number;
+                                /**
+                                 * Curve adjustment value
+                                 */
+                                curveAdjustment?: number;
+                                /**
+                                 * Whether curve is disabled
+                                 */
+                                curveDisabled?: boolean;
+                                /**
+                                 * Curve radius value (CSS format)
+                                 */
+                                curveRadius?: string;
+                                /**
+                                 * Type of decoration
+                                 */
+                                type?: 'text' | 'image';
+                                /**
+                                 * Content value for decoration
+                                 */
+                                value?: string;
+                                /**
+                                 * Style for text decoration
+                                 */
+                                style?: {
+                                    /**
+                                     * Font face for the text
+                                     */
+                                    fontFace?: string;
+                                    /**
+                                     * Font size in pixels
+                                     */
+                                    fontSize?: number;
+                                    /**
+                                     * Font color in CSS format
+                                     */
+                                    fontColor?: string;
+                                    /**
+                                     * Letter spacing in pixels
+                                     */
+                                    letterSpacing?: number;
+                                    /**
+                                     * Font weight
+                                     */
+                                    fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
+                                };
+                            } | null;
+                            /**
+                             * Bottom decoration configuration
+                             */
+                            bottom?: {
+                                /**
+                                 * Whether decoration is disabled
+                                 */
+                                disabled?: boolean;
+                                /**
+                                 * Whether text is enabled
+                                 */
+                                enableText?: boolean;
+                                /**
+                                 * Offset position in pixels
+                                 */
+                                offset?: number;
+                                /**
+                                 * Curve adjustment value
+                                 */
+                                curveAdjustment?: number;
+                                /**
+                                 * Whether curve is disabled
+                                 */
+                                curveDisabled?: boolean;
+                                /**
+                                 * Curve radius value (CSS format)
+                                 */
+                                curveRadius?: string;
+                                /**
+                                 * Type of decoration
+                                 */
+                                type?: 'text' | 'image';
+                                /**
+                                 * Content value for decoration
+                                 */
+                                value?: string;
+                                /**
+                                 * Style for text decoration
+                                 */
+                                style?: {
+                                    /**
+                                     * Font face for the text
+                                     */
+                                    fontFace?: string;
+                                    /**
+                                     * Font size in pixels
+                                     */
+                                    fontSize?: number;
+                                    /**
+                                     * Font color in CSS format
+                                     */
+                                    fontColor?: string;
+                                    /**
+                                     * Letter spacing in pixels
+                                     */
+                                    letterSpacing?: number;
+                                    /**
+                                     * Font weight
+                                     */
+                                    fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
+                                };
+                            } | null;
+                            /**
+                             * Left decoration configuration
+                             */
+                            left?: {
+                                /**
+                                 * Whether decoration is disabled
+                                 */
+                                disabled?: boolean;
+                                /**
+                                 * Whether text is enabled
+                                 */
+                                enableText?: boolean;
+                                /**
+                                 * Offset position in pixels
+                                 */
+                                offset?: number;
+                                /**
+                                 * Curve adjustment value
+                                 */
+                                curveAdjustment?: number;
+                                /**
+                                 * Whether curve is disabled
+                                 */
+                                curveDisabled?: boolean;
+                                /**
+                                 * Curve radius value (CSS format)
+                                 */
+                                curveRadius?: string;
+                                /**
+                                 * Type of decoration
+                                 */
+                                type?: 'text' | 'image';
+                                /**
+                                 * Content value for decoration
+                                 */
+                                value?: string;
+                                /**
+                                 * Style for text decoration
+                                 */
+                                style?: {
+                                    /**
+                                     * Font face for the text
+                                     */
+                                    fontFace?: string;
+                                    /**
+                                     * Font size in pixels
+                                     */
+                                    fontSize?: number;
+                                    /**
+                                     * Font color in CSS format
+                                     */
+                                    fontColor?: string;
+                                    /**
+                                     * Letter spacing in pixels
+                                     */
+                                    letterSpacing?: number;
+                                    /**
+                                     * Font weight
+                                     */
+                                    fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
+                                };
+                            } | null;
+                        } | null;
+                    };
+                };
+            };
+            /**
+             * Text object with its configuration
+             */
+            text?: {
+                id?: string | null;
+                name?: string | null;
+                /**
+                 * Text options configuration
+                 */
+                options: {
+                    /**
+                     * Text value for all positions
+                     */
+                    value?: string | null;
+                    /**
+                     * Text value for the top position
+                     */
+                    topValue?: string | null;
+                    /**
+                     * Text value for the bottom position
+                     */
+                    bottomValue?: string | null;
+                    /**
+                     * Text value for the right position
+                     */
+                    rightValue?: string | null;
+                    /**
+                     * Text value for the left position
+                     */
+                    leftValue?: string | null;
+                };
+            };
+            /**
+             * ID of the workspace the QR code belongs to
+             */
+            workspaceId: string | null;
+            /**
+             * Whether the QR code is valid
+             */
+            isValid: boolean | null;
+            /**
+             * When the QR code was last validated
+             */
+            validatedAt: string | null;
+            /**
+             * Version number of the QR code
+             */
+            version: number;
+            /**
+             * Whether the QR code is deleted
+             */
+            isDeleted?: boolean;
+            /**
+             * User who created the resource
+             */
+            createdByUser?: {
+                /**
+                 * Unique identifier of the user
+                 */
+                id: string;
+                /**
+                 * Name of the user
+                 */
+                name: string;
+                /**
+                 * Email address of the user
+                 */
+                email: string;
+            } | null;
+            /**
+             * User who last updated the resource
+             */
+            updatedByUser?: {
+                /**
+                 * Unique identifier of the user
+                 */
+                id: string;
+                /**
+                 * Name of the user
+                 */
+                name: string;
+                /**
+                 * Email address of the user
+                 */
+                email: string;
+            } | null;
+            /**
+             * API key used to create the resource
+             */
+            createdByApiKey?: {
+                /**
+                 * Unique identifier of the API key
+                 */
+                id: string;
+                /**
+                 * Name of the API key
+                 */
+                name: string;
+                /**
+                 * Role associated with the API key
+                 */
+                roleName: string;
+            } | null;
+            /**
+             * API key used to last update the resource
+             */
+            updatedByApiKey?: {
+                /**
+                 * Unique identifier of the API key
+                 */
+                id: string;
+                /**
+                 * Name of the API key
+                 */
+                name: string;
+                /**
+                 * Role associated with the API key
+                 */
+                roleName: string;
+            } | null;
+            /**
+             * When the resource was created
+             */
+            createdAt?: string | null;
+            /**
+             * When the resource was last updated
+             */
+            updatedAt?: string | null;
+            /**
+             * Array of links to the QR code in different formats
+             */
+            links?: Array<{
+                /**
+                 * Format of the QR code file
+                 */
+                format: string;
+                /**
+                 * URL to access the QR code file
+                 */
+                url: string;
+            }>;
+        }>;
+        /**
+         * Summary counts for the bulk create operation
+         */
+        summary: {
+            /**
+             * Total payloads submitted
+             */
+            requested: number;
+            /**
+             * Number of QR codes successfully created
+             */
+            created: number;
+            /**
+             * Number of payloads that failed to create
+             */
+            failed: number;
+            /**
+             * Number of payloads skipped before processing (e.g., plan limit reached)
+             */
+            skipped: number;
         };
         /**
-         * Border object with its configuration
+         * Per-item error information for payloads that failed to create
          */
-        border?: {
+        errors?: Array<{
+            /**
+             * Original index of the payload in the request array
+             */
+            index: number;
+            /**
+             * Name of the QR code payload that failed (if provided)
+             */
+            name?: string;
+            /**
+             * High-level reason why creation failed for this payload
+             */
+            message: string;
+            /**
+             * List of detailed validation or processing errors for this payload
+             */
+            reasons: Array<string>;
+        }>;
+    };
+};
+export type PostCodesBulkResponse = PostCodesBulkResponses[keyof PostCodesBulkResponses];
+export type PutCodesByCodeIdOptionsData = {
+    /**
+     * Update code options request
+     */
+    body?: {
+        /**
+         * The type of data the QR code contains. Only applies to dynamic codes. Determines how the QR code data is processed and what content type is returned when scanned.
+         */
+        dataType?: 'url' | 'wifi' | 'vcard' | 'text' | 'email' | 'event' | 'json' | 'file' | 'scan-info';
+        /**
+         * Partial QR code generation options to update. All fields are optional. At least one option field must be provided.
+         */
+        options: {
+            /**
+             * Data to encode in the QR code (required)
+             */
+            data?: string;
+            /**
+             * Shape of the QR code
+             */
+            shape?: 'square' | 'circle' | null;
+            margin?: number | null;
+            isResponsive?: boolean | null;
+            scale?: number | null;
+            offset?: number | null;
+            verticalOffset?: number | null;
+            horizontalOffset?: number | null;
+            qrOptions?: {
+                typeNumber?: number | null;
+                /**
+                 * QR code encoding mode
+                 */
+                mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
+                /**
+                 * Error correction level (L: 7%, M: 15%, Q: 25%, H: 30%)
+                 */
+                errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
+            } | null;
+            dotsOptions?: {
+                /**
+                 * Type of dots in QR code
+                 */
+                type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
+                color?: string | null;
+                size?: number | null;
+                /**
+                 * Gradient definition
+                 */
+                gradient?: {
+                    type?: 'linear' | 'radial';
+                    rotation?: number;
+                    colorStops?: Array<{
+                        offset?: number;
+                        color?: string;
+                    }>;
+                } | null;
+            } | null;
+            cornersSquareOptions?: {
+                /**
+                 * Type of corner squares in QR code
+                 */
+                type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
+                color?: string | null;
+                /**
+                 * Gradient definition
+                 */
+                gradient?: {
+                    type?: 'linear' | 'radial';
+                    rotation?: number;
+                    colorStops?: Array<{
+                        offset?: number;
+                        color?: string;
+                    }>;
+                } | null;
+            } | null;
+            cornersDotOptions?: {
+                /**
+                 * Type of corner dots in QR code
+                 */
+                type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
+                color?: string | null;
+                /**
+                 * Gradient definition
+                 */
+                gradient?: {
+                    type?: 'linear' | 'radial';
+                    rotation?: number;
+                    colorStops?: Array<{
+                        offset?: number;
+                        color?: string;
+                    }>;
+                } | null;
+            } | null;
+            backgroundOptions?: {
+                /**
+                 * Background color in CSS format
+                 */
+                color?: string | null;
+                /**
+                 * Background corner rounding (0-1 or CSS value)
+                 */
+                round?: number | string | null;
+                /**
+                 * Gradient for background
+                 */
+                gradient?: {
+                    /**
+                     * Type of gradient
+                     */
+                    type?: 'linear' | 'radial';
+                    /**
+                     * Rotation angle of gradient in degrees
+                     */
+                    rotation?: number;
+                    /**
+                     * Array of color stops in the gradient (min 2)
+                     */
+                    colorStops?: Array<{
+                        /**
+                         * Position of the color stop (0-1)
+                         */
+                        offset?: number;
+                        /**
+                         * Color in CSS format
+                         */
+                        color?: string;
+                    }>;
+                } | null;
+            } | false;
+            image?: string | unknown | null;
+            imageOptions?: {
+                /**
+                 * Mode for embedding images in QR code
+                 */
+                mode?: 'center' | 'overlay' | 'background' | null;
+                imageSize?: number | null;
+                margin?: number | null;
+                crossOrigin?: string | null;
+                fill?: {
+                    color?: string | null;
+                    /**
+                     * Gradient definition
+                     */
+                    gradient?: {
+                        type?: 'linear' | 'radial';
+                        rotation?: number;
+                        colorStops?: Array<{
+                            offset?: number;
+                            color?: string;
+                        }>;
+                    } | null;
+                } | null;
+            } | null;
+            borderOptions?: {
+                hasBorder?: boolean | null;
+                thickness?: number | null;
+                color?: string | null;
+                radius?: string | null;
+                noBorderThickness?: number | null;
+                background?: string | null;
+                inner?: {
+                    radius?: string | null;
+                    scale?: number | null;
+                    horizontalOffset?: number | null;
+                    verticalOffset?: number | null;
+                } | null;
+                /**
+                 * Inner or outer border configuration
+                 */
+                borderOuter?: {
+                    color?: string;
+                    thickness?: number;
+                } | null;
+                /**
+                 * Inner or outer border configuration
+                 */
+                borderInner?: {
+                    color?: string;
+                    thickness?: number;
+                } | null;
+                decorations?: {
+                    /**
+                     * Options for QR code decoration
+                     */
+                    top?: {
+                        disabled?: boolean;
+                        enableText?: boolean;
+                        offset?: number;
+                        curveAdjustment?: number;
+                        curveDisabled?: boolean;
+                        curveRadius?: string;
+                        type?: 'text' | 'image';
+                        value?: string;
+                        /**
+                         * Text decoration style
+                         */
+                        style?: {
+                            fontFace?: string;
+                            fontSize?: number;
+                            fontColor?: string;
+                            letterSpacing?: number;
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
+                        };
+                    } | null;
+                    /**
+                     * Options for QR code decoration
+                     */
+                    right?: {
+                        disabled?: boolean;
+                        enableText?: boolean;
+                        offset?: number;
+                        curveAdjustment?: number;
+                        curveDisabled?: boolean;
+                        curveRadius?: string;
+                        type?: 'text' | 'image';
+                        value?: string;
+                        /**
+                         * Text decoration style
+                         */
+                        style?: {
+                            fontFace?: string;
+                            fontSize?: number;
+                            fontColor?: string;
+                            letterSpacing?: number;
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
+                        };
+                    } | null;
+                    /**
+                     * Options for QR code decoration
+                     */
+                    bottom?: {
+                        disabled?: boolean;
+                        enableText?: boolean;
+                        offset?: number;
+                        curveAdjustment?: number;
+                        curveDisabled?: boolean;
+                        curveRadius?: string;
+                        type?: 'text' | 'image';
+                        value?: string;
+                        /**
+                         * Text decoration style
+                         */
+                        style?: {
+                            fontFace?: string;
+                            fontSize?: number;
+                            fontColor?: string;
+                            letterSpacing?: number;
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
+                        };
+                    } | null;
+                    /**
+                     * Options for QR code decoration
+                     */
+                    left?: {
+                        disabled?: boolean;
+                        enableText?: boolean;
+                        offset?: number;
+                        curveAdjustment?: number;
+                        curveDisabled?: boolean;
+                        curveRadius?: string;
+                        type?: 'text' | 'image';
+                        value?: string;
+                        /**
+                         * Text decoration style
+                         */
+                        style?: {
+                            fontFace?: string;
+                            fontSize?: number;
+                            fontColor?: string;
+                            letterSpacing?: number;
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
+                        };
+                    } | null;
+                } | null;
+            } | null;
+        };
+        /**
+         * Format for the generated QR code link. Return existing link if generated before or create new link with provided format.
+         */
+        linkFormat?: 'svg' | 'png' | 'pdf';
+        /**
+         * Whether to validate the QR code after updating options.
+         */
+        validate?: boolean;
+    };
+    path: {
+        /**
+         * Unique identifier of the QR Code
+         */
+        codeId: string;
+    };
+    query?: never;
+    url: '/codes/{codeId}/options';
+};
+export type PutCodesByCodeIdOptionsErrors = {
+    /**
+     * Invalid request to update QR Code Options.
+     */
+    400: {
+        message: string;
+        /**
+         * Detailed list of validation issues
+         */
+        errors?: Array<{
+            /**
+             * Path to the field causing the issue
+             */
+            path?: Array<string | number>;
+            /**
+             * Specific message for this issue
+             */
+            message: string;
+            /**
+             * Optional specific code for this issue (e.g., Zod issue code)
+             */
+            code?: string;
+        }>;
+    } | {
+        message: string;
+    } | {
+        message: string;
+    } | {
+        message: 'QR Code is invalid';
+    } | {
+        message: 'Invalid code type provided';
+    } | {
+        message: 'Cannot update a soft-deleted code. Please restore the code first';
+    };
+    /**
+     * Unauthorized response message
+     */
+    401: {
+        message: string;
+    };
+    /**
+     * Forbidden response message
+     */
+    403: {
+        message: string;
+    };
+    /**
+     * Organization or code not found.
+     */
+    404: {
+        /**
+         * The specified QR code could not be found
+         */
+        message: string;
+    } | {
+        /**
+         * The specified organization could not be found or is not accessible
+         */
+        message: string;
+    };
+};
+export type PutCodesByCodeIdOptionsError = PutCodesByCodeIdOptionsErrors[keyof PutCodesByCodeIdOptionsErrors];
+export type PutCodesByCodeIdOptionsResponses = {
+    /**
+     * QR code response schema
+     */
+    200: {
+        /**
+         * Unique identifier for the QR code
+         */
+        id: string;
+        /**
+         * Name of the QR code
+         */
+        name: string;
+        /**
+         * Type of the QR code
+         */
+        type?: 'static' | 'dynamic';
+        /**
+         * The type of data the QR code contains. Only applies to dynamic codes.
+         */
+        dataType?: 'url' | 'wifi' | 'vcard' | 'text' | 'email' | 'event' | 'json' | 'file' | 'scan-info' | null;
+        /**
+         * Short alias for the QR code
+         */
+        shortAlias?: string | null;
+        /**
+         * Functional content for dynamic QR codes. Structure depends on dataType.
+         */
+        dynamicData?: {
+            [key: string]: unknown;
+        } | null;
+        /**
+         * Data encoded in the QR code
+         */
+        data: string;
+        /**
+         * Description of the QR code
+         */
+        description: string | null;
+        /**
+         * Number of times the QR code has been scanned
+         */
+        totalScans: number | null;
+        /**
+         * Custom user metadata for the QR code as JSON object. This is separate from the dynamicData field and stores additional information that is not part of the functional content.
+         */
+        metadata: {
+            [key: string]: unknown;
+        } | null;
+        /**
+         * Complete configuration for QR code generation
+         */
+        options: {
+            /**
+             * Data to encode in the QR code (required)
+             */
+            data: string;
+            /**
+             * Overall shape of the QR code
+             */
+            shape?: 'square' | 'circle' | null;
+            /**
+             * Margin around the QR code in pixels
+             */
+            margin?: number | null;
+            /**
+             * Whether QR code is responsive
+             */
+            isResponsive?: boolean | null;
+            /**
+             * Scale factor for QR code (0-1.5)
+             */
+            scale?: number | null;
+            /**
+             * General offset in pixels
+             */
+            offset?: number | null;
+            /**
+             * Vertical offset in pixels
+             */
+            verticalOffset?: number | null;
+            /**
+             * Horizontal offset in pixels
+             */
+            horizontalOffset?: number | null;
+            /**
+             * QR code specific options
+             */
+            qrOptions?: {
+                /**
+                 * QR code type number (0-40)
+                 */
+                typeNumber?: number | null;
+                /**
+                 * QR code encoding mode
+                 */
+                mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
+                /**
+                 * Error correction level
+                 */
+                errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
+            } | null;
+            /**
+             * Options for QR code dots
+             */
+            dotsOptions?: {
+                /**
+                 * Type of dots
+                 */
+                type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
+                /**
+                 * Color of dots in CSS format
+                 */
+                color?: string | null;
+                /**
+                 * Size of dots relative to module size (0-1)
+                 */
+                size?: number | null;
+                /**
+                 * Gradient for dots
+                 */
+                gradient?: {
+                    /**
+                     * Type of gradient
+                     */
+                    type?: 'linear' | 'radial';
+                    /**
+                     * Rotation angle of gradient in degrees
+                     */
+                    rotation?: number;
+                    /**
+                     * Array of color stops in the gradient (min 2)
+                     */
+                    colorStops?: Array<{
+                        /**
+                         * Position of the color stop (0-1)
+                         */
+                        offset?: number;
+                        /**
+                         * Color in CSS format
+                         */
+                        color?: string;
+                    }>;
+                } | null;
+            } | null;
+            /**
+             * Options for QR code corner squares
+             */
+            cornersSquareOptions?: {
+                /**
+                 * Type of corner squares
+                 */
+                type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
+                /**
+                 * Color of corner squares in CSS format
+                 */
+                color?: string | null;
+                /**
+                 * Gradient for corner squares
+                 */
+                gradient?: {
+                    /**
+                     * Type of gradient
+                     */
+                    type?: 'linear' | 'radial';
+                    /**
+                     * Rotation angle of gradient in degrees
+                     */
+                    rotation?: number;
+                    /**
+                     * Array of color stops in the gradient (min 2)
+                     */
+                    colorStops?: Array<{
+                        /**
+                         * Position of the color stop (0-1)
+                         */
+                        offset?: number;
+                        /**
+                         * Color in CSS format
+                         */
+                        color?: string;
+                    }>;
+                } | null;
+            } | null;
+            /**
+             * Options for QR code corner dots
+             */
+            cornersDotOptions?: {
+                /**
+                 * Type of corner dots
+                 */
+                type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
+                /**
+                 * Color of corner dots in CSS format
+                 */
+                color?: string | null;
+                /**
+                 * Gradient for corner dots
+                 */
+                gradient?: {
+                    /**
+                     * Type of gradient
+                     */
+                    type?: 'linear' | 'radial';
+                    /**
+                     * Rotation angle of gradient in degrees
+                     */
+                    rotation?: number;
+                    /**
+                     * Array of color stops in the gradient (min 2)
+                     */
+                    colorStops?: Array<{
+                        /**
+                         * Position of the color stop (0-1)
+                         */
+                        offset?: number;
+                        /**
+                         * Color in CSS format
+                         */
+                        color?: string;
+                    }>;
+                } | null;
+            } | null;
+            /**
+             * Options for QR code background or false to disable
+             */
+            backgroundOptions?: {
+                /**
+                 * Background color in CSS format
+                 */
+                color?: string | null;
+                /**
+                 * Background corner rounding (0-1 or CSS value)
+                 */
+                round?: number | string | null;
+                /**
+                 * Gradient for background
+                 */
+                gradient?: {
+                    /**
+                     * Type of gradient
+                     */
+                    type?: 'linear' | 'radial';
+                    /**
+                     * Rotation angle of gradient in degrees
+                     */
+                    rotation?: number;
+                    /**
+                     * Array of color stops in the gradient (min 2)
+                     */
+                    colorStops?: Array<{
+                        /**
+                         * Position of the color stop (0-1)
+                         */
+                        offset?: number;
+                        /**
+                         * Color in CSS format
+                         */
+                        color?: string;
+                    }>;
+                } | null;
+            } | false;
+            /**
+             * Image to embed in the QR code (URL, Buffer, or Blob)
+             */
+            image?: string | unknown | null;
+            /**
+             * Options for embedded image
+             */
+            imageOptions?: {
+                /**
+                 * Mode for embedded image
+                 */
+                mode?: 'center' | 'overlay' | 'background' | null;
+                /**
+                 * Size of image relative to QR code (0-1)
+                 */
+                imageSize?: number | null;
+                /**
+                 * Margin around the image in pixels
+                 */
+                margin?: number | null;
+                /**
+                 * Cross-origin attribute for image
+                 */
+                crossOrigin?: string | null;
+                /**
+                 * Fill options for image area
+                 */
+                fill?: {
+                    /**
+                     * Fill color in CSS format
+                     */
+                    color?: string | null;
+                    /**
+                     * Gradient for fill
+                     */
+                    gradient?: {
+                        /**
+                         * Type of gradient
+                         */
+                        type?: 'linear' | 'radial';
+                        /**
+                         * Rotation angle of gradient in degrees
+                         */
+                        rotation?: number;
+                        /**
+                         * Array of color stops in the gradient (min 2)
+                         */
+                        colorStops?: Array<{
+                            /**
+                             * Position of the color stop (0-1)
+                             */
+                            offset?: number;
+                            /**
+                             * Color in CSS format
+                             */
+                            color?: string;
+                        }>;
+                    } | null;
+                } | null;
+            } | null;
+            /**
+             * Border configuration options
+             */
+            borderOptions?: {
+                /**
+                 * Whether to show border
+                 */
+                hasBorder?: boolean | null;
+                /**
+                 * Border thickness in pixels
+                 */
+                thickness?: number | null;
+                /**
+                 * Border color in CSS format
+                 */
+                color?: string | null;
+                /**
+                 * Border radius in CSS format
+                 */
+                radius?: string | null;
+                /**
+                 * Thickness when no border is shown
+                 */
+                noBorderThickness?: number | null;
+                /**
+                 * Border background color in CSS format
+                 */
+                background?: string | null;
+                /**
+                 * Inner border configuration
+                 */
+                inner?: {
+                    /**
+                     * Inner radius in CSS format
+                     */
+                    radius?: string | null;
+                    /**
+                     * Inner scale factor (0-1.5)
+                     */
+                    scale?: number | null;
+                    /**
+                     * Inner horizontal offset in pixels
+                     */
+                    horizontalOffset?: number | null;
+                    /**
+                     * Inner vertical offset in pixels
+                     */
+                    verticalOffset?: number | null;
+                } | null;
+                /**
+                 * Outer border configuration
+                 */
+                borderOuter?: {
+                    /**
+                     * Border color in CSS format
+                     */
+                    color?: string;
+                    /**
+                     * Border thickness in pixels
+                     */
+                    thickness?: number;
+                } | null;
+                /**
+                 * Inner border configuration
+                 */
+                borderInner?: {
+                    /**
+                     * Border color in CSS format
+                     */
+                    color?: string;
+                    /**
+                     * Border thickness in pixels
+                     */
+                    thickness?: number;
+                } | null;
+                /**
+                 * Border decorations configuration
+                 */
+                decorations?: {
+                    /**
+                     * Top decoration configuration
+                     */
+                    top?: {
+                        /**
+                         * Whether decoration is disabled
+                         */
+                        disabled?: boolean;
+                        /**
+                         * Whether text is enabled
+                         */
+                        enableText?: boolean;
+                        /**
+                         * Offset position in pixels
+                         */
+                        offset?: number;
+                        /**
+                         * Curve adjustment value
+                         */
+                        curveAdjustment?: number;
+                        /**
+                         * Whether curve is disabled
+                         */
+                        curveDisabled?: boolean;
+                        /**
+                         * Curve radius value (CSS format)
+                         */
+                        curveRadius?: string;
+                        /**
+                         * Type of decoration
+                         */
+                        type?: 'text' | 'image';
+                        /**
+                         * Content value for decoration
+                         */
+                        value?: string;
+                        /**
+                         * Style for text decoration
+                         */
+                        style?: {
+                            /**
+                             * Font face for the text
+                             */
+                            fontFace?: string;
+                            /**
+                             * Font size in pixels
+                             */
+                            fontSize?: number;
+                            /**
+                             * Font color in CSS format
+                             */
+                            fontColor?: string;
+                            /**
+                             * Letter spacing in pixels
+                             */
+                            letterSpacing?: number;
+                            /**
+                             * Font weight
+                             */
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
+                        };
+                    } | null;
+                    /**
+                     * Right decoration configuration
+                     */
+                    right?: {
+                        /**
+                         * Whether decoration is disabled
+                         */
+                        disabled?: boolean;
+                        /**
+                         * Whether text is enabled
+                         */
+                        enableText?: boolean;
+                        /**
+                         * Offset position in pixels
+                         */
+                        offset?: number;
+                        /**
+                         * Curve adjustment value
+                         */
+                        curveAdjustment?: number;
+                        /**
+                         * Whether curve is disabled
+                         */
+                        curveDisabled?: boolean;
+                        /**
+                         * Curve radius value (CSS format)
+                         */
+                        curveRadius?: string;
+                        /**
+                         * Type of decoration
+                         */
+                        type?: 'text' | 'image';
+                        /**
+                         * Content value for decoration
+                         */
+                        value?: string;
+                        /**
+                         * Style for text decoration
+                         */
+                        style?: {
+                            /**
+                             * Font face for the text
+                             */
+                            fontFace?: string;
+                            /**
+                             * Font size in pixels
+                             */
+                            fontSize?: number;
+                            /**
+                             * Font color in CSS format
+                             */
+                            fontColor?: string;
+                            /**
+                             * Letter spacing in pixels
+                             */
+                            letterSpacing?: number;
+                            /**
+                             * Font weight
+                             */
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
+                        };
+                    } | null;
+                    /**
+                     * Bottom decoration configuration
+                     */
+                    bottom?: {
+                        /**
+                         * Whether decoration is disabled
+                         */
+                        disabled?: boolean;
+                        /**
+                         * Whether text is enabled
+                         */
+                        enableText?: boolean;
+                        /**
+                         * Offset position in pixels
+                         */
+                        offset?: number;
+                        /**
+                         * Curve adjustment value
+                         */
+                        curveAdjustment?: number;
+                        /**
+                         * Whether curve is disabled
+                         */
+                        curveDisabled?: boolean;
+                        /**
+                         * Curve radius value (CSS format)
+                         */
+                        curveRadius?: string;
+                        /**
+                         * Type of decoration
+                         */
+                        type?: 'text' | 'image';
+                        /**
+                         * Content value for decoration
+                         */
+                        value?: string;
+                        /**
+                         * Style for text decoration
+                         */
+                        style?: {
+                            /**
+                             * Font face for the text
+                             */
+                            fontFace?: string;
+                            /**
+                             * Font size in pixels
+                             */
+                            fontSize?: number;
+                            /**
+                             * Font color in CSS format
+                             */
+                            fontColor?: string;
+                            /**
+                             * Letter spacing in pixels
+                             */
+                            letterSpacing?: number;
+                            /**
+                             * Font weight
+                             */
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
+                        };
+                    } | null;
+                    /**
+                     * Left decoration configuration
+                     */
+                    left?: {
+                        /**
+                         * Whether decoration is disabled
+                         */
+                        disabled?: boolean;
+                        /**
+                         * Whether text is enabled
+                         */
+                        enableText?: boolean;
+                        /**
+                         * Offset position in pixels
+                         */
+                        offset?: number;
+                        /**
+                         * Curve adjustment value
+                         */
+                        curveAdjustment?: number;
+                        /**
+                         * Whether curve is disabled
+                         */
+                        curveDisabled?: boolean;
+                        /**
+                         * Curve radius value (CSS format)
+                         */
+                        curveRadius?: string;
+                        /**
+                         * Type of decoration
+                         */
+                        type?: 'text' | 'image';
+                        /**
+                         * Content value for decoration
+                         */
+                        value?: string;
+                        /**
+                         * Style for text decoration
+                         */
+                        style?: {
+                            /**
+                             * Font face for the text
+                             */
+                            fontFace?: string;
+                            /**
+                             * Font size in pixels
+                             */
+                            fontSize?: number;
+                            /**
+                             * Font color in CSS format
+                             */
+                            fontColor?: string;
+                            /**
+                             * Letter spacing in pixels
+                             */
+                            letterSpacing?: number;
+                            /**
+                             * Font weight
+                             */
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
+                        };
+                    } | null;
+                } | null;
+            } | null;
+        };
+        /**
+         * ID of the style applied to the QR code
+         */
+        styleId: string | null;
+        /**
+         * ID of the template applied to the QR code
+         */
+        templateId: string | null;
+        /**
+         * ID of the border applied to the QR code
+         */
+        borderId: string | null;
+        /**
+         * ID of the text applied to the QR code
+         */
+        textId: string | null;
+        /**
+         * Style object with its configuration
+         */
+        style?: {
             id?: string | null;
             name?: string | null;
             /**
-             * Border options configuration
+             * Configuration options for QR code styling
              */
             options: {
                 /**
+                 * Primary color for QR code elements in CSS format
+                 */
+                primaryColor?: string | null;
+                /**
+                 * Secondary color for QR code elements in CSS format
+                 */
+                secondaryColor?: string | null;
+                /**
+                 * Tertiary color for QR code elements in CSS format
+                 */
+                thirdColor?: string | null;
+                /**
+                 * Background color of the QR code in CSS format
+                 */
+                backgroundColor?: string | null;
+                /**
+                 * Gradient configuration for QR code dots
+                 */
+                dotsGradient?: {
+                    /**
+                     * Type of gradient
+                     */
+                    type?: 'linear' | 'radial';
+                    /**
+                     * Rotation angle of gradient in degrees
+                     */
+                    rotation?: number;
+                    /**
+                     * Array of color stops in the gradient (min 2)
+                     */
+                    colorStops?: Array<{
+                        /**
+                         * Position of the color stop (0-1)
+                         */
+                        offset?: number;
+                        /**
+                         * Color in CSS format
+                         */
+                        color?: string;
+                    }>;
+                } | null;
+                /**
+                 * Gradient configuration for corner dots
+                 */
+                cornersDotGradient?: {
+                    /**
+                     * Type of gradient
+                     */
+                    type?: 'linear' | 'radial';
+                    /**
+                     * Rotation angle of gradient in degrees
+                     */
+                    rotation?: number;
+                    /**
+                     * Array of color stops in the gradient (min 2)
+                     */
+                    colorStops?: Array<{
+                        /**
+                         * Position of the color stop (0-1)
+                         */
+                        offset?: number;
+                        /**
+                         * Color in CSS format
+                         */
+                        color?: string;
+                    }>;
+                } | null;
+                /**
+                 * Gradient configuration for corners
+                 */
+                cornersGradient?: {
+                    /**
+                     * Type of gradient
+                     */
+                    type?: 'linear' | 'radial';
+                    /**
+                     * Rotation angle of gradient in degrees
+                     */
+                    rotation?: number;
+                    /**
+                     * Array of color stops in the gradient (min 2)
+                     */
+                    colorStops?: Array<{
+                        /**
+                         * Position of the color stop (0-1)
+                         */
+                        offset?: number;
+                        /**
+                         * Color in CSS format
+                         */
+                        color?: string;
+                    }>;
+                } | null;
+                /**
+                 * Gradient configuration for QR code background
+                 */
+                backgroundGradient?: {
+                    /**
+                     * Type of gradient
+                     */
+                    type?: 'linear' | 'radial';
+                    /**
+                     * Rotation angle of gradient in degrees
+                     */
+                    rotation?: number;
+                    /**
+                     * Array of color stops in the gradient (min 2)
+                     */
+                    colorStops?: Array<{
+                        /**
+                         * Position of the color stop (0-1)
+                         */
+                        offset?: number;
+                        /**
+                         * Color in CSS format
+                         */
+                        color?: string;
+                    }>;
+                } | null;
+                /**
+                 * Shape style for the QR code dots
+                 */
+                dotShape?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
+                /**
+                 * Shape style for the QR code corner squares
+                 */
+                cornerSquareShape?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
+                /**
+                 * Shape style for the QR code corner dots
+                 */
+                cornerDotShape?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
+                /**
+                 * Logo to be placed on the QR code (URL, Base64, Buffer, or Blob)
+                 */
+                logo?: string | unknown | null;
+                /**
+                 * Size of the logo relative to QR code (0-1)
+                 */
+                logoSize?: number | null;
+                /**
+                 * Placement mode for the logo
+                 */
+                logoMode?: 'center' | 'overlay' | 'background' | null;
+                /**
+                 * Margin around the logo in pixels
+                 */
+                logoMargin?: number | null;
+                /**
+                 * Background color for logo in CSS format
+                 */
+                logoBackgroundColor?: string | null;
+                /**
+                 * Padding around the logo in pixels
+                 */
+                logoPadding?: number | null;
+                /**
+                 * Border radius for logo in pixels or CSS format
+                 */
+                logoRadius?: string | number | null;
+                /**
+                 * Color of the QR code border in CSS format
+                 */
+                borderColor?: string | null;
+                /**
+                 * Thickness of the border in pixels
+                 */
+                borderThickness?: number | null;
+                /**
+                 * Border radius in pixels or CSS format
+                 */
+                borderRadius?: string | number | null;
+                /**
+                 * Color of the inner border in CSS format
+                 */
+                borderInnerColor?: string | null;
+                /**
+                 * Thickness of the inner border in pixels
+                 */
+                borderInnerThickness?: number | null;
+                /**
+                 * Inner border radius in pixels or CSS format
+                 */
+                borderInnerRadius?: string | number | null;
+                /**
+                 * Color of the outer border in CSS format
+                 */
+                borderOuterColor?: string | null;
+                /**
+                 * Thickness of the outer border in pixels
+                 */
+                borderOuterThickness?: number | null;
+                /**
+                 * Text to display on top border
+                 */
+                borderTextTop?: string | null;
+                /**
+                 * Text to display on right border
+                 */
+                borderTextRight?: string | null;
+                /**
+                 * Text to display on bottom border
+                 */
+                borderTextBottom?: string | null;
+                /**
+                 * Text to display on left border
+                 */
+                borderTextLeft?: string | null;
+                /**
+                 * Font family for border text
+                 */
+                borderFontFace?: string | null;
+                /**
+                 * Font size for border text in pixels
+                 */
+                borderFontSize?: number | null;
+                /**
+                 * Font color for border text in CSS format
+                 */
+                borderFontColor?: string | null;
+                /**
+                 * Letter spacing for border text in pixels
+                 */
+                borderLetterSpacing?: number | null;
+                /**
+                 * Text transformation for border text
+                 */
+                borderTextTransform?: 'uppercase' | 'lowercase' | 'capitalize' | null;
+                /**
+                 * Font weight for border text
+                 */
+                borderFontWeight?: string;
+            };
+        };
+        /**
+         * Template object with its configuration
+         */
+        template?: {
+            id?: string | null;
+            name?: string | null;
+            /**
+             * QR code configuration with optional data field
+             */
+            options?: {
+                /**
                  * Overall shape of the QR code
                  */
-                shape?: "square" | "circle" | null;
+                shape?: 'square' | 'circle' | null;
                 /**
                  * Margin around the QR code in pixels
                  */
@@ -26634,11 +28399,11 @@ export type PutCodesByCodeIdOptionsResponses = {
                     /**
                      * QR code encoding mode
                      */
-                    mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                    mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
                     /**
                      * Error correction level
                      */
-                    errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                    errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
                 } | null;
                 /**
                  * Options for QR code dots
@@ -26647,7 +28412,7 @@ export type PutCodesByCodeIdOptionsResponses = {
                     /**
                      * Type of dots
                      */
-                    type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                    type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                     /**
                      * Color of dots in CSS format
                      */
@@ -26663,7 +28428,7 @@ export type PutCodesByCodeIdOptionsResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -26690,7 +28455,7 @@ export type PutCodesByCodeIdOptionsResponses = {
                     /**
                      * Type of corner squares
                      */
-                    type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Color of corner squares in CSS format
                      */
@@ -26702,7 +28467,7 @@ export type PutCodesByCodeIdOptionsResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -26729,7 +28494,7 @@ export type PutCodesByCodeIdOptionsResponses = {
                     /**
                      * Type of corner dots
                      */
-                    type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Color of corner dots in CSS format
                      */
@@ -26741,7 +28506,7 @@ export type PutCodesByCodeIdOptionsResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -26780,7 +28545,7 @@ export type PutCodesByCodeIdOptionsResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -26811,7 +28576,7 @@ export type PutCodesByCodeIdOptionsResponses = {
                     /**
                      * Mode for embedded image
                      */
-                    mode?: "center" | "overlay" | "background" | null;
+                    mode?: 'center' | 'overlay' | 'background' | null;
                     /**
                      * Size of image relative to QR code (0-1)
                      */
@@ -26839,7 +28604,617 @@ export type PutCodesByCodeIdOptionsResponses = {
                             /**
                              * Type of gradient
                              */
-                            type?: "linear" | "radial";
+                            type?: 'linear' | 'radial';
+                            /**
+                             * Rotation angle of gradient in degrees
+                             */
+                            rotation?: number;
+                            /**
+                             * Array of color stops in the gradient (min 2)
+                             */
+                            colorStops?: Array<{
+                                /**
+                                 * Position of the color stop (0-1)
+                                 */
+                                offset?: number;
+                                /**
+                                 * Color in CSS format
+                                 */
+                                color?: string;
+                            }>;
+                        } | null;
+                    } | null;
+                } | null;
+                /**
+                 * Border configuration options
+                 */
+                borderOptions?: {
+                    /**
+                     * Whether to show border
+                     */
+                    hasBorder?: boolean | null;
+                    /**
+                     * Border thickness in pixels
+                     */
+                    thickness?: number | null;
+                    /**
+                     * Border color in CSS format
+                     */
+                    color?: string | null;
+                    /**
+                     * Border radius in CSS format
+                     */
+                    radius?: string | null;
+                    /**
+                     * Thickness when no border is shown
+                     */
+                    noBorderThickness?: number | null;
+                    /**
+                     * Border background color in CSS format
+                     */
+                    background?: string | null;
+                    /**
+                     * Inner border configuration
+                     */
+                    inner?: {
+                        /**
+                         * Inner radius in CSS format
+                         */
+                        radius?: string | null;
+                        /**
+                         * Inner scale factor (0-1.5)
+                         */
+                        scale?: number | null;
+                        /**
+                         * Inner horizontal offset in pixels
+                         */
+                        horizontalOffset?: number | null;
+                        /**
+                         * Inner vertical offset in pixels
+                         */
+                        verticalOffset?: number | null;
+                    } | null;
+                    /**
+                     * Outer border configuration
+                     */
+                    borderOuter?: {
+                        /**
+                         * Border color in CSS format
+                         */
+                        color?: string;
+                        /**
+                         * Border thickness in pixels
+                         */
+                        thickness?: number;
+                    } | null;
+                    /**
+                     * Inner border configuration
+                     */
+                    borderInner?: {
+                        /**
+                         * Border color in CSS format
+                         */
+                        color?: string;
+                        /**
+                         * Border thickness in pixels
+                         */
+                        thickness?: number;
+                    } | null;
+                    /**
+                     * Border decorations configuration
+                     */
+                    decorations?: {
+                        /**
+                         * Top decoration configuration
+                         */
+                        top?: {
+                            /**
+                             * Whether decoration is disabled
+                             */
+                            disabled?: boolean;
+                            /**
+                             * Whether text is enabled
+                             */
+                            enableText?: boolean;
+                            /**
+                             * Offset position in pixels
+                             */
+                            offset?: number;
+                            /**
+                             * Curve adjustment value
+                             */
+                            curveAdjustment?: number;
+                            /**
+                             * Whether curve is disabled
+                             */
+                            curveDisabled?: boolean;
+                            /**
+                             * Curve radius value (CSS format)
+                             */
+                            curveRadius?: string;
+                            /**
+                             * Type of decoration
+                             */
+                            type?: 'text' | 'image';
+                            /**
+                             * Content value for decoration
+                             */
+                            value?: string;
+                            /**
+                             * Style for text decoration
+                             */
+                            style?: {
+                                /**
+                                 * Font face for the text
+                                 */
+                                fontFace?: string;
+                                /**
+                                 * Font size in pixels
+                                 */
+                                fontSize?: number;
+                                /**
+                                 * Font color in CSS format
+                                 */
+                                fontColor?: string;
+                                /**
+                                 * Letter spacing in pixels
+                                 */
+                                letterSpacing?: number;
+                                /**
+                                 * Font weight
+                                 */
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
+                            };
+                        } | null;
+                        /**
+                         * Right decoration configuration
+                         */
+                        right?: {
+                            /**
+                             * Whether decoration is disabled
+                             */
+                            disabled?: boolean;
+                            /**
+                             * Whether text is enabled
+                             */
+                            enableText?: boolean;
+                            /**
+                             * Offset position in pixels
+                             */
+                            offset?: number;
+                            /**
+                             * Curve adjustment value
+                             */
+                            curveAdjustment?: number;
+                            /**
+                             * Whether curve is disabled
+                             */
+                            curveDisabled?: boolean;
+                            /**
+                             * Curve radius value (CSS format)
+                             */
+                            curveRadius?: string;
+                            /**
+                             * Type of decoration
+                             */
+                            type?: 'text' | 'image';
+                            /**
+                             * Content value for decoration
+                             */
+                            value?: string;
+                            /**
+                             * Style for text decoration
+                             */
+                            style?: {
+                                /**
+                                 * Font face for the text
+                                 */
+                                fontFace?: string;
+                                /**
+                                 * Font size in pixels
+                                 */
+                                fontSize?: number;
+                                /**
+                                 * Font color in CSS format
+                                 */
+                                fontColor?: string;
+                                /**
+                                 * Letter spacing in pixels
+                                 */
+                                letterSpacing?: number;
+                                /**
+                                 * Font weight
+                                 */
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
+                            };
+                        } | null;
+                        /**
+                         * Bottom decoration configuration
+                         */
+                        bottom?: {
+                            /**
+                             * Whether decoration is disabled
+                             */
+                            disabled?: boolean;
+                            /**
+                             * Whether text is enabled
+                             */
+                            enableText?: boolean;
+                            /**
+                             * Offset position in pixels
+                             */
+                            offset?: number;
+                            /**
+                             * Curve adjustment value
+                             */
+                            curveAdjustment?: number;
+                            /**
+                             * Whether curve is disabled
+                             */
+                            curveDisabled?: boolean;
+                            /**
+                             * Curve radius value (CSS format)
+                             */
+                            curveRadius?: string;
+                            /**
+                             * Type of decoration
+                             */
+                            type?: 'text' | 'image';
+                            /**
+                             * Content value for decoration
+                             */
+                            value?: string;
+                            /**
+                             * Style for text decoration
+                             */
+                            style?: {
+                                /**
+                                 * Font face for the text
+                                 */
+                                fontFace?: string;
+                                /**
+                                 * Font size in pixels
+                                 */
+                                fontSize?: number;
+                                /**
+                                 * Font color in CSS format
+                                 */
+                                fontColor?: string;
+                                /**
+                                 * Letter spacing in pixels
+                                 */
+                                letterSpacing?: number;
+                                /**
+                                 * Font weight
+                                 */
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
+                            };
+                        } | null;
+                        /**
+                         * Left decoration configuration
+                         */
+                        left?: {
+                            /**
+                             * Whether decoration is disabled
+                             */
+                            disabled?: boolean;
+                            /**
+                             * Whether text is enabled
+                             */
+                            enableText?: boolean;
+                            /**
+                             * Offset position in pixels
+                             */
+                            offset?: number;
+                            /**
+                             * Curve adjustment value
+                             */
+                            curveAdjustment?: number;
+                            /**
+                             * Whether curve is disabled
+                             */
+                            curveDisabled?: boolean;
+                            /**
+                             * Curve radius value (CSS format)
+                             */
+                            curveRadius?: string;
+                            /**
+                             * Type of decoration
+                             */
+                            type?: 'text' | 'image';
+                            /**
+                             * Content value for decoration
+                             */
+                            value?: string;
+                            /**
+                             * Style for text decoration
+                             */
+                            style?: {
+                                /**
+                                 * Font face for the text
+                                 */
+                                fontFace?: string;
+                                /**
+                                 * Font size in pixels
+                                 */
+                                fontSize?: number;
+                                /**
+                                 * Font color in CSS format
+                                 */
+                                fontColor?: string;
+                                /**
+                                 * Letter spacing in pixels
+                                 */
+                                letterSpacing?: number;
+                                /**
+                                 * Font weight
+                                 */
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
+                            };
+                        } | null;
+                    } | null;
+                } | null;
+                /**
+                 * Data to encode in the QR code (optional in this context)
+                 */
+                data?: string;
+            };
+        };
+        /**
+         * Border object with its configuration
+         */
+        border?: {
+            id?: string | null;
+            name?: string | null;
+            /**
+             * Border options configuration
+             */
+            options: {
+                /**
+                 * Overall shape of the QR code
+                 */
+                shape?: 'square' | 'circle' | null;
+                /**
+                 * Margin around the QR code in pixels
+                 */
+                margin?: number | null;
+                /**
+                 * Whether QR code is responsive
+                 */
+                isResponsive?: boolean | null;
+                /**
+                 * Scale factor for QR code (0-1.5)
+                 */
+                scale?: number | null;
+                /**
+                 * General offset in pixels
+                 */
+                offset?: number | null;
+                /**
+                 * Vertical offset in pixels
+                 */
+                verticalOffset?: number | null;
+                /**
+                 * Horizontal offset in pixels
+                 */
+                horizontalOffset?: number | null;
+                /**
+                 * QR code specific options
+                 */
+                qrOptions?: {
+                    /**
+                     * QR code type number (0-40)
+                     */
+                    typeNumber?: number | null;
+                    /**
+                     * QR code encoding mode
+                     */
+                    mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
+                    /**
+                     * Error correction level
+                     */
+                    errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
+                } | null;
+                /**
+                 * Options for QR code dots
+                 */
+                dotsOptions?: {
+                    /**
+                     * Type of dots
+                     */
+                    type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
+                    /**
+                     * Color of dots in CSS format
+                     */
+                    color?: string | null;
+                    /**
+                     * Size of dots relative to module size (0-1)
+                     */
+                    size?: number | null;
+                    /**
+                     * Gradient for dots
+                     */
+                    gradient?: {
+                        /**
+                         * Type of gradient
+                         */
+                        type?: 'linear' | 'radial';
+                        /**
+                         * Rotation angle of gradient in degrees
+                         */
+                        rotation?: number;
+                        /**
+                         * Array of color stops in the gradient (min 2)
+                         */
+                        colorStops?: Array<{
+                            /**
+                             * Position of the color stop (0-1)
+                             */
+                            offset?: number;
+                            /**
+                             * Color in CSS format
+                             */
+                            color?: string;
+                        }>;
+                    } | null;
+                } | null;
+                /**
+                 * Options for QR code corner squares
+                 */
+                cornersSquareOptions?: {
+                    /**
+                     * Type of corner squares
+                     */
+                    type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
+                    /**
+                     * Color of corner squares in CSS format
+                     */
+                    color?: string | null;
+                    /**
+                     * Gradient for corner squares
+                     */
+                    gradient?: {
+                        /**
+                         * Type of gradient
+                         */
+                        type?: 'linear' | 'radial';
+                        /**
+                         * Rotation angle of gradient in degrees
+                         */
+                        rotation?: number;
+                        /**
+                         * Array of color stops in the gradient (min 2)
+                         */
+                        colorStops?: Array<{
+                            /**
+                             * Position of the color stop (0-1)
+                             */
+                            offset?: number;
+                            /**
+                             * Color in CSS format
+                             */
+                            color?: string;
+                        }>;
+                    } | null;
+                } | null;
+                /**
+                 * Options for QR code corner dots
+                 */
+                cornersDotOptions?: {
+                    /**
+                     * Type of corner dots
+                     */
+                    type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
+                    /**
+                     * Color of corner dots in CSS format
+                     */
+                    color?: string | null;
+                    /**
+                     * Gradient for corner dots
+                     */
+                    gradient?: {
+                        /**
+                         * Type of gradient
+                         */
+                        type?: 'linear' | 'radial';
+                        /**
+                         * Rotation angle of gradient in degrees
+                         */
+                        rotation?: number;
+                        /**
+                         * Array of color stops in the gradient (min 2)
+                         */
+                        colorStops?: Array<{
+                            /**
+                             * Position of the color stop (0-1)
+                             */
+                            offset?: number;
+                            /**
+                             * Color in CSS format
+                             */
+                            color?: string;
+                        }>;
+                    } | null;
+                } | null;
+                /**
+                 * Options for QR code background or false to disable
+                 */
+                backgroundOptions?: {
+                    /**
+                     * Background color in CSS format
+                     */
+                    color?: string | null;
+                    /**
+                     * Background corner rounding (0-1 or CSS value)
+                     */
+                    round?: number | string | null;
+                    /**
+                     * Gradient for background
+                     */
+                    gradient?: {
+                        /**
+                         * Type of gradient
+                         */
+                        type?: 'linear' | 'radial';
+                        /**
+                         * Rotation angle of gradient in degrees
+                         */
+                        rotation?: number;
+                        /**
+                         * Array of color stops in the gradient (min 2)
+                         */
+                        colorStops?: Array<{
+                            /**
+                             * Position of the color stop (0-1)
+                             */
+                            offset?: number;
+                            /**
+                             * Color in CSS format
+                             */
+                            color?: string;
+                        }>;
+                    } | null;
+                } | false;
+                /**
+                 * Image to embed in the QR code (URL, Buffer, or Blob)
+                 */
+                image?: string | unknown | null;
+                /**
+                 * Options for embedded image
+                 */
+                imageOptions?: {
+                    /**
+                     * Mode for embedded image
+                     */
+                    mode?: 'center' | 'overlay' | 'background' | null;
+                    /**
+                     * Size of image relative to QR code (0-1)
+                     */
+                    imageSize?: number | null;
+                    /**
+                     * Margin around the image in pixels
+                     */
+                    margin?: number | null;
+                    /**
+                     * Cross-origin attribute for image
+                     */
+                    crossOrigin?: string | null;
+                    /**
+                     * Fill options for image area
+                     */
+                    fill?: {
+                        /**
+                         * Fill color in CSS format
+                         */
+                        color?: string | null;
+                        /**
+                         * Gradient for fill
+                         */
+                        gradient?: {
+                            /**
+                             * Type of gradient
+                             */
+                            type?: 'linear' | 'radial';
                             /**
                              * Rotation angle of gradient in degrees
                              */
@@ -26967,7 +29342,7 @@ export type PutCodesByCodeIdOptionsResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -26995,7 +29370,7 @@ export type PutCodesByCodeIdOptionsResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -27029,7 +29404,7 @@ export type PutCodesByCodeIdOptionsResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -27057,7 +29432,7 @@ export type PutCodesByCodeIdOptionsResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -27091,7 +29466,7 @@ export type PutCodesByCodeIdOptionsResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -27119,7 +29494,7 @@ export type PutCodesByCodeIdOptionsResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -27153,7 +29528,7 @@ export type PutCodesByCodeIdOptionsResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -27181,7 +29556,7 @@ export type PutCodesByCodeIdOptionsResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                     } | null;
@@ -27336,7 +29711,7 @@ export type DeleteCodesPermanentData = {
     body?: never;
     path?: never;
     query?: never;
-    url: "/codes/permanent";
+    url: '/codes/permanent';
 };
 export type DeleteCodesPermanentErrors = {
     /**
@@ -27427,14 +29802,14 @@ export type DeleteCodesByCodeIdPermanentData = {
         codeId: string;
     };
     query?: never;
-    url: "/codes/{codeId}/permanent";
+    url: '/codes/{codeId}/permanent';
 };
 export type DeleteCodesByCodeIdPermanentErrors = {
     /**
      * QR Code is not soft deleted.
      */
     400: {
-        message: "QR Code is not soft deleted";
+        message: 'QR Code is not soft deleted';
     };
     /**
      * Unauthorized response message
@@ -27485,14 +29860,14 @@ export type PostCodesByCodeIdRestoreData = {
         codeId: string;
     };
     query?: never;
-    url: "/codes/{codeId}/restore";
+    url: '/codes/{codeId}/restore';
 };
 export type PostCodesByCodeIdRestoreErrors = {
     /**
      * QR Code is not deleted.
      */
     400: {
-        message: "QR Code is not deleted";
+        message: 'QR Code is not deleted';
     };
     /**
      * Unauthorized response message
@@ -27538,11 +29913,11 @@ export type PostCodesByCodeIdRestoreResponses = {
         /**
          * Type of the QR code
          */
-        type?: "static" | "dynamic";
+        type?: 'static' | 'dynamic';
         /**
          * The type of data the QR code contains. Only applies to dynamic codes.
          */
-        dataType?: "url" | "wifi" | "vcard" | "text" | "email" | "event" | "json" | "file" | "scan-info" | null;
+        dataType?: 'url' | 'wifi' | 'vcard' | 'text' | 'email' | 'event' | 'json' | 'file' | 'scan-info' | null;
         /**
          * Short alias for the QR code
          */
@@ -27582,7 +29957,7 @@ export type PostCodesByCodeIdRestoreResponses = {
             /**
              * Overall shape of the QR code
              */
-            shape?: "square" | "circle" | null;
+            shape?: 'square' | 'circle' | null;
             /**
              * Margin around the QR code in pixels
              */
@@ -27618,11 +29993,11 @@ export type PostCodesByCodeIdRestoreResponses = {
                 /**
                  * QR code encoding mode
                  */
-                mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
                 /**
                  * Error correction level
                  */
-                errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
             } | null;
             /**
              * Options for QR code dots
@@ -27631,7 +30006,7 @@ export type PostCodesByCodeIdRestoreResponses = {
                 /**
                  * Type of dots
                  */
-                type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                 /**
                  * Color of dots in CSS format
                  */
@@ -27647,7 +30022,7 @@ export type PostCodesByCodeIdRestoreResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -27674,7 +30049,7 @@ export type PostCodesByCodeIdRestoreResponses = {
                 /**
                  * Type of corner squares
                  */
-                type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Color of corner squares in CSS format
                  */
@@ -27686,7 +30061,7 @@ export type PostCodesByCodeIdRestoreResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -27713,7 +30088,7 @@ export type PostCodesByCodeIdRestoreResponses = {
                 /**
                  * Type of corner dots
                  */
-                type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Color of corner dots in CSS format
                  */
@@ -27725,7 +30100,7 @@ export type PostCodesByCodeIdRestoreResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -27764,7 +30139,7 @@ export type PostCodesByCodeIdRestoreResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -27795,7 +30170,7 @@ export type PostCodesByCodeIdRestoreResponses = {
                 /**
                  * Mode for embedded image
                  */
-                mode?: "center" | "overlay" | "background" | null;
+                mode?: 'center' | 'overlay' | 'background' | null;
                 /**
                  * Size of image relative to QR code (0-1)
                  */
@@ -27823,7 +30198,7 @@ export type PostCodesByCodeIdRestoreResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -27954,7 +30329,7 @@ export type PostCodesByCodeIdRestoreResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -27982,7 +30357,7 @@ export type PostCodesByCodeIdRestoreResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -28016,7 +30391,7 @@ export type PostCodesByCodeIdRestoreResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -28044,7 +30419,7 @@ export type PostCodesByCodeIdRestoreResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -28078,7 +30453,7 @@ export type PostCodesByCodeIdRestoreResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -28106,7 +30481,7 @@ export type PostCodesByCodeIdRestoreResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -28140,7 +30515,7 @@ export type PostCodesByCodeIdRestoreResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -28168,7 +30543,7 @@ export type PostCodesByCodeIdRestoreResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                 } | null;
@@ -28223,7 +30598,7 @@ export type PostCodesByCodeIdRestoreResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -28249,7 +30624,7 @@ export type PostCodesByCodeIdRestoreResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -28275,7 +30650,7 @@ export type PostCodesByCodeIdRestoreResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -28301,7 +30676,7 @@ export type PostCodesByCodeIdRestoreResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -28323,15 +30698,15 @@ export type PostCodesByCodeIdRestoreResponses = {
                 /**
                  * Shape style for the QR code dots
                  */
-                dotShape?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                dotShape?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                 /**
                  * Shape style for the QR code corner squares
                  */
-                cornerSquareShape?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                cornerSquareShape?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Shape style for the QR code corner dots
                  */
-                cornerDotShape?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                cornerDotShape?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Logo to be placed on the QR code (URL, Base64, Buffer, or Blob)
                  */
@@ -28343,7 +30718,7 @@ export type PostCodesByCodeIdRestoreResponses = {
                 /**
                  * Placement mode for the logo
                  */
-                logoMode?: "center" | "overlay" | "background" | null;
+                logoMode?: 'center' | 'overlay' | 'background' | null;
                 /**
                  * Margin around the logo in pixels
                  */
@@ -28427,7 +30802,7 @@ export type PostCodesByCodeIdRestoreResponses = {
                 /**
                  * Text transformation for border text
                  */
-                borderTextTransform?: "uppercase" | "lowercase" | "capitalize" | null;
+                borderTextTransform?: 'uppercase' | 'lowercase' | 'capitalize' | null;
                 /**
                  * Font weight for border text
                  */
@@ -28447,7 +30822,7 @@ export type PostCodesByCodeIdRestoreResponses = {
                 /**
                  * Overall shape of the QR code
                  */
-                shape?: "square" | "circle" | null;
+                shape?: 'square' | 'circle' | null;
                 /**
                  * Margin around the QR code in pixels
                  */
@@ -28483,11 +30858,11 @@ export type PostCodesByCodeIdRestoreResponses = {
                     /**
                      * QR code encoding mode
                      */
-                    mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                    mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
                     /**
                      * Error correction level
                      */
-                    errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                    errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
                 } | null;
                 /**
                  * Options for QR code dots
@@ -28496,7 +30871,7 @@ export type PostCodesByCodeIdRestoreResponses = {
                     /**
                      * Type of dots
                      */
-                    type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                    type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                     /**
                      * Color of dots in CSS format
                      */
@@ -28512,7 +30887,7 @@ export type PostCodesByCodeIdRestoreResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -28539,7 +30914,7 @@ export type PostCodesByCodeIdRestoreResponses = {
                     /**
                      * Type of corner squares
                      */
-                    type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Color of corner squares in CSS format
                      */
@@ -28551,7 +30926,7 @@ export type PostCodesByCodeIdRestoreResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -28578,7 +30953,7 @@ export type PostCodesByCodeIdRestoreResponses = {
                     /**
                      * Type of corner dots
                      */
-                    type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Color of corner dots in CSS format
                      */
@@ -28590,7 +30965,7 @@ export type PostCodesByCodeIdRestoreResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -28629,7 +31004,7 @@ export type PostCodesByCodeIdRestoreResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -28660,7 +31035,7 @@ export type PostCodesByCodeIdRestoreResponses = {
                     /**
                      * Mode for embedded image
                      */
-                    mode?: "center" | "overlay" | "background" | null;
+                    mode?: 'center' | 'overlay' | 'background' | null;
                     /**
                      * Size of image relative to QR code (0-1)
                      */
@@ -28688,7 +31063,7 @@ export type PostCodesByCodeIdRestoreResponses = {
                             /**
                              * Type of gradient
                              */
-                            type?: "linear" | "radial";
+                            type?: 'linear' | 'radial';
                             /**
                              * Rotation angle of gradient in degrees
                              */
@@ -28819,7 +31194,7 @@ export type PostCodesByCodeIdRestoreResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -28847,7 +31222,7 @@ export type PostCodesByCodeIdRestoreResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -28881,7 +31256,7 @@ export type PostCodesByCodeIdRestoreResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -28909,7 +31284,7 @@ export type PostCodesByCodeIdRestoreResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -28943,7 +31318,7 @@ export type PostCodesByCodeIdRestoreResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -28971,7 +31346,7 @@ export type PostCodesByCodeIdRestoreResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -29005,7 +31380,7 @@ export type PostCodesByCodeIdRestoreResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -29033,7 +31408,7 @@ export type PostCodesByCodeIdRestoreResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                     } | null;
@@ -29057,7 +31432,7 @@ export type PostCodesByCodeIdRestoreResponses = {
                 /**
                  * Overall shape of the QR code
                  */
-                shape?: "square" | "circle" | null;
+                shape?: 'square' | 'circle' | null;
                 /**
                  * Margin around the QR code in pixels
                  */
@@ -29093,11 +31468,11 @@ export type PostCodesByCodeIdRestoreResponses = {
                     /**
                      * QR code encoding mode
                      */
-                    mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                    mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
                     /**
                      * Error correction level
                      */
-                    errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                    errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
                 } | null;
                 /**
                  * Options for QR code dots
@@ -29106,7 +31481,7 @@ export type PostCodesByCodeIdRestoreResponses = {
                     /**
                      * Type of dots
                      */
-                    type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                    type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                     /**
                      * Color of dots in CSS format
                      */
@@ -29122,7 +31497,7 @@ export type PostCodesByCodeIdRestoreResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -29149,7 +31524,7 @@ export type PostCodesByCodeIdRestoreResponses = {
                     /**
                      * Type of corner squares
                      */
-                    type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Color of corner squares in CSS format
                      */
@@ -29161,7 +31536,7 @@ export type PostCodesByCodeIdRestoreResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -29188,7 +31563,7 @@ export type PostCodesByCodeIdRestoreResponses = {
                     /**
                      * Type of corner dots
                      */
-                    type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Color of corner dots in CSS format
                      */
@@ -29200,7 +31575,7 @@ export type PostCodesByCodeIdRestoreResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -29239,7 +31614,7 @@ export type PostCodesByCodeIdRestoreResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -29270,7 +31645,7 @@ export type PostCodesByCodeIdRestoreResponses = {
                     /**
                      * Mode for embedded image
                      */
-                    mode?: "center" | "overlay" | "background" | null;
+                    mode?: 'center' | 'overlay' | 'background' | null;
                     /**
                      * Size of image relative to QR code (0-1)
                      */
@@ -29298,7 +31673,7 @@ export type PostCodesByCodeIdRestoreResponses = {
                             /**
                              * Type of gradient
                              */
-                            type?: "linear" | "radial";
+                            type?: 'linear' | 'radial';
                             /**
                              * Rotation angle of gradient in degrees
                              */
@@ -29426,7 +31801,7 @@ export type PostCodesByCodeIdRestoreResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -29454,7 +31829,7 @@ export type PostCodesByCodeIdRestoreResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -29488,7 +31863,7 @@ export type PostCodesByCodeIdRestoreResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -29516,7 +31891,7 @@ export type PostCodesByCodeIdRestoreResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -29550,7 +31925,7 @@ export type PostCodesByCodeIdRestoreResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -29578,7 +31953,7 @@ export type PostCodesByCodeIdRestoreResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -29612,7 +31987,7 @@ export type PostCodesByCodeIdRestoreResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -29640,7 +32015,7 @@ export type PostCodesByCodeIdRestoreResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                     } | null;
@@ -29795,7 +32170,7 @@ export type PostCodesBulkGetData = {
     body?: never;
     path?: never;
     query?: never;
-    url: "/codes/bulk-get";
+    url: '/codes/bulk-get';
 };
 export type PostCodesBulkGetErrors = {
     /**
@@ -29864,11 +32239,11 @@ export type PostCodesBulkGetResponses = {
             /**
              * Type of the QR code
              */
-            type?: "static" | "dynamic";
+            type?: 'static' | 'dynamic';
             /**
              * The type of data the QR code contains. Only applies to dynamic codes.
              */
-            dataType?: "url" | "wifi" | "vcard" | "text" | "email" | "event" | "json" | "file" | "scan-info" | null;
+            dataType?: 'url' | 'wifi' | 'vcard' | 'text' | 'email' | 'event' | 'json' | 'file' | 'scan-info' | null;
             /**
              * Short alias for the QR code
              */
@@ -29908,7 +32283,7 @@ export type PostCodesBulkGetResponses = {
                 /**
                  * Overall shape of the QR code
                  */
-                shape?: "square" | "circle" | null;
+                shape?: 'square' | 'circle' | null;
                 /**
                  * Margin around the QR code in pixels
                  */
@@ -29944,11 +32319,11 @@ export type PostCodesBulkGetResponses = {
                     /**
                      * QR code encoding mode
                      */
-                    mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                    mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
                     /**
                      * Error correction level
                      */
-                    errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                    errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
                 } | null;
                 /**
                  * Options for QR code dots
@@ -29957,7 +32332,7 @@ export type PostCodesBulkGetResponses = {
                     /**
                      * Type of dots
                      */
-                    type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                    type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                     /**
                      * Color of dots in CSS format
                      */
@@ -29973,7 +32348,7 @@ export type PostCodesBulkGetResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -30000,7 +32375,7 @@ export type PostCodesBulkGetResponses = {
                     /**
                      * Type of corner squares
                      */
-                    type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Color of corner squares in CSS format
                      */
@@ -30012,7 +32387,7 @@ export type PostCodesBulkGetResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -30039,7 +32414,7 @@ export type PostCodesBulkGetResponses = {
                     /**
                      * Type of corner dots
                      */
-                    type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Color of corner dots in CSS format
                      */
@@ -30051,7 +32426,7 @@ export type PostCodesBulkGetResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -30090,7 +32465,7 @@ export type PostCodesBulkGetResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -30121,7 +32496,7 @@ export type PostCodesBulkGetResponses = {
                     /**
                      * Mode for embedded image
                      */
-                    mode?: "center" | "overlay" | "background" | null;
+                    mode?: 'center' | 'overlay' | 'background' | null;
                     /**
                      * Size of image relative to QR code (0-1)
                      */
@@ -30149,7 +32524,7 @@ export type PostCodesBulkGetResponses = {
                             /**
                              * Type of gradient
                              */
-                            type?: "linear" | "radial";
+                            type?: 'linear' | 'radial';
                             /**
                              * Rotation angle of gradient in degrees
                              */
@@ -30280,7 +32655,7 @@ export type PostCodesBulkGetResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -30308,7 +32683,7 @@ export type PostCodesBulkGetResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -30342,7 +32717,7 @@ export type PostCodesBulkGetResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -30370,7 +32745,7 @@ export type PostCodesBulkGetResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -30404,7 +32779,7 @@ export type PostCodesBulkGetResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -30432,7 +32807,7 @@ export type PostCodesBulkGetResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -30466,7 +32841,7 @@ export type PostCodesBulkGetResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -30494,7 +32869,7 @@ export type PostCodesBulkGetResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                     } | null;
@@ -30549,7 +32924,7 @@ export type PostCodesBulkGetResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -30575,7 +32950,7 @@ export type PostCodesBulkGetResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -30601,7 +32976,7 @@ export type PostCodesBulkGetResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -30627,7 +33002,7 @@ export type PostCodesBulkGetResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -30649,15 +33024,15 @@ export type PostCodesBulkGetResponses = {
                     /**
                      * Shape style for the QR code dots
                      */
-                    dotShape?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                    dotShape?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                     /**
                      * Shape style for the QR code corner squares
                      */
-                    cornerSquareShape?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    cornerSquareShape?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Shape style for the QR code corner dots
                      */
-                    cornerDotShape?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    cornerDotShape?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Logo to be placed on the QR code (URL, Base64, Buffer, or Blob)
                      */
@@ -30669,7 +33044,7 @@ export type PostCodesBulkGetResponses = {
                     /**
                      * Placement mode for the logo
                      */
-                    logoMode?: "center" | "overlay" | "background" | null;
+                    logoMode?: 'center' | 'overlay' | 'background' | null;
                     /**
                      * Margin around the logo in pixels
                      */
@@ -30753,7 +33128,7 @@ export type PostCodesBulkGetResponses = {
                     /**
                      * Text transformation for border text
                      */
-                    borderTextTransform?: "uppercase" | "lowercase" | "capitalize" | null;
+                    borderTextTransform?: 'uppercase' | 'lowercase' | 'capitalize' | null;
                     /**
                      * Font weight for border text
                      */
@@ -30773,7 +33148,7 @@ export type PostCodesBulkGetResponses = {
                     /**
                      * Overall shape of the QR code
                      */
-                    shape?: "square" | "circle" | null;
+                    shape?: 'square' | 'circle' | null;
                     /**
                      * Margin around the QR code in pixels
                      */
@@ -30809,11 +33184,11 @@ export type PostCodesBulkGetResponses = {
                         /**
                          * QR code encoding mode
                          */
-                        mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                        mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
                         /**
                          * Error correction level
                          */
-                        errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                        errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
                     } | null;
                     /**
                      * Options for QR code dots
@@ -30822,7 +33197,7 @@ export type PostCodesBulkGetResponses = {
                         /**
                          * Type of dots
                          */
-                        type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                        type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                         /**
                          * Color of dots in CSS format
                          */
@@ -30838,7 +33213,7 @@ export type PostCodesBulkGetResponses = {
                             /**
                              * Type of gradient
                              */
-                            type?: "linear" | "radial";
+                            type?: 'linear' | 'radial';
                             /**
                              * Rotation angle of gradient in degrees
                              */
@@ -30865,7 +33240,7 @@ export type PostCodesBulkGetResponses = {
                         /**
                          * Type of corner squares
                          */
-                        type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                        type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                         /**
                          * Color of corner squares in CSS format
                          */
@@ -30877,7 +33252,7 @@ export type PostCodesBulkGetResponses = {
                             /**
                              * Type of gradient
                              */
-                            type?: "linear" | "radial";
+                            type?: 'linear' | 'radial';
                             /**
                              * Rotation angle of gradient in degrees
                              */
@@ -30904,7 +33279,7 @@ export type PostCodesBulkGetResponses = {
                         /**
                          * Type of corner dots
                          */
-                        type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                        type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                         /**
                          * Color of corner dots in CSS format
                          */
@@ -30916,7 +33291,7 @@ export type PostCodesBulkGetResponses = {
                             /**
                              * Type of gradient
                              */
-                            type?: "linear" | "radial";
+                            type?: 'linear' | 'radial';
                             /**
                              * Rotation angle of gradient in degrees
                              */
@@ -30955,7 +33330,7 @@ export type PostCodesBulkGetResponses = {
                             /**
                              * Type of gradient
                              */
-                            type?: "linear" | "radial";
+                            type?: 'linear' | 'radial';
                             /**
                              * Rotation angle of gradient in degrees
                              */
@@ -30986,7 +33361,7 @@ export type PostCodesBulkGetResponses = {
                         /**
                          * Mode for embedded image
                          */
-                        mode?: "center" | "overlay" | "background" | null;
+                        mode?: 'center' | 'overlay' | 'background' | null;
                         /**
                          * Size of image relative to QR code (0-1)
                          */
@@ -31014,7 +33389,7 @@ export type PostCodesBulkGetResponses = {
                                 /**
                                  * Type of gradient
                                  */
-                                type?: "linear" | "radial";
+                                type?: 'linear' | 'radial';
                                 /**
                                  * Rotation angle of gradient in degrees
                                  */
@@ -31145,7 +33520,7 @@ export type PostCodesBulkGetResponses = {
                                 /**
                                  * Type of decoration
                                  */
-                                type?: "text" | "image";
+                                type?: 'text' | 'image';
                                 /**
                                  * Content value for decoration
                                  */
@@ -31173,7 +33548,7 @@ export type PostCodesBulkGetResponses = {
                                     /**
                                      * Font weight
                                      */
-                                    fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                    fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                                 };
                             } | null;
                             /**
@@ -31207,7 +33582,7 @@ export type PostCodesBulkGetResponses = {
                                 /**
                                  * Type of decoration
                                  */
-                                type?: "text" | "image";
+                                type?: 'text' | 'image';
                                 /**
                                  * Content value for decoration
                                  */
@@ -31235,7 +33610,7 @@ export type PostCodesBulkGetResponses = {
                                     /**
                                      * Font weight
                                      */
-                                    fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                    fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                                 };
                             } | null;
                             /**
@@ -31269,7 +33644,7 @@ export type PostCodesBulkGetResponses = {
                                 /**
                                  * Type of decoration
                                  */
-                                type?: "text" | "image";
+                                type?: 'text' | 'image';
                                 /**
                                  * Content value for decoration
                                  */
@@ -31297,7 +33672,7 @@ export type PostCodesBulkGetResponses = {
                                     /**
                                      * Font weight
                                      */
-                                    fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                    fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                                 };
                             } | null;
                             /**
@@ -31331,7 +33706,7 @@ export type PostCodesBulkGetResponses = {
                                 /**
                                  * Type of decoration
                                  */
-                                type?: "text" | "image";
+                                type?: 'text' | 'image';
                                 /**
                                  * Content value for decoration
                                  */
@@ -31359,7 +33734,7 @@ export type PostCodesBulkGetResponses = {
                                     /**
                                      * Font weight
                                      */
-                                    fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                    fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                                 };
                             } | null;
                         } | null;
@@ -31383,7 +33758,7 @@ export type PostCodesBulkGetResponses = {
                     /**
                      * Overall shape of the QR code
                      */
-                    shape?: "square" | "circle" | null;
+                    shape?: 'square' | 'circle' | null;
                     /**
                      * Margin around the QR code in pixels
                      */
@@ -31419,11 +33794,11 @@ export type PostCodesBulkGetResponses = {
                         /**
                          * QR code encoding mode
                          */
-                        mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                        mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
                         /**
                          * Error correction level
                          */
-                        errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                        errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
                     } | null;
                     /**
                      * Options for QR code dots
@@ -31432,7 +33807,7 @@ export type PostCodesBulkGetResponses = {
                         /**
                          * Type of dots
                          */
-                        type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                        type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                         /**
                          * Color of dots in CSS format
                          */
@@ -31448,7 +33823,7 @@ export type PostCodesBulkGetResponses = {
                             /**
                              * Type of gradient
                              */
-                            type?: "linear" | "radial";
+                            type?: 'linear' | 'radial';
                             /**
                              * Rotation angle of gradient in degrees
                              */
@@ -31475,7 +33850,7 @@ export type PostCodesBulkGetResponses = {
                         /**
                          * Type of corner squares
                          */
-                        type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                        type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                         /**
                          * Color of corner squares in CSS format
                          */
@@ -31487,7 +33862,7 @@ export type PostCodesBulkGetResponses = {
                             /**
                              * Type of gradient
                              */
-                            type?: "linear" | "radial";
+                            type?: 'linear' | 'radial';
                             /**
                              * Rotation angle of gradient in degrees
                              */
@@ -31514,7 +33889,7 @@ export type PostCodesBulkGetResponses = {
                         /**
                          * Type of corner dots
                          */
-                        type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                        type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                         /**
                          * Color of corner dots in CSS format
                          */
@@ -31526,7 +33901,7 @@ export type PostCodesBulkGetResponses = {
                             /**
                              * Type of gradient
                              */
-                            type?: "linear" | "radial";
+                            type?: 'linear' | 'radial';
                             /**
                              * Rotation angle of gradient in degrees
                              */
@@ -31565,7 +33940,7 @@ export type PostCodesBulkGetResponses = {
                             /**
                              * Type of gradient
                              */
-                            type?: "linear" | "radial";
+                            type?: 'linear' | 'radial';
                             /**
                              * Rotation angle of gradient in degrees
                              */
@@ -31596,7 +33971,7 @@ export type PostCodesBulkGetResponses = {
                         /**
                          * Mode for embedded image
                          */
-                        mode?: "center" | "overlay" | "background" | null;
+                        mode?: 'center' | 'overlay' | 'background' | null;
                         /**
                          * Size of image relative to QR code (0-1)
                          */
@@ -31624,7 +33999,7 @@ export type PostCodesBulkGetResponses = {
                                 /**
                                  * Type of gradient
                                  */
-                                type?: "linear" | "radial";
+                                type?: 'linear' | 'radial';
                                 /**
                                  * Rotation angle of gradient in degrees
                                  */
@@ -31752,7 +34127,7 @@ export type PostCodesBulkGetResponses = {
                                 /**
                                  * Type of decoration
                                  */
-                                type?: "text" | "image";
+                                type?: 'text' | 'image';
                                 /**
                                  * Content value for decoration
                                  */
@@ -31780,7 +34155,7 @@ export type PostCodesBulkGetResponses = {
                                     /**
                                      * Font weight
                                      */
-                                    fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                    fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                                 };
                             } | null;
                             /**
@@ -31814,7 +34189,7 @@ export type PostCodesBulkGetResponses = {
                                 /**
                                  * Type of decoration
                                  */
-                                type?: "text" | "image";
+                                type?: 'text' | 'image';
                                 /**
                                  * Content value for decoration
                                  */
@@ -31842,7 +34217,7 @@ export type PostCodesBulkGetResponses = {
                                     /**
                                      * Font weight
                                      */
-                                    fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                    fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                                 };
                             } | null;
                             /**
@@ -31876,7 +34251,7 @@ export type PostCodesBulkGetResponses = {
                                 /**
                                  * Type of decoration
                                  */
-                                type?: "text" | "image";
+                                type?: 'text' | 'image';
                                 /**
                                  * Content value for decoration
                                  */
@@ -31904,7 +34279,7 @@ export type PostCodesBulkGetResponses = {
                                     /**
                                      * Font weight
                                      */
-                                    fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                    fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                                 };
                             } | null;
                             /**
@@ -31938,7 +34313,7 @@ export type PostCodesBulkGetResponses = {
                                 /**
                                  * Type of decoration
                                  */
-                                type?: "text" | "image";
+                                type?: 'text' | 'image';
                                 /**
                                  * Content value for decoration
                                  */
@@ -31966,7 +34341,7 @@ export type PostCodesBulkGetResponses = {
                                     /**
                                      * Font weight
                                      */
-                                    fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                    fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                                 };
                             } | null;
                         } | null;
@@ -32176,7 +34551,7 @@ export type PostCodesGenetateCanvasPngData = {
             /**
              * Overall shape of the QR code
              */
-            shape?: "square" | "circle" | null;
+            shape?: 'square' | 'circle' | null;
             /**
              * Margin around the QR code in pixels
              */
@@ -32212,11 +34587,11 @@ export type PostCodesGenetateCanvasPngData = {
                 /**
                  * QR code encoding mode
                  */
-                mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
                 /**
                  * Error correction level
                  */
-                errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
             } | null;
             /**
              * Options for QR code dots
@@ -32225,7 +34600,7 @@ export type PostCodesGenetateCanvasPngData = {
                 /**
                  * Type of dots
                  */
-                type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                 /**
                  * Color of dots in CSS format
                  */
@@ -32241,7 +34616,7 @@ export type PostCodesGenetateCanvasPngData = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -32268,7 +34643,7 @@ export type PostCodesGenetateCanvasPngData = {
                 /**
                  * Type of corner squares
                  */
-                type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Color of corner squares in CSS format
                  */
@@ -32280,7 +34655,7 @@ export type PostCodesGenetateCanvasPngData = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -32307,7 +34682,7 @@ export type PostCodesGenetateCanvasPngData = {
                 /**
                  * Type of corner dots
                  */
-                type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Color of corner dots in CSS format
                  */
@@ -32319,7 +34694,7 @@ export type PostCodesGenetateCanvasPngData = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -32358,7 +34733,7 @@ export type PostCodesGenetateCanvasPngData = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -32389,7 +34764,7 @@ export type PostCodesGenetateCanvasPngData = {
                 /**
                  * Mode for embedded image
                  */
-                mode?: "center" | "overlay" | "background" | null;
+                mode?: 'center' | 'overlay' | 'background' | null;
                 /**
                  * Size of image relative to QR code (0-1)
                  */
@@ -32417,7 +34792,7 @@ export type PostCodesGenetateCanvasPngData = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -32548,7 +34923,7 @@ export type PostCodesGenetateCanvasPngData = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -32576,7 +34951,7 @@ export type PostCodesGenetateCanvasPngData = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -32610,7 +34985,7 @@ export type PostCodesGenetateCanvasPngData = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -32638,7 +35013,7 @@ export type PostCodesGenetateCanvasPngData = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -32672,7 +35047,7 @@ export type PostCodesGenetateCanvasPngData = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -32700,7 +35075,7 @@ export type PostCodesGenetateCanvasPngData = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -32734,7 +35109,7 @@ export type PostCodesGenetateCanvasPngData = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -32762,7 +35137,7 @@ export type PostCodesGenetateCanvasPngData = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                 } | null;
@@ -32807,7 +35182,7 @@ export type PostCodesGenetateCanvasPngData = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -32833,7 +35208,7 @@ export type PostCodesGenetateCanvasPngData = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -32859,7 +35234,7 @@ export type PostCodesGenetateCanvasPngData = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -32885,7 +35260,7 @@ export type PostCodesGenetateCanvasPngData = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -32907,15 +35282,15 @@ export type PostCodesGenetateCanvasPngData = {
                 /**
                  * Shape style for the QR code dots
                  */
-                dotShape?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                dotShape?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                 /**
                  * Shape style for the QR code corner squares
                  */
-                cornerSquareShape?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                cornerSquareShape?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Shape style for the QR code corner dots
                  */
-                cornerDotShape?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                cornerDotShape?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Logo to be placed on the QR code (URL, Base64, Buffer, or Blob)
                  */
@@ -32927,7 +35302,7 @@ export type PostCodesGenetateCanvasPngData = {
                 /**
                  * Placement mode for the logo
                  */
-                logoMode?: "center" | "overlay" | "background" | null;
+                logoMode?: 'center' | 'overlay' | 'background' | null;
                 /**
                  * Margin around the logo in pixels
                  */
@@ -33011,7 +35386,7 @@ export type PostCodesGenetateCanvasPngData = {
                 /**
                  * Text transformation for border text
                  */
-                borderTextTransform?: "uppercase" | "lowercase" | "capitalize" | null;
+                borderTextTransform?: 'uppercase' | 'lowercase' | 'capitalize' | null;
                 /**
                  * Font weight for border text
                  */
@@ -33033,7 +35408,7 @@ export type PostCodesGenetateCanvasPngData = {
                 /**
                  * Overall shape of the QR code
                  */
-                shape?: "square" | "circle" | null;
+                shape?: 'square' | 'circle' | null;
                 /**
                  * Margin around the QR code in pixels
                  */
@@ -33069,11 +35444,11 @@ export type PostCodesGenetateCanvasPngData = {
                     /**
                      * QR code encoding mode
                      */
-                    mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                    mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
                     /**
                      * Error correction level
                      */
-                    errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                    errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
                 } | null;
                 /**
                  * Options for QR code dots
@@ -33082,7 +35457,7 @@ export type PostCodesGenetateCanvasPngData = {
                     /**
                      * Type of dots
                      */
-                    type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                    type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                     /**
                      * Color of dots in CSS format
                      */
@@ -33098,7 +35473,7 @@ export type PostCodesGenetateCanvasPngData = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -33125,7 +35500,7 @@ export type PostCodesGenetateCanvasPngData = {
                     /**
                      * Type of corner squares
                      */
-                    type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Color of corner squares in CSS format
                      */
@@ -33137,7 +35512,7 @@ export type PostCodesGenetateCanvasPngData = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -33164,7 +35539,7 @@ export type PostCodesGenetateCanvasPngData = {
                     /**
                      * Type of corner dots
                      */
-                    type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Color of corner dots in CSS format
                      */
@@ -33176,7 +35551,7 @@ export type PostCodesGenetateCanvasPngData = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -33215,7 +35590,7 @@ export type PostCodesGenetateCanvasPngData = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -33246,7 +35621,7 @@ export type PostCodesGenetateCanvasPngData = {
                     /**
                      * Mode for embedded image
                      */
-                    mode?: "center" | "overlay" | "background" | null;
+                    mode?: 'center' | 'overlay' | 'background' | null;
                     /**
                      * Size of image relative to QR code (0-1)
                      */
@@ -33274,7 +35649,7 @@ export type PostCodesGenetateCanvasPngData = {
                             /**
                              * Type of gradient
                              */
-                            type?: "linear" | "radial";
+                            type?: 'linear' | 'radial';
                             /**
                              * Rotation angle of gradient in degrees
                              */
@@ -33405,7 +35780,7 @@ export type PostCodesGenetateCanvasPngData = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -33433,7 +35808,7 @@ export type PostCodesGenetateCanvasPngData = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -33467,7 +35842,7 @@ export type PostCodesGenetateCanvasPngData = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -33495,7 +35870,7 @@ export type PostCodesGenetateCanvasPngData = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -33529,7 +35904,7 @@ export type PostCodesGenetateCanvasPngData = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -33557,7 +35932,7 @@ export type PostCodesGenetateCanvasPngData = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -33591,7 +35966,7 @@ export type PostCodesGenetateCanvasPngData = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -33619,7 +35994,7 @@ export type PostCodesGenetateCanvasPngData = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                     } | null;
@@ -33641,7 +36016,7 @@ export type PostCodesGenetateCanvasPngData = {
                 /**
                  * Overall shape of the QR code
                  */
-                shape?: "square" | "circle" | null;
+                shape?: 'square' | 'circle' | null;
                 /**
                  * Margin around the QR code in pixels
                  */
@@ -33677,11 +36052,11 @@ export type PostCodesGenetateCanvasPngData = {
                     /**
                      * QR code encoding mode
                      */
-                    mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                    mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
                     /**
                      * Error correction level
                      */
-                    errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                    errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
                 } | null;
                 /**
                  * Options for QR code dots
@@ -33690,7 +36065,7 @@ export type PostCodesGenetateCanvasPngData = {
                     /**
                      * Type of dots
                      */
-                    type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                    type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                     /**
                      * Color of dots in CSS format
                      */
@@ -33706,7 +36081,7 @@ export type PostCodesGenetateCanvasPngData = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -33733,7 +36108,7 @@ export type PostCodesGenetateCanvasPngData = {
                     /**
                      * Type of corner squares
                      */
-                    type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Color of corner squares in CSS format
                      */
@@ -33745,7 +36120,7 @@ export type PostCodesGenetateCanvasPngData = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -33772,7 +36147,7 @@ export type PostCodesGenetateCanvasPngData = {
                     /**
                      * Type of corner dots
                      */
-                    type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Color of corner dots in CSS format
                      */
@@ -33784,7 +36159,7 @@ export type PostCodesGenetateCanvasPngData = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -33823,7 +36198,7 @@ export type PostCodesGenetateCanvasPngData = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -33854,7 +36229,7 @@ export type PostCodesGenetateCanvasPngData = {
                     /**
                      * Mode for embedded image
                      */
-                    mode?: "center" | "overlay" | "background" | null;
+                    mode?: 'center' | 'overlay' | 'background' | null;
                     /**
                      * Size of image relative to QR code (0-1)
                      */
@@ -33882,7 +36257,7 @@ export type PostCodesGenetateCanvasPngData = {
                             /**
                              * Type of gradient
                              */
-                            type?: "linear" | "radial";
+                            type?: 'linear' | 'radial';
                             /**
                              * Rotation angle of gradient in degrees
                              */
@@ -34010,7 +36385,7 @@ export type PostCodesGenetateCanvasPngData = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -34038,7 +36413,7 @@ export type PostCodesGenetateCanvasPngData = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -34072,7 +36447,7 @@ export type PostCodesGenetateCanvasPngData = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -34100,7 +36475,7 @@ export type PostCodesGenetateCanvasPngData = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -34134,7 +36509,7 @@ export type PostCodesGenetateCanvasPngData = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -34162,7 +36537,7 @@ export type PostCodesGenetateCanvasPngData = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -34196,7 +36571,7 @@ export type PostCodesGenetateCanvasPngData = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -34224,7 +36599,7 @@ export type PostCodesGenetateCanvasPngData = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                     } | null;
@@ -34268,7 +36643,7 @@ export type PostCodesGenetateCanvasPngData = {
     };
     path?: never;
     query?: never;
-    url: "/codes/genetate/canvas-png";
+    url: '/codes/genetate/canvas-png';
 };
 export type PostCodesGenetateCanvasPngErrors = {
     /**
@@ -34329,7 +36704,7 @@ export type PostCodesGenerateByTypeData = {
             /**
              * Overall shape of the QR code
              */
-            shape?: "square" | "circle" | null;
+            shape?: 'square' | 'circle' | null;
             /**
              * Margin around the QR code in pixels
              */
@@ -34365,11 +36740,11 @@ export type PostCodesGenerateByTypeData = {
                 /**
                  * QR code encoding mode
                  */
-                mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
                 /**
                  * Error correction level
                  */
-                errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
             } | null;
             /**
              * Options for QR code dots
@@ -34378,7 +36753,7 @@ export type PostCodesGenerateByTypeData = {
                 /**
                  * Type of dots
                  */
-                type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                 /**
                  * Color of dots in CSS format
                  */
@@ -34394,7 +36769,7 @@ export type PostCodesGenerateByTypeData = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -34421,7 +36796,7 @@ export type PostCodesGenerateByTypeData = {
                 /**
                  * Type of corner squares
                  */
-                type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Color of corner squares in CSS format
                  */
@@ -34433,7 +36808,7 @@ export type PostCodesGenerateByTypeData = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -34460,7 +36835,7 @@ export type PostCodesGenerateByTypeData = {
                 /**
                  * Type of corner dots
                  */
-                type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Color of corner dots in CSS format
                  */
@@ -34472,7 +36847,7 @@ export type PostCodesGenerateByTypeData = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -34511,7 +36886,7 @@ export type PostCodesGenerateByTypeData = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -34542,7 +36917,7 @@ export type PostCodesGenerateByTypeData = {
                 /**
                  * Mode for embedded image
                  */
-                mode?: "center" | "overlay" | "background" | null;
+                mode?: 'center' | 'overlay' | 'background' | null;
                 /**
                  * Size of image relative to QR code (0-1)
                  */
@@ -34570,7 +36945,7 @@ export type PostCodesGenerateByTypeData = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -34701,7 +37076,7 @@ export type PostCodesGenerateByTypeData = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -34729,7 +37104,7 @@ export type PostCodesGenerateByTypeData = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -34763,7 +37138,7 @@ export type PostCodesGenerateByTypeData = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -34791,7 +37166,7 @@ export type PostCodesGenerateByTypeData = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -34825,7 +37200,7 @@ export type PostCodesGenerateByTypeData = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -34853,7 +37228,7 @@ export type PostCodesGenerateByTypeData = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -34887,7 +37262,7 @@ export type PostCodesGenerateByTypeData = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -34915,7 +37290,7 @@ export type PostCodesGenerateByTypeData = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                 } | null;
@@ -34960,7 +37335,7 @@ export type PostCodesGenerateByTypeData = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -34986,7 +37361,7 @@ export type PostCodesGenerateByTypeData = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -35012,7 +37387,7 @@ export type PostCodesGenerateByTypeData = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -35038,7 +37413,7 @@ export type PostCodesGenerateByTypeData = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -35060,15 +37435,15 @@ export type PostCodesGenerateByTypeData = {
                 /**
                  * Shape style for the QR code dots
                  */
-                dotShape?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                dotShape?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                 /**
                  * Shape style for the QR code corner squares
                  */
-                cornerSquareShape?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                cornerSquareShape?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Shape style for the QR code corner dots
                  */
-                cornerDotShape?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                cornerDotShape?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Logo to be placed on the QR code (URL, Base64, Buffer, or Blob)
                  */
@@ -35080,7 +37455,7 @@ export type PostCodesGenerateByTypeData = {
                 /**
                  * Placement mode for the logo
                  */
-                logoMode?: "center" | "overlay" | "background" | null;
+                logoMode?: 'center' | 'overlay' | 'background' | null;
                 /**
                  * Margin around the logo in pixels
                  */
@@ -35164,7 +37539,7 @@ export type PostCodesGenerateByTypeData = {
                 /**
                  * Text transformation for border text
                  */
-                borderTextTransform?: "uppercase" | "lowercase" | "capitalize" | null;
+                borderTextTransform?: 'uppercase' | 'lowercase' | 'capitalize' | null;
                 /**
                  * Font weight for border text
                  */
@@ -35186,7 +37561,7 @@ export type PostCodesGenerateByTypeData = {
                 /**
                  * Overall shape of the QR code
                  */
-                shape?: "square" | "circle" | null;
+                shape?: 'square' | 'circle' | null;
                 /**
                  * Margin around the QR code in pixels
                  */
@@ -35222,11 +37597,11 @@ export type PostCodesGenerateByTypeData = {
                     /**
                      * QR code encoding mode
                      */
-                    mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                    mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
                     /**
                      * Error correction level
                      */
-                    errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                    errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
                 } | null;
                 /**
                  * Options for QR code dots
@@ -35235,7 +37610,7 @@ export type PostCodesGenerateByTypeData = {
                     /**
                      * Type of dots
                      */
-                    type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                    type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                     /**
                      * Color of dots in CSS format
                      */
@@ -35251,7 +37626,7 @@ export type PostCodesGenerateByTypeData = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -35278,7 +37653,7 @@ export type PostCodesGenerateByTypeData = {
                     /**
                      * Type of corner squares
                      */
-                    type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Color of corner squares in CSS format
                      */
@@ -35290,7 +37665,7 @@ export type PostCodesGenerateByTypeData = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -35317,7 +37692,7 @@ export type PostCodesGenerateByTypeData = {
                     /**
                      * Type of corner dots
                      */
-                    type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Color of corner dots in CSS format
                      */
@@ -35329,7 +37704,7 @@ export type PostCodesGenerateByTypeData = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -35368,7 +37743,7 @@ export type PostCodesGenerateByTypeData = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -35399,7 +37774,7 @@ export type PostCodesGenerateByTypeData = {
                     /**
                      * Mode for embedded image
                      */
-                    mode?: "center" | "overlay" | "background" | null;
+                    mode?: 'center' | 'overlay' | 'background' | null;
                     /**
                      * Size of image relative to QR code (0-1)
                      */
@@ -35427,7 +37802,7 @@ export type PostCodesGenerateByTypeData = {
                             /**
                              * Type of gradient
                              */
-                            type?: "linear" | "radial";
+                            type?: 'linear' | 'radial';
                             /**
                              * Rotation angle of gradient in degrees
                              */
@@ -35558,7 +37933,7 @@ export type PostCodesGenerateByTypeData = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -35586,7 +37961,7 @@ export type PostCodesGenerateByTypeData = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -35620,7 +37995,7 @@ export type PostCodesGenerateByTypeData = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -35648,7 +38023,7 @@ export type PostCodesGenerateByTypeData = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -35682,7 +38057,7 @@ export type PostCodesGenerateByTypeData = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -35710,7 +38085,7 @@ export type PostCodesGenerateByTypeData = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -35744,7 +38119,7 @@ export type PostCodesGenerateByTypeData = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -35772,7 +38147,7 @@ export type PostCodesGenerateByTypeData = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                     } | null;
@@ -35794,7 +38169,7 @@ export type PostCodesGenerateByTypeData = {
                 /**
                  * Overall shape of the QR code
                  */
-                shape?: "square" | "circle" | null;
+                shape?: 'square' | 'circle' | null;
                 /**
                  * Margin around the QR code in pixels
                  */
@@ -35830,11 +38205,11 @@ export type PostCodesGenerateByTypeData = {
                     /**
                      * QR code encoding mode
                      */
-                    mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                    mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
                     /**
                      * Error correction level
                      */
-                    errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                    errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
                 } | null;
                 /**
                  * Options for QR code dots
@@ -35843,7 +38218,7 @@ export type PostCodesGenerateByTypeData = {
                     /**
                      * Type of dots
                      */
-                    type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                    type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                     /**
                      * Color of dots in CSS format
                      */
@@ -35859,7 +38234,7 @@ export type PostCodesGenerateByTypeData = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -35886,7 +38261,7 @@ export type PostCodesGenerateByTypeData = {
                     /**
                      * Type of corner squares
                      */
-                    type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Color of corner squares in CSS format
                      */
@@ -35898,7 +38273,7 @@ export type PostCodesGenerateByTypeData = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -35925,7 +38300,7 @@ export type PostCodesGenerateByTypeData = {
                     /**
                      * Type of corner dots
                      */
-                    type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Color of corner dots in CSS format
                      */
@@ -35937,7 +38312,7 @@ export type PostCodesGenerateByTypeData = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -35976,7 +38351,7 @@ export type PostCodesGenerateByTypeData = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -36007,7 +38382,7 @@ export type PostCodesGenerateByTypeData = {
                     /**
                      * Mode for embedded image
                      */
-                    mode?: "center" | "overlay" | "background" | null;
+                    mode?: 'center' | 'overlay' | 'background' | null;
                     /**
                      * Size of image relative to QR code (0-1)
                      */
@@ -36035,7 +38410,7 @@ export type PostCodesGenerateByTypeData = {
                             /**
                              * Type of gradient
                              */
-                            type?: "linear" | "radial";
+                            type?: 'linear' | 'radial';
                             /**
                              * Rotation angle of gradient in degrees
                              */
@@ -36163,7 +38538,7 @@ export type PostCodesGenerateByTypeData = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -36191,7 +38566,7 @@ export type PostCodesGenerateByTypeData = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -36225,7 +38600,7 @@ export type PostCodesGenerateByTypeData = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -36253,7 +38628,7 @@ export type PostCodesGenerateByTypeData = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -36287,7 +38662,7 @@ export type PostCodesGenerateByTypeData = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -36315,7 +38690,7 @@ export type PostCodesGenerateByTypeData = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -36349,7 +38724,7 @@ export type PostCodesGenerateByTypeData = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -36377,7 +38752,7 @@ export type PostCodesGenerateByTypeData = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                     } | null;
@@ -36423,10 +38798,10 @@ export type PostCodesGenerateByTypeData = {
         /**
          * File type to generate
          */
-        type: "svg" | "png" | "pdf";
+        type: 'svg' | 'png' | 'pdf';
     };
     query?: never;
-    url: "/codes/generate/{type}";
+    url: '/codes/generate/{type}';
 };
 export type PostCodesGenerateByTypeErrors = {
     /**
@@ -36487,7 +38862,7 @@ export type PostCodesValidateData = {
             /**
              * Overall shape of the QR code
              */
-            shape?: "square" | "circle" | null;
+            shape?: 'square' | 'circle' | null;
             /**
              * Margin around the QR code in pixels
              */
@@ -36523,11 +38898,11 @@ export type PostCodesValidateData = {
                 /**
                  * QR code encoding mode
                  */
-                mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
                 /**
                  * Error correction level
                  */
-                errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
             } | null;
             /**
              * Options for QR code dots
@@ -36536,7 +38911,7 @@ export type PostCodesValidateData = {
                 /**
                  * Type of dots
                  */
-                type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                 /**
                  * Color of dots in CSS format
                  */
@@ -36552,7 +38927,7 @@ export type PostCodesValidateData = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -36579,7 +38954,7 @@ export type PostCodesValidateData = {
                 /**
                  * Type of corner squares
                  */
-                type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Color of corner squares in CSS format
                  */
@@ -36591,7 +38966,7 @@ export type PostCodesValidateData = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -36618,7 +38993,7 @@ export type PostCodesValidateData = {
                 /**
                  * Type of corner dots
                  */
-                type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Color of corner dots in CSS format
                  */
@@ -36630,7 +39005,7 @@ export type PostCodesValidateData = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -36669,7 +39044,7 @@ export type PostCodesValidateData = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -36700,7 +39075,7 @@ export type PostCodesValidateData = {
                 /**
                  * Mode for embedded image
                  */
-                mode?: "center" | "overlay" | "background" | null;
+                mode?: 'center' | 'overlay' | 'background' | null;
                 /**
                  * Size of image relative to QR code (0-1)
                  */
@@ -36728,7 +39103,7 @@ export type PostCodesValidateData = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -36859,7 +39234,7 @@ export type PostCodesValidateData = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -36887,7 +39262,7 @@ export type PostCodesValidateData = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -36921,7 +39296,7 @@ export type PostCodesValidateData = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -36949,7 +39324,7 @@ export type PostCodesValidateData = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -36983,7 +39358,7 @@ export type PostCodesValidateData = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -37011,7 +39386,7 @@ export type PostCodesValidateData = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -37045,7 +39420,7 @@ export type PostCodesValidateData = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -37073,7 +39448,7 @@ export type PostCodesValidateData = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                 } | null;
@@ -37118,7 +39493,7 @@ export type PostCodesValidateData = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -37144,7 +39519,7 @@ export type PostCodesValidateData = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -37170,7 +39545,7 @@ export type PostCodesValidateData = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -37196,7 +39571,7 @@ export type PostCodesValidateData = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -37218,15 +39593,15 @@ export type PostCodesValidateData = {
                 /**
                  * Shape style for the QR code dots
                  */
-                dotShape?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                dotShape?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                 /**
                  * Shape style for the QR code corner squares
                  */
-                cornerSquareShape?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                cornerSquareShape?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Shape style for the QR code corner dots
                  */
-                cornerDotShape?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                cornerDotShape?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Logo to be placed on the QR code (URL, Base64, Buffer, or Blob)
                  */
@@ -37238,7 +39613,7 @@ export type PostCodesValidateData = {
                 /**
                  * Placement mode for the logo
                  */
-                logoMode?: "center" | "overlay" | "background" | null;
+                logoMode?: 'center' | 'overlay' | 'background' | null;
                 /**
                  * Margin around the logo in pixels
                  */
@@ -37322,7 +39697,7 @@ export type PostCodesValidateData = {
                 /**
                  * Text transformation for border text
                  */
-                borderTextTransform?: "uppercase" | "lowercase" | "capitalize" | null;
+                borderTextTransform?: 'uppercase' | 'lowercase' | 'capitalize' | null;
                 /**
                  * Font weight for border text
                  */
@@ -37344,7 +39719,7 @@ export type PostCodesValidateData = {
                 /**
                  * Overall shape of the QR code
                  */
-                shape?: "square" | "circle" | null;
+                shape?: 'square' | 'circle' | null;
                 /**
                  * Margin around the QR code in pixels
                  */
@@ -37380,11 +39755,11 @@ export type PostCodesValidateData = {
                     /**
                      * QR code encoding mode
                      */
-                    mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                    mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
                     /**
                      * Error correction level
                      */
-                    errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                    errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
                 } | null;
                 /**
                  * Options for QR code dots
@@ -37393,7 +39768,7 @@ export type PostCodesValidateData = {
                     /**
                      * Type of dots
                      */
-                    type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                    type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                     /**
                      * Color of dots in CSS format
                      */
@@ -37409,7 +39784,7 @@ export type PostCodesValidateData = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -37436,7 +39811,7 @@ export type PostCodesValidateData = {
                     /**
                      * Type of corner squares
                      */
-                    type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Color of corner squares in CSS format
                      */
@@ -37448,7 +39823,7 @@ export type PostCodesValidateData = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -37475,7 +39850,7 @@ export type PostCodesValidateData = {
                     /**
                      * Type of corner dots
                      */
-                    type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Color of corner dots in CSS format
                      */
@@ -37487,7 +39862,7 @@ export type PostCodesValidateData = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -37526,7 +39901,7 @@ export type PostCodesValidateData = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -37557,7 +39932,7 @@ export type PostCodesValidateData = {
                     /**
                      * Mode for embedded image
                      */
-                    mode?: "center" | "overlay" | "background" | null;
+                    mode?: 'center' | 'overlay' | 'background' | null;
                     /**
                      * Size of image relative to QR code (0-1)
                      */
@@ -37585,7 +39960,7 @@ export type PostCodesValidateData = {
                             /**
                              * Type of gradient
                              */
-                            type?: "linear" | "radial";
+                            type?: 'linear' | 'radial';
                             /**
                              * Rotation angle of gradient in degrees
                              */
@@ -37716,7 +40091,7 @@ export type PostCodesValidateData = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -37744,7 +40119,7 @@ export type PostCodesValidateData = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -37778,7 +40153,7 @@ export type PostCodesValidateData = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -37806,7 +40181,7 @@ export type PostCodesValidateData = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -37840,7 +40215,7 @@ export type PostCodesValidateData = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -37868,7 +40243,7 @@ export type PostCodesValidateData = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -37902,7 +40277,7 @@ export type PostCodesValidateData = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -37930,7 +40305,7 @@ export type PostCodesValidateData = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                     } | null;
@@ -37952,7 +40327,7 @@ export type PostCodesValidateData = {
                 /**
                  * Overall shape of the QR code
                  */
-                shape?: "square" | "circle" | null;
+                shape?: 'square' | 'circle' | null;
                 /**
                  * Margin around the QR code in pixels
                  */
@@ -37988,11 +40363,11 @@ export type PostCodesValidateData = {
                     /**
                      * QR code encoding mode
                      */
-                    mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                    mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
                     /**
                      * Error correction level
                      */
-                    errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                    errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
                 } | null;
                 /**
                  * Options for QR code dots
@@ -38001,7 +40376,7 @@ export type PostCodesValidateData = {
                     /**
                      * Type of dots
                      */
-                    type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                    type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                     /**
                      * Color of dots in CSS format
                      */
@@ -38017,7 +40392,7 @@ export type PostCodesValidateData = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -38044,7 +40419,7 @@ export type PostCodesValidateData = {
                     /**
                      * Type of corner squares
                      */
-                    type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Color of corner squares in CSS format
                      */
@@ -38056,7 +40431,7 @@ export type PostCodesValidateData = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -38083,7 +40458,7 @@ export type PostCodesValidateData = {
                     /**
                      * Type of corner dots
                      */
-                    type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Color of corner dots in CSS format
                      */
@@ -38095,7 +40470,7 @@ export type PostCodesValidateData = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -38134,7 +40509,7 @@ export type PostCodesValidateData = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -38165,7 +40540,7 @@ export type PostCodesValidateData = {
                     /**
                      * Mode for embedded image
                      */
-                    mode?: "center" | "overlay" | "background" | null;
+                    mode?: 'center' | 'overlay' | 'background' | null;
                     /**
                      * Size of image relative to QR code (0-1)
                      */
@@ -38193,7 +40568,7 @@ export type PostCodesValidateData = {
                             /**
                              * Type of gradient
                              */
-                            type?: "linear" | "radial";
+                            type?: 'linear' | 'radial';
                             /**
                              * Rotation angle of gradient in degrees
                              */
@@ -38321,7 +40696,7 @@ export type PostCodesValidateData = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -38349,7 +40724,7 @@ export type PostCodesValidateData = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -38383,7 +40758,7 @@ export type PostCodesValidateData = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -38411,7 +40786,7 @@ export type PostCodesValidateData = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -38445,7 +40820,7 @@ export type PostCodesValidateData = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -38473,7 +40848,7 @@ export type PostCodesValidateData = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -38507,7 +40882,7 @@ export type PostCodesValidateData = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -38535,7 +40910,7 @@ export type PostCodesValidateData = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                     } | null;
@@ -38579,7 +40954,7 @@ export type PostCodesValidateData = {
     };
     path?: never;
     query?: never;
-    url: "/codes/validate";
+    url: '/codes/validate';
 };
 export type PostCodesValidateErrors = {
     /**
@@ -38654,7 +41029,7 @@ export type PostCodesByCodeIdValidateData = {
         codeId: string;
     };
     query?: never;
-    url: "/codes/{codeId}/validate";
+    url: '/codes/{codeId}/validate';
 };
 export type PostCodesByCodeIdValidateErrors = {
     /**
@@ -38730,7 +41105,7 @@ export type PostCodesLinksRefreshData = {
     body?: never;
     path?: never;
     query?: never;
-    url: "/codes/links/refresh";
+    url: '/codes/links/refresh';
 };
 export type PostCodesLinksRefreshErrors = {
     /**
@@ -38818,7 +41193,7 @@ export type GetCodesByCodeIdVersionByVersionData = {
         version: number;
     };
     query?: never;
-    url: "/codes/{codeId}/version/{version}";
+    url: '/codes/{codeId}/version/{version}';
 };
 export type GetCodesByCodeIdVersionByVersionErrors = {
     /**
@@ -38870,11 +41245,11 @@ export type GetCodesByCodeIdVersionByVersionResponses = {
         /**
          * Type of the QR code
          */
-        type?: "static" | "dynamic";
+        type?: 'static' | 'dynamic';
         /**
          * The type of data the QR code contains. Only applies to dynamic codes.
          */
-        dataType?: "url" | "wifi" | "vcard" | "text" | "email" | "event" | "json" | "file" | "scan-info" | null;
+        dataType?: 'url' | 'wifi' | 'vcard' | 'text' | 'email' | 'event' | 'json' | 'file' | 'scan-info' | null;
         /**
          * Short alias for the QR code
          */
@@ -38914,7 +41289,7 @@ export type GetCodesByCodeIdVersionByVersionResponses = {
             /**
              * Overall shape of the QR code
              */
-            shape?: "square" | "circle" | null;
+            shape?: 'square' | 'circle' | null;
             /**
              * Margin around the QR code in pixels
              */
@@ -38950,11 +41325,11 @@ export type GetCodesByCodeIdVersionByVersionResponses = {
                 /**
                  * QR code encoding mode
                  */
-                mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
                 /**
                  * Error correction level
                  */
-                errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
             } | null;
             /**
              * Options for QR code dots
@@ -38963,7 +41338,7 @@ export type GetCodesByCodeIdVersionByVersionResponses = {
                 /**
                  * Type of dots
                  */
-                type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                 /**
                  * Color of dots in CSS format
                  */
@@ -38979,7 +41354,7 @@ export type GetCodesByCodeIdVersionByVersionResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -39006,7 +41381,7 @@ export type GetCodesByCodeIdVersionByVersionResponses = {
                 /**
                  * Type of corner squares
                  */
-                type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Color of corner squares in CSS format
                  */
@@ -39018,7 +41393,7 @@ export type GetCodesByCodeIdVersionByVersionResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -39045,7 +41420,7 @@ export type GetCodesByCodeIdVersionByVersionResponses = {
                 /**
                  * Type of corner dots
                  */
-                type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Color of corner dots in CSS format
                  */
@@ -39057,7 +41432,7 @@ export type GetCodesByCodeIdVersionByVersionResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -39096,7 +41471,7 @@ export type GetCodesByCodeIdVersionByVersionResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -39127,7 +41502,7 @@ export type GetCodesByCodeIdVersionByVersionResponses = {
                 /**
                  * Mode for embedded image
                  */
-                mode?: "center" | "overlay" | "background" | null;
+                mode?: 'center' | 'overlay' | 'background' | null;
                 /**
                  * Size of image relative to QR code (0-1)
                  */
@@ -39155,7 +41530,7 @@ export type GetCodesByCodeIdVersionByVersionResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -39286,7 +41661,7 @@ export type GetCodesByCodeIdVersionByVersionResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -39314,7 +41689,7 @@ export type GetCodesByCodeIdVersionByVersionResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -39348,7 +41723,7 @@ export type GetCodesByCodeIdVersionByVersionResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -39376,7 +41751,7 @@ export type GetCodesByCodeIdVersionByVersionResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -39410,7 +41785,7 @@ export type GetCodesByCodeIdVersionByVersionResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -39438,7 +41813,7 @@ export type GetCodesByCodeIdVersionByVersionResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -39472,7 +41847,7 @@ export type GetCodesByCodeIdVersionByVersionResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -39500,7 +41875,7 @@ export type GetCodesByCodeIdVersionByVersionResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                 } | null;
@@ -39555,7 +41930,7 @@ export type GetCodesByCodeIdVersionByVersionResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -39581,7 +41956,7 @@ export type GetCodesByCodeIdVersionByVersionResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -39607,7 +41982,7 @@ export type GetCodesByCodeIdVersionByVersionResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -39633,7 +42008,7 @@ export type GetCodesByCodeIdVersionByVersionResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -39655,15 +42030,15 @@ export type GetCodesByCodeIdVersionByVersionResponses = {
                 /**
                  * Shape style for the QR code dots
                  */
-                dotShape?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                dotShape?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                 /**
                  * Shape style for the QR code corner squares
                  */
-                cornerSquareShape?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                cornerSquareShape?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Shape style for the QR code corner dots
                  */
-                cornerDotShape?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                cornerDotShape?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Logo to be placed on the QR code (URL, Base64, Buffer, or Blob)
                  */
@@ -39675,7 +42050,7 @@ export type GetCodesByCodeIdVersionByVersionResponses = {
                 /**
                  * Placement mode for the logo
                  */
-                logoMode?: "center" | "overlay" | "background" | null;
+                logoMode?: 'center' | 'overlay' | 'background' | null;
                 /**
                  * Margin around the logo in pixels
                  */
@@ -39759,7 +42134,7 @@ export type GetCodesByCodeIdVersionByVersionResponses = {
                 /**
                  * Text transformation for border text
                  */
-                borderTextTransform?: "uppercase" | "lowercase" | "capitalize" | null;
+                borderTextTransform?: 'uppercase' | 'lowercase' | 'capitalize' | null;
                 /**
                  * Font weight for border text
                  */
@@ -39779,7 +42154,7 @@ export type GetCodesByCodeIdVersionByVersionResponses = {
                 /**
                  * Overall shape of the QR code
                  */
-                shape?: "square" | "circle" | null;
+                shape?: 'square' | 'circle' | null;
                 /**
                  * Margin around the QR code in pixels
                  */
@@ -39815,11 +42190,11 @@ export type GetCodesByCodeIdVersionByVersionResponses = {
                     /**
                      * QR code encoding mode
                      */
-                    mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                    mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
                     /**
                      * Error correction level
                      */
-                    errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                    errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
                 } | null;
                 /**
                  * Options for QR code dots
@@ -39828,7 +42203,7 @@ export type GetCodesByCodeIdVersionByVersionResponses = {
                     /**
                      * Type of dots
                      */
-                    type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                    type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                     /**
                      * Color of dots in CSS format
                      */
@@ -39844,7 +42219,7 @@ export type GetCodesByCodeIdVersionByVersionResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -39871,7 +42246,7 @@ export type GetCodesByCodeIdVersionByVersionResponses = {
                     /**
                      * Type of corner squares
                      */
-                    type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Color of corner squares in CSS format
                      */
@@ -39883,7 +42258,7 @@ export type GetCodesByCodeIdVersionByVersionResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -39910,7 +42285,7 @@ export type GetCodesByCodeIdVersionByVersionResponses = {
                     /**
                      * Type of corner dots
                      */
-                    type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Color of corner dots in CSS format
                      */
@@ -39922,7 +42297,7 @@ export type GetCodesByCodeIdVersionByVersionResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -39961,7 +42336,7 @@ export type GetCodesByCodeIdVersionByVersionResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -39992,7 +42367,7 @@ export type GetCodesByCodeIdVersionByVersionResponses = {
                     /**
                      * Mode for embedded image
                      */
-                    mode?: "center" | "overlay" | "background" | null;
+                    mode?: 'center' | 'overlay' | 'background' | null;
                     /**
                      * Size of image relative to QR code (0-1)
                      */
@@ -40020,7 +42395,7 @@ export type GetCodesByCodeIdVersionByVersionResponses = {
                             /**
                              * Type of gradient
                              */
-                            type?: "linear" | "radial";
+                            type?: 'linear' | 'radial';
                             /**
                              * Rotation angle of gradient in degrees
                              */
@@ -40151,7 +42526,7 @@ export type GetCodesByCodeIdVersionByVersionResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -40179,7 +42554,7 @@ export type GetCodesByCodeIdVersionByVersionResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -40213,7 +42588,7 @@ export type GetCodesByCodeIdVersionByVersionResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -40241,7 +42616,7 @@ export type GetCodesByCodeIdVersionByVersionResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -40275,7 +42650,7 @@ export type GetCodesByCodeIdVersionByVersionResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -40303,7 +42678,7 @@ export type GetCodesByCodeIdVersionByVersionResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -40337,7 +42712,7 @@ export type GetCodesByCodeIdVersionByVersionResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -40365,7 +42740,7 @@ export type GetCodesByCodeIdVersionByVersionResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                     } | null;
@@ -40389,7 +42764,7 @@ export type GetCodesByCodeIdVersionByVersionResponses = {
                 /**
                  * Overall shape of the QR code
                  */
-                shape?: "square" | "circle" | null;
+                shape?: 'square' | 'circle' | null;
                 /**
                  * Margin around the QR code in pixels
                  */
@@ -40425,11 +42800,11 @@ export type GetCodesByCodeIdVersionByVersionResponses = {
                     /**
                      * QR code encoding mode
                      */
-                    mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                    mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
                     /**
                      * Error correction level
                      */
-                    errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                    errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
                 } | null;
                 /**
                  * Options for QR code dots
@@ -40438,7 +42813,7 @@ export type GetCodesByCodeIdVersionByVersionResponses = {
                     /**
                      * Type of dots
                      */
-                    type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                    type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                     /**
                      * Color of dots in CSS format
                      */
@@ -40454,7 +42829,7 @@ export type GetCodesByCodeIdVersionByVersionResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -40481,7 +42856,7 @@ export type GetCodesByCodeIdVersionByVersionResponses = {
                     /**
                      * Type of corner squares
                      */
-                    type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Color of corner squares in CSS format
                      */
@@ -40493,7 +42868,7 @@ export type GetCodesByCodeIdVersionByVersionResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -40520,7 +42895,7 @@ export type GetCodesByCodeIdVersionByVersionResponses = {
                     /**
                      * Type of corner dots
                      */
-                    type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Color of corner dots in CSS format
                      */
@@ -40532,7 +42907,7 @@ export type GetCodesByCodeIdVersionByVersionResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -40571,7 +42946,7 @@ export type GetCodesByCodeIdVersionByVersionResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -40602,7 +42977,7 @@ export type GetCodesByCodeIdVersionByVersionResponses = {
                     /**
                      * Mode for embedded image
                      */
-                    mode?: "center" | "overlay" | "background" | null;
+                    mode?: 'center' | 'overlay' | 'background' | null;
                     /**
                      * Size of image relative to QR code (0-1)
                      */
@@ -40630,7 +43005,7 @@ export type GetCodesByCodeIdVersionByVersionResponses = {
                             /**
                              * Type of gradient
                              */
-                            type?: "linear" | "radial";
+                            type?: 'linear' | 'radial';
                             /**
                              * Rotation angle of gradient in degrees
                              */
@@ -40758,7 +43133,7 @@ export type GetCodesByCodeIdVersionByVersionResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -40786,7 +43161,7 @@ export type GetCodesByCodeIdVersionByVersionResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -40820,7 +43195,7 @@ export type GetCodesByCodeIdVersionByVersionResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -40848,7 +43223,7 @@ export type GetCodesByCodeIdVersionByVersionResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -40882,7 +43257,7 @@ export type GetCodesByCodeIdVersionByVersionResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -40910,7 +43285,7 @@ export type GetCodesByCodeIdVersionByVersionResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -40944,7 +43319,7 @@ export type GetCodesByCodeIdVersionByVersionResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -40972,7 +43347,7 @@ export type GetCodesByCodeIdVersionByVersionResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                     } | null;
@@ -41132,7 +43507,7 @@ export type DeleteCodesByCodeIdVersionsData = {
         codeId: string;
     };
     query?: never;
-    url: "/codes/{codeId}/versions";
+    url: '/codes/{codeId}/versions';
 };
 export type DeleteCodesByCodeIdVersionsErrors = {
     /**
@@ -41184,7 +43559,7 @@ export type GetCodesByCodeIdVersionsData = {
         codeId: string;
     };
     query?: never;
-    url: "/codes/{codeId}/versions";
+    url: '/codes/{codeId}/versions';
 };
 export type GetCodesByCodeIdVersionsErrors = {
     /**
@@ -41256,11 +43631,11 @@ export type GetCodesByCodeIdVersionsResponses = {
             /**
              * Type of the QR code
              */
-            type?: "static" | "dynamic";
+            type?: 'static' | 'dynamic';
             /**
              * The type of data the QR code contains. Only applies to dynamic codes.
              */
-            dataType?: "url" | "wifi" | "vcard" | "text" | "email" | "event" | "json" | "file" | "scan-info" | null;
+            dataType?: 'url' | 'wifi' | 'vcard' | 'text' | 'email' | 'event' | 'json' | 'file' | 'scan-info' | null;
             /**
              * Short alias for the QR code
              */
@@ -41300,7 +43675,7 @@ export type GetCodesByCodeIdVersionsResponses = {
                 /**
                  * Overall shape of the QR code
                  */
-                shape?: "square" | "circle" | null;
+                shape?: 'square' | 'circle' | null;
                 /**
                  * Margin around the QR code in pixels
                  */
@@ -41336,11 +43711,11 @@ export type GetCodesByCodeIdVersionsResponses = {
                     /**
                      * QR code encoding mode
                      */
-                    mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                    mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
                     /**
                      * Error correction level
                      */
-                    errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                    errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
                 } | null;
                 /**
                  * Options for QR code dots
@@ -41349,7 +43724,7 @@ export type GetCodesByCodeIdVersionsResponses = {
                     /**
                      * Type of dots
                      */
-                    type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                    type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                     /**
                      * Color of dots in CSS format
                      */
@@ -41365,7 +43740,7 @@ export type GetCodesByCodeIdVersionsResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -41392,7 +43767,7 @@ export type GetCodesByCodeIdVersionsResponses = {
                     /**
                      * Type of corner squares
                      */
-                    type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Color of corner squares in CSS format
                      */
@@ -41404,7 +43779,7 @@ export type GetCodesByCodeIdVersionsResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -41431,7 +43806,7 @@ export type GetCodesByCodeIdVersionsResponses = {
                     /**
                      * Type of corner dots
                      */
-                    type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Color of corner dots in CSS format
                      */
@@ -41443,7 +43818,7 @@ export type GetCodesByCodeIdVersionsResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -41482,7 +43857,7 @@ export type GetCodesByCodeIdVersionsResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -41513,7 +43888,7 @@ export type GetCodesByCodeIdVersionsResponses = {
                     /**
                      * Mode for embedded image
                      */
-                    mode?: "center" | "overlay" | "background" | null;
+                    mode?: 'center' | 'overlay' | 'background' | null;
                     /**
                      * Size of image relative to QR code (0-1)
                      */
@@ -41541,7 +43916,7 @@ export type GetCodesByCodeIdVersionsResponses = {
                             /**
                              * Type of gradient
                              */
-                            type?: "linear" | "radial";
+                            type?: 'linear' | 'radial';
                             /**
                              * Rotation angle of gradient in degrees
                              */
@@ -41672,7 +44047,7 @@ export type GetCodesByCodeIdVersionsResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -41700,7 +44075,7 @@ export type GetCodesByCodeIdVersionsResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -41734,7 +44109,7 @@ export type GetCodesByCodeIdVersionsResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -41762,7 +44137,7 @@ export type GetCodesByCodeIdVersionsResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -41796,7 +44171,7 @@ export type GetCodesByCodeIdVersionsResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -41824,7 +44199,7 @@ export type GetCodesByCodeIdVersionsResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -41858,7 +44233,7 @@ export type GetCodesByCodeIdVersionsResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -41886,7 +44261,7 @@ export type GetCodesByCodeIdVersionsResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                     } | null;
@@ -41941,7 +44316,7 @@ export type GetCodesByCodeIdVersionsResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -41967,7 +44342,7 @@ export type GetCodesByCodeIdVersionsResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -41993,7 +44368,7 @@ export type GetCodesByCodeIdVersionsResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -42019,7 +44394,7 @@ export type GetCodesByCodeIdVersionsResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -42041,15 +44416,15 @@ export type GetCodesByCodeIdVersionsResponses = {
                     /**
                      * Shape style for the QR code dots
                      */
-                    dotShape?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                    dotShape?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                     /**
                      * Shape style for the QR code corner squares
                      */
-                    cornerSquareShape?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    cornerSquareShape?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Shape style for the QR code corner dots
                      */
-                    cornerDotShape?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    cornerDotShape?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Logo to be placed on the QR code (URL, Base64, Buffer, or Blob)
                      */
@@ -42061,7 +44436,7 @@ export type GetCodesByCodeIdVersionsResponses = {
                     /**
                      * Placement mode for the logo
                      */
-                    logoMode?: "center" | "overlay" | "background" | null;
+                    logoMode?: 'center' | 'overlay' | 'background' | null;
                     /**
                      * Margin around the logo in pixels
                      */
@@ -42145,7 +44520,7 @@ export type GetCodesByCodeIdVersionsResponses = {
                     /**
                      * Text transformation for border text
                      */
-                    borderTextTransform?: "uppercase" | "lowercase" | "capitalize" | null;
+                    borderTextTransform?: 'uppercase' | 'lowercase' | 'capitalize' | null;
                     /**
                      * Font weight for border text
                      */
@@ -42165,7 +44540,7 @@ export type GetCodesByCodeIdVersionsResponses = {
                     /**
                      * Overall shape of the QR code
                      */
-                    shape?: "square" | "circle" | null;
+                    shape?: 'square' | 'circle' | null;
                     /**
                      * Margin around the QR code in pixels
                      */
@@ -42201,11 +44576,11 @@ export type GetCodesByCodeIdVersionsResponses = {
                         /**
                          * QR code encoding mode
                          */
-                        mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                        mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
                         /**
                          * Error correction level
                          */
-                        errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                        errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
                     } | null;
                     /**
                      * Options for QR code dots
@@ -42214,7 +44589,7 @@ export type GetCodesByCodeIdVersionsResponses = {
                         /**
                          * Type of dots
                          */
-                        type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                        type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                         /**
                          * Color of dots in CSS format
                          */
@@ -42230,7 +44605,7 @@ export type GetCodesByCodeIdVersionsResponses = {
                             /**
                              * Type of gradient
                              */
-                            type?: "linear" | "radial";
+                            type?: 'linear' | 'radial';
                             /**
                              * Rotation angle of gradient in degrees
                              */
@@ -42257,7 +44632,7 @@ export type GetCodesByCodeIdVersionsResponses = {
                         /**
                          * Type of corner squares
                          */
-                        type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                        type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                         /**
                          * Color of corner squares in CSS format
                          */
@@ -42269,7 +44644,7 @@ export type GetCodesByCodeIdVersionsResponses = {
                             /**
                              * Type of gradient
                              */
-                            type?: "linear" | "radial";
+                            type?: 'linear' | 'radial';
                             /**
                              * Rotation angle of gradient in degrees
                              */
@@ -42296,7 +44671,7 @@ export type GetCodesByCodeIdVersionsResponses = {
                         /**
                          * Type of corner dots
                          */
-                        type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                        type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                         /**
                          * Color of corner dots in CSS format
                          */
@@ -42308,7 +44683,7 @@ export type GetCodesByCodeIdVersionsResponses = {
                             /**
                              * Type of gradient
                              */
-                            type?: "linear" | "radial";
+                            type?: 'linear' | 'radial';
                             /**
                              * Rotation angle of gradient in degrees
                              */
@@ -42347,7 +44722,7 @@ export type GetCodesByCodeIdVersionsResponses = {
                             /**
                              * Type of gradient
                              */
-                            type?: "linear" | "radial";
+                            type?: 'linear' | 'radial';
                             /**
                              * Rotation angle of gradient in degrees
                              */
@@ -42378,7 +44753,7 @@ export type GetCodesByCodeIdVersionsResponses = {
                         /**
                          * Mode for embedded image
                          */
-                        mode?: "center" | "overlay" | "background" | null;
+                        mode?: 'center' | 'overlay' | 'background' | null;
                         /**
                          * Size of image relative to QR code (0-1)
                          */
@@ -42406,7 +44781,7 @@ export type GetCodesByCodeIdVersionsResponses = {
                                 /**
                                  * Type of gradient
                                  */
-                                type?: "linear" | "radial";
+                                type?: 'linear' | 'radial';
                                 /**
                                  * Rotation angle of gradient in degrees
                                  */
@@ -42537,7 +44912,7 @@ export type GetCodesByCodeIdVersionsResponses = {
                                 /**
                                  * Type of decoration
                                  */
-                                type?: "text" | "image";
+                                type?: 'text' | 'image';
                                 /**
                                  * Content value for decoration
                                  */
@@ -42565,7 +44940,7 @@ export type GetCodesByCodeIdVersionsResponses = {
                                     /**
                                      * Font weight
                                      */
-                                    fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                    fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                                 };
                             } | null;
                             /**
@@ -42599,7 +44974,7 @@ export type GetCodesByCodeIdVersionsResponses = {
                                 /**
                                  * Type of decoration
                                  */
-                                type?: "text" | "image";
+                                type?: 'text' | 'image';
                                 /**
                                  * Content value for decoration
                                  */
@@ -42627,7 +45002,7 @@ export type GetCodesByCodeIdVersionsResponses = {
                                     /**
                                      * Font weight
                                      */
-                                    fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                    fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                                 };
                             } | null;
                             /**
@@ -42661,7 +45036,7 @@ export type GetCodesByCodeIdVersionsResponses = {
                                 /**
                                  * Type of decoration
                                  */
-                                type?: "text" | "image";
+                                type?: 'text' | 'image';
                                 /**
                                  * Content value for decoration
                                  */
@@ -42689,7 +45064,7 @@ export type GetCodesByCodeIdVersionsResponses = {
                                     /**
                                      * Font weight
                                      */
-                                    fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                    fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                                 };
                             } | null;
                             /**
@@ -42723,7 +45098,7 @@ export type GetCodesByCodeIdVersionsResponses = {
                                 /**
                                  * Type of decoration
                                  */
-                                type?: "text" | "image";
+                                type?: 'text' | 'image';
                                 /**
                                  * Content value for decoration
                                  */
@@ -42751,7 +45126,7 @@ export type GetCodesByCodeIdVersionsResponses = {
                                     /**
                                      * Font weight
                                      */
-                                    fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                    fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                                 };
                             } | null;
                         } | null;
@@ -42775,7 +45150,7 @@ export type GetCodesByCodeIdVersionsResponses = {
                     /**
                      * Overall shape of the QR code
                      */
-                    shape?: "square" | "circle" | null;
+                    shape?: 'square' | 'circle' | null;
                     /**
                      * Margin around the QR code in pixels
                      */
@@ -42811,11 +45186,11 @@ export type GetCodesByCodeIdVersionsResponses = {
                         /**
                          * QR code encoding mode
                          */
-                        mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                        mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
                         /**
                          * Error correction level
                          */
-                        errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                        errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
                     } | null;
                     /**
                      * Options for QR code dots
@@ -42824,7 +45199,7 @@ export type GetCodesByCodeIdVersionsResponses = {
                         /**
                          * Type of dots
                          */
-                        type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                        type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                         /**
                          * Color of dots in CSS format
                          */
@@ -42840,7 +45215,7 @@ export type GetCodesByCodeIdVersionsResponses = {
                             /**
                              * Type of gradient
                              */
-                            type?: "linear" | "radial";
+                            type?: 'linear' | 'radial';
                             /**
                              * Rotation angle of gradient in degrees
                              */
@@ -42867,7 +45242,7 @@ export type GetCodesByCodeIdVersionsResponses = {
                         /**
                          * Type of corner squares
                          */
-                        type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                        type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                         /**
                          * Color of corner squares in CSS format
                          */
@@ -42879,7 +45254,7 @@ export type GetCodesByCodeIdVersionsResponses = {
                             /**
                              * Type of gradient
                              */
-                            type?: "linear" | "radial";
+                            type?: 'linear' | 'radial';
                             /**
                              * Rotation angle of gradient in degrees
                              */
@@ -42906,7 +45281,7 @@ export type GetCodesByCodeIdVersionsResponses = {
                         /**
                          * Type of corner dots
                          */
-                        type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                        type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                         /**
                          * Color of corner dots in CSS format
                          */
@@ -42918,7 +45293,7 @@ export type GetCodesByCodeIdVersionsResponses = {
                             /**
                              * Type of gradient
                              */
-                            type?: "linear" | "radial";
+                            type?: 'linear' | 'radial';
                             /**
                              * Rotation angle of gradient in degrees
                              */
@@ -42957,7 +45332,7 @@ export type GetCodesByCodeIdVersionsResponses = {
                             /**
                              * Type of gradient
                              */
-                            type?: "linear" | "radial";
+                            type?: 'linear' | 'radial';
                             /**
                              * Rotation angle of gradient in degrees
                              */
@@ -42988,7 +45363,7 @@ export type GetCodesByCodeIdVersionsResponses = {
                         /**
                          * Mode for embedded image
                          */
-                        mode?: "center" | "overlay" | "background" | null;
+                        mode?: 'center' | 'overlay' | 'background' | null;
                         /**
                          * Size of image relative to QR code (0-1)
                          */
@@ -43016,7 +45391,7 @@ export type GetCodesByCodeIdVersionsResponses = {
                                 /**
                                  * Type of gradient
                                  */
-                                type?: "linear" | "radial";
+                                type?: 'linear' | 'radial';
                                 /**
                                  * Rotation angle of gradient in degrees
                                  */
@@ -43144,7 +45519,7 @@ export type GetCodesByCodeIdVersionsResponses = {
                                 /**
                                  * Type of decoration
                                  */
-                                type?: "text" | "image";
+                                type?: 'text' | 'image';
                                 /**
                                  * Content value for decoration
                                  */
@@ -43172,7 +45547,7 @@ export type GetCodesByCodeIdVersionsResponses = {
                                     /**
                                      * Font weight
                                      */
-                                    fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                    fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                                 };
                             } | null;
                             /**
@@ -43206,7 +45581,7 @@ export type GetCodesByCodeIdVersionsResponses = {
                                 /**
                                  * Type of decoration
                                  */
-                                type?: "text" | "image";
+                                type?: 'text' | 'image';
                                 /**
                                  * Content value for decoration
                                  */
@@ -43234,7 +45609,7 @@ export type GetCodesByCodeIdVersionsResponses = {
                                     /**
                                      * Font weight
                                      */
-                                    fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                    fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                                 };
                             } | null;
                             /**
@@ -43268,7 +45643,7 @@ export type GetCodesByCodeIdVersionsResponses = {
                                 /**
                                  * Type of decoration
                                  */
-                                type?: "text" | "image";
+                                type?: 'text' | 'image';
                                 /**
                                  * Content value for decoration
                                  */
@@ -43296,7 +45671,7 @@ export type GetCodesByCodeIdVersionsResponses = {
                                     /**
                                      * Font weight
                                      */
-                                    fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                    fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                                 };
                             } | null;
                             /**
@@ -43330,7 +45705,7 @@ export type GetCodesByCodeIdVersionsResponses = {
                                 /**
                                  * Type of decoration
                                  */
-                                type?: "text" | "image";
+                                type?: 'text' | 'image';
                                 /**
                                  * Content value for decoration
                                  */
@@ -43358,7 +45733,7 @@ export type GetCodesByCodeIdVersionsResponses = {
                                     /**
                                      * Font weight
                                      */
-                                    fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                    fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                                 };
                             } | null;
                         } | null;
@@ -43520,7 +45895,7 @@ export type PostCodesByCodeIdVersionByVersionRestoreData = {
         version: number;
     };
     query?: never;
-    url: "/codes/{codeId}/version/{version}/restore";
+    url: '/codes/{codeId}/version/{version}/restore';
 };
 export type PostCodesByCodeIdVersionByVersionRestoreErrors = {
     /**
@@ -43572,11 +45947,11 @@ export type PostCodesByCodeIdVersionByVersionRestoreResponses = {
         /**
          * Type of the QR code
          */
-        type?: "static" | "dynamic";
+        type?: 'static' | 'dynamic';
         /**
          * The type of data the QR code contains. Only applies to dynamic codes.
          */
-        dataType?: "url" | "wifi" | "vcard" | "text" | "email" | "event" | "json" | "file" | "scan-info" | null;
+        dataType?: 'url' | 'wifi' | 'vcard' | 'text' | 'email' | 'event' | 'json' | 'file' | 'scan-info' | null;
         /**
          * Short alias for the QR code
          */
@@ -43616,7 +45991,7 @@ export type PostCodesByCodeIdVersionByVersionRestoreResponses = {
             /**
              * Overall shape of the QR code
              */
-            shape?: "square" | "circle" | null;
+            shape?: 'square' | 'circle' | null;
             /**
              * Margin around the QR code in pixels
              */
@@ -43652,11 +46027,11 @@ export type PostCodesByCodeIdVersionByVersionRestoreResponses = {
                 /**
                  * QR code encoding mode
                  */
-                mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
                 /**
                  * Error correction level
                  */
-                errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
             } | null;
             /**
              * Options for QR code dots
@@ -43665,7 +46040,7 @@ export type PostCodesByCodeIdVersionByVersionRestoreResponses = {
                 /**
                  * Type of dots
                  */
-                type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                 /**
                  * Color of dots in CSS format
                  */
@@ -43681,7 +46056,7 @@ export type PostCodesByCodeIdVersionByVersionRestoreResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -43708,7 +46083,7 @@ export type PostCodesByCodeIdVersionByVersionRestoreResponses = {
                 /**
                  * Type of corner squares
                  */
-                type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Color of corner squares in CSS format
                  */
@@ -43720,7 +46095,7 @@ export type PostCodesByCodeIdVersionByVersionRestoreResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -43747,7 +46122,7 @@ export type PostCodesByCodeIdVersionByVersionRestoreResponses = {
                 /**
                  * Type of corner dots
                  */
-                type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Color of corner dots in CSS format
                  */
@@ -43759,7 +46134,7 @@ export type PostCodesByCodeIdVersionByVersionRestoreResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -43798,7 +46173,7 @@ export type PostCodesByCodeIdVersionByVersionRestoreResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -43829,7 +46204,7 @@ export type PostCodesByCodeIdVersionByVersionRestoreResponses = {
                 /**
                  * Mode for embedded image
                  */
-                mode?: "center" | "overlay" | "background" | null;
+                mode?: 'center' | 'overlay' | 'background' | null;
                 /**
                  * Size of image relative to QR code (0-1)
                  */
@@ -43857,7 +46232,7 @@ export type PostCodesByCodeIdVersionByVersionRestoreResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -43988,7 +46363,7 @@ export type PostCodesByCodeIdVersionByVersionRestoreResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -44016,7 +46391,7 @@ export type PostCodesByCodeIdVersionByVersionRestoreResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -44050,7 +46425,7 @@ export type PostCodesByCodeIdVersionByVersionRestoreResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -44078,7 +46453,7 @@ export type PostCodesByCodeIdVersionByVersionRestoreResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -44112,7 +46487,7 @@ export type PostCodesByCodeIdVersionByVersionRestoreResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -44140,7 +46515,7 @@ export type PostCodesByCodeIdVersionByVersionRestoreResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -44174,7 +46549,7 @@ export type PostCodesByCodeIdVersionByVersionRestoreResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -44202,7 +46577,7 @@ export type PostCodesByCodeIdVersionByVersionRestoreResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                 } | null;
@@ -44257,7 +46632,7 @@ export type PostCodesByCodeIdVersionByVersionRestoreResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -44283,7 +46658,7 @@ export type PostCodesByCodeIdVersionByVersionRestoreResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -44309,7 +46684,7 @@ export type PostCodesByCodeIdVersionByVersionRestoreResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -44335,7 +46710,7 @@ export type PostCodesByCodeIdVersionByVersionRestoreResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -44357,15 +46732,15 @@ export type PostCodesByCodeIdVersionByVersionRestoreResponses = {
                 /**
                  * Shape style for the QR code dots
                  */
-                dotShape?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                dotShape?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                 /**
                  * Shape style for the QR code corner squares
                  */
-                cornerSquareShape?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                cornerSquareShape?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Shape style for the QR code corner dots
                  */
-                cornerDotShape?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                cornerDotShape?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Logo to be placed on the QR code (URL, Base64, Buffer, or Blob)
                  */
@@ -44377,7 +46752,7 @@ export type PostCodesByCodeIdVersionByVersionRestoreResponses = {
                 /**
                  * Placement mode for the logo
                  */
-                logoMode?: "center" | "overlay" | "background" | null;
+                logoMode?: 'center' | 'overlay' | 'background' | null;
                 /**
                  * Margin around the logo in pixels
                  */
@@ -44461,7 +46836,7 @@ export type PostCodesByCodeIdVersionByVersionRestoreResponses = {
                 /**
                  * Text transformation for border text
                  */
-                borderTextTransform?: "uppercase" | "lowercase" | "capitalize" | null;
+                borderTextTransform?: 'uppercase' | 'lowercase' | 'capitalize' | null;
                 /**
                  * Font weight for border text
                  */
@@ -44481,7 +46856,7 @@ export type PostCodesByCodeIdVersionByVersionRestoreResponses = {
                 /**
                  * Overall shape of the QR code
                  */
-                shape?: "square" | "circle" | null;
+                shape?: 'square' | 'circle' | null;
                 /**
                  * Margin around the QR code in pixels
                  */
@@ -44517,11 +46892,11 @@ export type PostCodesByCodeIdVersionByVersionRestoreResponses = {
                     /**
                      * QR code encoding mode
                      */
-                    mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                    mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
                     /**
                      * Error correction level
                      */
-                    errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                    errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
                 } | null;
                 /**
                  * Options for QR code dots
@@ -44530,7 +46905,7 @@ export type PostCodesByCodeIdVersionByVersionRestoreResponses = {
                     /**
                      * Type of dots
                      */
-                    type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                    type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                     /**
                      * Color of dots in CSS format
                      */
@@ -44546,7 +46921,7 @@ export type PostCodesByCodeIdVersionByVersionRestoreResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -44573,7 +46948,7 @@ export type PostCodesByCodeIdVersionByVersionRestoreResponses = {
                     /**
                      * Type of corner squares
                      */
-                    type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Color of corner squares in CSS format
                      */
@@ -44585,7 +46960,7 @@ export type PostCodesByCodeIdVersionByVersionRestoreResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -44612,7 +46987,7 @@ export type PostCodesByCodeIdVersionByVersionRestoreResponses = {
                     /**
                      * Type of corner dots
                      */
-                    type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Color of corner dots in CSS format
                      */
@@ -44624,7 +46999,7 @@ export type PostCodesByCodeIdVersionByVersionRestoreResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -44663,7 +47038,7 @@ export type PostCodesByCodeIdVersionByVersionRestoreResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -44694,7 +47069,7 @@ export type PostCodesByCodeIdVersionByVersionRestoreResponses = {
                     /**
                      * Mode for embedded image
                      */
-                    mode?: "center" | "overlay" | "background" | null;
+                    mode?: 'center' | 'overlay' | 'background' | null;
                     /**
                      * Size of image relative to QR code (0-1)
                      */
@@ -44722,7 +47097,7 @@ export type PostCodesByCodeIdVersionByVersionRestoreResponses = {
                             /**
                              * Type of gradient
                              */
-                            type?: "linear" | "radial";
+                            type?: 'linear' | 'radial';
                             /**
                              * Rotation angle of gradient in degrees
                              */
@@ -44853,7 +47228,7 @@ export type PostCodesByCodeIdVersionByVersionRestoreResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -44881,7 +47256,7 @@ export type PostCodesByCodeIdVersionByVersionRestoreResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -44915,7 +47290,7 @@ export type PostCodesByCodeIdVersionByVersionRestoreResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -44943,7 +47318,7 @@ export type PostCodesByCodeIdVersionByVersionRestoreResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -44977,7 +47352,7 @@ export type PostCodesByCodeIdVersionByVersionRestoreResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -45005,7 +47380,7 @@ export type PostCodesByCodeIdVersionByVersionRestoreResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -45039,7 +47414,7 @@ export type PostCodesByCodeIdVersionByVersionRestoreResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -45067,7 +47442,7 @@ export type PostCodesByCodeIdVersionByVersionRestoreResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                     } | null;
@@ -45091,7 +47466,7 @@ export type PostCodesByCodeIdVersionByVersionRestoreResponses = {
                 /**
                  * Overall shape of the QR code
                  */
-                shape?: "square" | "circle" | null;
+                shape?: 'square' | 'circle' | null;
                 /**
                  * Margin around the QR code in pixels
                  */
@@ -45127,11 +47502,11 @@ export type PostCodesByCodeIdVersionByVersionRestoreResponses = {
                     /**
                      * QR code encoding mode
                      */
-                    mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                    mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
                     /**
                      * Error correction level
                      */
-                    errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                    errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
                 } | null;
                 /**
                  * Options for QR code dots
@@ -45140,7 +47515,7 @@ export type PostCodesByCodeIdVersionByVersionRestoreResponses = {
                     /**
                      * Type of dots
                      */
-                    type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                    type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                     /**
                      * Color of dots in CSS format
                      */
@@ -45156,7 +47531,7 @@ export type PostCodesByCodeIdVersionByVersionRestoreResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -45183,7 +47558,7 @@ export type PostCodesByCodeIdVersionByVersionRestoreResponses = {
                     /**
                      * Type of corner squares
                      */
-                    type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Color of corner squares in CSS format
                      */
@@ -45195,7 +47570,7 @@ export type PostCodesByCodeIdVersionByVersionRestoreResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -45222,7 +47597,7 @@ export type PostCodesByCodeIdVersionByVersionRestoreResponses = {
                     /**
                      * Type of corner dots
                      */
-                    type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Color of corner dots in CSS format
                      */
@@ -45234,7 +47609,7 @@ export type PostCodesByCodeIdVersionByVersionRestoreResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -45273,7 +47648,7 @@ export type PostCodesByCodeIdVersionByVersionRestoreResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -45304,7 +47679,7 @@ export type PostCodesByCodeIdVersionByVersionRestoreResponses = {
                     /**
                      * Mode for embedded image
                      */
-                    mode?: "center" | "overlay" | "background" | null;
+                    mode?: 'center' | 'overlay' | 'background' | null;
                     /**
                      * Size of image relative to QR code (0-1)
                      */
@@ -45332,7 +47707,7 @@ export type PostCodesByCodeIdVersionByVersionRestoreResponses = {
                             /**
                              * Type of gradient
                              */
-                            type?: "linear" | "radial";
+                            type?: 'linear' | 'radial';
                             /**
                              * Rotation angle of gradient in degrees
                              */
@@ -45460,7 +47835,7 @@ export type PostCodesByCodeIdVersionByVersionRestoreResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -45488,7 +47863,7 @@ export type PostCodesByCodeIdVersionByVersionRestoreResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -45522,7 +47897,7 @@ export type PostCodesByCodeIdVersionByVersionRestoreResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -45550,7 +47925,7 @@ export type PostCodesByCodeIdVersionByVersionRestoreResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -45584,7 +47959,7 @@ export type PostCodesByCodeIdVersionByVersionRestoreResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -45612,7 +47987,7 @@ export type PostCodesByCodeIdVersionByVersionRestoreResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -45646,7 +48021,7 @@ export type PostCodesByCodeIdVersionByVersionRestoreResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -45674,7 +48049,7 @@ export type PostCodesByCodeIdVersionByVersionRestoreResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                     } | null;
@@ -45836,10 +48211,10 @@ export type GetCodesByCodeIdVersionByVersionByTypeData = {
         /**
          * File type to generate
          */
-        type: "svg" | "png" | "pdf";
+        type: 'svg' | 'png' | 'pdf';
     };
     query?: never;
-    url: "/codes/{codeId}/version/{version}/{type}";
+    url: '/codes/{codeId}/version/{version}/{type}';
 };
 export type GetCodesByCodeIdVersionByVersionByTypeErrors = {
     /**
@@ -45893,10 +48268,10 @@ export type GetCodesByCodeIdVersionByVersionByTypeLinkData = {
         /**
          * File type to generate
          */
-        type: "svg" | "png" | "pdf";
+        type: 'svg' | 'png' | 'pdf';
     };
     query?: never;
-    url: "/codes/{codeId}/version/{version}/{type}/link";
+    url: '/codes/{codeId}/version/{version}/{type}/link';
 };
 export type GetCodesByCodeIdVersionByVersionByTypeLinkErrors = {
     /**
@@ -45959,7 +48334,7 @@ export type DeleteCodesByCodeIdVersionsByVersionLinksData = {
         version: number;
     };
     query?: never;
-    url: "/codes/{codeId}/versions/{version}/links";
+    url: '/codes/{codeId}/versions/{version}/links';
 };
 export type DeleteCodesByCodeIdVersionsByVersionLinksErrors = {
     /**
@@ -46038,10 +48413,10 @@ export type DeleteCodesByCodeIdVersionsByVersionLinksByTypeData = {
         /**
          * File type to generate
          */
-        type: "svg" | "png" | "pdf";
+        type: 'svg' | 'png' | 'pdf';
     };
     query?: never;
-    url: "/codes/{codeId}/versions/{version}/links/{type}";
+    url: '/codes/{codeId}/versions/{version}/links/{type}';
 };
 export type DeleteCodesByCodeIdVersionsByVersionLinksByTypeErrors = {
     /**
@@ -46067,7 +48442,7 @@ export type DeleteCodesByCodeIdVersionsByVersionLinksByTypeErrors = {
             code?: string;
         }>;
     } | {
-        message: "No link found for the specified file type for this code version";
+        message: 'No link found for the specified file type for this code version';
     };
     /**
      * Unauthorized response message
@@ -46125,16 +48500,16 @@ export type DeleteCodesByCodeIdVersionsLinksData = {
         codeId: string;
     };
     query?: never;
-    url: "/codes/{codeId}/versions/links";
+    url: '/codes/{codeId}/versions/links';
 };
 export type DeleteCodesByCodeIdVersionsLinksErrors = {
     /**
      * Invalid request to delete all code versions links.
      */
     400: {
-        message: "No code versions found to delete links from";
+        message: 'No code versions found to delete links from';
     } | {
-        message: "No links of the specified file type found for any code version";
+        message: 'No links of the specified file type found for any code version';
     };
     /**
      * Unauthorized response message
@@ -46183,10 +48558,10 @@ export type DeleteCodesByCodeIdVersionsLinksByTypeData = {
         /**
          * File type to generate
          */
-        type: "svg" | "png" | "pdf";
+        type: 'svg' | 'png' | 'pdf';
     };
     query?: never;
-    url: "/codes/{codeId}/versions/links/{type}";
+    url: '/codes/{codeId}/versions/links/{type}';
 };
 export type DeleteCodesByCodeIdVersionsLinksByTypeErrors = {
     /**
@@ -46212,9 +48587,9 @@ export type DeleteCodesByCodeIdVersionsLinksByTypeErrors = {
             code?: string;
         }>;
     } | {
-        message: "No code versions found to delete links from";
+        message: 'No code versions found to delete links from';
     } | {
-        message: "No links of the specified file type found for any code version";
+        message: 'No links of the specified file type found for any code version';
     };
     /**
      * Unauthorized response message
@@ -46263,10 +48638,10 @@ export type GetCodesByCodeIdByTypeData = {
         /**
          * File type to generate
          */
-        type: "svg" | "png" | "pdf";
+        type: 'svg' | 'png' | 'pdf';
     };
     query?: never;
-    url: "/codes/{codeId}/{type}";
+    url: '/codes/{codeId}/{type}';
 };
 export type GetCodesByCodeIdByTypeErrors = {
     /**
@@ -46314,10 +48689,10 @@ export type GetCodesByCodeIdByTypeLinkData = {
         /**
          * File type to generate
          */
-        type: "svg" | "png" | "pdf";
+        type: 'svg' | 'png' | 'pdf';
     };
     query?: never;
-    url: "/codes/{codeId}/{type}/link";
+    url: '/codes/{codeId}/{type}/link';
 };
 export type GetCodesByCodeIdByTypeLinkErrors = {
     /**
@@ -46369,7 +48744,7 @@ export type DeleteCodesByCodeIdLinksData = {
         codeId: string;
     };
     query?: never;
-    url: "/codes/{codeId}/links";
+    url: '/codes/{codeId}/links';
 };
 export type DeleteCodesByCodeIdLinksErrors = {
     /**
@@ -46419,10 +48794,10 @@ export type DeleteCodesByCodeIdLinksByTypeData = {
         /**
          * File type to generate
          */
-        type: "svg" | "png" | "pdf";
+        type: 'svg' | 'png' | 'pdf';
     };
     query?: never;
-    url: "/codes/{codeId}/links/{type}";
+    url: '/codes/{codeId}/links/{type}';
 };
 export type DeleteCodesByCodeIdLinksByTypeErrors = {
     /**
@@ -46483,7 +48858,7 @@ export type GetScansByScanIdData = {
         scanId: string;
     };
     query?: never;
-    url: "/scans/{scanId}";
+    url: '/scans/{scanId}';
 };
 export type GetScansByScanIdErrors = {
     /**
@@ -46604,7 +48979,7 @@ export type GetTemplatesData = {
          */
         name?: string;
     };
-    url: "/templates";
+    url: '/templates';
 };
 export type GetTemplatesErrors = {
     /**
@@ -46667,7 +49042,7 @@ export type GetTemplatesResponses = {
                 /**
                  * Overall shape of the QR code
                  */
-                shape?: "square" | "circle" | null;
+                shape?: 'square' | 'circle' | null;
                 /**
                  * Margin around the QR code in pixels
                  */
@@ -46703,11 +49078,11 @@ export type GetTemplatesResponses = {
                     /**
                      * QR code encoding mode
                      */
-                    mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                    mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
                     /**
                      * Error correction level
                      */
-                    errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                    errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
                 } | null;
                 /**
                  * Options for QR code dots
@@ -46716,7 +49091,7 @@ export type GetTemplatesResponses = {
                     /**
                      * Type of dots
                      */
-                    type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                    type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                     /**
                      * Color of dots in CSS format
                      */
@@ -46732,7 +49107,7 @@ export type GetTemplatesResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -46759,7 +49134,7 @@ export type GetTemplatesResponses = {
                     /**
                      * Type of corner squares
                      */
-                    type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Color of corner squares in CSS format
                      */
@@ -46771,7 +49146,7 @@ export type GetTemplatesResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -46798,7 +49173,7 @@ export type GetTemplatesResponses = {
                     /**
                      * Type of corner dots
                      */
-                    type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Color of corner dots in CSS format
                      */
@@ -46810,7 +49185,7 @@ export type GetTemplatesResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -46849,7 +49224,7 @@ export type GetTemplatesResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -46880,7 +49255,7 @@ export type GetTemplatesResponses = {
                     /**
                      * Mode for embedded image
                      */
-                    mode?: "center" | "overlay" | "background" | null;
+                    mode?: 'center' | 'overlay' | 'background' | null;
                     /**
                      * Size of image relative to QR code (0-1)
                      */
@@ -46908,7 +49283,7 @@ export type GetTemplatesResponses = {
                             /**
                              * Type of gradient
                              */
-                            type?: "linear" | "radial";
+                            type?: 'linear' | 'radial';
                             /**
                              * Rotation angle of gradient in degrees
                              */
@@ -47039,7 +49414,7 @@ export type GetTemplatesResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -47067,7 +49442,7 @@ export type GetTemplatesResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -47101,7 +49476,7 @@ export type GetTemplatesResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -47129,7 +49504,7 @@ export type GetTemplatesResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -47163,7 +49538,7 @@ export type GetTemplatesResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -47191,7 +49566,7 @@ export type GetTemplatesResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -47225,7 +49600,7 @@ export type GetTemplatesResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -47253,7 +49628,7 @@ export type GetTemplatesResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                     } | null;
@@ -47369,7 +49744,7 @@ export type GetTemplatesResponses = {
                 /**
                  * Overall shape of the QR code
                  */
-                shape?: "square" | "circle" | null;
+                shape?: 'square' | 'circle' | null;
                 /**
                  * Margin around the QR code in pixels
                  */
@@ -47405,11 +49780,11 @@ export type GetTemplatesResponses = {
                     /**
                      * QR code encoding mode
                      */
-                    mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                    mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
                     /**
                      * Error correction level
                      */
-                    errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                    errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
                 } | null;
                 /**
                  * Options for QR code dots
@@ -47418,7 +49793,7 @@ export type GetTemplatesResponses = {
                     /**
                      * Type of dots
                      */
-                    type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                    type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                     /**
                      * Color of dots in CSS format
                      */
@@ -47434,7 +49809,7 @@ export type GetTemplatesResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -47461,7 +49836,7 @@ export type GetTemplatesResponses = {
                     /**
                      * Type of corner squares
                      */
-                    type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Color of corner squares in CSS format
                      */
@@ -47473,7 +49848,7 @@ export type GetTemplatesResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -47500,7 +49875,7 @@ export type GetTemplatesResponses = {
                     /**
                      * Type of corner dots
                      */
-                    type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Color of corner dots in CSS format
                      */
@@ -47512,7 +49887,7 @@ export type GetTemplatesResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -47551,7 +49926,7 @@ export type GetTemplatesResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -47582,7 +49957,7 @@ export type GetTemplatesResponses = {
                     /**
                      * Mode for embedded image
                      */
-                    mode?: "center" | "overlay" | "background" | null;
+                    mode?: 'center' | 'overlay' | 'background' | null;
                     /**
                      * Size of image relative to QR code (0-1)
                      */
@@ -47610,7 +49985,7 @@ export type GetTemplatesResponses = {
                             /**
                              * Type of gradient
                              */
-                            type?: "linear" | "radial";
+                            type?: 'linear' | 'radial';
                             /**
                              * Rotation angle of gradient in degrees
                              */
@@ -47741,7 +50116,7 @@ export type GetTemplatesResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -47769,7 +50144,7 @@ export type GetTemplatesResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -47803,7 +50178,7 @@ export type GetTemplatesResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -47831,7 +50206,7 @@ export type GetTemplatesResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -47865,7 +50240,7 @@ export type GetTemplatesResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -47893,7 +50268,7 @@ export type GetTemplatesResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -47927,7 +50302,7 @@ export type GetTemplatesResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -47955,7 +50330,7 @@ export type GetTemplatesResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                     } | null;
@@ -48071,7 +50446,7 @@ export type PostTemplatesData = {
             /**
              * Overall shape of the QR code
              */
-            shape?: "square" | "circle" | null;
+            shape?: 'square' | 'circle' | null;
             /**
              * Margin around the QR code in pixels
              */
@@ -48107,11 +50482,11 @@ export type PostTemplatesData = {
                 /**
                  * QR code encoding mode
                  */
-                mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
                 /**
                  * Error correction level
                  */
-                errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
             } | null;
             /**
              * Options for QR code dots
@@ -48120,7 +50495,7 @@ export type PostTemplatesData = {
                 /**
                  * Type of dots
                  */
-                type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                 /**
                  * Color of dots in CSS format
                  */
@@ -48136,7 +50511,7 @@ export type PostTemplatesData = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -48163,7 +50538,7 @@ export type PostTemplatesData = {
                 /**
                  * Type of corner squares
                  */
-                type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Color of corner squares in CSS format
                  */
@@ -48175,7 +50550,7 @@ export type PostTemplatesData = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -48202,7 +50577,7 @@ export type PostTemplatesData = {
                 /**
                  * Type of corner dots
                  */
-                type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Color of corner dots in CSS format
                  */
@@ -48214,7 +50589,7 @@ export type PostTemplatesData = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -48253,7 +50628,7 @@ export type PostTemplatesData = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -48284,7 +50659,7 @@ export type PostTemplatesData = {
                 /**
                  * Mode for embedded image
                  */
-                mode?: "center" | "overlay" | "background" | null;
+                mode?: 'center' | 'overlay' | 'background' | null;
                 /**
                  * Size of image relative to QR code (0-1)
                  */
@@ -48312,7 +50687,7 @@ export type PostTemplatesData = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -48443,7 +50818,7 @@ export type PostTemplatesData = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -48471,7 +50846,7 @@ export type PostTemplatesData = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -48505,7 +50880,7 @@ export type PostTemplatesData = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -48533,7 +50908,7 @@ export type PostTemplatesData = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -48567,7 +50942,7 @@ export type PostTemplatesData = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -48595,7 +50970,7 @@ export type PostTemplatesData = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -48629,7 +51004,7 @@ export type PostTemplatesData = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -48657,7 +51032,7 @@ export type PostTemplatesData = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                 } | null;
@@ -48676,7 +51051,7 @@ export type PostTemplatesData = {
     };
     path?: never;
     query?: never;
-    url: "/templates";
+    url: '/templates';
 };
 export type PostTemplatesErrors = {
     /**
@@ -48704,7 +51079,7 @@ export type PostTemplatesErrors = {
     } | {
         message: string;
     } | {
-        message: "Template name is already taken";
+        message: 'Template name is already taken';
     };
     /**
      * Unauthorized response message
@@ -48758,7 +51133,7 @@ export type PostTemplatesResponses = {
             /**
              * Overall shape of the QR code
              */
-            shape?: "square" | "circle" | null;
+            shape?: 'square' | 'circle' | null;
             /**
              * Margin around the QR code in pixels
              */
@@ -48794,11 +51169,11 @@ export type PostTemplatesResponses = {
                 /**
                  * QR code encoding mode
                  */
-                mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
                 /**
                  * Error correction level
                  */
-                errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
             } | null;
             /**
              * Options for QR code dots
@@ -48807,7 +51182,7 @@ export type PostTemplatesResponses = {
                 /**
                  * Type of dots
                  */
-                type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                 /**
                  * Color of dots in CSS format
                  */
@@ -48823,7 +51198,7 @@ export type PostTemplatesResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -48850,7 +51225,7 @@ export type PostTemplatesResponses = {
                 /**
                  * Type of corner squares
                  */
-                type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Color of corner squares in CSS format
                  */
@@ -48862,7 +51237,7 @@ export type PostTemplatesResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -48889,7 +51264,7 @@ export type PostTemplatesResponses = {
                 /**
                  * Type of corner dots
                  */
-                type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Color of corner dots in CSS format
                  */
@@ -48901,7 +51276,7 @@ export type PostTemplatesResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -48940,7 +51315,7 @@ export type PostTemplatesResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -48971,7 +51346,7 @@ export type PostTemplatesResponses = {
                 /**
                  * Mode for embedded image
                  */
-                mode?: "center" | "overlay" | "background" | null;
+                mode?: 'center' | 'overlay' | 'background' | null;
                 /**
                  * Size of image relative to QR code (0-1)
                  */
@@ -48999,7 +51374,7 @@ export type PostTemplatesResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -49130,7 +51505,7 @@ export type PostTemplatesResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -49158,7 +51533,7 @@ export type PostTemplatesResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -49192,7 +51567,7 @@ export type PostTemplatesResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -49220,7 +51595,7 @@ export type PostTemplatesResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -49254,7 +51629,7 @@ export type PostTemplatesResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -49282,7 +51657,7 @@ export type PostTemplatesResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -49316,7 +51691,7 @@ export type PostTemplatesResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -49344,7 +51719,7 @@ export type PostTemplatesResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                 } | null;
@@ -49448,7 +51823,7 @@ export type GetTemplatesBaseData = {
          */
         name?: string;
     };
-    url: "/templates/base";
+    url: '/templates/base';
 };
 export type GetTemplatesBaseErrors = {
     /**
@@ -49485,7 +51860,7 @@ export type GetTemplatesBaseResponses = {
             /**
              * Overall shape of the QR code
              */
-            shape?: "square" | "circle" | null;
+            shape?: 'square' | 'circle' | null;
             /**
              * Margin around the QR code in pixels
              */
@@ -49521,11 +51896,11 @@ export type GetTemplatesBaseResponses = {
                 /**
                  * QR code encoding mode
                  */
-                mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
                 /**
                  * Error correction level
                  */
-                errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
             } | null;
             /**
              * Options for QR code dots
@@ -49534,7 +51909,7 @@ export type GetTemplatesBaseResponses = {
                 /**
                  * Type of dots
                  */
-                type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                 /**
                  * Color of dots in CSS format
                  */
@@ -49550,7 +51925,7 @@ export type GetTemplatesBaseResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -49577,7 +51952,7 @@ export type GetTemplatesBaseResponses = {
                 /**
                  * Type of corner squares
                  */
-                type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Color of corner squares in CSS format
                  */
@@ -49589,7 +51964,7 @@ export type GetTemplatesBaseResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -49616,7 +51991,7 @@ export type GetTemplatesBaseResponses = {
                 /**
                  * Type of corner dots
                  */
-                type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Color of corner dots in CSS format
                  */
@@ -49628,7 +52003,7 @@ export type GetTemplatesBaseResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -49667,7 +52042,7 @@ export type GetTemplatesBaseResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -49698,7 +52073,7 @@ export type GetTemplatesBaseResponses = {
                 /**
                  * Mode for embedded image
                  */
-                mode?: "center" | "overlay" | "background" | null;
+                mode?: 'center' | 'overlay' | 'background' | null;
                 /**
                  * Size of image relative to QR code (0-1)
                  */
@@ -49726,7 +52101,7 @@ export type GetTemplatesBaseResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -49857,7 +52232,7 @@ export type GetTemplatesBaseResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -49885,7 +52260,7 @@ export type GetTemplatesBaseResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -49919,7 +52294,7 @@ export type GetTemplatesBaseResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -49947,7 +52322,7 @@ export type GetTemplatesBaseResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -49981,7 +52356,7 @@ export type GetTemplatesBaseResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -50009,7 +52384,7 @@ export type GetTemplatesBaseResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -50043,7 +52418,7 @@ export type GetTemplatesBaseResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -50071,7 +52446,7 @@ export type GetTemplatesBaseResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                 } | null;
@@ -50086,7 +52461,7 @@ export type DeleteTemplatesByTemplateIdData = {
         templateId: string;
     };
     query?: never;
-    url: "/templates/{templateId}";
+    url: '/templates/{templateId}';
 };
 export type DeleteTemplatesByTemplateIdErrors = {
     /**
@@ -50138,7 +52513,7 @@ export type GetTemplatesByTemplateIdData = {
         templateId: string;
     };
     query?: never;
-    url: "/templates/{templateId}";
+    url: '/templates/{templateId}';
 };
 export type GetTemplatesByTemplateIdErrors = {
     /**
@@ -50193,7 +52568,7 @@ export type GetTemplatesByTemplateIdResponses = {
             /**
              * Overall shape of the QR code
              */
-            shape?: "square" | "circle" | null;
+            shape?: 'square' | 'circle' | null;
             /**
              * Margin around the QR code in pixels
              */
@@ -50229,11 +52604,11 @@ export type GetTemplatesByTemplateIdResponses = {
                 /**
                  * QR code encoding mode
                  */
-                mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
                 /**
                  * Error correction level
                  */
-                errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
             } | null;
             /**
              * Options for QR code dots
@@ -50242,7 +52617,7 @@ export type GetTemplatesByTemplateIdResponses = {
                 /**
                  * Type of dots
                  */
-                type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                 /**
                  * Color of dots in CSS format
                  */
@@ -50258,7 +52633,7 @@ export type GetTemplatesByTemplateIdResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -50285,7 +52660,7 @@ export type GetTemplatesByTemplateIdResponses = {
                 /**
                  * Type of corner squares
                  */
-                type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Color of corner squares in CSS format
                  */
@@ -50297,7 +52672,7 @@ export type GetTemplatesByTemplateIdResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -50324,7 +52699,7 @@ export type GetTemplatesByTemplateIdResponses = {
                 /**
                  * Type of corner dots
                  */
-                type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Color of corner dots in CSS format
                  */
@@ -50336,7 +52711,7 @@ export type GetTemplatesByTemplateIdResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -50375,7 +52750,7 @@ export type GetTemplatesByTemplateIdResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -50406,7 +52781,7 @@ export type GetTemplatesByTemplateIdResponses = {
                 /**
                  * Mode for embedded image
                  */
-                mode?: "center" | "overlay" | "background" | null;
+                mode?: 'center' | 'overlay' | 'background' | null;
                 /**
                  * Size of image relative to QR code (0-1)
                  */
@@ -50434,7 +52809,7 @@ export type GetTemplatesByTemplateIdResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -50565,7 +52940,7 @@ export type GetTemplatesByTemplateIdResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -50593,7 +52968,7 @@ export type GetTemplatesByTemplateIdResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -50627,7 +53002,7 @@ export type GetTemplatesByTemplateIdResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -50655,7 +53030,7 @@ export type GetTemplatesByTemplateIdResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -50689,7 +53064,7 @@ export type GetTemplatesByTemplateIdResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -50717,7 +53092,7 @@ export type GetTemplatesByTemplateIdResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -50751,7 +53126,7 @@ export type GetTemplatesByTemplateIdResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -50779,7 +53154,7 @@ export type GetTemplatesByTemplateIdResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                 } | null;
@@ -50894,7 +53269,7 @@ export type PutTemplatesByTemplateIdData = {
             /**
              * Overall shape of the QR code
              */
-            shape?: "square" | "circle" | null;
+            shape?: 'square' | 'circle' | null;
             /**
              * Margin around the QR code in pixels
              */
@@ -50930,11 +53305,11 @@ export type PutTemplatesByTemplateIdData = {
                 /**
                  * QR code encoding mode
                  */
-                mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
                 /**
                  * Error correction level
                  */
-                errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
             } | null;
             /**
              * Options for QR code dots
@@ -50943,7 +53318,7 @@ export type PutTemplatesByTemplateIdData = {
                 /**
                  * Type of dots
                  */
-                type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                 /**
                  * Color of dots in CSS format
                  */
@@ -50959,7 +53334,7 @@ export type PutTemplatesByTemplateIdData = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -50986,7 +53361,7 @@ export type PutTemplatesByTemplateIdData = {
                 /**
                  * Type of corner squares
                  */
-                type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Color of corner squares in CSS format
                  */
@@ -50998,7 +53373,7 @@ export type PutTemplatesByTemplateIdData = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -51025,7 +53400,7 @@ export type PutTemplatesByTemplateIdData = {
                 /**
                  * Type of corner dots
                  */
-                type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Color of corner dots in CSS format
                  */
@@ -51037,7 +53412,7 @@ export type PutTemplatesByTemplateIdData = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -51076,7 +53451,7 @@ export type PutTemplatesByTemplateIdData = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -51107,7 +53482,7 @@ export type PutTemplatesByTemplateIdData = {
                 /**
                  * Mode for embedded image
                  */
-                mode?: "center" | "overlay" | "background" | null;
+                mode?: 'center' | 'overlay' | 'background' | null;
                 /**
                  * Size of image relative to QR code (0-1)
                  */
@@ -51135,7 +53510,7 @@ export type PutTemplatesByTemplateIdData = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -51266,7 +53641,7 @@ export type PutTemplatesByTemplateIdData = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -51294,7 +53669,7 @@ export type PutTemplatesByTemplateIdData = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -51328,7 +53703,7 @@ export type PutTemplatesByTemplateIdData = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -51356,7 +53731,7 @@ export type PutTemplatesByTemplateIdData = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -51390,7 +53765,7 @@ export type PutTemplatesByTemplateIdData = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -51418,7 +53793,7 @@ export type PutTemplatesByTemplateIdData = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -51452,7 +53827,7 @@ export type PutTemplatesByTemplateIdData = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -51480,7 +53855,7 @@ export type PutTemplatesByTemplateIdData = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                 } | null;
@@ -51497,7 +53872,7 @@ export type PutTemplatesByTemplateIdData = {
         templateId: string;
     };
     query?: never;
-    url: "/templates/{templateId}";
+    url: '/templates/{templateId}';
 };
 export type PutTemplatesByTemplateIdErrors = {
     /**
@@ -51525,7 +53900,7 @@ export type PutTemplatesByTemplateIdErrors = {
     } | {
         message: string;
     } | {
-        message: "Template name is already taken";
+        message: 'Template name is already taken';
     };
     /**
      * Unauthorized response message
@@ -51579,7 +53954,7 @@ export type PutTemplatesByTemplateIdResponses = {
             /**
              * Overall shape of the QR code
              */
-            shape?: "square" | "circle" | null;
+            shape?: 'square' | 'circle' | null;
             /**
              * Margin around the QR code in pixels
              */
@@ -51615,11 +53990,11 @@ export type PutTemplatesByTemplateIdResponses = {
                 /**
                  * QR code encoding mode
                  */
-                mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
                 /**
                  * Error correction level
                  */
-                errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
             } | null;
             /**
              * Options for QR code dots
@@ -51628,7 +54003,7 @@ export type PutTemplatesByTemplateIdResponses = {
                 /**
                  * Type of dots
                  */
-                type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                 /**
                  * Color of dots in CSS format
                  */
@@ -51644,7 +54019,7 @@ export type PutTemplatesByTemplateIdResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -51671,7 +54046,7 @@ export type PutTemplatesByTemplateIdResponses = {
                 /**
                  * Type of corner squares
                  */
-                type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Color of corner squares in CSS format
                  */
@@ -51683,7 +54058,7 @@ export type PutTemplatesByTemplateIdResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -51710,7 +54085,7 @@ export type PutTemplatesByTemplateIdResponses = {
                 /**
                  * Type of corner dots
                  */
-                type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Color of corner dots in CSS format
                  */
@@ -51722,7 +54097,7 @@ export type PutTemplatesByTemplateIdResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -51761,7 +54136,7 @@ export type PutTemplatesByTemplateIdResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -51792,7 +54167,7 @@ export type PutTemplatesByTemplateIdResponses = {
                 /**
                  * Mode for embedded image
                  */
-                mode?: "center" | "overlay" | "background" | null;
+                mode?: 'center' | 'overlay' | 'background' | null;
                 /**
                  * Size of image relative to QR code (0-1)
                  */
@@ -51820,7 +54195,7 @@ export type PutTemplatesByTemplateIdResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -51951,7 +54326,7 @@ export type PutTemplatesByTemplateIdResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -51979,7 +54354,7 @@ export type PutTemplatesByTemplateIdResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -52013,7 +54388,7 @@ export type PutTemplatesByTemplateIdResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -52041,7 +54416,7 @@ export type PutTemplatesByTemplateIdResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -52075,7 +54450,7 @@ export type PutTemplatesByTemplateIdResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -52103,7 +54478,7 @@ export type PutTemplatesByTemplateIdResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -52137,7 +54512,7 @@ export type PutTemplatesByTemplateIdResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -52165,7 +54540,7 @@ export type PutTemplatesByTemplateIdResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                 } | null;
@@ -52272,7 +54647,7 @@ export type PutTemplatesByTemplateIdOptionsData = {
             /**
              * Shape of the QR code
              */
-            shape?: "square" | "circle" | null;
+            shape?: 'square' | 'circle' | null;
             margin?: number | null;
             isResponsive?: boolean | null;
             scale?: number | null;
@@ -52284,24 +54659,24 @@ export type PutTemplatesByTemplateIdOptionsData = {
                 /**
                  * QR code encoding mode
                  */
-                mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
                 /**
                  * Error correction level (L: 7%, M: 15%, Q: 25%, H: 30%)
                  */
-                errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
             } | null;
             dotsOptions?: {
                 /**
                  * Type of dots in QR code
                  */
-                type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                 color?: string | null;
                 size?: number | null;
                 /**
                  * Gradient definition
                  */
                 gradient?: {
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     rotation?: number;
                     colorStops?: Array<{
                         offset?: number;
@@ -52313,13 +54688,13 @@ export type PutTemplatesByTemplateIdOptionsData = {
                 /**
                  * Type of corner squares in QR code
                  */
-                type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 color?: string | null;
                 /**
                  * Gradient definition
                  */
                 gradient?: {
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     rotation?: number;
                     colorStops?: Array<{
                         offset?: number;
@@ -52331,13 +54706,13 @@ export type PutTemplatesByTemplateIdOptionsData = {
                 /**
                  * Type of corner dots in QR code
                  */
-                type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 color?: string | null;
                 /**
                  * Gradient definition
                  */
                 gradient?: {
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     rotation?: number;
                     colorStops?: Array<{
                         offset?: number;
@@ -52361,7 +54736,7 @@ export type PutTemplatesByTemplateIdOptionsData = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -52386,7 +54761,7 @@ export type PutTemplatesByTemplateIdOptionsData = {
                 /**
                  * Mode for embedding images in QR code
                  */
-                mode?: "center" | "overlay" | "background" | null;
+                mode?: 'center' | 'overlay' | 'background' | null;
                 imageSize?: number | null;
                 margin?: number | null;
                 crossOrigin?: string | null;
@@ -52396,7 +54771,7 @@ export type PutTemplatesByTemplateIdOptionsData = {
                      * Gradient definition
                      */
                     gradient?: {
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         rotation?: number;
                         colorStops?: Array<{
                             offset?: number;
@@ -52443,7 +54818,7 @@ export type PutTemplatesByTemplateIdOptionsData = {
                         curveAdjustment?: number;
                         curveDisabled?: boolean;
                         curveRadius?: string;
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         value?: string;
                         /**
                          * Text decoration style
@@ -52453,7 +54828,7 @@ export type PutTemplatesByTemplateIdOptionsData = {
                             fontSize?: number;
                             fontColor?: string;
                             letterSpacing?: number;
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -52466,7 +54841,7 @@ export type PutTemplatesByTemplateIdOptionsData = {
                         curveAdjustment?: number;
                         curveDisabled?: boolean;
                         curveRadius?: string;
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         value?: string;
                         /**
                          * Text decoration style
@@ -52476,7 +54851,7 @@ export type PutTemplatesByTemplateIdOptionsData = {
                             fontSize?: number;
                             fontColor?: string;
                             letterSpacing?: number;
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -52489,7 +54864,7 @@ export type PutTemplatesByTemplateIdOptionsData = {
                         curveAdjustment?: number;
                         curveDisabled?: boolean;
                         curveRadius?: string;
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         value?: string;
                         /**
                          * Text decoration style
@@ -52499,7 +54874,7 @@ export type PutTemplatesByTemplateIdOptionsData = {
                             fontSize?: number;
                             fontColor?: string;
                             letterSpacing?: number;
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -52512,7 +54887,7 @@ export type PutTemplatesByTemplateIdOptionsData = {
                         curveAdjustment?: number;
                         curveDisabled?: boolean;
                         curveRadius?: string;
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         value?: string;
                         /**
                          * Text decoration style
@@ -52522,7 +54897,7 @@ export type PutTemplatesByTemplateIdOptionsData = {
                             fontSize?: number;
                             fontColor?: string;
                             letterSpacing?: number;
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                 } | null;
@@ -52533,7 +54908,7 @@ export type PutTemplatesByTemplateIdOptionsData = {
         templateId: string;
     };
     query?: never;
-    url: "/templates/{templateId}/options";
+    url: '/templates/{templateId}/options';
 };
 export type PutTemplatesByTemplateIdOptionsErrors = {
     /**
@@ -52613,7 +54988,7 @@ export type PutTemplatesByTemplateIdOptionsResponses = {
             /**
              * Overall shape of the QR code
              */
-            shape?: "square" | "circle" | null;
+            shape?: 'square' | 'circle' | null;
             /**
              * Margin around the QR code in pixels
              */
@@ -52649,11 +55024,11 @@ export type PutTemplatesByTemplateIdOptionsResponses = {
                 /**
                  * QR code encoding mode
                  */
-                mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
                 /**
                  * Error correction level
                  */
-                errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
             } | null;
             /**
              * Options for QR code dots
@@ -52662,7 +55037,7 @@ export type PutTemplatesByTemplateIdOptionsResponses = {
                 /**
                  * Type of dots
                  */
-                type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                 /**
                  * Color of dots in CSS format
                  */
@@ -52678,7 +55053,7 @@ export type PutTemplatesByTemplateIdOptionsResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -52705,7 +55080,7 @@ export type PutTemplatesByTemplateIdOptionsResponses = {
                 /**
                  * Type of corner squares
                  */
-                type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Color of corner squares in CSS format
                  */
@@ -52717,7 +55092,7 @@ export type PutTemplatesByTemplateIdOptionsResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -52744,7 +55119,7 @@ export type PutTemplatesByTemplateIdOptionsResponses = {
                 /**
                  * Type of corner dots
                  */
-                type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Color of corner dots in CSS format
                  */
@@ -52756,7 +55131,7 @@ export type PutTemplatesByTemplateIdOptionsResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -52795,7 +55170,7 @@ export type PutTemplatesByTemplateIdOptionsResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -52826,7 +55201,7 @@ export type PutTemplatesByTemplateIdOptionsResponses = {
                 /**
                  * Mode for embedded image
                  */
-                mode?: "center" | "overlay" | "background" | null;
+                mode?: 'center' | 'overlay' | 'background' | null;
                 /**
                  * Size of image relative to QR code (0-1)
                  */
@@ -52854,7 +55229,7 @@ export type PutTemplatesByTemplateIdOptionsResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -52985,7 +55360,7 @@ export type PutTemplatesByTemplateIdOptionsResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -53013,7 +55388,7 @@ export type PutTemplatesByTemplateIdOptionsResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -53047,7 +55422,7 @@ export type PutTemplatesByTemplateIdOptionsResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -53075,7 +55450,7 @@ export type PutTemplatesByTemplateIdOptionsResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -53109,7 +55484,7 @@ export type PutTemplatesByTemplateIdOptionsResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -53137,7 +55512,7 @@ export type PutTemplatesByTemplateIdOptionsResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -53171,7 +55546,7 @@ export type PutTemplatesByTemplateIdOptionsResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -53199,7 +55574,7 @@ export type PutTemplatesByTemplateIdOptionsResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                 } | null;
@@ -53305,7 +55680,7 @@ export type GetTemplatesWorkspaceByWorkspaceIdData = {
          */
         name?: string;
     };
-    url: "/templates/workspace/{workspaceId}";
+    url: '/templates/workspace/{workspaceId}';
 };
 export type GetTemplatesWorkspaceByWorkspaceIdErrors = {
     /**
@@ -53360,7 +55735,7 @@ export type GetTemplatesWorkspaceByWorkspaceIdResponses = {
             /**
              * Overall shape of the QR code
              */
-            shape?: "square" | "circle" | null;
+            shape?: 'square' | 'circle' | null;
             /**
              * Margin around the QR code in pixels
              */
@@ -53396,11 +55771,11 @@ export type GetTemplatesWorkspaceByWorkspaceIdResponses = {
                 /**
                  * QR code encoding mode
                  */
-                mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
                 /**
                  * Error correction level
                  */
-                errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
             } | null;
             /**
              * Options for QR code dots
@@ -53409,7 +55784,7 @@ export type GetTemplatesWorkspaceByWorkspaceIdResponses = {
                 /**
                  * Type of dots
                  */
-                type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                 /**
                  * Color of dots in CSS format
                  */
@@ -53425,7 +55800,7 @@ export type GetTemplatesWorkspaceByWorkspaceIdResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -53452,7 +55827,7 @@ export type GetTemplatesWorkspaceByWorkspaceIdResponses = {
                 /**
                  * Type of corner squares
                  */
-                type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Color of corner squares in CSS format
                  */
@@ -53464,7 +55839,7 @@ export type GetTemplatesWorkspaceByWorkspaceIdResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -53491,7 +55866,7 @@ export type GetTemplatesWorkspaceByWorkspaceIdResponses = {
                 /**
                  * Type of corner dots
                  */
-                type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Color of corner dots in CSS format
                  */
@@ -53503,7 +55878,7 @@ export type GetTemplatesWorkspaceByWorkspaceIdResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -53542,7 +55917,7 @@ export type GetTemplatesWorkspaceByWorkspaceIdResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -53573,7 +55948,7 @@ export type GetTemplatesWorkspaceByWorkspaceIdResponses = {
                 /**
                  * Mode for embedded image
                  */
-                mode?: "center" | "overlay" | "background" | null;
+                mode?: 'center' | 'overlay' | 'background' | null;
                 /**
                  * Size of image relative to QR code (0-1)
                  */
@@ -53601,7 +55976,7 @@ export type GetTemplatesWorkspaceByWorkspaceIdResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -53732,7 +56107,7 @@ export type GetTemplatesWorkspaceByWorkspaceIdResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -53760,7 +56135,7 @@ export type GetTemplatesWorkspaceByWorkspaceIdResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -53794,7 +56169,7 @@ export type GetTemplatesWorkspaceByWorkspaceIdResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -53822,7 +56197,7 @@ export type GetTemplatesWorkspaceByWorkspaceIdResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -53856,7 +56231,7 @@ export type GetTemplatesWorkspaceByWorkspaceIdResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -53884,7 +56259,7 @@ export type GetTemplatesWorkspaceByWorkspaceIdResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -53918,7 +56293,7 @@ export type GetTemplatesWorkspaceByWorkspaceIdResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -53946,7 +56321,7 @@ export type GetTemplatesWorkspaceByWorkspaceIdResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                 } | null;
@@ -54050,7 +56425,7 @@ export type GetStylesData = {
          */
         name?: string;
     };
-    url: "/styles";
+    url: '/styles';
 };
 export type GetStylesErrors = {
     /**
@@ -54133,7 +56508,7 @@ export type GetStylesResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -54159,7 +56534,7 @@ export type GetStylesResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -54185,7 +56560,7 @@ export type GetStylesResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -54211,7 +56586,7 @@ export type GetStylesResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -54233,15 +56608,15 @@ export type GetStylesResponses = {
                 /**
                  * Shape style for the QR code dots
                  */
-                dotShape?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                dotShape?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                 /**
                  * Shape style for the QR code corner squares
                  */
-                cornerSquareShape?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                cornerSquareShape?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Shape style for the QR code corner dots
                  */
-                cornerDotShape?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                cornerDotShape?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Logo to be placed on the QR code (URL, Base64, Buffer, or Blob)
                  */
@@ -54253,7 +56628,7 @@ export type GetStylesResponses = {
                 /**
                  * Placement mode for the logo
                  */
-                logoMode?: "center" | "overlay" | "background" | null;
+                logoMode?: 'center' | 'overlay' | 'background' | null;
                 /**
                  * Margin around the logo in pixels
                  */
@@ -54337,7 +56712,7 @@ export type GetStylesResponses = {
                 /**
                  * Text transformation for border text
                  */
-                borderTextTransform?: "uppercase" | "lowercase" | "capitalize" | null;
+                borderTextTransform?: 'uppercase' | 'lowercase' | 'capitalize' | null;
                 /**
                  * Font weight for border text
                  */
@@ -54473,7 +56848,7 @@ export type GetStylesResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -54499,7 +56874,7 @@ export type GetStylesResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -54525,7 +56900,7 @@ export type GetStylesResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -54551,7 +56926,7 @@ export type GetStylesResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -54573,15 +56948,15 @@ export type GetStylesResponses = {
                 /**
                  * Shape style for the QR code dots
                  */
-                dotShape?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                dotShape?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                 /**
                  * Shape style for the QR code corner squares
                  */
-                cornerSquareShape?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                cornerSquareShape?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Shape style for the QR code corner dots
                  */
-                cornerDotShape?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                cornerDotShape?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Logo to be placed on the QR code (URL, Base64, Buffer, or Blob)
                  */
@@ -54593,7 +56968,7 @@ export type GetStylesResponses = {
                 /**
                  * Placement mode for the logo
                  */
-                logoMode?: "center" | "overlay" | "background" | null;
+                logoMode?: 'center' | 'overlay' | 'background' | null;
                 /**
                  * Margin around the logo in pixels
                  */
@@ -54677,7 +57052,7 @@ export type GetStylesResponses = {
                 /**
                  * Text transformation for border text
                  */
-                borderTextTransform?: "uppercase" | "lowercase" | "capitalize" | null;
+                borderTextTransform?: 'uppercase' | 'lowercase' | 'capitalize' | null;
                 /**
                  * Font weight for border text
                  */
@@ -54813,7 +57188,7 @@ export type PostStylesData = {
                 /**
                  * Type of gradient
                  */
-                type?: "linear" | "radial";
+                type?: 'linear' | 'radial';
                 /**
                  * Rotation angle of gradient in degrees
                  */
@@ -54839,7 +57214,7 @@ export type PostStylesData = {
                 /**
                  * Type of gradient
                  */
-                type?: "linear" | "radial";
+                type?: 'linear' | 'radial';
                 /**
                  * Rotation angle of gradient in degrees
                  */
@@ -54865,7 +57240,7 @@ export type PostStylesData = {
                 /**
                  * Type of gradient
                  */
-                type?: "linear" | "radial";
+                type?: 'linear' | 'radial';
                 /**
                  * Rotation angle of gradient in degrees
                  */
@@ -54891,7 +57266,7 @@ export type PostStylesData = {
                 /**
                  * Type of gradient
                  */
-                type?: "linear" | "radial";
+                type?: 'linear' | 'radial';
                 /**
                  * Rotation angle of gradient in degrees
                  */
@@ -54913,15 +57288,15 @@ export type PostStylesData = {
             /**
              * Shape style for the QR code dots
              */
-            dotShape?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+            dotShape?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
             /**
              * Shape style for the QR code corner squares
              */
-            cornerSquareShape?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+            cornerSquareShape?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
             /**
              * Shape style for the QR code corner dots
              */
-            cornerDotShape?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+            cornerDotShape?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
             /**
              * Logo to be placed on the QR code (URL, Base64, Buffer, or Blob)
              */
@@ -54933,7 +57308,7 @@ export type PostStylesData = {
             /**
              * Placement mode for the logo
              */
-            logoMode?: "center" | "overlay" | "background" | null;
+            logoMode?: 'center' | 'overlay' | 'background' | null;
             /**
              * Margin around the logo in pixels
              */
@@ -55017,7 +57392,7 @@ export type PostStylesData = {
             /**
              * Text transformation for border text
              */
-            borderTextTransform?: "uppercase" | "lowercase" | "capitalize" | null;
+            borderTextTransform?: 'uppercase' | 'lowercase' | 'capitalize' | null;
             /**
              * Font weight for border text
              */
@@ -55036,7 +57411,7 @@ export type PostStylesData = {
     };
     path?: never;
     query?: never;
-    url: "/styles";
+    url: '/styles';
 };
 export type PostStylesErrors = {
     /**
@@ -55064,7 +57439,7 @@ export type PostStylesErrors = {
     } | {
         message: string;
     } | {
-        message: "Style name is already taken";
+        message: 'Style name is already taken';
     };
     /**
      * Unauthorized response message
@@ -55138,7 +57513,7 @@ export type PostStylesResponses = {
                 /**
                  * Type of gradient
                  */
-                type?: "linear" | "radial";
+                type?: 'linear' | 'radial';
                 /**
                  * Rotation angle of gradient in degrees
                  */
@@ -55164,7 +57539,7 @@ export type PostStylesResponses = {
                 /**
                  * Type of gradient
                  */
-                type?: "linear" | "radial";
+                type?: 'linear' | 'radial';
                 /**
                  * Rotation angle of gradient in degrees
                  */
@@ -55190,7 +57565,7 @@ export type PostStylesResponses = {
                 /**
                  * Type of gradient
                  */
-                type?: "linear" | "radial";
+                type?: 'linear' | 'radial';
                 /**
                  * Rotation angle of gradient in degrees
                  */
@@ -55216,7 +57591,7 @@ export type PostStylesResponses = {
                 /**
                  * Type of gradient
                  */
-                type?: "linear" | "radial";
+                type?: 'linear' | 'radial';
                 /**
                  * Rotation angle of gradient in degrees
                  */
@@ -55238,15 +57613,15 @@ export type PostStylesResponses = {
             /**
              * Shape style for the QR code dots
              */
-            dotShape?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+            dotShape?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
             /**
              * Shape style for the QR code corner squares
              */
-            cornerSquareShape?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+            cornerSquareShape?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
             /**
              * Shape style for the QR code corner dots
              */
-            cornerDotShape?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+            cornerDotShape?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
             /**
              * Logo to be placed on the QR code (URL, Base64, Buffer, or Blob)
              */
@@ -55258,7 +57633,7 @@ export type PostStylesResponses = {
             /**
              * Placement mode for the logo
              */
-            logoMode?: "center" | "overlay" | "background" | null;
+            logoMode?: 'center' | 'overlay' | 'background' | null;
             /**
              * Margin around the logo in pixels
              */
@@ -55342,7 +57717,7 @@ export type PostStylesResponses = {
             /**
              * Text transformation for border text
              */
-            borderTextTransform?: "uppercase" | "lowercase" | "capitalize" | null;
+            borderTextTransform?: 'uppercase' | 'lowercase' | 'capitalize' | null;
             /**
              * Font weight for border text
              */
@@ -55446,7 +57821,7 @@ export type GetStylesBaseData = {
          */
         name?: string;
     };
-    url: "/styles/base";
+    url: '/styles/base';
 };
 export type GetStylesBaseErrors = {
     /**
@@ -55503,7 +57878,7 @@ export type GetStylesBaseResponses = {
                 /**
                  * Type of gradient
                  */
-                type?: "linear" | "radial";
+                type?: 'linear' | 'radial';
                 /**
                  * Rotation angle of gradient in degrees
                  */
@@ -55529,7 +57904,7 @@ export type GetStylesBaseResponses = {
                 /**
                  * Type of gradient
                  */
-                type?: "linear" | "radial";
+                type?: 'linear' | 'radial';
                 /**
                  * Rotation angle of gradient in degrees
                  */
@@ -55555,7 +57930,7 @@ export type GetStylesBaseResponses = {
                 /**
                  * Type of gradient
                  */
-                type?: "linear" | "radial";
+                type?: 'linear' | 'radial';
                 /**
                  * Rotation angle of gradient in degrees
                  */
@@ -55581,7 +57956,7 @@ export type GetStylesBaseResponses = {
                 /**
                  * Type of gradient
                  */
-                type?: "linear" | "radial";
+                type?: 'linear' | 'radial';
                 /**
                  * Rotation angle of gradient in degrees
                  */
@@ -55603,15 +57978,15 @@ export type GetStylesBaseResponses = {
             /**
              * Shape style for the QR code dots
              */
-            dotShape?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+            dotShape?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
             /**
              * Shape style for the QR code corner squares
              */
-            cornerSquareShape?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+            cornerSquareShape?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
             /**
              * Shape style for the QR code corner dots
              */
-            cornerDotShape?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+            cornerDotShape?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
             /**
              * Logo to be placed on the QR code (URL, Base64, Buffer, or Blob)
              */
@@ -55623,7 +57998,7 @@ export type GetStylesBaseResponses = {
             /**
              * Placement mode for the logo
              */
-            logoMode?: "center" | "overlay" | "background" | null;
+            logoMode?: 'center' | 'overlay' | 'background' | null;
             /**
              * Margin around the logo in pixels
              */
@@ -55707,7 +58082,7 @@ export type GetStylesBaseResponses = {
             /**
              * Text transformation for border text
              */
-            borderTextTransform?: "uppercase" | "lowercase" | "capitalize" | null;
+            borderTextTransform?: 'uppercase' | 'lowercase' | 'capitalize' | null;
             /**
              * Font weight for border text
              */
@@ -55722,7 +58097,7 @@ export type DeleteStylesByStyleIdData = {
         styleId: string;
     };
     query?: never;
-    url: "/styles/{styleId}";
+    url: '/styles/{styleId}';
 };
 export type DeleteStylesByStyleIdErrors = {
     /**
@@ -55777,7 +58152,7 @@ export type GetStylesByStyleIdData = {
         styleId: string;
     };
     query?: never;
-    url: "/styles/{styleId}";
+    url: '/styles/{styleId}';
 };
 export type GetStylesByStyleIdErrors = {
     /**
@@ -55852,7 +58227,7 @@ export type GetStylesByStyleIdResponses = {
                 /**
                  * Type of gradient
                  */
-                type?: "linear" | "radial";
+                type?: 'linear' | 'radial';
                 /**
                  * Rotation angle of gradient in degrees
                  */
@@ -55878,7 +58253,7 @@ export type GetStylesByStyleIdResponses = {
                 /**
                  * Type of gradient
                  */
-                type?: "linear" | "radial";
+                type?: 'linear' | 'radial';
                 /**
                  * Rotation angle of gradient in degrees
                  */
@@ -55904,7 +58279,7 @@ export type GetStylesByStyleIdResponses = {
                 /**
                  * Type of gradient
                  */
-                type?: "linear" | "radial";
+                type?: 'linear' | 'radial';
                 /**
                  * Rotation angle of gradient in degrees
                  */
@@ -55930,7 +58305,7 @@ export type GetStylesByStyleIdResponses = {
                 /**
                  * Type of gradient
                  */
-                type?: "linear" | "radial";
+                type?: 'linear' | 'radial';
                 /**
                  * Rotation angle of gradient in degrees
                  */
@@ -55952,15 +58327,15 @@ export type GetStylesByStyleIdResponses = {
             /**
              * Shape style for the QR code dots
              */
-            dotShape?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+            dotShape?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
             /**
              * Shape style for the QR code corner squares
              */
-            cornerSquareShape?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+            cornerSquareShape?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
             /**
              * Shape style for the QR code corner dots
              */
-            cornerDotShape?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+            cornerDotShape?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
             /**
              * Logo to be placed on the QR code (URL, Base64, Buffer, or Blob)
              */
@@ -55972,7 +58347,7 @@ export type GetStylesByStyleIdResponses = {
             /**
              * Placement mode for the logo
              */
-            logoMode?: "center" | "overlay" | "background" | null;
+            logoMode?: 'center' | 'overlay' | 'background' | null;
             /**
              * Margin around the logo in pixels
              */
@@ -56056,7 +58431,7 @@ export type GetStylesByStyleIdResponses = {
             /**
              * Text transformation for border text
              */
-            borderTextTransform?: "uppercase" | "lowercase" | "capitalize" | null;
+            borderTextTransform?: 'uppercase' | 'lowercase' | 'capitalize' | null;
             /**
              * Font weight for border text
              */
@@ -56191,7 +58566,7 @@ export type PutStylesByStyleIdData = {
                 /**
                  * Type of gradient
                  */
-                type?: "linear" | "radial";
+                type?: 'linear' | 'radial';
                 /**
                  * Rotation angle of gradient in degrees
                  */
@@ -56217,7 +58592,7 @@ export type PutStylesByStyleIdData = {
                 /**
                  * Type of gradient
                  */
-                type?: "linear" | "radial";
+                type?: 'linear' | 'radial';
                 /**
                  * Rotation angle of gradient in degrees
                  */
@@ -56243,7 +58618,7 @@ export type PutStylesByStyleIdData = {
                 /**
                  * Type of gradient
                  */
-                type?: "linear" | "radial";
+                type?: 'linear' | 'radial';
                 /**
                  * Rotation angle of gradient in degrees
                  */
@@ -56269,7 +58644,7 @@ export type PutStylesByStyleIdData = {
                 /**
                  * Type of gradient
                  */
-                type?: "linear" | "radial";
+                type?: 'linear' | 'radial';
                 /**
                  * Rotation angle of gradient in degrees
                  */
@@ -56291,15 +58666,15 @@ export type PutStylesByStyleIdData = {
             /**
              * Shape style for the QR code dots
              */
-            dotShape?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+            dotShape?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
             /**
              * Shape style for the QR code corner squares
              */
-            cornerSquareShape?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+            cornerSquareShape?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
             /**
              * Shape style for the QR code corner dots
              */
-            cornerDotShape?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+            cornerDotShape?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
             /**
              * Logo to be placed on the QR code (URL, Base64, Buffer, or Blob)
              */
@@ -56311,7 +58686,7 @@ export type PutStylesByStyleIdData = {
             /**
              * Placement mode for the logo
              */
-            logoMode?: "center" | "overlay" | "background" | null;
+            logoMode?: 'center' | 'overlay' | 'background' | null;
             /**
              * Margin around the logo in pixels
              */
@@ -56395,7 +58770,7 @@ export type PutStylesByStyleIdData = {
             /**
              * Text transformation for border text
              */
-            borderTextTransform?: "uppercase" | "lowercase" | "capitalize" | null;
+            borderTextTransform?: 'uppercase' | 'lowercase' | 'capitalize' | null;
             /**
              * Font weight for border text
              */
@@ -56412,7 +58787,7 @@ export type PutStylesByStyleIdData = {
         styleId: string;
     };
     query?: never;
-    url: "/styles/{styleId}";
+    url: '/styles/{styleId}';
 };
 export type PutStylesByStyleIdErrors = {
     /**
@@ -56440,7 +58815,7 @@ export type PutStylesByStyleIdErrors = {
     } | {
         message: string;
     } | {
-        message: "Style name is already taken";
+        message: 'Style name is already taken';
     };
     /**
      * Unauthorized response message
@@ -56514,7 +58889,7 @@ export type PutStylesByStyleIdResponses = {
                 /**
                  * Type of gradient
                  */
-                type?: "linear" | "radial";
+                type?: 'linear' | 'radial';
                 /**
                  * Rotation angle of gradient in degrees
                  */
@@ -56540,7 +58915,7 @@ export type PutStylesByStyleIdResponses = {
                 /**
                  * Type of gradient
                  */
-                type?: "linear" | "radial";
+                type?: 'linear' | 'radial';
                 /**
                  * Rotation angle of gradient in degrees
                  */
@@ -56566,7 +58941,7 @@ export type PutStylesByStyleIdResponses = {
                 /**
                  * Type of gradient
                  */
-                type?: "linear" | "radial";
+                type?: 'linear' | 'radial';
                 /**
                  * Rotation angle of gradient in degrees
                  */
@@ -56592,7 +58967,7 @@ export type PutStylesByStyleIdResponses = {
                 /**
                  * Type of gradient
                  */
-                type?: "linear" | "radial";
+                type?: 'linear' | 'radial';
                 /**
                  * Rotation angle of gradient in degrees
                  */
@@ -56614,15 +58989,15 @@ export type PutStylesByStyleIdResponses = {
             /**
              * Shape style for the QR code dots
              */
-            dotShape?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+            dotShape?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
             /**
              * Shape style for the QR code corner squares
              */
-            cornerSquareShape?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+            cornerSquareShape?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
             /**
              * Shape style for the QR code corner dots
              */
-            cornerDotShape?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+            cornerDotShape?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
             /**
              * Logo to be placed on the QR code (URL, Base64, Buffer, or Blob)
              */
@@ -56634,7 +59009,7 @@ export type PutStylesByStyleIdResponses = {
             /**
              * Placement mode for the logo
              */
-            logoMode?: "center" | "overlay" | "background" | null;
+            logoMode?: 'center' | 'overlay' | 'background' | null;
             /**
              * Margin around the logo in pixels
              */
@@ -56718,7 +59093,7 @@ export type PutStylesByStyleIdResponses = {
             /**
              * Text transformation for border text
              */
-            borderTextTransform?: "uppercase" | "lowercase" | "capitalize" | null;
+            borderTextTransform?: 'uppercase' | 'lowercase' | 'capitalize' | null;
             /**
              * Font weight for border text
              */
@@ -56830,7 +59205,7 @@ export type PutStylesByStyleIdOptionsData = {
              * Gradient definition
              */
             dotsGradient?: {
-                type?: "linear" | "radial";
+                type?: 'linear' | 'radial';
                 rotation?: number;
                 colorStops?: Array<{
                     offset?: number;
@@ -56841,7 +59216,7 @@ export type PutStylesByStyleIdOptionsData = {
              * Gradient definition
              */
             cornersDotGradient?: {
-                type?: "linear" | "radial";
+                type?: 'linear' | 'radial';
                 rotation?: number;
                 colorStops?: Array<{
                     offset?: number;
@@ -56852,7 +59227,7 @@ export type PutStylesByStyleIdOptionsData = {
              * Gradient definition
              */
             cornersGradient?: {
-                type?: "linear" | "radial";
+                type?: 'linear' | 'radial';
                 rotation?: number;
                 colorStops?: Array<{
                     offset?: number;
@@ -56863,7 +59238,7 @@ export type PutStylesByStyleIdOptionsData = {
              * Gradient definition
              */
             backgroundGradient?: {
-                type?: "linear" | "radial";
+                type?: 'linear' | 'radial';
                 rotation?: number;
                 colorStops?: Array<{
                     offset?: number;
@@ -56873,21 +59248,21 @@ export type PutStylesByStyleIdOptionsData = {
             /**
              * Type of dots in QR code
              */
-            dotShape?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+            dotShape?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
             /**
              * Type of corner squares in QR code
              */
-            cornerSquareShape?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+            cornerSquareShape?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
             /**
              * Type of corner dots in QR code
              */
-            cornerDotShape?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+            cornerDotShape?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
             logo?: string | unknown | null;
             logoSize?: number | null;
             /**
              * Mode for embedding images in QR code
              */
-            logoMode?: "center" | "overlay" | "background" | null;
+            logoMode?: 'center' | 'overlay' | 'background' | null;
             logoMargin?: number | null;
             logoBackgroundColor?: string | null;
             logoPadding?: number | null;
@@ -56908,7 +59283,7 @@ export type PutStylesByStyleIdOptionsData = {
             borderFontSize?: number | null;
             borderFontColor?: string | null;
             borderLetterSpacing?: number | null;
-            borderTextTransform?: "uppercase" | "lowercase" | "capitalize" | null;
+            borderTextTransform?: 'uppercase' | 'lowercase' | 'capitalize' | null;
             borderFontWeight?: string;
         };
     };
@@ -56916,7 +59291,7 @@ export type PutStylesByStyleIdOptionsData = {
         styleId: string;
     };
     query?: never;
-    url: "/styles/{styleId}/options";
+    url: '/styles/{styleId}/options';
 };
 export type PutStylesByStyleIdOptionsErrors = {
     /**
@@ -57016,7 +59391,7 @@ export type PutStylesByStyleIdOptionsResponses = {
                 /**
                  * Type of gradient
                  */
-                type?: "linear" | "radial";
+                type?: 'linear' | 'radial';
                 /**
                  * Rotation angle of gradient in degrees
                  */
@@ -57042,7 +59417,7 @@ export type PutStylesByStyleIdOptionsResponses = {
                 /**
                  * Type of gradient
                  */
-                type?: "linear" | "radial";
+                type?: 'linear' | 'radial';
                 /**
                  * Rotation angle of gradient in degrees
                  */
@@ -57068,7 +59443,7 @@ export type PutStylesByStyleIdOptionsResponses = {
                 /**
                  * Type of gradient
                  */
-                type?: "linear" | "radial";
+                type?: 'linear' | 'radial';
                 /**
                  * Rotation angle of gradient in degrees
                  */
@@ -57094,7 +59469,7 @@ export type PutStylesByStyleIdOptionsResponses = {
                 /**
                  * Type of gradient
                  */
-                type?: "linear" | "radial";
+                type?: 'linear' | 'radial';
                 /**
                  * Rotation angle of gradient in degrees
                  */
@@ -57116,15 +59491,15 @@ export type PutStylesByStyleIdOptionsResponses = {
             /**
              * Shape style for the QR code dots
              */
-            dotShape?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+            dotShape?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
             /**
              * Shape style for the QR code corner squares
              */
-            cornerSquareShape?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+            cornerSquareShape?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
             /**
              * Shape style for the QR code corner dots
              */
-            cornerDotShape?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+            cornerDotShape?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
             /**
              * Logo to be placed on the QR code (URL, Base64, Buffer, or Blob)
              */
@@ -57136,7 +59511,7 @@ export type PutStylesByStyleIdOptionsResponses = {
             /**
              * Placement mode for the logo
              */
-            logoMode?: "center" | "overlay" | "background" | null;
+            logoMode?: 'center' | 'overlay' | 'background' | null;
             /**
              * Margin around the logo in pixels
              */
@@ -57220,7 +59595,7 @@ export type PutStylesByStyleIdOptionsResponses = {
             /**
              * Text transformation for border text
              */
-            borderTextTransform?: "uppercase" | "lowercase" | "capitalize" | null;
+            borderTextTransform?: 'uppercase' | 'lowercase' | 'capitalize' | null;
             /**
              * Font weight for border text
              */
@@ -57326,7 +59701,7 @@ export type GetStylesWorkspaceByWorkspaceIdData = {
          */
         name?: string;
     };
-    url: "/styles/workspace/{workspaceId}";
+    url: '/styles/workspace/{workspaceId}';
 };
 export type GetStylesWorkspaceByWorkspaceIdErrors = {
     /**
@@ -57401,7 +59776,7 @@ export type GetStylesWorkspaceByWorkspaceIdResponses = {
                 /**
                  * Type of gradient
                  */
-                type?: "linear" | "radial";
+                type?: 'linear' | 'radial';
                 /**
                  * Rotation angle of gradient in degrees
                  */
@@ -57427,7 +59802,7 @@ export type GetStylesWorkspaceByWorkspaceIdResponses = {
                 /**
                  * Type of gradient
                  */
-                type?: "linear" | "radial";
+                type?: 'linear' | 'radial';
                 /**
                  * Rotation angle of gradient in degrees
                  */
@@ -57453,7 +59828,7 @@ export type GetStylesWorkspaceByWorkspaceIdResponses = {
                 /**
                  * Type of gradient
                  */
-                type?: "linear" | "radial";
+                type?: 'linear' | 'radial';
                 /**
                  * Rotation angle of gradient in degrees
                  */
@@ -57479,7 +59854,7 @@ export type GetStylesWorkspaceByWorkspaceIdResponses = {
                 /**
                  * Type of gradient
                  */
-                type?: "linear" | "radial";
+                type?: 'linear' | 'radial';
                 /**
                  * Rotation angle of gradient in degrees
                  */
@@ -57501,15 +59876,15 @@ export type GetStylesWorkspaceByWorkspaceIdResponses = {
             /**
              * Shape style for the QR code dots
              */
-            dotShape?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+            dotShape?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
             /**
              * Shape style for the QR code corner squares
              */
-            cornerSquareShape?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+            cornerSquareShape?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
             /**
              * Shape style for the QR code corner dots
              */
-            cornerDotShape?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+            cornerDotShape?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
             /**
              * Logo to be placed on the QR code (URL, Base64, Buffer, or Blob)
              */
@@ -57521,7 +59896,7 @@ export type GetStylesWorkspaceByWorkspaceIdResponses = {
             /**
              * Placement mode for the logo
              */
-            logoMode?: "center" | "overlay" | "background" | null;
+            logoMode?: 'center' | 'overlay' | 'background' | null;
             /**
              * Margin around the logo in pixels
              */
@@ -57605,7 +59980,7 @@ export type GetStylesWorkspaceByWorkspaceIdResponses = {
             /**
              * Text transformation for border text
              */
-            borderTextTransform?: "uppercase" | "lowercase" | "capitalize" | null;
+            borderTextTransform?: 'uppercase' | 'lowercase' | 'capitalize' | null;
             /**
              * Font weight for border text
              */
@@ -57709,7 +60084,7 @@ export type GetTextsData = {
          */
         name?: string;
     };
-    url: "/texts";
+    url: '/texts';
 };
 export type GetTextsErrors = {
     /**
@@ -58059,7 +60434,7 @@ export type PostTextsData = {
     };
     path?: never;
     query?: never;
-    url: "/texts";
+    url: '/texts';
 };
 export type PostTextsErrors = {
     /**
@@ -58257,7 +60632,7 @@ export type GetTextsBaseData = {
          */
         name?: string;
     };
-    url: "/texts/base";
+    url: '/texts/base';
 };
 export type GetTextsBaseErrors = {
     /**
@@ -58321,7 +60696,7 @@ export type DeleteTextsByTextIdData = {
         textId: string;
     };
     query?: never;
-    url: "/texts/{textId}";
+    url: '/texts/{textId}';
 };
 export type DeleteTextsByTextIdErrors = {
     /**
@@ -58376,7 +60751,7 @@ export type GetTextsByTextIdData = {
         textId: string;
     };
     query?: never;
-    url: "/texts/{textId}";
+    url: '/texts/{textId}';
 };
 export type GetTextsByTextIdErrors = {
     /**
@@ -58591,7 +60966,7 @@ export type PutTextsByTextIdData = {
         textId: string;
     };
     query?: never;
-    url: "/texts/{textId}";
+    url: '/texts/{textId}';
 };
 export type PutTextsByTextIdErrors = {
     /**
@@ -58800,7 +61175,7 @@ export type PutTextsByTextIdOptionsData = {
         textId: string;
     };
     query?: never;
-    url: "/texts/{textId}/options";
+    url: '/texts/{textId}/options';
 };
 export type PutTextsByTextIdOptionsErrors = {
     /**
@@ -58998,7 +61373,7 @@ export type GetTextsWorkspaceByWorkspaceIdData = {
          */
         name?: string;
     };
-    url: "/texts/workspace/{workspaceId}";
+    url: '/texts/workspace/{workspaceId}';
 };
 export type GetTextsWorkspaceByWorkspaceIdErrors = {
     /**
@@ -59169,7 +61544,7 @@ export type GetBordersData = {
          */
         name?: string;
     };
-    url: "/borders";
+    url: '/borders';
 };
 export type GetBordersErrors = {
     /**
@@ -59228,7 +61603,7 @@ export type GetBordersResponses = {
                 /**
                  * Overall shape of the QR code
                  */
-                shape?: "square" | "circle" | null;
+                shape?: 'square' | 'circle' | null;
                 /**
                  * Margin around the QR code in pixels
                  */
@@ -59264,11 +61639,11 @@ export type GetBordersResponses = {
                     /**
                      * QR code encoding mode
                      */
-                    mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                    mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
                     /**
                      * Error correction level
                      */
-                    errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                    errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
                 } | null;
                 /**
                  * Options for QR code dots
@@ -59277,7 +61652,7 @@ export type GetBordersResponses = {
                     /**
                      * Type of dots
                      */
-                    type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                    type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                     /**
                      * Color of dots in CSS format
                      */
@@ -59293,7 +61668,7 @@ export type GetBordersResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -59320,7 +61695,7 @@ export type GetBordersResponses = {
                     /**
                      * Type of corner squares
                      */
-                    type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Color of corner squares in CSS format
                      */
@@ -59332,7 +61707,7 @@ export type GetBordersResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -59359,7 +61734,7 @@ export type GetBordersResponses = {
                     /**
                      * Type of corner dots
                      */
-                    type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Color of corner dots in CSS format
                      */
@@ -59371,7 +61746,7 @@ export type GetBordersResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -59410,7 +61785,7 @@ export type GetBordersResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -59441,7 +61816,7 @@ export type GetBordersResponses = {
                     /**
                      * Mode for embedded image
                      */
-                    mode?: "center" | "overlay" | "background" | null;
+                    mode?: 'center' | 'overlay' | 'background' | null;
                     /**
                      * Size of image relative to QR code (0-1)
                      */
@@ -59469,7 +61844,7 @@ export type GetBordersResponses = {
                             /**
                              * Type of gradient
                              */
-                            type?: "linear" | "radial";
+                            type?: 'linear' | 'radial';
                             /**
                              * Rotation angle of gradient in degrees
                              */
@@ -59597,7 +61972,7 @@ export type GetBordersResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -59625,7 +62000,7 @@ export type GetBordersResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -59659,7 +62034,7 @@ export type GetBordersResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -59687,7 +62062,7 @@ export type GetBordersResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -59721,7 +62096,7 @@ export type GetBordersResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -59749,7 +62124,7 @@ export type GetBordersResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -59783,7 +62158,7 @@ export type GetBordersResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -59811,7 +62186,7 @@ export type GetBordersResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                     } | null;
@@ -59927,7 +62302,7 @@ export type GetBordersResponses = {
                 /**
                  * Overall shape of the QR code
                  */
-                shape?: "square" | "circle" | null;
+                shape?: 'square' | 'circle' | null;
                 /**
                  * Margin around the QR code in pixels
                  */
@@ -59963,11 +62338,11 @@ export type GetBordersResponses = {
                     /**
                      * QR code encoding mode
                      */
-                    mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                    mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
                     /**
                      * Error correction level
                      */
-                    errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                    errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
                 } | null;
                 /**
                  * Options for QR code dots
@@ -59976,7 +62351,7 @@ export type GetBordersResponses = {
                     /**
                      * Type of dots
                      */
-                    type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                    type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                     /**
                      * Color of dots in CSS format
                      */
@@ -59992,7 +62367,7 @@ export type GetBordersResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -60019,7 +62394,7 @@ export type GetBordersResponses = {
                     /**
                      * Type of corner squares
                      */
-                    type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Color of corner squares in CSS format
                      */
@@ -60031,7 +62406,7 @@ export type GetBordersResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -60058,7 +62433,7 @@ export type GetBordersResponses = {
                     /**
                      * Type of corner dots
                      */
-                    type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                    type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                     /**
                      * Color of corner dots in CSS format
                      */
@@ -60070,7 +62445,7 @@ export type GetBordersResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -60109,7 +62484,7 @@ export type GetBordersResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -60140,7 +62515,7 @@ export type GetBordersResponses = {
                     /**
                      * Mode for embedded image
                      */
-                    mode?: "center" | "overlay" | "background" | null;
+                    mode?: 'center' | 'overlay' | 'background' | null;
                     /**
                      * Size of image relative to QR code (0-1)
                      */
@@ -60168,7 +62543,7 @@ export type GetBordersResponses = {
                             /**
                              * Type of gradient
                              */
-                            type?: "linear" | "radial";
+                            type?: 'linear' | 'radial';
                             /**
                              * Rotation angle of gradient in degrees
                              */
@@ -60296,7 +62671,7 @@ export type GetBordersResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -60324,7 +62699,7 @@ export type GetBordersResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -60358,7 +62733,7 @@ export type GetBordersResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -60386,7 +62761,7 @@ export type GetBordersResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -60420,7 +62795,7 @@ export type GetBordersResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -60448,7 +62823,7 @@ export type GetBordersResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                         /**
@@ -60482,7 +62857,7 @@ export type GetBordersResponses = {
                             /**
                              * Type of decoration
                              */
-                            type?: "text" | "image";
+                            type?: 'text' | 'image';
                             /**
                              * Content value for decoration
                              */
@@ -60510,7 +62885,7 @@ export type GetBordersResponses = {
                                 /**
                                  * Font weight
                                  */
-                                fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                                fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                             };
                         } | null;
                     } | null;
@@ -60626,7 +63001,7 @@ export type PostBordersData = {
             /**
              * Overall shape of the QR code
              */
-            shape?: "square" | "circle" | null;
+            shape?: 'square' | 'circle' | null;
             /**
              * Margin around the QR code in pixels
              */
@@ -60662,11 +63037,11 @@ export type PostBordersData = {
                 /**
                  * QR code encoding mode
                  */
-                mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
                 /**
                  * Error correction level
                  */
-                errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
             } | null;
             /**
              * Options for QR code dots
@@ -60675,7 +63050,7 @@ export type PostBordersData = {
                 /**
                  * Type of dots
                  */
-                type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                 /**
                  * Color of dots in CSS format
                  */
@@ -60691,7 +63066,7 @@ export type PostBordersData = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -60718,7 +63093,7 @@ export type PostBordersData = {
                 /**
                  * Type of corner squares
                  */
-                type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Color of corner squares in CSS format
                  */
@@ -60730,7 +63105,7 @@ export type PostBordersData = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -60757,7 +63132,7 @@ export type PostBordersData = {
                 /**
                  * Type of corner dots
                  */
-                type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Color of corner dots in CSS format
                  */
@@ -60769,7 +63144,7 @@ export type PostBordersData = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -60808,7 +63183,7 @@ export type PostBordersData = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -60839,7 +63214,7 @@ export type PostBordersData = {
                 /**
                  * Mode for embedded image
                  */
-                mode?: "center" | "overlay" | "background" | null;
+                mode?: 'center' | 'overlay' | 'background' | null;
                 /**
                  * Size of image relative to QR code (0-1)
                  */
@@ -60867,7 +63242,7 @@ export type PostBordersData = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -60995,7 +63370,7 @@ export type PostBordersData = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -61023,7 +63398,7 @@ export type PostBordersData = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -61057,7 +63432,7 @@ export type PostBordersData = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -61085,7 +63460,7 @@ export type PostBordersData = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -61119,7 +63494,7 @@ export type PostBordersData = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -61147,7 +63522,7 @@ export type PostBordersData = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -61181,7 +63556,7 @@ export type PostBordersData = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -61209,7 +63584,7 @@ export type PostBordersData = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                 } | null;
@@ -61228,7 +63603,7 @@ export type PostBordersData = {
     };
     path?: never;
     query?: never;
-    url: "/borders";
+    url: '/borders';
 };
 export type PostBordersErrors = {
     /**
@@ -61308,7 +63683,7 @@ export type PostBordersResponses = {
             /**
              * Overall shape of the QR code
              */
-            shape?: "square" | "circle" | null;
+            shape?: 'square' | 'circle' | null;
             /**
              * Margin around the QR code in pixels
              */
@@ -61344,11 +63719,11 @@ export type PostBordersResponses = {
                 /**
                  * QR code encoding mode
                  */
-                mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
                 /**
                  * Error correction level
                  */
-                errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
             } | null;
             /**
              * Options for QR code dots
@@ -61357,7 +63732,7 @@ export type PostBordersResponses = {
                 /**
                  * Type of dots
                  */
-                type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                 /**
                  * Color of dots in CSS format
                  */
@@ -61373,7 +63748,7 @@ export type PostBordersResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -61400,7 +63775,7 @@ export type PostBordersResponses = {
                 /**
                  * Type of corner squares
                  */
-                type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Color of corner squares in CSS format
                  */
@@ -61412,7 +63787,7 @@ export type PostBordersResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -61439,7 +63814,7 @@ export type PostBordersResponses = {
                 /**
                  * Type of corner dots
                  */
-                type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Color of corner dots in CSS format
                  */
@@ -61451,7 +63826,7 @@ export type PostBordersResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -61490,7 +63865,7 @@ export type PostBordersResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -61521,7 +63896,7 @@ export type PostBordersResponses = {
                 /**
                  * Mode for embedded image
                  */
-                mode?: "center" | "overlay" | "background" | null;
+                mode?: 'center' | 'overlay' | 'background' | null;
                 /**
                  * Size of image relative to QR code (0-1)
                  */
@@ -61549,7 +63924,7 @@ export type PostBordersResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -61677,7 +64052,7 @@ export type PostBordersResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -61705,7 +64080,7 @@ export type PostBordersResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -61739,7 +64114,7 @@ export type PostBordersResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -61767,7 +64142,7 @@ export type PostBordersResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -61801,7 +64176,7 @@ export type PostBordersResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -61829,7 +64204,7 @@ export type PostBordersResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -61863,7 +64238,7 @@ export type PostBordersResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -61891,7 +64266,7 @@ export type PostBordersResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                 } | null;
@@ -61995,7 +64370,7 @@ export type GetBordersBaseData = {
          */
         name?: string;
     };
-    url: "/borders/base";
+    url: '/borders/base';
 };
 export type GetBordersBaseErrors = {
     /**
@@ -62032,7 +64407,7 @@ export type GetBordersBaseResponses = {
             /**
              * Overall shape of the QR code
              */
-            shape?: "square" | "circle" | null;
+            shape?: 'square' | 'circle' | null;
             /**
              * Margin around the QR code in pixels
              */
@@ -62068,11 +64443,11 @@ export type GetBordersBaseResponses = {
                 /**
                  * QR code encoding mode
                  */
-                mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
                 /**
                  * Error correction level
                  */
-                errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
             } | null;
             /**
              * Options for QR code dots
@@ -62081,7 +64456,7 @@ export type GetBordersBaseResponses = {
                 /**
                  * Type of dots
                  */
-                type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                 /**
                  * Color of dots in CSS format
                  */
@@ -62097,7 +64472,7 @@ export type GetBordersBaseResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -62124,7 +64499,7 @@ export type GetBordersBaseResponses = {
                 /**
                  * Type of corner squares
                  */
-                type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Color of corner squares in CSS format
                  */
@@ -62136,7 +64511,7 @@ export type GetBordersBaseResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -62163,7 +64538,7 @@ export type GetBordersBaseResponses = {
                 /**
                  * Type of corner dots
                  */
-                type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Color of corner dots in CSS format
                  */
@@ -62175,7 +64550,7 @@ export type GetBordersBaseResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -62214,7 +64589,7 @@ export type GetBordersBaseResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -62245,7 +64620,7 @@ export type GetBordersBaseResponses = {
                 /**
                  * Mode for embedded image
                  */
-                mode?: "center" | "overlay" | "background" | null;
+                mode?: 'center' | 'overlay' | 'background' | null;
                 /**
                  * Size of image relative to QR code (0-1)
                  */
@@ -62273,7 +64648,7 @@ export type GetBordersBaseResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -62401,7 +64776,7 @@ export type GetBordersBaseResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -62429,7 +64804,7 @@ export type GetBordersBaseResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -62463,7 +64838,7 @@ export type GetBordersBaseResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -62491,7 +64866,7 @@ export type GetBordersBaseResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -62525,7 +64900,7 @@ export type GetBordersBaseResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -62553,7 +64928,7 @@ export type GetBordersBaseResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -62587,7 +64962,7 @@ export type GetBordersBaseResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -62615,7 +64990,7 @@ export type GetBordersBaseResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                 } | null;
@@ -62630,7 +65005,7 @@ export type DeleteBordersByBorderIdData = {
         borderId: string;
     };
     query?: never;
-    url: "/borders/{borderId}";
+    url: '/borders/{borderId}';
 };
 export type DeleteBordersByBorderIdErrors = {
     /**
@@ -62679,7 +65054,7 @@ export type GetBordersByBorderIdData = {
         borderId: string;
     };
     query?: never;
-    url: "/borders/{borderId}";
+    url: '/borders/{borderId}';
 };
 export type GetBordersByBorderIdErrors = {
     /**
@@ -62734,7 +65109,7 @@ export type GetBordersByBorderIdResponses = {
             /**
              * Overall shape of the QR code
              */
-            shape?: "square" | "circle" | null;
+            shape?: 'square' | 'circle' | null;
             /**
              * Margin around the QR code in pixels
              */
@@ -62770,11 +65145,11 @@ export type GetBordersByBorderIdResponses = {
                 /**
                  * QR code encoding mode
                  */
-                mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
                 /**
                  * Error correction level
                  */
-                errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
             } | null;
             /**
              * Options for QR code dots
@@ -62783,7 +65158,7 @@ export type GetBordersByBorderIdResponses = {
                 /**
                  * Type of dots
                  */
-                type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                 /**
                  * Color of dots in CSS format
                  */
@@ -62799,7 +65174,7 @@ export type GetBordersByBorderIdResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -62826,7 +65201,7 @@ export type GetBordersByBorderIdResponses = {
                 /**
                  * Type of corner squares
                  */
-                type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Color of corner squares in CSS format
                  */
@@ -62838,7 +65213,7 @@ export type GetBordersByBorderIdResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -62865,7 +65240,7 @@ export type GetBordersByBorderIdResponses = {
                 /**
                  * Type of corner dots
                  */
-                type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Color of corner dots in CSS format
                  */
@@ -62877,7 +65252,7 @@ export type GetBordersByBorderIdResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -62916,7 +65291,7 @@ export type GetBordersByBorderIdResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -62947,7 +65322,7 @@ export type GetBordersByBorderIdResponses = {
                 /**
                  * Mode for embedded image
                  */
-                mode?: "center" | "overlay" | "background" | null;
+                mode?: 'center' | 'overlay' | 'background' | null;
                 /**
                  * Size of image relative to QR code (0-1)
                  */
@@ -62975,7 +65350,7 @@ export type GetBordersByBorderIdResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -63103,7 +65478,7 @@ export type GetBordersByBorderIdResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -63131,7 +65506,7 @@ export type GetBordersByBorderIdResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -63165,7 +65540,7 @@ export type GetBordersByBorderIdResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -63193,7 +65568,7 @@ export type GetBordersByBorderIdResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -63227,7 +65602,7 @@ export type GetBordersByBorderIdResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -63255,7 +65630,7 @@ export type GetBordersByBorderIdResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -63289,7 +65664,7 @@ export type GetBordersByBorderIdResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -63317,7 +65692,7 @@ export type GetBordersByBorderIdResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                 } | null;
@@ -63432,7 +65807,7 @@ export type PutBordersByBorderIdData = {
             /**
              * Overall shape of the QR code
              */
-            shape?: "square" | "circle" | null;
+            shape?: 'square' | 'circle' | null;
             /**
              * Margin around the QR code in pixels
              */
@@ -63468,11 +65843,11 @@ export type PutBordersByBorderIdData = {
                 /**
                  * QR code encoding mode
                  */
-                mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
                 /**
                  * Error correction level
                  */
-                errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
             } | null;
             /**
              * Options for QR code dots
@@ -63481,7 +65856,7 @@ export type PutBordersByBorderIdData = {
                 /**
                  * Type of dots
                  */
-                type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                 /**
                  * Color of dots in CSS format
                  */
@@ -63497,7 +65872,7 @@ export type PutBordersByBorderIdData = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -63524,7 +65899,7 @@ export type PutBordersByBorderIdData = {
                 /**
                  * Type of corner squares
                  */
-                type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Color of corner squares in CSS format
                  */
@@ -63536,7 +65911,7 @@ export type PutBordersByBorderIdData = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -63563,7 +65938,7 @@ export type PutBordersByBorderIdData = {
                 /**
                  * Type of corner dots
                  */
-                type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Color of corner dots in CSS format
                  */
@@ -63575,7 +65950,7 @@ export type PutBordersByBorderIdData = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -63614,7 +65989,7 @@ export type PutBordersByBorderIdData = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -63645,7 +66020,7 @@ export type PutBordersByBorderIdData = {
                 /**
                  * Mode for embedded image
                  */
-                mode?: "center" | "overlay" | "background" | null;
+                mode?: 'center' | 'overlay' | 'background' | null;
                 /**
                  * Size of image relative to QR code (0-1)
                  */
@@ -63673,7 +66048,7 @@ export type PutBordersByBorderIdData = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -63801,7 +66176,7 @@ export type PutBordersByBorderIdData = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -63829,7 +66204,7 @@ export type PutBordersByBorderIdData = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -63863,7 +66238,7 @@ export type PutBordersByBorderIdData = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -63891,7 +66266,7 @@ export type PutBordersByBorderIdData = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -63925,7 +66300,7 @@ export type PutBordersByBorderIdData = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -63953,7 +66328,7 @@ export type PutBordersByBorderIdData = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -63987,7 +66362,7 @@ export type PutBordersByBorderIdData = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -64015,7 +66390,7 @@ export type PutBordersByBorderIdData = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                 } | null;
@@ -64032,7 +66407,7 @@ export type PutBordersByBorderIdData = {
         borderId: string;
     };
     query?: never;
-    url: "/borders/{borderId}";
+    url: '/borders/{borderId}';
 };
 export type PutBordersByBorderIdErrors = {
     /**
@@ -64114,7 +66489,7 @@ export type PutBordersByBorderIdResponses = {
             /**
              * Overall shape of the QR code
              */
-            shape?: "square" | "circle" | null;
+            shape?: 'square' | 'circle' | null;
             /**
              * Margin around the QR code in pixels
              */
@@ -64150,11 +66525,11 @@ export type PutBordersByBorderIdResponses = {
                 /**
                  * QR code encoding mode
                  */
-                mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
                 /**
                  * Error correction level
                  */
-                errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
             } | null;
             /**
              * Options for QR code dots
@@ -64163,7 +66538,7 @@ export type PutBordersByBorderIdResponses = {
                 /**
                  * Type of dots
                  */
-                type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                 /**
                  * Color of dots in CSS format
                  */
@@ -64179,7 +66554,7 @@ export type PutBordersByBorderIdResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -64206,7 +66581,7 @@ export type PutBordersByBorderIdResponses = {
                 /**
                  * Type of corner squares
                  */
-                type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Color of corner squares in CSS format
                  */
@@ -64218,7 +66593,7 @@ export type PutBordersByBorderIdResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -64245,7 +66620,7 @@ export type PutBordersByBorderIdResponses = {
                 /**
                  * Type of corner dots
                  */
-                type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Color of corner dots in CSS format
                  */
@@ -64257,7 +66632,7 @@ export type PutBordersByBorderIdResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -64296,7 +66671,7 @@ export type PutBordersByBorderIdResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -64327,7 +66702,7 @@ export type PutBordersByBorderIdResponses = {
                 /**
                  * Mode for embedded image
                  */
-                mode?: "center" | "overlay" | "background" | null;
+                mode?: 'center' | 'overlay' | 'background' | null;
                 /**
                  * Size of image relative to QR code (0-1)
                  */
@@ -64355,7 +66730,7 @@ export type PutBordersByBorderIdResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -64483,7 +66858,7 @@ export type PutBordersByBorderIdResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -64511,7 +66886,7 @@ export type PutBordersByBorderIdResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -64545,7 +66920,7 @@ export type PutBordersByBorderIdResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -64573,7 +66948,7 @@ export type PutBordersByBorderIdResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -64607,7 +66982,7 @@ export type PutBordersByBorderIdResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -64635,7 +67010,7 @@ export type PutBordersByBorderIdResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -64669,7 +67044,7 @@ export type PutBordersByBorderIdResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -64697,7 +67072,7 @@ export type PutBordersByBorderIdResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                 } | null;
@@ -64839,7 +67214,7 @@ export type PutBordersByBorderIdOptionsData = {
                         curveAdjustment?: number;
                         curveDisabled?: boolean;
                         curveRadius?: string;
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         value?: string;
                         /**
                          * Text decoration style
@@ -64849,7 +67224,7 @@ export type PutBordersByBorderIdOptionsData = {
                             fontSize?: number;
                             fontColor?: string;
                             letterSpacing?: number;
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -64862,7 +67237,7 @@ export type PutBordersByBorderIdOptionsData = {
                         curveAdjustment?: number;
                         curveDisabled?: boolean;
                         curveRadius?: string;
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         value?: string;
                         /**
                          * Text decoration style
@@ -64872,7 +67247,7 @@ export type PutBordersByBorderIdOptionsData = {
                             fontSize?: number;
                             fontColor?: string;
                             letterSpacing?: number;
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -64885,7 +67260,7 @@ export type PutBordersByBorderIdOptionsData = {
                         curveAdjustment?: number;
                         curveDisabled?: boolean;
                         curveRadius?: string;
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         value?: string;
                         /**
                          * Text decoration style
@@ -64895,7 +67270,7 @@ export type PutBordersByBorderIdOptionsData = {
                             fontSize?: number;
                             fontColor?: string;
                             letterSpacing?: number;
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -64908,7 +67283,7 @@ export type PutBordersByBorderIdOptionsData = {
                         curveAdjustment?: number;
                         curveDisabled?: boolean;
                         curveRadius?: string;
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         value?: string;
                         /**
                          * Text decoration style
@@ -64918,7 +67293,7 @@ export type PutBordersByBorderIdOptionsData = {
                             fontSize?: number;
                             fontColor?: string;
                             letterSpacing?: number;
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                 } | null;
@@ -64926,7 +67301,7 @@ export type PutBordersByBorderIdOptionsData = {
             /**
              * Overall shape of the QR code
              */
-            shape?: "square" | "circle" | null;
+            shape?: 'square' | 'circle' | null;
             /**
              * Margin around the QR code in pixels
              */
@@ -64962,11 +67337,11 @@ export type PutBordersByBorderIdOptionsData = {
                 /**
                  * QR code encoding mode
                  */
-                mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
                 /**
                  * Error correction level
                  */
-                errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
             } | null;
             /**
              * Options for QR code dots
@@ -64975,7 +67350,7 @@ export type PutBordersByBorderIdOptionsData = {
                 /**
                  * Type of dots
                  */
-                type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                 /**
                  * Color of dots in CSS format
                  */
@@ -64991,7 +67366,7 @@ export type PutBordersByBorderIdOptionsData = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -65018,7 +67393,7 @@ export type PutBordersByBorderIdOptionsData = {
                 /**
                  * Type of corner squares
                  */
-                type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Color of corner squares in CSS format
                  */
@@ -65030,7 +67405,7 @@ export type PutBordersByBorderIdOptionsData = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -65057,7 +67432,7 @@ export type PutBordersByBorderIdOptionsData = {
                 /**
                  * Type of corner dots
                  */
-                type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Color of corner dots in CSS format
                  */
@@ -65069,7 +67444,7 @@ export type PutBordersByBorderIdOptionsData = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -65108,7 +67483,7 @@ export type PutBordersByBorderIdOptionsData = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -65139,7 +67514,7 @@ export type PutBordersByBorderIdOptionsData = {
                 /**
                  * Mode for embedded image
                  */
-                mode?: "center" | "overlay" | "background" | null;
+                mode?: 'center' | 'overlay' | 'background' | null;
                 /**
                  * Size of image relative to QR code (0-1)
                  */
@@ -65167,7 +67542,7 @@ export type PutBordersByBorderIdOptionsData = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -65194,7 +67569,7 @@ export type PutBordersByBorderIdOptionsData = {
         borderId: string;
     };
     query?: never;
-    url: "/borders/{borderId}/options";
+    url: '/borders/{borderId}/options';
 };
 export type PutBordersByBorderIdOptionsErrors = {
     /**
@@ -65274,7 +67649,7 @@ export type PutBordersByBorderIdOptionsResponses = {
             /**
              * Overall shape of the QR code
              */
-            shape?: "square" | "circle" | null;
+            shape?: 'square' | 'circle' | null;
             /**
              * Margin around the QR code in pixels
              */
@@ -65310,11 +67685,11 @@ export type PutBordersByBorderIdOptionsResponses = {
                 /**
                  * QR code encoding mode
                  */
-                mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
                 /**
                  * Error correction level
                  */
-                errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
             } | null;
             /**
              * Options for QR code dots
@@ -65323,7 +67698,7 @@ export type PutBordersByBorderIdOptionsResponses = {
                 /**
                  * Type of dots
                  */
-                type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                 /**
                  * Color of dots in CSS format
                  */
@@ -65339,7 +67714,7 @@ export type PutBordersByBorderIdOptionsResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -65366,7 +67741,7 @@ export type PutBordersByBorderIdOptionsResponses = {
                 /**
                  * Type of corner squares
                  */
-                type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Color of corner squares in CSS format
                  */
@@ -65378,7 +67753,7 @@ export type PutBordersByBorderIdOptionsResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -65405,7 +67780,7 @@ export type PutBordersByBorderIdOptionsResponses = {
                 /**
                  * Type of corner dots
                  */
-                type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Color of corner dots in CSS format
                  */
@@ -65417,7 +67792,7 @@ export type PutBordersByBorderIdOptionsResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -65456,7 +67831,7 @@ export type PutBordersByBorderIdOptionsResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -65487,7 +67862,7 @@ export type PutBordersByBorderIdOptionsResponses = {
                 /**
                  * Mode for embedded image
                  */
-                mode?: "center" | "overlay" | "background" | null;
+                mode?: 'center' | 'overlay' | 'background' | null;
                 /**
                  * Size of image relative to QR code (0-1)
                  */
@@ -65515,7 +67890,7 @@ export type PutBordersByBorderIdOptionsResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -65643,7 +68018,7 @@ export type PutBordersByBorderIdOptionsResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -65671,7 +68046,7 @@ export type PutBordersByBorderIdOptionsResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -65705,7 +68080,7 @@ export type PutBordersByBorderIdOptionsResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -65733,7 +68108,7 @@ export type PutBordersByBorderIdOptionsResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -65767,7 +68142,7 @@ export type PutBordersByBorderIdOptionsResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -65795,7 +68170,7 @@ export type PutBordersByBorderIdOptionsResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -65829,7 +68204,7 @@ export type PutBordersByBorderIdOptionsResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -65857,7 +68232,7 @@ export type PutBordersByBorderIdOptionsResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                 } | null;
@@ -65963,7 +68338,7 @@ export type GetBordersWorkspaceByWorkspaceIdData = {
          */
         name?: string;
     };
-    url: "/borders/workspace/{workspaceId}";
+    url: '/borders/workspace/{workspaceId}';
 };
 export type GetBordersWorkspaceByWorkspaceIdErrors = {
     /**
@@ -66018,7 +68393,7 @@ export type GetBordersWorkspaceByWorkspaceIdResponses = {
             /**
              * Overall shape of the QR code
              */
-            shape?: "square" | "circle" | null;
+            shape?: 'square' | 'circle' | null;
             /**
              * Margin around the QR code in pixels
              */
@@ -66054,11 +68429,11 @@ export type GetBordersWorkspaceByWorkspaceIdResponses = {
                 /**
                  * QR code encoding mode
                  */
-                mode?: "numeric" | "alphanumeric" | "byte" | "kanji" | "unicode";
+                mode?: 'numeric' | 'alphanumeric' | 'byte' | 'kanji' | 'unicode';
                 /**
                  * Error correction level
                  */
-                errorCorrectionLevel?: "L" | "M" | "Q" | "H" | null;
+                errorCorrectionLevel?: 'L' | 'M' | 'Q' | 'H' | null;
             } | null;
             /**
              * Options for QR code dots
@@ -66067,7 +68442,7 @@ export type GetBordersWorkspaceByWorkspaceIdResponses = {
                 /**
                  * Type of dots
                  */
-                type?: "dot" | "square" | "rounded" | "extra-rounded" | "classy" | "classy-rounded" | "vertical-line" | "horizontal-line" | "random-dot" | "small-square" | "tiny-square" | "star" | "plus" | "diamond" | null;
+                type?: 'dot' | 'square' | 'rounded' | 'extra-rounded' | 'classy' | 'classy-rounded' | 'vertical-line' | 'horizontal-line' | 'random-dot' | 'small-square' | 'tiny-square' | 'star' | 'plus' | 'diamond' | null;
                 /**
                  * Color of dots in CSS format
                  */
@@ -66083,7 +68458,7 @@ export type GetBordersWorkspaceByWorkspaceIdResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -66110,7 +68485,7 @@ export type GetBordersWorkspaceByWorkspaceIdResponses = {
                 /**
                  * Type of corner squares
                  */
-                type?: "dot" | "square" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                type?: 'dot' | 'square' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Color of corner squares in CSS format
                  */
@@ -66122,7 +68497,7 @@ export type GetBordersWorkspaceByWorkspaceIdResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -66149,7 +68524,7 @@ export type GetBordersWorkspaceByWorkspaceIdResponses = {
                 /**
                  * Type of corner dots
                  */
-                type?: "dot" | "square" | "heart" | "rounded" | "classy" | "outpoint" | "inpoint" | null;
+                type?: 'dot' | 'square' | 'heart' | 'rounded' | 'classy' | 'outpoint' | 'inpoint' | null;
                 /**
                  * Color of corner dots in CSS format
                  */
@@ -66161,7 +68536,7 @@ export type GetBordersWorkspaceByWorkspaceIdResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -66200,7 +68575,7 @@ export type GetBordersWorkspaceByWorkspaceIdResponses = {
                     /**
                      * Type of gradient
                      */
-                    type?: "linear" | "radial";
+                    type?: 'linear' | 'radial';
                     /**
                      * Rotation angle of gradient in degrees
                      */
@@ -66231,7 +68606,7 @@ export type GetBordersWorkspaceByWorkspaceIdResponses = {
                 /**
                  * Mode for embedded image
                  */
-                mode?: "center" | "overlay" | "background" | null;
+                mode?: 'center' | 'overlay' | 'background' | null;
                 /**
                  * Size of image relative to QR code (0-1)
                  */
@@ -66259,7 +68634,7 @@ export type GetBordersWorkspaceByWorkspaceIdResponses = {
                         /**
                          * Type of gradient
                          */
-                        type?: "linear" | "radial";
+                        type?: 'linear' | 'radial';
                         /**
                          * Rotation angle of gradient in degrees
                          */
@@ -66387,7 +68762,7 @@ export type GetBordersWorkspaceByWorkspaceIdResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -66415,7 +68790,7 @@ export type GetBordersWorkspaceByWorkspaceIdResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -66449,7 +68824,7 @@ export type GetBordersWorkspaceByWorkspaceIdResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -66477,7 +68852,7 @@ export type GetBordersWorkspaceByWorkspaceIdResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -66511,7 +68886,7 @@ export type GetBordersWorkspaceByWorkspaceIdResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -66539,7 +68914,7 @@ export type GetBordersWorkspaceByWorkspaceIdResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                     /**
@@ -66573,7 +68948,7 @@ export type GetBordersWorkspaceByWorkspaceIdResponses = {
                         /**
                          * Type of decoration
                          */
-                        type?: "text" | "image";
+                        type?: 'text' | 'image';
                         /**
                          * Content value for decoration
                          */
@@ -66601,7 +68976,7 @@ export type GetBordersWorkspaceByWorkspaceIdResponses = {
                             /**
                              * Font weight
                              */
-                            fontWeight?: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
+                            fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
                         };
                     } | null;
                 } | null;
@@ -66700,7 +69075,7 @@ export type GetCountryCodesData = {
     body?: never;
     path?: never;
     query?: never;
-    url: "/country-codes";
+    url: '/country-codes';
 };
 export type GetCountryCodesResponses = {
     /**
@@ -66743,9 +69118,9 @@ export type GetRouterRuleTemplatesData = {
         /**
          * Filter templates by router rule type
          */
-        type?: "location" | "continent" | "geo" | "time" | "date" | "timezone" | "language" | "browser" | "os" | "deviceVendor" | "deviceModel" | "scanLimit";
+        type?: 'location' | 'continent' | 'geo' | 'time' | 'date' | 'timezone' | 'language' | 'browser' | 'os' | 'deviceVendor' | 'deviceModel' | 'scanLimit';
     };
-    url: "/router-rule-templates";
+    url: '/router-rule-templates';
 };
 export type GetRouterRuleTemplatesErrors = {
     /**
@@ -66775,7 +69150,7 @@ export type PostRouterRuleTemplatesData = {
     body?: unknown;
     path?: never;
     query?: never;
-    url: "/router-rule-templates";
+    url: '/router-rule-templates';
 };
 export type PostRouterRuleTemplatesErrors = {
     /**
@@ -66801,17 +69176,17 @@ export type PostRouterRuleTemplatesErrors = {
             code?: string;
         }>;
     } | {
-        error: "TEMPLATE_COMPOSITE_RULE_NESTING_DEPTH_EXCEEDED";
+        error: 'TEMPLATE_COMPOSITE_RULE_NESTING_DEPTH_EXCEEDED';
         message: string;
         maxDepth: number;
         actualDepth: number;
     } | {
-        error: "TEMPLATE_COMPOSITE_RULE_CONDITION_COUNT_EXCEEDED";
+        error: 'TEMPLATE_COMPOSITE_RULE_CONDITION_COUNT_EXCEEDED';
         message: string;
         maxConditions: number;
         actualConditions: number;
     } | {
-        error: "TEMPLATE_COMPOSITE_RULE_CONDITIONS_REQUIRED";
+        error: 'TEMPLATE_COMPOSITE_RULE_CONDITIONS_REQUIRED';
         message: string;
         ruleType: string;
     };
@@ -66851,7 +69226,7 @@ export type DeleteRouterRuleTemplatesByRouterRuleTemplateIdData = {
         routerRuleTemplateId: string;
     };
     query?: never;
-    url: "/router-rule-templates/{routerRuleTemplateId}";
+    url: '/router-rule-templates/{routerRuleTemplateId}';
 };
 export type DeleteRouterRuleTemplatesByRouterRuleTemplateIdErrors = {
     /**
@@ -66912,7 +69287,7 @@ export type GetRouterRuleTemplatesByRouterRuleTemplateIdData = {
         routerRuleTemplateId: string;
     };
     query?: never;
-    url: "/router-rule-templates/{routerRuleTemplateId}";
+    url: '/router-rule-templates/{routerRuleTemplateId}';
 };
 export type GetRouterRuleTemplatesByRouterRuleTemplateIdErrors = {
     /**
@@ -66967,7 +69342,7 @@ export type PutRouterRuleTemplatesByRouterRuleTemplateIdData = {
         routerRuleTemplateId: string;
     };
     query?: never;
-    url: "/router-rule-templates/{routerRuleTemplateId}";
+    url: '/router-rule-templates/{routerRuleTemplateId}';
 };
 export type PutRouterRuleTemplatesByRouterRuleTemplateIdErrors = {
     /**
@@ -66993,17 +69368,17 @@ export type PutRouterRuleTemplatesByRouterRuleTemplateIdErrors = {
             code?: string;
         }>;
     } | {
-        error: "TEMPLATE_COMPOSITE_RULE_NESTING_DEPTH_EXCEEDED";
+        error: 'TEMPLATE_COMPOSITE_RULE_NESTING_DEPTH_EXCEEDED';
         message: string;
         maxDepth: number;
         actualDepth: number;
     } | {
-        error: "TEMPLATE_COMPOSITE_RULE_CONDITION_COUNT_EXCEEDED";
+        error: 'TEMPLATE_COMPOSITE_RULE_CONDITION_COUNT_EXCEEDED';
         message: string;
         maxConditions: number;
         actualConditions: number;
     } | {
-        error: "TEMPLATE_COMPOSITE_RULE_CONDITIONS_REQUIRED";
+        error: 'TEMPLATE_COMPOSITE_RULE_CONDITIONS_REQUIRED';
         message: string;
         ruleType: string;
     };
@@ -67065,7 +69440,7 @@ export type GetRouterRulesData = {
         /**
          * Filter rules by router rule type
          */
-        type?: "location" | "continent" | "geo" | "time" | "date" | "timezone" | "language" | "browser" | "os" | "deviceVendor" | "deviceModel" | "scanLimit";
+        type?: 'location' | 'continent' | 'geo' | 'time' | 'date' | 'timezone' | 'language' | 'browser' | 'os' | 'deviceVendor' | 'deviceModel' | 'scanLimit';
         /**
          * Filter rules by specific priority value
          */
@@ -67073,7 +69448,7 @@ export type GetRouterRulesData = {
         /**
          * Filter rules by data type
          */
-        dataType?: "url" | "text" | "email" | "wifi" | "vcard" | "event" | "json" | "file";
+        dataType?: 'url' | 'text' | 'email' | 'wifi' | 'vcard' | 'event' | 'json' | 'file';
         /**
          * Filter by specific workspace ID
          */
@@ -67083,7 +69458,7 @@ export type GetRouterRulesData = {
          */
         codeId?: string;
     };
-    url: "/router-rules";
+    url: '/router-rules';
 };
 export type GetRouterRulesErrors = {
     /**
@@ -67201,7 +69576,7 @@ export type GetRouterRulesResponses = {
             /**
              * The type of data the QR code contains. Only applies to dynamic codes. Determines how the QR code data is processed and what content type is returned when scanned. Available options: url (default, standard web redirect), wifi (WiFi configuration), vcard (contact card), text (plain text), email (mailto format), event (calendar event), json (custom JSON), file (file download), scan-info (returns scan information as JSON).
              */
-            dataType: "url" | "wifi" | "vcard" | "text" | "email" | "event" | "json" | "file" | "scan-info";
+            dataType: 'url' | 'wifi' | 'vcard' | 'text' | 'email' | 'event' | 'json' | 'file' | 'scan-info';
             dynamicData: {
                 [key: string]: unknown;
             };
@@ -67340,7 +69715,7 @@ export type GetWorkspacesByWorkspaceIdRouterRulesData = {
         /**
          * Filter rules by router rule type
          */
-        type?: "location" | "continent" | "geo" | "time" | "date" | "timezone" | "language" | "browser" | "os" | "deviceVendor" | "deviceModel" | "scanLimit";
+        type?: 'location' | 'continent' | 'geo' | 'time' | 'date' | 'timezone' | 'language' | 'browser' | 'os' | 'deviceVendor' | 'deviceModel' | 'scanLimit';
         /**
          * Filter rules by specific priority value
          */
@@ -67348,13 +69723,13 @@ export type GetWorkspacesByWorkspaceIdRouterRulesData = {
         /**
          * Filter rules by data type
          */
-        dataType?: "url" | "text" | "email" | "phone" | "sms" | "wifi" | "vcard" | "event";
+        dataType?: 'url' | 'text' | 'email' | 'phone' | 'sms' | 'wifi' | 'vcard' | 'event';
         /**
          * Filter rules by specific QR code ID within the workspace
          */
         codeId?: string;
     };
-    url: "/workspaces/{workspaceId}/router-rules";
+    url: '/workspaces/{workspaceId}/router-rules';
 };
 export type GetWorkspacesByWorkspaceIdRouterRulesErrors = {
     /**
@@ -67478,7 +69853,7 @@ export type GetWorkspacesByWorkspaceIdRouterRulesResponses = {
             /**
              * The type of data the QR code contains. Only applies to dynamic codes. Determines how the QR code data is processed and what content type is returned when scanned. Available options: url (default, standard web redirect), wifi (WiFi configuration), vcard (contact card), text (plain text), email (mailto format), event (calendar event), json (custom JSON), file (file download), scan-info (returns scan information as JSON).
              */
-            dataType: "url" | "wifi" | "vcard" | "text" | "email" | "event" | "json" | "file" | "scan-info";
+            dataType: 'url' | 'wifi' | 'vcard' | 'text' | 'email' | 'event' | 'json' | 'file' | 'scan-info';
             dynamicData: {
                 [key: string]: unknown;
             };
@@ -67605,7 +69980,7 @@ export type PostWorkspacesByWorkspaceIdRouterRuleTemplatesData = {
         workspaceId: string;
     };
     query?: never;
-    url: "/workspaces/{workspaceId}/router-rule-templates";
+    url: '/workspaces/{workspaceId}/router-rule-templates';
 };
 export type PostWorkspacesByWorkspaceIdRouterRuleTemplatesErrors = {
     /**
@@ -67631,17 +70006,17 @@ export type PostWorkspacesByWorkspaceIdRouterRuleTemplatesErrors = {
             code?: string;
         }>;
     } | {
-        error: "TEMPLATE_COMPOSITE_RULE_NESTING_DEPTH_EXCEEDED";
+        error: 'TEMPLATE_COMPOSITE_RULE_NESTING_DEPTH_EXCEEDED';
         message: string;
         maxDepth: number;
         actualDepth: number;
     } | {
-        error: "TEMPLATE_COMPOSITE_RULE_CONDITION_COUNT_EXCEEDED";
+        error: 'TEMPLATE_COMPOSITE_RULE_CONDITION_COUNT_EXCEEDED';
         message: string;
         maxConditions: number;
         actualConditions: number;
     } | {
-        error: "TEMPLATE_COMPOSITE_RULE_CONDITIONS_REQUIRED";
+        error: 'TEMPLATE_COMPOSITE_RULE_CONDITIONS_REQUIRED';
         message: string;
         ruleType: string;
     };
@@ -67672,5 +70047,5 @@ export type PostWorkspacesByWorkspaceIdRouterRuleTemplatesResponses = {
     201: unknown;
 };
 export type ClientOptions = {
-    baseUrl: "https://api.qr-platform.com/v1/openapi" | (string & {});
+    baseUrl: "https://api.qr-platform.com/v1" | (string & {});
 };
